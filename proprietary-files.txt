@@ -136,7 +136,6 @@ vendor/lib64/vendor.qti.hardware.pal@1.0.so;MAKE_COPY_RULE_ONLY
 
 # Audio soundfx
 vendor/lib64/soundfx/libasphere.so
-vendor/lib64/soundfx/libmisoundfx.so
 vendor/lib64/soundfx/libshoebox.so
 
 # Batterysecret
