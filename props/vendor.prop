@@ -205,6 +205,9 @@ vendor.media.omx=0
 # Netflix
 ro.netflix.bsp_rev=Q6450-36256-1
 
+# Perf
+ro.vendor.extension_library=libqti-perfd-client.so
+
 # Qcomd
 persist.vendor.qcomsysd.enabled=1
 
