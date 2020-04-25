@@ -95,6 +95,9 @@ ro.hardware.camera=xiaomi
 # Chipset
 ro.soc.manufacturer=QTI
 
+# Dex2oat
+dalvik.vm.dex2oat64.enabled=true
+
 # Display
 ro.vendor.display.sensortype=2
 ro.vendor.display.svi=1
