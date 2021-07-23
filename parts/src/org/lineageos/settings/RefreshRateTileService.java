@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2021 WaveOS
+ * Copyright (C) 2021 Chaldeaprjkt
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,38 +18,68 @@
 package org.lineageos.settings;
 
 import android.content.Context;
+import android.provider.Settings;
 import android.service.quicksettings.Tile;
 import android.service.quicksettings.TileService;
+import android.view.Display;
 
-import org.lineageos.settings.R;
-import org.lineageos.settings.utils.RefreshRateUtils;
-
-import java.util.Arrays;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Locale;
 
 public class RefreshRateTileService extends TileService {
+    private static final String KEY_MIN_REFRESH_RATE = "min_refresh_rate";
+    private static final String KEY_PEAK_REFRESH_RATE = "peak_refresh_rate";
 
     private Context context;
     private Tile tile;
 
-    private String[] refreshRates;
-    private String[] refreshRateValues;
-    private int currentRefreshRate;
+    private final List<String> entries = new ArrayList<>();
+    private final List<Float> values = new ArrayList<>();
+    private int active;
 
     @Override
     public void onCreate() {
         super.onCreate();
         context = getApplicationContext();
-        refreshRates = context.getResources().getStringArray(R.array.device_refresh_rates);
-        refreshRateValues = context.getResources().getStringArray(R.array.device_refresh_rates_val);
+        Display.Mode mode = context.getDisplay().getMode();
+        Display.Mode[] modes = context.getDisplay().getSupportedModes();
+        for (Display.Mode m : modes) {
+            int rate = (int) Math.round(m.getRefreshRate());
+            if (rate % 30 != 0 || m.getPhysicalWidth() != mode.getPhysicalWidth() ||
+                m.getPhysicalHeight() != mode.getPhysicalHeight())
+                continue;
+
+            entries.add(String.format(Locale.US,"%d Hz", rate));
+            values.add(m.getRefreshRate());
+        }
+        syncFromSettings();
     }
 
-    private void updateCurrentRefreshRate() {
-        currentRefreshRate = Arrays.asList(refreshRateValues).indexOf(Integer.toString(RefreshRateUtils.getRefreshRate(context)));
+    private void syncFromSettings() {
+        float rate = Settings.System.getFloat(context.getContentResolver(),
+                KEY_MIN_REFRESH_RATE, 60);
+        active = values.indexOf(rate);
+        if (active < 0)
+            active = 0;
     }
 
-    private void updateTileDescription() {
-        tile.setContentDescription(refreshRates[currentRefreshRate]);
-        tile.setSubtitle(refreshRates[currentRefreshRate]);
+
+    private void cycleRefreshRate() {
+        if (active < values.size() - 1) {
+            active++;
+        } else {
+            active = 0;
+        }
+
+        float rate = values.get(active);
+        Settings.System.putFloat(context.getContentResolver(), KEY_MIN_REFRESH_RATE, rate);
+        Settings.System.putFloat(context.getContentResolver(), KEY_PEAK_REFRESH_RATE, rate);
+    }
+
+    private void updateTileView() {
+        tile.setContentDescription(entries.get(active));
+        tile.setSubtitle(entries.get(active));
         tile.updateTile();
     }
 
@@ -57,25 +88,15 @@ public class RefreshRateTileService extends TileService {
         super.onStartListening();
         tile = getQsTile();
         tile.setState(Tile.STATE_ACTIVE);
-        updateCurrentRefreshRate();
-        updateTileDescription();
-    }
-
-    private int getRefreshRateVal() {
-        return Integer.parseInt(refreshRateValues[currentRefreshRate]);
+        syncFromSettings();
+        updateTileView();
     }
 
     @Override
     public void onClick() {
         super.onClick();
-        updateCurrentRefreshRate();
-        if (currentRefreshRate == refreshRates.length - 1) {
-            currentRefreshRate = 0;
-        } else {
-            currentRefreshRate++;
-        }
-        RefreshRateUtils.setRefreshRate(context, getRefreshRateVal());
-        RefreshRateUtils.setFPS(getRefreshRateVal());
-        updateTileDescription();
+        cycleRefreshRate();
+        syncFromSettings();
+        updateTileView();
     }
 }
