@@ -34,9 +34,9 @@ public class RefreshRateTileService extends TileService {
     private Context context;
     private Tile tile;
 
-    private final List<String> entries = new ArrayList<>();
-    private final List<Float> values = new ArrayList<>();
-    private int active;
+    private final List<Integer> availableRates = new ArrayList<>();
+    private int activeRateMin;
+    private int activeRateMax;
 
     @Override
     public void onCreate() {
@@ -46,40 +46,46 @@ public class RefreshRateTileService extends TileService {
         Display.Mode[] modes = context.getDisplay().getSupportedModes();
         for (Display.Mode m : modes) {
             int rate = (int) Math.round(m.getRefreshRate());
-            if (rate % 30 != 0 || m.getPhysicalWidth() != mode.getPhysicalWidth() ||
-                m.getPhysicalHeight() != mode.getPhysicalHeight())
-                continue;
-
-            entries.add(String.format(Locale.US,"%d Hz", rate));
-            values.add(m.getRefreshRate());
+            if (rate % 30 == 0 && m.getPhysicalWidth() == mode.getPhysicalWidth() &&
+                m.getPhysicalHeight() == mode.getPhysicalHeight()) {
+                availableRates.add(rate);
+            }
         }
         syncFromSettings();
     }
 
-    private void syncFromSettings() {
-        float rate = Settings.System.getFloat(context.getContentResolver(),
-                KEY_MIN_REFRESH_RATE, 60);
-        active = values.indexOf(rate);
-        if (active < 0)
-            active = 0;
+    private int getSettingOf(String key) {
+        float rate = Settings.System.getFloat(context.getContentResolver(), key, 60);
+        int active = availableRates.indexOf((int) Math.round(rate));
+        return Math.max(active, 0);
     }
 
+    private void syncFromSettings() {
+        activeRateMin = getSettingOf(KEY_MIN_REFRESH_RATE);
+        activeRateMax = getSettingOf(KEY_PEAK_REFRESH_RATE);
+    }
 
     private void cycleRefreshRate() {
-        if (active < values.size() - 1) {
-            active++;
+        if (activeRateMin < availableRates.size() - 1) {
+            activeRateMin++;
         } else {
-            active = 0;
+            activeRateMin = 0;
         }
 
-        float rate = values.get(active);
+        float rate = availableRates.get(activeRateMin);
         Settings.System.putFloat(context.getContentResolver(), KEY_MIN_REFRESH_RATE, rate);
         Settings.System.putFloat(context.getContentResolver(), KEY_PEAK_REFRESH_RATE, rate);
     }
 
     private void updateTileView() {
-        tile.setContentDescription(entries.get(active));
-        tile.setSubtitle(entries.get(active));
+        String displayText;
+        int min = availableRates.get(activeRateMin);
+        int max = availableRates.get(activeRateMax);
+
+        displayText = String.format(Locale.US, min == max ? "%d Hz" : "%d - %d Hz", min, max);
+        tile.setContentDescription(displayText);
+        tile.setSubtitle(displayText);
+        tile.setState(min == max ? Tile.STATE_ACTIVE : Tile.STATE_INACTIVE);
         tile.updateTile();
     }
 
@@ -87,7 +93,6 @@ public class RefreshRateTileService extends TileService {
     public void onStartListening() {
         super.onStartListening();
         tile = getQsTile();
-        tile.setState(Tile.STATE_ACTIVE);
         syncFromSettings();
         updateTileView();
     }
