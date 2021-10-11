@@ -36,9 +36,8 @@
         android:label="@string/device_settings_app_name"
         android:persistent="true">
 
-        <receiver android:name=".BootCompletedReceiver"
-                  android:exported="false">
-            <intent-filter>
+        <receiver android:name=".BootCompletedReceiver" android:exported="true">
+            <intent-filter android:priority="1000">
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
@@ -51,7 +50,7 @@
 
         <activity
             android:name=".doze.DozeSettingsActivity"
-            android:exported="false"
+            android:exported="true"
             android:label="@string/ambient_display_title"
             android:theme="@style/Theme.SubSettingsBase">
             <intent-filter>
@@ -63,6 +62,7 @@
         <activity
             android:name=".dirac.DiracActivity"
             android:label="@string/dirac_title"
+            android:exported="true"
             android:theme="@style/Theme.SubSettingsBase">
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
@@ -76,6 +76,7 @@
 
         <activity
             android:name=".thermal.ThermalSettingsActivity"
+            android:exported="true"
             android:label="@string/thermal_title"
             android:icon="@drawable/ic_thermal_settings"
             android:theme="@style/Theme.SubSettingsBase_v31">
@@ -95,6 +96,7 @@
 
         <activity
             android:name=".speaker.ClearSpeakerActivity" 
+            android:exported="true"
             android:label="@string/clear_speaker_title"
             android:theme="@style/Theme.SubSettingsBase">
             <intent-filter>
@@ -106,6 +108,7 @@
 
         <service
             android:name=".thermal.ThermalService"
+            android:exported="true"
             android:permission="ThermalService">
         </service>
 
@@ -113,6 +116,7 @@
             android:name=".RefreshRateTileService"
             android:icon="@drawable/ic_qs_refresh_rate"
             android:label="@string/refresh_rate_tile_title"
+            android:exported="true"
             android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
             <intent-filter>
                 <action android:name="android.service.quicksettings.action.QS_TILE"/>
@@ -123,6 +127,7 @@
             android:name=".dirac.DiracTileService"
             android:icon="@drawable/ic_headphone"
             android:label="@string/dirac_qs_tile_title"
+            android:exported="true"
             android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
             <intent-filter>
                 <action android:name="android.service.quicksettings.action.QS_TILE"/>
@@ -132,7 +137,7 @@
         <activity
             android:name=".refreshrate.RefreshActivity"
             android:label="@string/refresh_title"
-            android:exported="false"
+            android:exported="true"
             android:theme="@style/Theme.SubSettingsBase">
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
@@ -154,6 +159,7 @@
         <activity
             android:name=".TileEntryActivity"
             android:label="@string/device_settings_app_name"
+            android:exported="true"
             android:theme="@style/Theme.SubSettingsBase">
             <intent-filter>
                 <action android:name="android.service.quicksettings.action.QS_TILE_PREFERENCES" />
