@@ -202,6 +202,9 @@ on boot
     chown system system /sys/class/qcom-battery/input_suspend
     chmod 774 /sys/class/qcom-battery/input_suspend
 
+    # Set doze mode permissions
+    chown system system /sys/devices/platform/soc/soc:qcom,dsi-display/doze_mode
+    chmod 0660 /sys/devices/platform/soc/soc:qcom,dsi-display/doze_mode
 
     # game plaid mode
     chown system system  /sys/devices/virtual/gpu_plaid/plaid/game_data
