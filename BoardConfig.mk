@@ -8,6 +8,9 @@ DEVICE_PATH := device/xiaomi/garnet
 
 BUILD_BROKEN_DUP_RULES := true
 
+# MiuiCamera
+-include device/xiaomi/garnet-miuicamera/BoardConfig.mk
+
 # A/B
 AB_OTA_PARTITIONS := \
     boot \
