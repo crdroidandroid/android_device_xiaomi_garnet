@@ -85,6 +85,9 @@ camera.disable_zsl_mode=true
 ro.camera.enableCamera1MaxZsl=1
 ro.hardware.camera=xiaomi
 
+# Camera
+vendor.camera.aux.packageexcludelist=org.telegram.messenger,org.thunderdog.challegram
+
 # Chipset
 ro.soc.manufacturer=QTI
 
