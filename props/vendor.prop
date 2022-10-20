@@ -169,6 +169,7 @@ ro.hardware.keystore_desede=true
 debug.c2.use_dmabufheaps=1
 debug.stagefright.c2inputsurface=-1
 ro.media.xml_variant.profiles=_parrot_v0
+debug.sdm.support_writeback=0
 
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
