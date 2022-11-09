@@ -31,6 +31,11 @@ on boot
     chmod 0700 /sys/bus/platform/devices/soc:fingerprint_fpc/screen
     chmod 0666 /dev/input/event2
 
+on post-fs
+    # Workarround for cache
+    rm /data/resource-cache
+    rm /data/system/package_cache
+
 on post-fs-data
     mkdir /data/vendor/misc 01771 system system
     mkdir /data/vendor/misc/mi_fp 0770 system system
