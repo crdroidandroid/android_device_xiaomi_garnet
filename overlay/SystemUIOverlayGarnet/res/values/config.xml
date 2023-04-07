@@ -8,5 +8,8 @@
     <bool name="doze_display_state_supported">true</bool>
 
     <!-- Bottom margin size when fingerprint in display is active -->
-    <dimen name="keyguard_indication_margin_bottom">6dp</dimen>
+    <dimen name="keyguard_indication_margin_bottom">8dp</dimen>
+
+    <!-- Preferred max refresh rate at AOD & Ambient Display, if supported by the display. -->
+    <integer name="config_aodMaxRefreshRate">60</integer>
 </resources>
