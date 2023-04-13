@@ -27,7 +27,6 @@ import android.util.Log;
 import android.view.Display;
 import android.view.Display.HdrCapabilities;
 
-import org.lineageos.settings.doze.DozeUtils;
 import org.lineageos.settings.thermal.ThermalUtils;
 import org.lineageos.settings.refreshrate.RefreshUtils;
 
@@ -37,13 +36,12 @@ public class BootCompletedReceiver extends BroadcastReceiver {
 
     @Override
     public void onReceive(final Context context, Intent intent) {
+
         if (!intent.getAction().equals(Intent.ACTION_BOOT_COMPLETED)) {
             return;
         }
         if (DEBUG)
             Log.d(TAG, "Received boot completed intent");
-	// Doze
-        DozeUtils.onBootCompleted(context);
 
         // Thermal Profiles
         ThermalUtils.startService(context);
