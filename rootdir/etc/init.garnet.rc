@@ -74,6 +74,9 @@ on property:ro.boot.product.hardware.sku=CN
     enable secureelement-hal_1_2
     enable qti_esepowerman
 
+on property:sys.boot_completed=1
+    write /sys/devices/virtual/thermal/thermal_message/sconfig 20
+
 service vendor.audio-hal /vendor/bin/hw/android.hardware.audio.service
     override
     class hal
