@@ -7,6 +7,9 @@
     <!-- Doze: does this device support STATE_DOZE?  -->
     <bool name="doze_display_state_supported">true</bool>
 
+    <!-- Whether show refresh rate QS tile -->
+    <bool name="config_showRefreshRateQsTile">true</bool>
+
     <!-- Bottom margin size when fingerprint in display is active -->
     <dimen name="keyguard_indication_margin_bottom">8dp</dimen>
 
