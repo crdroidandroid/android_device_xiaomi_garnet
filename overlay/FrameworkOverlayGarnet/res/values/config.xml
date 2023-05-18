@@ -992,4 +992,12 @@
 
     <!-- Expected value from fast charging status file  -->
     <string name="config_oemFastChargerStatusValue" translatable="false">1</string>
+
+    <!-- Power Menu Reboot -->
+    <string-array translatable="false" name="config_rebootActionsList">
+        <item>restart</item>
+        <item>reboot_recovery</item>
+        <item>reboot_bootloader</item>
+        <item>reboot_fastboot</item>
+    </string-array>
 </resources>
