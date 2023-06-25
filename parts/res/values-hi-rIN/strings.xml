@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2021 The LineageOS Project
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+    <!-- Ambient settings -->
+    <string name="ambient_enable">एम्बिएंट डिस्प्ले</string>
+    <string name="doze_brightness_title">ऑलवेज ऑन ब्राइटनेस</string>
+    <string name="doze_brightness_summary">%s मोड चालू किया गया</string>
+    <!-- Dirac settings -->
+    <string name="dirac_title">एम आई साउंड एन्हांसर </string>
+    <string name="dirac_enable">चालू करें</string>
+    <string name="dirac_summary">ऑडियो गुणवत्ता ऑप्टिमाइज़ करें</string>
+    <string name="dirac_headset_title">हेडफ़ोन प्रकार चुनें</string>
+    <string name="dirac_preset_title">पूर्व निर्धारित चुनें</string>
+    <!-- Dirac settings: Headset types -->
+    <string name="dirac_headset_earbuds">एम आई इयरबड्स </string>
+    <string name="dirac_headset_in_ear_2013">एम आई इन-ईयर (2013)</string>
+    <string name="dirac_headset_piston_1">एम आई पिस्टन-1</string>
+    <string name="dirac_headset_general_inear">एम आई हेडफोन्स</string>
+    <string name="dirac_headset_piston_basic">बेसिक एडिशन </string>
+    <string name="dirac_headset_piston_2">एम आई पिस्टन-2</string>
+    <string name="dirac_headset_piston_standard">स्टैंडर्ड एडिशन </string>
+    <string name="dirac_headset_piston_youth">यूथ एडिशन </string>
+    <string name="dirac_headset_piston_color">कलर एडिशन </string>
+    <string name="dirac_headset_in_ear">एम आई इन-ईयर</string>
+    <string name="dirac_headset_capsule">एम आई कैपसूल</string>
+    <string name="dirac_headset_in_ear_pro">एम आई इन-ईयर प्रो</string>
+    <string name="dirac_headset_comfort">एम आई कंफर्ट </string>
+    <string name="dirac_headset_reduction_noise">एम आई नॉइज कैंसलिंग टाइप-C</string>
+    <string name="dirac_headset_cancelling">एम आई नॉइज कैंसलिंग 3.5एमएम </string>
+    <string name="dirac_headset_half_in_ear">एम आई हाल्फ इन ईयर</string>
+    <string name="dirac_headset_in_ear2">एम आई इन-ईयर 2</string>
+    <string name="dirac_headset_earphone_basic">एम आई इयरफोन बेसिक</string>
+    <string name="dirac_headset_earphone">एम आई ईयरफ़ोन्स</string>
+    <string name="dirac_headset_ear_four">एम आई क्वाद्रुपाल ड्राइवर ईयरफ़ोन्स</string>
+    <string name="dirac_headset_piston_typec">एम आई इन-इयर हेडफ़ोन्स (टाइप-C)</string>
+    <string name="dirac_headset_bluetooth_collar">एम आई ब्लूटूथ नेकबैंड</string>
+    <string name="dirac_headset_bluetooth_linefree">एम आई ब्लुटूथ ईयरफ़ोन्स</string>
+    <string name="dirac_headset_redmi_earphones">रेडमी इयरफोन </string>
+    <string name="dirac_headset_dual_driver_in_ear">एम आई ड्युअल ड्राइवर इन-ईयर ईयरफ़ोन्स</string>
+    <!-- Dirac settings: Equalizer presets -->
+    <string name="dirac_preset_default">डिफॉल्ट</string>
+    <string name="dirac_preset_rock">रॉक</string>
+    <string name="dirac_preset_jazz">जैज़</string>
+    <string name="dirac_preset_pop">पॉप</string>
+    <string name="dirac_preset_classical">शास्त्रीय</string>
+    <string name="dirac_preset_hiphop">हिप हॉप</string>
+    <string name="dirac_preset_blues">ब्लूज़</string>
+    <string name="dirac_preset_electronic">इलेक्ट्रॉनिक</string>
+    <string name="dirac_preset_country">कंट्री </string>
+    <string name="dirac_preset_dance">डांस </string>
+    <string name="dirac_preset_metal">मेटल</string>
+    <!-- Dirac settings: Sound Scenes -->
+    <string name="music_headset_scenario_select">दृश्य चुनें</string>
+    <string name="music_headset_scenario_intelligent">स्मार्ट</string>
+    <string name="music_headset_scenario_music">संगीत</string>
+    <string name="music_headset_scenario_video">वीडियो</string>
+    <string name="music_headset_scenario_vocal">आवाज़</string>
+    <!-- QS tile title -->
+    <string name="dirac_qs_tile_title">Mi ध्वनि एन्हांसर</string>
+    <!-- Thermal Profiles -->
+    <string name="thermal_title">थर्मल प्रोफाइल्स </string>
+    <string name="thermal_summary">पर ऐप थर्मल प्रोफाइल कंफीग्रेशन</string>
+    <string name="thermal_default">डिफॉल्ट</string>
+    <string name="thermal_benchmark">बेंचमार्क </string>
+    <string name="thermal_browser">ब्राउज़र</string>
+    <string name="thermal_camera">कैमरा</string>
+    <string name="thermal_dialer">डायलर</string>
+    <string name="thermal_gaming">गेमिंग </string>
+    <string name="thermal_streaming">स्ट्रीमिंग </string>
+    <!-- Clear Speaker -->
+    <string name="clear_speaker_title">स्पीकर को साफ़ करें</string>
+    <string name="clear_speaker_summary">स्पीकर को साफ़ करने के लिए 30 सेकंड का ऑडियो चलाएं</string>
+    <string name="clear_speaker_description">इस सुविधा को एक या दो बार चलाएं यदि आप पाते हैं कि आपका स्पीकर धूल से हल्का अवरुद्ध है। मीडिया वॉल्यूम को अधिकतम पर सेट करें। \n\nयदि स्पीकर को बहुत अधिक अवरुद्ध किया गया है, तो अपने डिवाइस को नीचे की ओर स्पीकर के साथ हिलाते हुए इस सुविधा को 2-5 बार चलाएं।</string>
+    <!-- Haptic Level Settings -->
+    <string name="haptic_title">कंपन फीडबैक </string>
+    <string name="haptic_warning">हैप्टिक स्तर बहुत अधिक सेट करना स्थायी हार्डवेयर क्षति का कारण बन सकता है, अपने जोखिम पर उपयोग करें</string>
+    <string name="haptic_summary">कंपन तीव्रता सेट करें</string>
+    <string name="haptic_level_title">स्तर</string>
+    <string name="haptic_level_summary">कंपन तीव्रता की मात्रा</string>
+    <string name="haptic_level_summary_incompatible">सुविधा समर्थित नहीं है</string>
+</resources>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2021 The LineageOS Project
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+    <!-- Ambient settings -->
+    <string name="ambient_enable">A Környezeti kijelző használata</string>
+    <string name="doze_brightness_title">Álandóan bekapcsolt fényerő</string>
+    <string name="doze_brightness_summary">%s-mód aktiválva</string>
+    <!-- Dirac settings -->
+    <string name="dirac_title">Mi Hangjavítás</string>
+    <string name="dirac_enable">Engedélyezés</string>
+    <string name="dirac_summary">Hangminőség-optimalizálás</string>
+    <string name="dirac_headset_title">Fülhallgató-típus választás</string>
+    <string name="dirac_preset_title">Előbeállítás-választó</string>
+    <!-- Dirac settings: Headset types -->
+    <string name="dirac_headset_earbuds">Mi Earbuds</string>
+    <string name="dirac_headset_in_ear_2013">Mi In-Ear (2013)</string>
+    <string name="dirac_headset_piston_1">Mi Piston-1</string>
+    <string name="dirac_headset_general_inear">MI-fejhallgatók</string>
+    <string name="dirac_headset_piston_basic">Alap kiadás</string>
+    <string name="dirac_headset_piston_2">Mi Piston-2</string>
+    <string name="dirac_headset_piston_standard">Standard kiadás</string>
+    <string name="dirac_headset_piston_youth">Youth kiadás</string>
+    <string name="dirac_headset_piston_color">Színes kiadás</string>
+    <string name="dirac_headset_in_ear">Mi In-Ear</string>
+    <string name="dirac_headset_capsule">Mi Capsule</string>
+    <string name="dirac_headset_in_ear_pro">Mi In-Ear Pro</string>
+    <string name="dirac_headset_comfort">Mi Kényelem</string>
+    <string name="dirac_headset_reduction_noise">Mi Zajcsökkentés Type-C</string>
+    <string name="dirac_headset_cancelling">Mi Zajcsökkentés 3.5mm</string>
+    <string name="dirac_headset_half_in_ear">Mi Half In-Ear</string>
+    <string name="dirac_headset_in_ear2">Mi In-Ear 2</string>
+    <string name="dirac_headset_earphone_basic">Mi Fülhallgató Alap</string>
+    <string name="dirac_headset_earphone">MI-fülhallgatók</string>
+    <string name="dirac_headset_ear_four">Mi Quadruple Driver-fülhallgató</string>
+    <string name="dirac_headset_piston_typec">Mi In-Ear fejhallgató (C-típus)</string>
+    <string name="dirac_headset_bluetooth_collar">Mi Bluetooth Neckband</string>
+    <string name="dirac_headset_bluetooth_linefree">Mi Bluetooth fülhallgatók</string>
+    <string name="dirac_headset_redmi_earphones">Redmi fülhallgatók</string>
+    <string name="dirac_headset_dual_driver_in_ear">Mi Dual Driver In-ear fülhallgató</string>
+    <!-- Dirac settings: Equalizer presets -->
+    <string name="dirac_preset_default">Alapértelmezett</string>
+    <string name="dirac_preset_rock">Rock</string>
+    <string name="dirac_preset_jazz">Jazz</string>
+    <string name="dirac_preset_pop">Pop</string>
+    <string name="dirac_preset_classical">Klasszikus</string>
+    <string name="dirac_preset_hiphop">Hip-Hop</string>
+    <string name="dirac_preset_blues">Blues</string>
+    <string name="dirac_preset_electronic">Elektronikus</string>
+    <string name="dirac_preset_country">Country</string>
+    <string name="dirac_preset_dance">Dance</string>
+    <string name="dirac_preset_metal">Metál</string>
+    <!-- Dirac settings: Sound Scenes -->
+    <string name="music_headset_scenario_select">Típusválasztás</string>
+    <string name="music_headset_scenario_intelligent">Okos</string>
+    <string name="music_headset_scenario_music">Zene</string>
+    <string name="music_headset_scenario_video">Videó</string>
+    <string name="music_headset_scenario_vocal">Hang</string>
+    <!-- QS tile title -->
+    <string name="dirac_qs_tile_title">Mi Hangjavítás</string>
+    <!-- Thermal Profiles -->
+    <string name="thermal_title">Hőprofilok</string>
+    <string name="thermal_summary">Alkalmazásonként beállitható hőprofilok</string>
+    <string name="thermal_default">Alapértelmezett</string>
+    <string name="thermal_benchmark">Tesztekhez</string>
+    <string name="thermal_browser">Böngészéshez</string>
+    <string name="thermal_camera">Kamerához</string>
+    <string name="thermal_dialer">Hívásokhoz</string>
+    <string name="thermal_gaming">Játékhoz</string>
+    <string name="thermal_streaming">Streameléshez</string>
+    <!-- Clear Speaker -->
+    <string name="clear_speaker_title">Hangszórótisztítás</string>
+    <string name="clear_speaker_summary">Tisztítás egy 30 pásodperces hang lejátszásával</string>
+    <string name="clear_speaker_description">Futtassa ezt a funkciót egyszer vagy kétszer, ha úgy gondolja hangszórója beporosodott. Állítsa a hangerőt maximumra.\n\nHa nagyon poros, akkor 3-5 alkalommal végezzen tisztítást, de közben a készüléket is erősen rázza meg, hangszóróval lefelé.\n\nVIGYÁZZON hogy egyetlen fejhallgató se legyen csatlakoztatva!</string>
+    <!-- Haptic Level Settings -->
+    <string name="haptic_title">Rezgő visszajelzés</string>
+    <string name="haptic_warning">Ne állítsa túl erősre a rezgést, mert a finom alkatrészek megsérülhetnek! Csak saját felelősségre!</string>
+    <string name="haptic_summary">A rezgés intenzitásvezérlése</string>
+    <string name="haptic_level_title">Szint</string>
+    <string name="haptic_level_summary">Rezgésintezitás</string>
+    <string name="haptic_level_summary_incompatible">Ez a funkció nem támogatott</string>
+</resources>

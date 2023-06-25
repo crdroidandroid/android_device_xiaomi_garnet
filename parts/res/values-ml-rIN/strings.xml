@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2021 The LineageOS Project
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+    <!-- Ambient settings -->
+    <string name="ambient_enable">ആമ്പിയന്റ് ഡിസ്‌പ്ലേ ഉപയോഗിക്കുക</string>
+    <string name="doze_brightness_title">എപ്പോഴും തെളിച്ചത്തിൽ</string>
+    <string name="doze_brightness_summary">മോഡ് പ്രവർത്തനക്ഷമമാക്കി%s</string>
+    <!-- Dirac settings -->
+    <string name="dirac_title">മി ശബ്ദ എൻഹാൻസർ</string>
+    <string name="dirac_enable">പ്രാപ്തമാക്കുക</string>
+    <string name="dirac_summary">ഓഡിയോ ഗുണനിലവാരം ഒപ്റ്റിമൈസുചെയ്യുക</string>
+    <string name="dirac_headset_title">ഹെഡ്ഫോൺ തരം തിരഞ്ഞെടുക്കുക</string>
+    <string name="dirac_preset_title">ഒരു പ്രീസെറ്റ് തിരഞ്ഞെടുക്കുക</string>
+    <!-- Dirac settings: Headset types -->
+    <string name="dirac_headset_earbuds">Mi ഇയർബഡ്സുകൾ</string>
+    <string name="dirac_headset_in_ear_2013">Mi ഇൻ-ഇയർ (2013)</string>
+    <string name="dirac_headset_piston_1">Mi പിസ്റ്റൺ-1</string>
+    <string name="dirac_headset_general_inear">Mi ഹെഡ്‌ഫോണുകള്‍</string>
+    <string name="dirac_headset_piston_basic">അടിസ്ഥാന പതിപ്പ്</string>
+    <string name="dirac_headset_piston_2">Mi പിസ്റ്റൺ-2</string>
+    <string name="dirac_headset_piston_standard">സ്റ്റാൻഡേർഡ് എഡിഷൻ</string>
+    <string name="dirac_headset_piston_youth">യൂത്ത് എഡിഷൻ</string>
+    <string name="dirac_headset_piston_color">കളർ എഡിഷൻ</string>
+    <string name="dirac_headset_in_ear">Mi ഇൻ-ഇയർ</string>
+    <string name="dirac_headset_capsule">Mi ക്യാപ്സ്യൂൾ</string>
+    <string name="dirac_headset_in_ear_pro">Mi ഇൻ-ഇയർ പ്രോ</string>
+    <string name="dirac_headset_comfort">Mi കംഫർട്ട്</string>
+    <string name="dirac_headset_reduction_noise">മി നോയിസ് ക്യാൻസലിംഗ് ടൈപ്പ്-സി</string>
+    <string name="dirac_headset_cancelling">മി നോയ്സ് ക്യാൻസലിംഗ് 3.5mm</string>
+    <string name="dirac_headset_half_in_ear">Mi ഹാഫ് ഇൻ ഇയർ</string>
+    <string name="dirac_headset_in_ear2">മി ഇൻ ഇയർ 2</string>
+    <string name="dirac_headset_earphone_basic">മി ഇയർഫോൺ ബേസിക്</string>
+    <string name="dirac_headset_earphone">മി ഹെഡ്‌ഫോണുകള്‍</string>
+    <string name="dirac_headset_ear_four">Mi Quadruple Driver ഇയർഫോണുകൾ</string>
+    <string name="dirac_headset_piston_typec">Mi in-Ear ഹെഡ്‌ഫോണുകള്‍ (Type-C)</string>
+    <string name="dirac_headset_bluetooth_collar">മി ബ്ലൂടൂത്ത് നെക്‌ബാൻഡ്‌</string>
+    <string name="dirac_headset_bluetooth_linefree">മി ബ്ലൂടൂത്ത് ഇയർഫോണുകൾ</string>
+    <string name="dirac_headset_redmi_earphones">റെഡ്മി ഇയർഫോണുകൾ</string>
+    <string name="dirac_headset_dual_driver_in_ear">മി ഡ്യുവൽ ഡ്രൈവർ ഇൻ-ഇയർ ഇയർഫോണുകൾ</string>
+    <!-- Dirac settings: Equalizer presets -->
+    <string name="dirac_preset_default">സ്ഥിരമായത്</string>
+    <string name="dirac_preset_rock">റോക്ക്</string>
+    <string name="dirac_preset_jazz">ജാസ്സ്</string>
+    <string name="dirac_preset_pop">പോപ്പ്</string>
+    <string name="dirac_preset_classical">ക്ലാസിക്കൽ</string>
+    <string name="dirac_preset_hiphop">ഹിപ്പ് ഹോപ്പ്</string>
+    <string name="dirac_preset_blues">ദുഃഖഭാവം</string>
+    <string name="dirac_preset_electronic">ഇലക്ട്രോണിക്ക്</string>
+    <string name="dirac_preset_country">കൺട്രി</string>
+    <string name="dirac_preset_dance">നൃത്തം</string>
+    <string name="dirac_preset_metal">മെറ്റൽ</string>
+    <!-- Dirac settings: Sound Scenes -->
+    <string name="music_headset_scenario_select">സീൻ തിരഞ്ഞെടുക്കുക</string>
+    <string name="music_headset_scenario_intelligent">സ്മാർട്ട്</string>
+    <string name="music_headset_scenario_music">സംഗീതം</string>
+    <string name="music_headset_scenario_video">വീഡിയോ</string>
+    <string name="music_headset_scenario_vocal">ശബ്ദം</string>
+    <!-- QS tile title -->
+    <string name="dirac_qs_tile_title">മി ശബ്ദ എൻഹാൻസർ</string>
+    <!-- Thermal Profiles -->
+    <string name="thermal_title">തെർമൽ പ്രൊഫൈൽസ്</string>
+    <string name="thermal_summary">ഓരോ ആപ്പിനും തെർമൽ പ്രൊഫൈൽ കോൺഫിഗറേഷൻ</string>
+    <string name="thermal_default">സ്ഥിരമായത്</string>
+    <string name="thermal_benchmark">ബെഞ്ച്മാർക്</string>
+    <string name="thermal_browser">ബ്രൗസര്‍</string>
+    <string name="thermal_camera">ക്യാമറ</string>
+    <string name="thermal_dialer">ഡയലർ</string>
+    <string name="thermal_gaming">ഗെയിമിംഗ്</string>
+    <string name="thermal_streaming">സ്ട്രീമിംഗ്</string>
+    <!-- Clear Speaker -->
+    <string name="clear_speaker_title">സ്പീക്കർ വൃത്തിയാക്കുക</string>
+    <string name="clear_speaker_summary">സ്പീക്കർ വൃത്തിയാക്കാൻ 30 സെക്കന്റ് ഓഡിയോ പ്ലേ ചെയ്യുക</string>
+    <string name="clear_speaker_description">നിങ്ങളുടെ സ്പീക്കർ പൊടിയാൽ ചെറുതായി തടഞ്ഞിട്ടുണ്ടെന്ന് കണ്ടാൽ ഒന്നോ രണ്ടോ തവണ ഈ ഫീച്ചർ പ്രവർത്തിപ്പിക്കുക. മീഡിയ വോളിയം പരമാവധി സജ്ജമാക്കുക.\n\nസ്പീക്കർ വൻതോതിൽ ബ്ലോക്ക് ചെയ്‌തിട്ടുണ്ടെങ്കിൽ, സ്‌പീക്കർ താഴേക്ക് തിരിഞ്ഞ് നിങ്ങളുടെ ഉപകരണം കുലുക്കുമ്പോൾ ഈ ഫീച്ചർ 2-5 തവണ പ്രവർത്തിപ്പിക്കുക.\n\nമുന്നറിയിപ്പ്: ഏതെങ്കിലും ഹെഡ്‌ഫോണുകൾ അൺപ്ലഗ് ചെയ്തിട്ടുണ്ടെന്ന് ഉറപ്പാക്കുക.</string>
+    <!-- Haptic Level Settings -->
+    <string name="haptic_title">ഹപ്‌റ്റിക് ഫീഡ്‌ബാക്ക്</string>
+    <string name="haptic_warning">വളരെ ഉയർന്ന ഹാപ്‌റ്റിക് ലെവൽ സജ്ജീകരിക്കുന്നത് സ്ഥിരമായ ഹാർഡ്‌വെയർ തകരാറിന് കാരണമായേക്കാം, നിങ്ങളുടെ സ്വന്തം ഉത്തരവാദിത്തത്തിൽ ഉപയോഗിക്കുക</string>
+    <string name="haptic_summary">വൈബ്രേഷൻ തീവ്രത ഇഷ്ടാനുസൃതമാക്കുക</string>
+    <string name="haptic_level_title">ലെവൽ</string>
+    <string name="haptic_level_summary">വൈബ്രേഷൻ തീവ്രതയുടെ അളവ്</string>
+    <string name="haptic_level_summary_incompatible">ഫീച്ചർ ലഭ്യമല്ല</string>
+</resources>

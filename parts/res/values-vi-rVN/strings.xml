@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2021 The LineageOS Project
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+    <!-- Ambient settings -->
+    <string name="ambient_enable">Sử dụng màn hình xem nhanh</string>
+    <string name="doze_brightness_title">Độ sáng luôn bật</string>
+    <string name="doze_brightness_summary">Chế độ %s được kích hoạt</string>
+    <!-- Dirac settings -->
+    <string name="dirac_title">Tăng cường Mi Sound</string>
+    <string name="dirac_enable">Kích hoạt</string>
+    <string name="dirac_summary">Tối ưu chất lượng âm thanh</string>
+    <string name="dirac_headset_title">Chọn loại tai nghe</string>
+    <string name="dirac_preset_title">Chọn hiệu chỉnh sẵn có</string>
+    <!-- Dirac settings: Headset types -->
+    <string name="dirac_headset_earbuds">Mi Earbud</string>
+    <string name="dirac_headset_in_ear_2013">Mi In-Ear (2013)</string>
+    <string name="dirac_headset_piston_1">Mi Piston-1</string>
+    <string name="dirac_headset_general_inear">Tai nghe Mi</string>
+    <string name="dirac_headset_piston_basic">Cơ bản</string>
+    <string name="dirac_headset_piston_2">Mi Piston-2</string>
+    <string name="dirac_headset_piston_standard">Tiêu chuẩn</string>
+    <string name="dirac_headset_piston_youth">Phiên bản rút gọn</string>
+    <string name="dirac_headset_piston_color">Phiên bản màu</string>
+    <string name="dirac_headset_in_ear">Mi In-Ear</string>
+    <string name="dirac_headset_capsule">Mi Capsule</string>
+    <string name="dirac_headset_in_ear_pro">Mi In-Ear Pro</string>
+    <string name="dirac_headset_comfort">Mi Comfort</string>
+    <string name="dirac_headset_reduction_noise">Khử tiếng ồn Mi Type-C</string>
+    <string name="dirac_headset_cancelling">Khử tiếng ồn Mi 3.5mm</string>
+    <string name="dirac_headset_half_in_ear">Mi Half In-Ear</string>
+    <string name="dirac_headset_in_ear2">Mi In-Ear 2</string>
+    <string name="dirac_headset_earphone_basic">Tai Nghe Mi Cơ Bản</string>
+    <string name="dirac_headset_earphone">Tai Nghe Mi</string>
+    <string name="dirac_headset_ear_four">Tai nghe Mi Quadruple Driver</string>
+    <string name="dirac_headset_piston_typec">Tai nghe Mi In-Ear (Type-C)</string>
+    <string name="dirac_headset_bluetooth_collar">Tai nghe Mi Bluetooth Neckband</string>
+    <string name="dirac_headset_bluetooth_linefree">Tai nghe Mi Bluetooth</string>
+    <string name="dirac_headset_redmi_earphones">Tai nghe Redmi</string>
+    <string name="dirac_headset_dual_driver_in_ear">Tai nghe Mi Dual Driver In-ear</string>
+    <!-- Dirac settings: Equalizer presets -->
+    <string name="dirac_preset_default">Mặc định</string>
+    <string name="dirac_preset_rock">Nhạc Rock</string>
+    <string name="dirac_preset_jazz">Nhạc Jazz</string>
+    <string name="dirac_preset_pop">Nhạc Pop</string>
+    <string name="dirac_preset_classical">Cổ điển</string>
+    <string name="dirac_preset_hiphop">Nhạc Hip hop</string>
+    <string name="dirac_preset_blues">Blues</string>
+    <string name="dirac_preset_electronic">Điện tử</string>
+    <string name="dirac_preset_country">Country</string>
+    <string name="dirac_preset_dance">Dance</string>
+    <string name="dirac_preset_metal">Metal</string>
+    <!-- Dirac settings: Sound Scenes -->
+    <string name="music_headset_scenario_select">Chọn cảnh</string>
+    <string name="music_headset_scenario_intelligent">Thông minh</string>
+    <string name="music_headset_scenario_music">Âm nhạc</string>
+    <string name="music_headset_scenario_video">Video</string>
+    <string name="music_headset_scenario_vocal">Giọng nói</string>
+    <!-- QS tile title -->
+    <string name="dirac_qs_tile_title">Tăng cường Mi Sound</string>
+    <!-- Thermal Profiles -->
+    <string name="thermal_title">Cấu hình hiệu năng</string>
+    <string name="thermal_summary">Cấu hình hiệu năng cho mỗi ứng dụng</string>
+    <string name="thermal_default">Mặc định</string>
+    <string name="thermal_benchmark">Điểm chuẩn</string>
+    <string name="thermal_browser">Trình duyệt</string>
+    <string name="thermal_camera">Máy ảnh</string>
+    <string name="thermal_dialer">Trình quay số</string>
+    <string name="thermal_gaming">Game</string>
+    <string name="thermal_streaming">Phát trực tuyến</string>
+    <!-- Clear Speaker -->
+    <string name="clear_speaker_title">Làm sạch loa</string>
+    <string name="clear_speaker_summary">Phát âm thanh 30 giây để làm sạch loa</string>
+    <string name="clear_speaker_description">Chạy tính năng này một hoặc hai lần nếu bạn thấy rằng loa của mình bị bụi bám nhẹ. Đặt âm lượng phương tiện ở mức tối đa.\n\nNếu loa bị chặn nhiều, hãy chạy tính năng này 2-5 lần trong khi lắc thiết bị của bạn với loa hướng xuống dưới.\n\nCẢNH Báo: Đảm bảo rằng mọi tai nghe đã được rút ra.</string>
+    <!-- Haptic Level Settings -->
+    <string name="haptic_title">Phản hồi xúc giác</string>
+    <string name="haptic_warning">Thiết lập mức rung quá cao có thể gây hư hỏng phần cứng vĩnh viễn, bạn tự chịu rủi ro khi sử dụng</string>
+    <string name="haptic_summary">Cường độ rung của nhạc chuông</string>
+    <string name="haptic_level_title">Mức độ</string>
+    <string name="haptic_level_summary">Cường độ rung của nhạc chuông</string>
+    <string name="haptic_level_summary_incompatible">Tính năng không được hỗ trợ</string>
+</resources>

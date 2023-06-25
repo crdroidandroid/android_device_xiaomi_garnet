@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2021 The LineageOS Project
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+    <!-- Ambient settings -->
+    <string name="ambient_enable">Ortam ekranı</string>
+    <string name="doze_brightness_title">Her zaman açık ekran parlaklığı</string>
+    <string name="doze_brightness_summary">%s modu etkinleştirildi</string>
+    <!-- Dirac settings -->
+    <string name="dirac_title">Mi Ses Yükseltici</string>
+    <string name="dirac_enable">Etkinleştir</string>
+    <string name="dirac_summary">Ses kalitesini optimize eder</string>
+    <string name="dirac_headset_title">Kulaklık türünü seçin</string>
+    <string name="dirac_preset_title">Bir ön ayar seçin</string>
+    <!-- Dirac settings: Headset types -->
+    <string name="dirac_headset_earbuds">Mi Kulaklıkları</string>
+    <string name="dirac_headset_in_ear_2013">Mi Kulak-İçi (2013)</string>
+    <string name="dirac_headset_piston_1">Mi Piston-1</string>
+    <string name="dirac_headset_general_inear">Mi Kulaklıklar</string>
+    <string name="dirac_headset_piston_basic">Temel sürüm</string>
+    <string name="dirac_headset_piston_2">Mi Piston-2</string>
+    <string name="dirac_headset_piston_standard">Standard Edition</string>
+    <string name="dirac_headset_piston_youth">Gençlik sürümü</string>
+    <string name="dirac_headset_piston_color">Renkli Sürüm</string>
+    <string name="dirac_headset_in_ear">Mi Kulak-İçi</string>
+    <string name="dirac_headset_capsule">Mi Kapsül</string>
+    <string name="dirac_headset_in_ear_pro">Mi Kulak içi Pro</string>
+    <string name="dirac_headset_comfort">Mi Konfor</string>
+    <string name="dirac_headset_reduction_noise">Mi Gürültü Önleme Type-C</string>
+    <string name="dirac_headset_cancelling">Mi Gürültü Engelleme 3.5mm</string>
+    <string name="dirac_headset_half_in_ear">Mi Yarı Kulak içi</string>
+    <string name="dirac_headset_in_ear2">Mi Kulak içi 2</string>
+    <string name="dirac_headset_earphone_basic">Mi Kulaklık Basic</string>
+    <string name="dirac_headset_earphone">Mi Kulaklıklar</string>
+    <string name="dirac_headset_ear_four">Mi Dörtlü Sürücü Kulaklık</string>
+    <string name="dirac_headset_piston_typec">Mi Kulak-İçi Kulaklık (Type-C)</string>
+    <string name="dirac_headset_bluetooth_collar">Mi Bluetooth Boyun Askılı Kulaklık</string>
+    <string name="dirac_headset_bluetooth_linefree">Mi Bluetooth Kulaklık</string>
+    <string name="dirac_headset_redmi_earphones">Redmi Kulaklıkları</string>
+    <string name="dirac_headset_dual_driver_in_ear">Mi Çift Sürücü Kulak içi Kulaklık</string>
+    <!-- Dirac settings: Equalizer presets -->
+    <string name="dirac_preset_default">Varsayılan</string>
+    <string name="dirac_preset_rock">Rock</string>
+    <string name="dirac_preset_jazz">Caz</string>
+    <string name="dirac_preset_pop">Pop</string>
+    <string name="dirac_preset_classical">Klasik</string>
+    <string name="dirac_preset_hiphop">Hip Hop</string>
+    <string name="dirac_preset_blues">Blues</string>
+    <string name="dirac_preset_electronic">Elektronik</string>
+    <string name="dirac_preset_country">Country</string>
+    <string name="dirac_preset_dance">Dans</string>
+    <string name="dirac_preset_metal">Metal</string>
+    <!-- Dirac settings: Sound Scenes -->
+    <string name="music_headset_scenario_select">Sahne Seç</string>
+    <string name="music_headset_scenario_intelligent">Akıllı</string>
+    <string name="music_headset_scenario_music">Müzik</string>
+    <string name="music_headset_scenario_video">Video</string>
+    <string name="music_headset_scenario_vocal">Ses</string>
+    <!-- QS tile title -->
+    <string name="dirac_qs_tile_title">Mi Ses Yükseltici</string>
+    <!-- Thermal Profiles -->
+    <string name="thermal_title">Termal profiller</string>
+    <string name="thermal_summary">Uygulama başına termal profil yapılandırması</string>
+    <string name="thermal_default">Varsayılan</string>
+    <string name="thermal_benchmark">Kıyaslama</string>
+    <string name="thermal_browser">Tarayıcı</string>
+    <string name="thermal_camera">Kamera</string>
+    <string name="thermal_dialer">Telefon</string>
+    <string name="thermal_gaming">Oyun</string>
+    <string name="thermal_streaming">Yayın</string>
+    <!-- Clear Speaker -->
+    <string name="clear_speaker_title">Hoparlörü temizle</string>
+    <string name="clear_speaker_summary">Hoparlörü temizlemek için 30 saniye boyunca bir ses çal</string>
+    <string name="clear_speaker_description">Hoparlörünüzün toz tarafından hafifçe engellendiğini fark ederseniz bu özelliği bir veya iki kez çalıştırın. Medya ses seviyesini maksimuma ayarlayın.\n\nHoparlör çok fazla tıkalı ise, hoparlör aşağı bakacak şekilde cihazınızı sallarken bu özelliği 2-5 kez çalıştırın.\n\nUYARI: Kulaklıkların takılı olmadığından emin olun.</string>
+    <!-- Haptic Level Settings -->
+    <string name="haptic_title">Dokunmatik geri bildirim</string>
+    <string name="haptic_warning">Haptik seviyesinin çok yüksek ayarlanması kalıcı donanım hasarına neden olabilir, riski size ait olmak üzere kullanın</string>
+    <string name="haptic_summary">Zil sesi titreşim yoğunluğu</string>
+    <string name="haptic_level_title">Seviye</string>
+    <string name="haptic_level_summary">Titreşim güç kontrolu</string>
+    <string name="haptic_level_summary_incompatible">Özellik desteklenmiyor</string>
+</resources>

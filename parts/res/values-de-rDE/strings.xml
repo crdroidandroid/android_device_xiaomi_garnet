@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2021 The LineageOS Project
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+    <!-- Ambient settings -->
+    <string name="ambient_enable">Inaktivitätsdisplay verwenden</string>
+    <string name="doze_brightness_title">Helligkeit des Always-On Displays</string>
+    <string name="doze_brightness_summary">%s Modus ist Aktiviert</string>
+    <!-- Dirac settings -->
+    <string name="dirac_title">Mi Klangverbesserung</string>
+    <string name="dirac_enable">Nutze die Mi Klangverbesserung</string>
+    <string name="dirac_summary">Audioqualität optimieren</string>
+    <string name="dirac_headset_title">Kopfhörertyp auswählen</string>
+    <string name="dirac_preset_title">Voreinstellung auswählen</string>
+    <!-- Dirac settings: Headset types -->
+    <string name="dirac_headset_earbuds">Mi Earbuds</string>
+    <string name="dirac_headset_in_ear_2013">Mi In-Ear (2013)</string>
+    <string name="dirac_headset_piston_1">Mi Piston-1</string>
+    <string name="dirac_headset_general_inear">Mi Headphones</string>
+    <string name="dirac_headset_piston_basic">Basic Edition</string>
+    <string name="dirac_headset_piston_2">Mi Piston-2</string>
+    <string name="dirac_headset_piston_standard">Standard Edition</string>
+    <string name="dirac_headset_piston_youth">Youth Edition</string>
+    <string name="dirac_headset_piston_color">Color Edition</string>
+    <string name="dirac_headset_in_ear">Mi In-Ear</string>
+    <string name="dirac_headset_capsule">Mi Capsule</string>
+    <string name="dirac_headset_in_ear_pro">Mi In-Ear Pro</string>
+    <string name="dirac_headset_comfort">Mi Komfort</string>
+    <string name="dirac_headset_reduction_noise">Mi-Geräuschunterdrückung (Typ-C)</string>
+    <string name="dirac_headset_cancelling">Mi-Geräuschunterdrückung (3.5 mm)</string>
+    <string name="dirac_headset_half_in_ear">Mi Half In-Ear</string>
+    <string name="dirac_headset_in_ear2">Mi In-Ear 2</string>
+    <string name="dirac_headset_earphone_basic">Mi Earphones Basic</string>
+    <string name="dirac_headset_earphone">Mi Earphones</string>
+    <string name="dirac_headset_ear_four">Mi Quadruple Driver Earphones</string>
+    <string name="dirac_headset_piston_typec">Mi In-Ear-Ohrhörer (Type-C)</string>
+    <string name="dirac_headset_bluetooth_collar">Mi Bluetooth Neckband</string>
+    <string name="dirac_headset_bluetooth_linefree">Mi Bluetooth Earphones</string>
+    <string name="dirac_headset_redmi_earphones">Redmi Earphones</string>
+    <string name="dirac_headset_dual_driver_in_ear">Mi Dual Driver In-ear Earphones</string>
+    <!-- Dirac settings: Equalizer presets -->
+    <string name="dirac_preset_default">Standardeinstellung</string>
+    <string name="dirac_preset_rock">Rock</string>
+    <string name="dirac_preset_jazz">Jazz</string>
+    <string name="dirac_preset_pop">Pop</string>
+    <string name="dirac_preset_classical">Klassik</string>
+    <string name="dirac_preset_hiphop">Hip-Hop</string>
+    <string name="dirac_preset_blues">Blues</string>
+    <string name="dirac_preset_electronic">Electronic</string>
+    <string name="dirac_preset_country">Country</string>
+    <string name="dirac_preset_dance">Dance</string>
+    <string name="dirac_preset_metal">Metal</string>
+    <!-- Dirac settings: Sound Scenes -->
+    <string name="music_headset_scenario_select">Szene auswählen</string>
+    <string name="music_headset_scenario_intelligent">Smart</string>
+    <string name="music_headset_scenario_music">Musik</string>
+    <string name="music_headset_scenario_video">Video</string>
+    <string name="music_headset_scenario_vocal">Stimme</string>
+    <!-- QS tile title -->
+    <string name="dirac_qs_tile_title">Mi Klangverbesserung</string>
+    <!-- Thermal Profiles -->
+    <string name="thermal_title">Optimierungsprofile</string>
+    <string name="thermal_summary">Passen Sie die Profile via App an, um eine optimale Leistung zu erzielen</string>
+    <string name="thermal_default">Keine Optimierung</string>
+    <string name="thermal_benchmark">Leistung</string>
+    <string name="thermal_browser">Browser</string>
+    <string name="thermal_camera">Kamera</string>
+    <string name="thermal_dialer">Telefon</string>
+    <string name="thermal_gaming">Spiele</string>
+    <string name="thermal_streaming">Streaming Programme</string>
+    <!-- Clear Speaker -->
+    <string name="clear_speaker_title">Lautsprecher reinigen</string>
+    <string name="clear_speaker_summary">Spielen Sie einen 30-sekündigen Ton ab, um den Lautsprecher zu entlasten</string>
+    <string name="clear_speaker_description">Führen Sie diese Funktion ein- oder zweimal aus, wenn Sie feststellen, dass Ihr Lautsprecher leicht durch Staub blockiert ist. Stellen Sie die Medienlautstärke auf Maximum ein.\n\nWenn der Lautsprecher stark blockiert ist, führen Sie diese Funktion 2-5 Mal aus, während Sie Ihr Gerät mit dem Lautsprecher nach unten schütteln.\n\nACHTUNG: Stellen Sie sicher, dass kein Kopfhörer eingesteckt ist.</string>
+    <!-- Haptic Level Settings -->
+    <string name="haptic_title">Haptisches Feedback</string>
+    <string name="haptic_warning">Eine zu hohe Einstellung des haptischen Feedbacks kann zu dauerhaften Hardwareschäden führen, Verwendung auf eigene Gefahr</string>
+    <string name="haptic_summary">Vibrationsintensität anpassen</string>
+    <string name="haptic_level_title">Stärke</string>
+    <string name="haptic_level_summary">Vibrationsintensität</string>
+    <string name="haptic_level_summary_incompatible">Funktion nicht unterstützt</string>
+</resources>

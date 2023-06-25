@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2021 The LineageOS Project
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+    <!-- Ambient settings -->
+    <string name="ambient_enable">使用環境顯示</string>
+    <string name="doze_brightness_title">一律顯示的亮度</string>
+    <string name="doze_brightness_summary">已啟用 %s 模式</string>
+    <!-- Dirac settings -->
+    <string name="dirac_title">米音音效增強</string>
+    <string name="dirac_enable">啟用</string>
+    <string name="dirac_summary">最佳化聲音品質</string>
+    <string name="dirac_headset_title">選擇耳機類型</string>
+    <string name="dirac_preset_title">選擇預設等化器</string>
+    <!-- Dirac settings: Headset types -->
+    <string name="dirac_headset_earbuds">小米藍牙耳機</string>
+    <string name="dirac_headset_in_ear_2013">小米入耳式耳機（2013 年版）</string>
+    <string name="dirac_headset_piston_1">小米活塞耳機 1</string>
+    <string name="dirac_headset_general_inear">小米頭戴式耳機</string>
+    <string name="dirac_headset_piston_basic">小米入耳式耳機 基礎版</string>
+    <string name="dirac_headset_piston_2">小米活塞耳機 2</string>
+    <string name="dirac_headset_piston_standard">小米活塞耳機（標準版）</string>
+    <string name="dirac_headset_piston_youth">小米活塞耳機（青春版）</string>
+    <string name="dirac_headset_piston_color">小米活塞耳機（炫彩版）</string>
+    <string name="dirac_headset_in_ear">小米入耳式耳機</string>
+    <string name="dirac_headset_capsule">小米膠囊耳機</string>
+    <string name="dirac_headset_in_ear_pro">小米圈鐵耳機 Pro</string>
+    <string name="dirac_headset_comfort">小米頭戴式耳機輕鬆版</string>
+    <string name="dirac_headset_reduction_noise">小米降噪耳機Type-C</string>
+    <string name="dirac_headset_cancelling">小米降噪耳機 3.5mm</string>
+    <string name="dirac_headset_half_in_ear">小米雙單元半入耳式耳機</string>
+    <string name="dirac_headset_in_ear2">小米入耳式耳機 2</string>
+    <string name="dirac_headset_earphone_basic">小米基礎版耳機</string>
+    <string name="dirac_headset_earphone">小米耳機</string>
+    <string name="dirac_headset_ear_four">小米圈鐵四單元耳機</string>
+    <string name="dirac_headset_piston_typec">小米入耳式耳機（Type-C）</string>
+    <string name="dirac_headset_bluetooth_collar">小米藍牙項圈耳機</string>
+    <string name="dirac_headset_bluetooth_linefree">小米藍牙耳機</string>
+    <string name="dirac_headset_redmi_earphones">紅米入耳式耳機</string>
+    <string name="dirac_headset_dual_driver_in_ear">小米雙動圈耳機</string>
+    <!-- Dirac settings: Equalizer presets -->
+    <string name="dirac_preset_default">預設</string>
+    <string name="dirac_preset_rock">搖滾</string>
+    <string name="dirac_preset_jazz">爵士</string>
+    <string name="dirac_preset_pop">流行</string>
+    <string name="dirac_preset_classical">古典</string>
+    <string name="dirac_preset_hiphop">嘻哈</string>
+    <string name="dirac_preset_blues">藍調</string>
+    <string name="dirac_preset_electronic">電音</string>
+    <string name="dirac_preset_country">鄉村</string>
+    <string name="dirac_preset_dance">舞曲</string>
+    <string name="dirac_preset_metal">重金屬</string>
+    <!-- Dirac settings: Sound Scenes -->
+    <string name="music_headset_scenario_select">選擇場景</string>
+    <string name="music_headset_scenario_intelligent">動態</string>
+    <string name="music_headset_scenario_music">音樂</string>
+    <string name="music_headset_scenario_video">影片</string>
+    <string name="music_headset_scenario_vocal">語音</string>
+    <!-- QS tile title -->
+    <string name="dirac_qs_tile_title">米音音效增強</string>
+    <!-- Thermal Profiles -->
+    <string name="thermal_title">溫度設定檔</string>
+    <string name="thermal_summary">Per-app thermal profile configuration</string>
+    <string name="thermal_default">預設</string>
+    <string name="thermal_benchmark">效能測試</string>
+    <string name="thermal_browser">瀏覽器</string>
+    <string name="thermal_camera">相機</string>
+    <string name="thermal_dialer">撥號器</string>
+    <string name="thermal_gaming">遊戲</string>
+    <string name="thermal_streaming">串流</string>
+    <!-- Clear Speaker -->
+    <string name="clear_speaker_title">清理揚聲器</string>
+    <string name="clear_speaker_summary">播放 30 秒的音效來清理揚聲器</string>
+    <string name="clear_speaker_description">當發現有灰塵覆蓋住揚聲器時，可以使用這個功能一二次。使用時需要將音量調到最大。\n\n堵塞的情況較嚴重時，可以在使用這個功能的同時將揚聲器朝下，並且搖晃手機。\n\n警告：請確保在使用這個功能之前已經拔除耳機。</string>
+    <!-- Haptic Level Settings -->
+    <string name="haptic_title">震動回饋</string>
+    <string name="haptic_warning">設定震動回饋的強度過高可能會導致永久性的硬件損壞，請自行承擔風險。</string>
+    <string name="haptic_summary">自定振動強度</string>
+    <string name="haptic_level_title">等級</string>
+    <string name="haptic_level_summary">震動的強度</string>
+    <string name="haptic_level_summary_incompatible">不支持的功能</string>
+</resources>

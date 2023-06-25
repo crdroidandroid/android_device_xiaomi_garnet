@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2021 The LineageOS Project
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+    <!-- Ambient settings -->
+    <string name="ambient_enable">Aktiv låsskärm</string>
+    <string name="doze_brightness_title">Always on brightness</string>
+    <string name="doze_brightness_summary">%s läge är aktiverad</string>
+    <!-- Dirac settings -->
+    <string name="dirac_title">Mi ljudförstärkare</string>
+    <string name="dirac_enable">Aktivera</string>
+    <string name="dirac_summary">Optimera ljudkvaliteten</string>
+    <string name="dirac_headset_title">Välj hörlurstyper</string>
+    <string name="dirac_preset_title">Välj ett förval</string>
+    <!-- Dirac settings: Headset types -->
+    <string name="dirac_headset_earbuds">Mi Hörlurar</string>
+    <string name="dirac_headset_in_ear_2013">Mi In-Ear (2013)</string>
+    <string name="dirac_headset_piston_1">Mi Piston-1</string>
+    <string name="dirac_headset_general_inear">Mi Hörlurar</string>
+    <string name="dirac_headset_piston_basic">Basic Edition</string>
+    <string name="dirac_headset_piston_2">Mi Piston-2</string>
+    <string name="dirac_headset_piston_standard">Standard Edition</string>
+    <string name="dirac_headset_piston_youth">Youth Edition</string>
+    <string name="dirac_headset_piston_color">Color Edition</string>
+    <string name="dirac_headset_in_ear">Mi In-Ear</string>
+    <string name="dirac_headset_capsule">Mi Capsule</string>
+    <string name="dirac_headset_in_ear_pro">Mi In-Ear Pro</string>
+    <string name="dirac_headset_comfort">Mi Comfort</string>
+    <string name="dirac_headset_reduction_noise">Mi Noise Cancelling Type-C</string>
+    <string name="dirac_headset_cancelling">Mi Noise Cancelling 3.5mm</string>
+    <string name="dirac_headset_half_in_ear">Mi Half In-Ear</string>
+    <string name="dirac_headset_in_ear2">Mi In-Ear 2</string>
+    <string name="dirac_headset_earphone_basic">Mi Earphones Basic</string>
+    <string name="dirac_headset_earphone">Mi Hörlurar</string>
+    <string name="dirac_headset_ear_four">Mi Quadruple Driver Earphones</string>
+    <string name="dirac_headset_piston_typec">Mi In-Ear Headphones (Type-C)</string>
+    <string name="dirac_headset_bluetooth_collar">Mi Bluetooth Neckband</string>
+    <string name="dirac_headset_bluetooth_linefree">Mi Bluetooth Earphones</string>
+    <string name="dirac_headset_redmi_earphones">Redmi hörlurar</string>
+    <string name="dirac_headset_dual_driver_in_ear">Mi Dual Driver In-ear Earphones</string>
+    <!-- Dirac settings: Equalizer presets -->
+    <string name="dirac_preset_default">Standard</string>
+    <string name="dirac_preset_rock">Rock</string>
+    <string name="dirac_preset_jazz">Jazz</string>
+    <string name="dirac_preset_pop">Pop</string>
+    <string name="dirac_preset_classical">Klassiskt</string>
+    <string name="dirac_preset_hiphop">Hip Hop</string>
+    <string name="dirac_preset_blues">Blues</string>
+    <string name="dirac_preset_electronic">Elektroniskt</string>
+    <string name="dirac_preset_country">Country</string>
+    <string name="dirac_preset_dance">Dance</string>
+    <string name="dirac_preset_metal">Metall</string>
+    <!-- Dirac settings: Sound Scenes -->
+    <string name="music_headset_scenario_select">Choose scene</string>
+    <string name="music_headset_scenario_intelligent">Smart</string>
+    <string name="music_headset_scenario_music">Musik</string>
+    <string name="music_headset_scenario_video">Video</string>
+    <string name="music_headset_scenario_vocal">Röst</string>
+    <!-- QS tile title -->
+    <string name="dirac_qs_tile_title">Mi ljudförstärkare</string>
+    <!-- Thermal Profiles -->
+    <string name="thermal_title">Thermal profiles</string>
+    <string name="thermal_summary">Per-app thermal profile configuration</string>
+    <string name="thermal_default">Standard</string>
+    <string name="thermal_benchmark">Benchmark</string>
+    <string name="thermal_browser">Webbläsare</string>
+    <string name="thermal_camera">Kamera</string>
+    <string name="thermal_dialer">Telefon</string>
+    <string name="thermal_gaming">Spel</string>
+    <string name="thermal_streaming">Streaming</string>
+    <!-- Clear Speaker -->
+    <string name="clear_speaker_title">Rensa högtalare</string>
+    <string name="clear_speaker_summary">Spela ett 30 sekunders ljudklipp för att rensa högtalaren</string>
+    <string name="clear_speaker_description">Kör denna funktion en eller två gånger om du upptäcker att högtalaren är lätt blockerad av damm. Ställ in mediavolymen till maximal.\n\nOm högtalaren blockeras tungt, kör denna funktion 2-5 gånger medan du skakar enheten med högtalaren nedåt.\n\nVARNING: Se till att alla hörlurar är bortkopplade.</string>
+    <!-- Haptic Level Settings -->
+    <string name="haptic_title">Haptisk feedback</string>
+    <string name="haptic_warning">Setting-up haptic level too high may cause permanent hardware damage, use at your own risk</string>
+    <string name="haptic_summary">Anpassa vibrationsintensiteten</string>
+    <string name="haptic_level_title">Nivå</string>
+    <string name="haptic_level_summary">Amount of vibration intensity</string>
+    <string name="haptic_level_summary_incompatible">Funktionen stöds inte</string>
+</resources>
