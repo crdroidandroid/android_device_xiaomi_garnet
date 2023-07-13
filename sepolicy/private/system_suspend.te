@@ -1,0 +1,3 @@
+allow system_suspend sysfs:dir { read };
+
+allow system_suspend sysfs_batteryinfo:dir { read };
