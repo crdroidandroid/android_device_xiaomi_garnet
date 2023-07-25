@@ -535,11 +535,11 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.sip.voip.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.sip.voip.xml
 
 # Thermal
-ifeq ($(TARGET_USE_QTI_THERMAL_SERVICE),true)
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/thermal/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf
+
 PRODUCT_PACKAGES += \
-    android.hardware.thermal@2.0-service.qti-v2 \
-    android.hardware.thermal@2.0
-endif
+    android.hardware.thermal@2.0-service.qti
 
 # Touchscreen
 PRODUCT_COPY_FILES += \
