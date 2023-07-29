@@ -2889,6 +2889,29 @@ vendor/etc/thermal-tgame.conf
 vendor/etc/thermal-video.conf
 vendor/etc/thermal-videochat.conf
 vendor/etc/thermald-devices.conf
+vendor/bin/hw/vendor.qti.hardware.limits@1.0-service
+vendor/etc/init/init_thermal-engine.rc
+vendor/etc/init/vendor.qti.hardware.limits@1.0-service.rc
+vendor/etc/thermal.benchmark.conf
+vendor/etc/thermal.high.conf
+vendor/etc/thermal.high.level1.conf
+vendor/etc/thermal.high.level2.conf
+vendor/etc/thermal.high.level3.conf
+vendor/etc/thermal.high.level4.conf
+vendor/etc/thermal.low.conf
+vendor/etc/thermal.low.level1.conf
+vendor/etc/thermal.low.level2.conf
+vendor/etc/thermal.mid.conf
+vendor/etc/thermal.mid.level1.conf
+vendor/etc/thermal.mid.level2.conf
+vendor/etc/thermal.mid.level3.conf
+vendor/etc/thermal.mid.level4.conf
+vendor/etc/thermal.sgame.conf
+vendor/etc/thermal.super.conf
+vendor/etc/vintf/manifest/vendor.qti.hardware.limits@1.0-service.xml
+-vendor/lib/libthermalclient.so
+-vendor/lib64/libthermalclient.so
+vendor/lib64/vendor.qti.hardware.limits@1.0.so
 
 # Time services
 vendor/app/TimeService/TimeService.apk
