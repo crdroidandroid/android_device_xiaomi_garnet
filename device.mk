@@ -58,9 +58,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     libaudioroute-v34 \
-    agmcap \
-    agmcompressplay \
-    agmplay \
     lib_bt_aptx \
     lib_bt_ble \
     lib_bt_bundle \
