@@ -4,8 +4,6 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <device name="Android">
-    <item name="none">0</item>
-
     <!-- Power used by display unit in ambient display mode, including back lighting-->
     <item name="ambient.on">0.1</item>
 
