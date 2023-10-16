@@ -77,6 +77,7 @@
         <library name="v4a_re" path="libv4a_re.so"/>
         <!--DOLBY DAP-->
         <library name="dap" path="libhwdap.so"/>
+        <library name="dvl" path="libdlbvol.so"/>
         <!--DOLBY END-->
         <!--DOLBY SPATIALIZER-->
         <library name="spatializer" path="libswspatializer.so"/>
@@ -137,6 +138,7 @@
         <effect name="v4a_standard_re" library="v4a_re" uuid="90380da3-8536-4744-a6a3-5731970e640f"/>
         <!--DOLBY DAP-->
         <effect name="dap" library="dap" uuid="9d4921da-8225-4f29-aefa-39537a04bcaa"/>
+        <effect name="dlb_music_listener" library="dvl" uuid="40f66c8b-5aa5-4345-8919-53ec431aaa98"/>
         <!--DOLBY END-->
         <!--DOLBY SPATIALIZER-->
         <effect name="spatializer" library="spatializer" uuid="ccd4cf09-a79d-46c2-9aae-06a1698d6c8f"/>
@@ -150,6 +152,7 @@
     <postprocess>
         <stream type="music">
             <apply effect="music_helper"/>
+            <apply effect="dlb_music_listener"/> <!--DOLBY ADD-->
         </stream>
         <stream type="ring">
             <apply effect="ring_helper"/>
