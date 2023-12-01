@@ -1,2 +1,5 @@
+# Bluetooth
+bluetooth.profile.sap.server.enabled=true
+
 # Radio
 telephony.active_modems.max_count=2
