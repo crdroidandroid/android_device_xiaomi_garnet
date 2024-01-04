@@ -52,6 +52,8 @@
         <!-- PA: Allow VoLTE and WFC by default -->
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <!-- PA: Enable LTE+ icon by default -->
+        <boolean name="hide_lte_plus_data_icon_bool" value="false"/>
     </carrier_config>
     <carrier_config mcc="001" mnc="01">
         <boolean name="carrier_volte_available_bool" value="true" />
