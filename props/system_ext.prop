@@ -1,4 +1,5 @@
 # Bluetooth
+bluetooth.profile.pbap.sim.enabled=true
 bluetooth.profile.sap.server.enabled=true
 persist.bluetooth.leaudio.allow.multiple.context=false
 persist.bluetooth.leaudio_offload.disabled=false
