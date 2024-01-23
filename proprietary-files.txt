@@ -2944,12 +2944,12 @@ vendor/firmware/vpu20_1v.mbn
 vendor/firmware/vpu20_1v.mdt
 
 # Vibrator firmware
-vendor/firmware/0_click_P_RTP.bin:vendor/etc/vibrator/effect_0.bin
-vendor/firmware/1_doubelClick_P_RTP.bin:vendor/etc/vibrator/effect_1.bin
-vendor/firmware/2_tick_P_RTP.bin:vendor/etc/vibrator/effect_2.bin
-vendor/firmware/3_thud_P_RTP.bin:vendor/etc/vibrator/effect_3.bin
-vendor/firmware/4_pop_P_RTP.bin:vendor/etc/vibrator/effect_4.bin
-vendor/firmware/5_heavyClick_P_RTP.bin:vendor/etc/vibrator/effect_5.bin
+vendor/firmware/0_click_P_RTP.bin
+vendor/firmware/1_doubelClick_P_RTP.bin
+vendor/firmware/2_tick_P_RTP.bin
+vendor/firmware/3_thud_P_RTP.bin
+vendor/firmware/4_pop_P_RTP.bin
+vendor/firmware/5_heavyClick_P_RTP.bin
 
 # WiFi
 vendor/bin/cnss-daemon
