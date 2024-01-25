@@ -73,6 +73,9 @@
 # Touchfeature
 /dev/xiaomi-touch u:object_r:touchfeature_device:s0
 
+# Vibrator
+/vendor/bin/hw/vendor\.qti\.hardware\.vibrator\.service\.xiaomi u:object_r:hal_vibrator_default_exec:s0
+
 # Wifi
 /data/vendor/mac_addr(/.*)? u:object_r:vendor_mac_vendor_data_file:s0
 /data/vendor/wlan_logs(/.*)? u:object_r:vendor_wifi_vendor_data_file:s0
