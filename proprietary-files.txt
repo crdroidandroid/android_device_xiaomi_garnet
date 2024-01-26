@@ -1548,27 +1548,11 @@ vendor/etc/media_profiles_parrot_v0.xml
 
 # Mlipay
 vendor/app/MipayService/MipayService.apk
-vendor/bin/fidoca
 vendor/bin/mlipayd@1.1
-vendor/bin/mtd@1.3
-vendor/bin/tidad@1.2
-vendor/etc/init/vendor.xiaomi.hardware.mfidoca@1.0-service.rc
 vendor/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc
-vendor/etc/init/vendor.xiaomi.hardware.mtdservice@1.3-service.rc
-vendor/etc/init/vendor.xiaomi.hardware.tidaservice@1.2-service.rc
-vendor/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.mfidoca.xml
 vendor/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.mlipay.xml
-vendor/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.mtdservice.xml
-vendor/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.tidaservice.xml
-vendor/lib64/libmfido.so
 vendor/lib64/libmlipay.so
 vendor/lib64/libmlipay@1.1.so
-vendor/lib64/libmt.so
-vendor/lib64/libmt@1.3.so
-vendor/lib64/libtida@1.2.so
-vendor/lib64/vendor.xiaomi.hardware.tidaservice@1.0.so
-vendor/lib64/vendor.xiaomi.hardware.tidaservice@1.1.so
-vendor/lib64/vendor.xiaomi.hardware.tidaservice@1.2.so
 
 # NFC
 vendor/bin/hw/vendor.nxp.hardware.nfc@2.0-service
