@@ -1,4 +1,5 @@
 # Bluetooth
+bluetooth.hfp.codec_aptx_voice.enabled=true
 bluetooth.profile.pbap.sim.enabled=true
 bluetooth.profile.sap.server.enabled=true
 persist.bluetooth.leaudio.allow.multiple.context=false
