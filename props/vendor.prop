@@ -104,7 +104,6 @@ vendor.display.enable_dpps_dynamic_fps=0
 vendor.display.enable_hdr10_gpu_target=1
 vendor.display.enable_optimize_refresh=0
 vendor.display.idle_time=0
-vendor.display.vds_allow_hwc=0
 
 # DPM
 persist.vendor.dpm.vndr.feature=1
