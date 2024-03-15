@@ -1483,6 +1483,30 @@ vendor/lib64/vendor.qti.esepowermanager@1.1.so
 my_bigball/etc/permissions/EuiccGoogle_grant_permissions_list.xml:product/etc/permissions/privapp-permissions-euiccgoogle.xml|58ddaa5bbff62eefd2d5c39900b7b29fd177def1
 my_bigball/priv-app/EuiccGoogle/EuiccGoogle.apk:product/priv-app/EuiccGoogle/EuiccGoogle.apk;PRESIGNED|4fb8d8ab0e1dbda1582361f48395f819367edb0a
 
+# Dolby Atmos
+vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service
+vendor/etc/dolby/dax-default.xml
+vendor/etc/init/vendor.dolby.hardware.dms@2.0-service.rc
+vendor/etc/vintf/manifest/manifest_vendor.dolby.hardware.dms.xml
+vendor/lib/libdapparamstorage.so
+vendor/lib/libdeccfg.so
+vendor/lib/libstagefright_soft_ddpdec.so
+vendor/lib/libstagefrightdolby.so
+vendor/lib/soundfx/libhwdap.so
+vendor/lib/soundfx/libswgamedap.so
+vendor/lib/soundfx/libswvqe.so
+vendor/lib/vendor.dolby.hardware.dms@2.0.so
+vendor/lib64/libdapparamstorage.so
+vendor/lib64/libdeccfg.so
+vendor/lib64/libdlbdsservice.so
+vendor/lib64/libstagefright_soft_ddpdec.so
+vendor/lib64/libstagefrightdolby.so
+vendor/lib64/soundfx/libhwdap.so
+vendor/lib64/soundfx/libswgamedap.so
+vendor/lib64/soundfx/libswvqe.so
+vendor/lib64/vendor.dolby.hardware.dms@2.0-impl.so
+vendor/lib64/vendor.dolby.hardware.dms@2.0.so
+
 # Fingerprint
 odm/lib/hw/fingerprint.fpc_fod.so:odm/lib/hw/fingerprint.fpc_fod.default.so
 odm/lib/hw/fingerprint.goodix_fod.so:odm/lib/hw/fingerprint.goodix_fod.default.so
