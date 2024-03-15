@@ -74,6 +74,12 @@ vendor/lib/rfsa/adsp/misound_res_spk_power_video.bin
 # ANT+
 vendor/lib64/hw/com.dsi.ant@1.0-impl.so
 
+# Audio configs
+vendor/etc/audio_policy_engine_configuration_mi.xml:vendor/etc/audio_policy_engine_configuration.xml
+vendor/etc/audio_policy_engine_default_stream_volumes.xml
+vendor/etc/audio_policy_engine_product_strategies.xml
+vendor/etc/audio_policy_engine_stream_volumes.xml
+
 # Audio firmware
 vendor/firmware/aw882xx_acf.bin
 
