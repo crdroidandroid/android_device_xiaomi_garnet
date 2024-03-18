@@ -70,7 +70,13 @@ static disp_event_resp* parseDispEvent(int fd) {
     struct disp_event_resp* response =
             reinterpret_cast<struct disp_event_resp*>(malloc(header.length));
     response->base = header;
+
     int dataLength = response->base.length - sizeof(response->base);
+    if (dataLength < 0) {
+        LOG(ERROR) << "invalid data length: " << response->base.length;
+        return nullptr;
+    }
+
     ssize_t dataSize = read(fd, &response->data, dataLength);
     if (dataSize < dataLength) {
         LOG(ERROR) << "unexpected display event data size: " << dataSize;
