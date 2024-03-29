@@ -1,4 +1,5 @@
 # Bluetooth
+bluetooth.device.class_of_device=90,2,12
 bluetooth.hfp.codec_aptx_voice.enabled=true
 bluetooth.profile.pbap.sim.enabled=true
 bluetooth.profile.sap.server.enabled=true
