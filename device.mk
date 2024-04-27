@@ -162,6 +162,7 @@ PRODUCT_PACKAGES += \
     init.qti.display_boot.sh
 
 PRODUCT_PACKAGES += \
+    libdisplayconfig.system.qti \
     vendor.display.config@1.11.vendor \
     vendor.qti.hardware.display.config-V2-ndk_platform.vendor \
     vendor.qti.hardware.display.mapper@2.0.vendor
