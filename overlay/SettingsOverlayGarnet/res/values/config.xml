@@ -11,5 +11,5 @@
     <integer name="config_network_scan_helper_max_search_time_sec">254</integer>
 
     <!-- The radius of the enrollment progress bar, in dp -->
-    <integer name="config_udfpsEnrollProgressBar" translatable="false">110</integer>
+    <integer name="config_udfpsEnrollProgressBar" translatable="false">90</integer>
 </resources>
