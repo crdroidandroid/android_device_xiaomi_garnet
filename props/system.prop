@@ -1,6 +1,9 @@
 # CNE
 persist.vendor.cne.feature=1
 
+# QTI
+ro.vendor.qti.va_aosp.support=1
+
 # Radio
 DEVICE_PROVISIONED=1
 persist.vendor.data.mode=concurrent
