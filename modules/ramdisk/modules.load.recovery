@@ -206,6 +206,7 @@ focaltech_3683g.ko
 nt36xxx-i2c.ko
 nt36xxx-spi.ko
 goodix_core.ko
+xiaomi_touch.ko
 pm8941-pwrkey.ko
 qpnp-power-on.ko
 qcom-hv-haptics.ko
