@@ -85,6 +85,10 @@ ro.hardware.camera=xiaomi
 # Chipset
 ro.soc.manufacturer=QTI
 
+# Dexopt
+pm.dexopt.first-boot=quicken
+pm.dexopt.bg-dexopt=everything
+
 # Display
 ro.vendor.display.sensortype=2
 ro.vendor.display.svi=1
