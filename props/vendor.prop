@@ -86,7 +86,7 @@ ro.hardware.camera=xiaomi
 ro.soc.manufacturer=QTI
 
 # Dexopt
-pm.dexopt.first-boot=quicken
+pm.dexopt.first-boot=verify
 pm.dexopt.bg-dexopt=everything
 pm.dexopt.boot=verify
 pm.dexopt.install=speed-profile
