@@ -64,12 +64,17 @@ service qti_esepowermanager_service_1_1 /vendor/bin/hw/vendor.qti.esepowermanage
     override
     disabled
 
+on property:ro.boot.product.hardware.sku=CN
+    enable nqnfc_2_0_hal_service
+    enable secureelement-hal_1_2
+    enable qti_esepowerman
+
 on property:ro.boot.product.hardware.sku=GL
     enable nqnfc_2_0_hal_service
     enable secureelement-hal_1_2
     enable qti_esepowerman
 
-on property:ro.boot.product.hardware.sku=CN
+on property:ro.boot.product.hardware.sku=JP
     enable nqnfc_2_0_hal_service
     enable secureelement-hal_1_2
     enable qti_esepowerman

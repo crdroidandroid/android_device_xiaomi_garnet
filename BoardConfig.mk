@@ -76,7 +76,7 @@ DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
 
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/configs/hidl/manifest.xml
 
-$(foreach sku, CN GL, \
+$(foreach sku, CN GL JP, \
     $(eval ODM_MANIFEST_SKUS += $(sku)) \
     $(eval ODM_MANIFEST_$(sku)_FILES += \
         $(DEVICE_PATH)/configs/hidl/manifest_nfc.xml))
