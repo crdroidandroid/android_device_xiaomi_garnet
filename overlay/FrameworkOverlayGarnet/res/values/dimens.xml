@@ -25,5 +25,5 @@
     <dimen name="rounded_corner_radius_bottom">110.0px</dimen>
 
     <!-- Default paddings for content around the corners. -->
-    <dimen name="rounded_corner_content_padding">0.0dip</dimen>
+    <dimen name="rounded_corner_content_padding">50px</dimen>
 </resources>
