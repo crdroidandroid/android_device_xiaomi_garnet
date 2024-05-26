@@ -5,6 +5,13 @@
 //
 
 runtime_resource_overlay {
-    name: "FrameworkOverlayGarnetEsim",
+    name: "FrameworkOverlayGarnetGLEsim",
+    manifest: "AndroidManifestGL.xml",
+    vendor: true,
+}
+
+runtime_resource_overlay {
+    name: "FrameworkOverlayGarnetJPEsim",
+    manifest: "AndroidManifestJP.xml",
     vendor: true,
 }
