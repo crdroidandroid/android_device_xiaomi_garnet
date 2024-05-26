@@ -106,7 +106,7 @@ void vendor_load_properties() {
         mod_device = "garnet";
         brand = "Redmi";
         description = "garnet-user 14 UKQ1.231003.002 V816.0.1.0.UNRCNXM release-keys";
-        fingerprint = "Redmi/garnet/garnet:13/UKQ1.231003.002/V816.0.1.0.UNRCNXM:user/release-keys";
+        fingerprint = "Redmi/garnet/garnet:14/UKQ1.231003.002/V816.0.1.0.UNRCNXM:user/release-keys";
         marketname = "Redmi Note 13 Pro";
         if (hwversion == "17.0.9" || hwversion == "17.1.9" || hwversion == "17.2.6" || hwversion == "17.2.9" || hwversion == "17.9.9") {
             model = "2312CRAD3C";
