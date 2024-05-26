@@ -113,6 +113,14 @@ void vendor_load_properties() {
         } else {
             model = "2312DRA50C";
         }
+    } else if (region == "JP") {
+        device = "XIG05";
+        mod_device = "garnet_jp_kd_global";
+        brand = "Redmi";
+        description = "XIG05_jp_kdi-user 14 UKQ1.231003.002 V816.0.2.0.UNRJPKD release-keys";
+        fingerprint = "Redmi/XIG05_jp_kdi/XIG05:14/UKQ1.231003.002/V816.0.2.0.UNRJPKD:user/release-keys";
+        marketname = "XIG05";
+        model = "XIG05";
     }
 
     set_ro_build_prop("fingerprint", fingerprint);
