@@ -88,12 +88,6 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/etc/camera/pureView_parameter.xml': blob_fixup()
         .regex_replace(r'=([0-9]+)>', r'="\1">'),
     (
-        'vendor/etc/init/hw/init.batterysecret.rc',
-        'vendor/etc/init/hw/init.mi_thermald.rc',
-        'vendor/etc/init/hw/init.qti.kernel.rc',
-    ): blob_fixup()
-         .regex_replace(r'on charger', r'on property:init.svc.vendor.charger=running'),
-    (
     'vendor/etc/seccomp_policy/atfwd@2.0.policy',
     'vendor/etc/seccomp_policy/modemManager.policy',
     'vendor/etc/seccomp_policy/sensors-qesdk.policy',

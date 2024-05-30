@@ -312,7 +312,7 @@ on init && property:ro.boot.mode=charger
     wait /sys/kernel/boot_adsp/boot
     write /sys/kernel/boot_adsp/boot 1
 
-on property:init.svc.vendor.charger=running
+on charger
     start vendor.power_off_alarm
     setprop sys.usb.controller a600000.dwc3
     wait /sys/class/udc/${sys.usb.controller}
