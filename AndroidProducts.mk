@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_garnet.mk
+    $(LOCAL_DIR)/derp_garnet.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_garnet-user \
-    lineage_garnet-userdebug \
-    lineage_garnet-eng
+    derp_garnet-user \
+    derp_garnet-userdebug \
+    derp_garnet-eng
