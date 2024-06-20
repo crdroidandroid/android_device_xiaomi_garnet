@@ -78,6 +78,8 @@
         <!--DOLBY DAP-->
         <library name="dap" path="libhwdap.so"/>
         <!--DOLBY END-->
+        <!--DOLBY SPATIALIZER-->
+        <library name="spatializer" path="libswspatializer.so"/>
         <!--DOLBY GAME-->
         <library name="gamedap" path="libswgamedap.so"/>
         <!--DOLBY END-->
@@ -136,6 +138,8 @@
         <!--DOLBY DAP-->
         <effect name="dap" library="dap" uuid="9d4921da-8225-4f29-aefa-39537a04bcaa"/>
         <!--DOLBY END-->
+        <!--DOLBY SPATIALIZER-->
+        <effect name="spatializer" library="spatializer" uuid="ccd4cf09-a79d-46c2-9aae-06a1698d6c8f"/>
         <!--DOLBY GAME-->
         <effect name="gamedap" library="gamedap" uuid="3783c334-d3a0-4d13-874f-0032e5fb80e2"/>
         <!--DOLBY END-->

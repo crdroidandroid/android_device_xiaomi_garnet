@@ -18,6 +18,7 @@ ro.config.system_vol_steps=15
 ro.config.vc_call_vol_steps=11
 ro.vendor.audio.camera.loopback.support=false
 ro.vendor.audio.elus.enable=true
+ro.audio.spatializer_enabled=true
 ro.vendor.audio.feature.spatial=7
 ro.vendor.audio.gain.support=true
 ro.vendor.audio.soundtrigger.appdefine.cnn.level=45
