@@ -1,7 +1,26 @@
+//
+// Copyright (C) 2021-2024 The LineageOS Project
+// SPDX-License-Identifier: Apache-2.0
+//
+
 soong_namespace {
     imports: [
         "hardware/qcom-caf/bootctrl",
         "hardware/xiaomi",
         "vendor/qcom/opensource/commonsys-intf/display",
     ],
+}
+
+install_symlink {
+    name: "firmware_wlan_mac.bin_symlink",
+    vendor: true,
+    installed_location: "firmware/wlan/qca_cld/adrastea/wlan_mac.bin",
+    symlink_target: "/mnt/vendor/persist/wlan/wlan_mac.bin",
+}
+
+install_symlink {
+    name: "firmware_WCNSS_qcom_cfg.ini_symlink",
+    vendor: true,
+    installed_location: "firmware/wlan/qca_cld/adrastea/WCNSS_qcom_cfg.ini",
+    symlink_target: "/vendor/etc/wifi/adrastea/WCNSS_qcom_cfg.ini",
 }

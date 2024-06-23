@@ -35,14 +35,4 @@ $(VM_SYSTEM_MOUNT_POINT): $(LOCAL_INSTALLED_MODULE)
 
 ALL_DEFAULT_INSTALLED_MODULES += $(FIRMWARE_MOUNT_POINT) $(BT_FIRMWARE_MOUNT_POINT) $(DSP_MOUNT_POINT) $(VM_SYSTEM_MOUNT_POINT)
 
-FIRMWARE_WLAN_QCA_CLD_ADRASTEA_SYMLINKS := $(TARGET_OUT_VENDOR)/firmware/wlan/qca_cld/adrastea/
-$(FIRMWARE_WLAN_QCA_CLD_ADRASTEA_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
-	@echo "Creating adrastea qca_cld wlan firmware symlinks: $@"
-	@rm -rf $@/*
-	@mkdir -p $@
-	$(hide) ln -sf /vendor/etc/wifi/adrastea/WCNSS_qcom_cfg.ini $@/WCNSS_qcom_cfg.ini
-	$(hide) ln -sf /mnt/vendor/persist/wlan/wlan_mac.bin $@/wlan_mac.bin
-
-ALL_DEFAULT_INSTALLED_MODULES += $(FIRMWARE_WLAN_QCA_CLD_ADRASTEA_SYMLINKS)
-
 endif
