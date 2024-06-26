@@ -14,8 +14,10 @@ $(call inherit-product, vendor/derp/config/common_full_phone.mk)
 # Inherit from garnet device
 $(call inherit-product, device/xiaomi/garnet/device.mk)
 
-# Fingerprint
+# Derp Stuff
 TARGET_HAS_UDFPS := true
+EXTRA_UDFPS_ANIMATIONS := true
+TARGET_SUPPORTS_QUICK_TAP := true
 
 # Derpfest
 DERP_BUILDTYPE := Official
