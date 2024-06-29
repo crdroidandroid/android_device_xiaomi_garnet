@@ -75,6 +75,9 @@ function blob_fixup() {
             [ "$2" = "" ] && return 0
             grep -q "setsockopt: 1" "${2}" || echo "setsockopt: 1" >> "${2}"
             ;;
+        vendor/etc/media_codecs.xml|vendor/etc/media_codecs_parrot_v0.xml|vendor/etc/media_codecs_parrot_v1.xml|vendor/etc/media_codecs_parrot_v2.xm|vendor/etc/media_codecs_system_default.xml)
+            sed -i -E '/media_codecs_(google_audio|google_c2|google_telephony|vendor_audio)/d' "${2}"
+            ;;
         vendor/etc/vintf/manifest/c2_manifest_vendor.xml)
             sed -ni '/dolby/!p' "${2}"
             ;;
