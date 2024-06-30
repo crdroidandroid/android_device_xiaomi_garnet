@@ -1885,6 +1885,9 @@ vendor/etc/media_codecs_performance_parrot_v0.xml
 vendor/etc/media_parrot_v0/video_system_specs.json
 vendor/etc/media_profiles_parrot_v0.xml
 
+# Media (Dolby)
+vendor/etc/dolby_vision.cfg
+
 # Mlipay
 vendor/app/MipayService/MipayService.apk
 vendor/bin/fidoca
