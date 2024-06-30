@@ -24,7 +24,6 @@ import android.content.IntentFilter;
 import android.util.Log;
 
 import org.lineageos.settings.doze.DozeUtils;
-import org.lineageos.settings.dirac.DiracUtils;
 import org.lineageos.settings.thermal.ThermalUtils;
 import org.lineageos.settings.refreshrate.RefreshUtils;
 
@@ -41,9 +40,6 @@ public class BootCompletedReceiver extends BroadcastReceiver {
             Log.d(TAG, "Received boot completed intent");
 	// Doze
         DozeUtils.onBootCompleted(context);
-
-        // Dirac
-        DiracUtils.onBootCompleted(context);
 
         // Thermal Profiles
         ThermalUtils.startService(context);
