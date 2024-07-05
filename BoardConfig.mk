@@ -208,7 +208,7 @@ TARGET_SYSTEM_EXT_PROP += $(DEVICE_PATH)/props/system_ext.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/props/vendor.prop
 
 # Vendor security patch
-VENDOR_SECURITY_PATCH := 2024-03-01
+VENDOR_SECURITY_PATCH := 2024-06-01
 
 # Verified Boot
 BOARD_AVB_ENABLE := true
