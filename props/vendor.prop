@@ -180,8 +180,6 @@ ro.hardware.keystore_desede=true
 # Media
 debug.c2.use_dmabufheaps=1
 debug.stagefright.c2inputsurface=-1
-debug.stagefright.ccodec=4
-debug.stagefright.omx_default_rank=0
 ro.media.xml_variant.profiles=_parrot_v0
 vendor.media.omx=0
 
