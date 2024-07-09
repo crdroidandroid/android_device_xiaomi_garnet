@@ -158,6 +158,7 @@ debug.sf.treat_170m_as_sRGB=1
 debug.sf.use_phase_offsets_as_durations=1
 persist.sys.sf.color_mode=0
 persist.sys.sf.color_saturation=1.0
+ro.gfx.driver.1=com.qualcomm.qti.gpudrivers.pineapple.api34
 ro.hardware.egl=adreno
 ro.hardware.vulkan=adreno
 ro.opengles.version=196610
