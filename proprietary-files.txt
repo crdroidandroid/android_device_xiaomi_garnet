@@ -1369,10 +1369,13 @@ vendor/lib64/vendor.qti.diaghal@1.0.so
 
 # Display Calibration
 product/etc/displayconfig/display_id_4630946370515662722.xml:vendor/etc/displayconfig/display_id_4630946370515662722.xml
+product/etc/displayconfig/display_id_4630946377747519618.xml:vendor/etc/displayconfig/display_id_4630946377747519618.xml
 product/etc/displayconfig/display_id_4630946545580055170.xml:vendor/etc/displayconfig/display_id_4630946545580055170.xml
 vendor/etc/display/qdcm_calib_data_xiaomi_36_0d_0a_video_mode_dsc_dsi_panel.json
+vendor/etc/display/qdcm_calib_data_xiaomi_41_02_0c_video_mode_dsc_dsi_panel.json
 vendor/etc/display/qdcm_calib_data_xiaomi_42_02_0b_video_mode_dsc_dsi_panel.json
 vendor/etc/mdss_dsi_n16_36_0d_0a_dsc_vid_mi.xml
+vendor/etc/mdss_dsi_n16_41_02_0c_dsc_vid_mi.xml
 vendor/etc/mdss_dsi_n16_42_02_0b_dsc_vid_mi.xml
 
 # Display HDR - from ingot-user 14 UKQ1.231121.127 127 release-keys
