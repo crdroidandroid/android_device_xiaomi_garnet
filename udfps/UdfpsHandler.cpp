@@ -16,9 +16,9 @@
 #include <thread>
 
 #include <display/drm/mi_disp.h>
+#include <linux/xiaomi_touch.h>
 
 #include "UdfpsHandler.h"
-#include "xiaomi_touch.h"
 
 #define COMMAND_NIT 10
 #define PARAM_NIT_FOD 1
@@ -31,12 +31,8 @@
 #define FOD_STATUS_OFF 0
 #define FOD_STATUS_ON 1
 
-#define TOUCH_DEV_PATH "/dev/xiaomi-touch"
-#define TOUCH_MAGIC 'T'
-#define TOUCH_IOC_SET_CUR_VALUE _IO(TOUCH_MAGIC, SET_CUR_VALUE)
-#define TOUCH_IOC_GET_CUR_VALUE _IO(TOUCH_MAGIC, GET_CUR_VALUE)
-
 #define DISP_FEATURE_PATH "/dev/mi_display/disp_feature"
+#define TOUCH_DEV_PATH "/dev/xiaomi-touch"
 
 #define FOD_PRESS_STATUS_PATH "/sys/class/touch/touch_dev/fod_press_status"
 
