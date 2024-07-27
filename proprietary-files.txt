@@ -1922,7 +1922,6 @@ vendor/lib/libmlipay@1.1.so
 vendor/lib/libmt.so
 vendor/lib/libtida@1.2.so
 vendor/lib/vendor.xiaomi.hardware.mfidoca@1.0.so
-vendor/lib/vendor.xiaomi.hardware.mtdservice@1.0.so
 vendor/lib/vendor.xiaomi.hardware.tidaservice@1.0.so
 vendor/lib/vendor.xiaomi.hardware.tidaservice@1.1.so
 vendor/lib/vendor.xiaomi.hardware.tidaservice@1.2.so
@@ -1933,10 +1932,6 @@ vendor/lib64/libmt.so
 vendor/lib64/libmt@1.3.so
 vendor/lib64/libtida@1.2.so
 vendor/lib64/vendor.xiaomi.hardware.mfidoca@1.0.so
-vendor/lib64/vendor.xiaomi.hardware.mtdservice@1.0.so
-vendor/lib64/vendor.xiaomi.hardware.mtdservice@1.1.so
-vendor/lib64/vendor.xiaomi.hardware.mtdservice@1.2.so
-vendor/lib64/vendor.xiaomi.hardware.mtdservice@1.3.so
 vendor/lib64/vendor.xiaomi.hardware.tidaservice@1.0.so
 vendor/lib64/vendor.xiaomi.hardware.tidaservice@1.1.so
 vendor/lib64/vendor.xiaomi.hardware.tidaservice@1.2.so
