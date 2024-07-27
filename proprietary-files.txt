@@ -84,15 +84,11 @@ vendor/etc/audio_policy_engine_stream_volumes.xml
 vendor/firmware/aw882xx_acf.bin
 
 # Audio graph manager
-vendor/bin/hw/vendor.qti.hardware.AGMIPC@1.0-service
-vendor/etc/init/vendor.qti.hardware.AGMIPC@1.0-service.rc
 -vendor/lib/libagm.so
 -vendor/lib/vendor.qti.hardware.AGMIPC@1.0-impl.so
 -vendor/lib64/libagm.so
-vendor/lib64/libagmclient.so
 vendor/lib64/libmisight.so
 -vendor/lib64/vendor.qti.hardware.AGMIPC@1.0-impl.so
-vendor/lib64/vendor.qti.hardware.AGMIPC@1.0.so
 
 # Audio libraries
 vendor/etc/audio_cloud_control_white_list.xml

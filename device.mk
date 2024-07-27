@@ -55,6 +55,9 @@ PRODUCT_PACKAGES += \
     android.hardware.soundtrigger@2.3-impl
 
 PRODUCT_PACKAGES += \
+    vendor.qti.hardware.AGMIPC@1.0-service
+
+PRODUCT_PACKAGES += \
     audioadsprpcd \
     audio.primary.parrot \
     audio.r_submix.default \
@@ -67,6 +70,7 @@ PRODUCT_PACKAGES += \
     libagm_compress_plugin \
     libagm_mixer_plugin \
     libagm_pcm_plugin \
+    libagmclient \
     libbatterylistener \
     libfmpal \
     libpalclient \
