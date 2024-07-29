@@ -118,14 +118,6 @@ class XiaomiGarnetUdfpsHander : public UdfpsHandler {
                 bool pressed = readBool(fd);
                 mDevice->extCmd(mDevice, COMMAND_FOD_PRESS_STATUS,
                                 pressed ? PARAM_FOD_PRESSED : PARAM_FOD_RELEASED);
-
-                // Request HBM
-                disp_local_hbm_req req;
-                req.base.flag = 0;
-                req.base.disp_id = MI_DISP_PRIMARY;
-                req.local_hbm_value = pressed ? LHBM_TARGET_BRIGHTNESS_WHITE_1000NIT
-                                              : LHBM_TARGET_BRIGHTNESS_OFF_FINGER_UP;
-                ioctl(disp_fd_.get(), MI_DISP_IOCTL_SET_LOCAL_HBM, &req);
             }
         }).detach();
 
@@ -203,12 +195,7 @@ class XiaomiGarnetUdfpsHander : public UdfpsHandler {
     void onAcquired(int32_t result, int32_t vendorCode) {
         LOG(INFO) << __func__ << " result: " << result << " vendorCode: " << vendorCode;
         if (result == FINGERPRINT_ACQUIRED_GOOD) {
-            // Request to disable HBM already, even if the finger is still pressed
-            disp_local_hbm_req req;
-            req.base.flag = 0;
-            req.base.disp_id = MI_DISP_PRIMARY;
-            req.local_hbm_value = LHBM_TARGET_BRIGHTNESS_OFF_FINGER_UP;
-            ioctl(disp_fd_.get(), MI_DISP_IOCTL_SET_LOCAL_HBM, &req);
+            setFingerDown(false);
         }
 
         /* vendorCode for goodix_fod devices:
@@ -243,6 +230,11 @@ class XiaomiGarnetUdfpsHander : public UdfpsHandler {
     }
 
     void setFingerDown(bool pressed) {
+        disp_local_hbm_req req;
+        req.base.flag = 0;
+        req.base.disp_id = MI_DISP_PRIMARY;
+        req.local_hbm_value = pressed ? LHBM_TARGET_BRIGHTNESS_WHITE_1000NIT : LHBM_TARGET_BRIGHTNESS_OFF_FINGER_UP;
+        ioctl(disp_fd_.get(), MI_DISP_IOCTL_SET_LOCAL_HBM, &req);
         int buf[MAX_BUF_SIZE] = {MI_DISP_PRIMARY, THP_FOD_DOWNUP_CTL, pressed ? 1 : 0};
         ioctl(touch_fd_.get(), TOUCH_IOC_SET_CUR_VALUE, &buf);
     }
