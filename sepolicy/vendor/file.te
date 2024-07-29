@@ -1,5 +1,6 @@
 # Audio
 type audio_socket, file_type;
+type smartpa_type, fs_type, sysfs_type;
 
 # Batterysecret
 type vendor_sysfs_qcom_battery, fs_type, sysfs_type;

@@ -1,3 +1,6 @@
+# Audio
+genfscon sysfs /kernel/smartpa/smartpa_type u:object_r:smartpa_type:s0
+
 # Battery
 genfscon sysfs /class/qcom-battery u:object_r:vendor_sysfs_battery_supply:s0
 

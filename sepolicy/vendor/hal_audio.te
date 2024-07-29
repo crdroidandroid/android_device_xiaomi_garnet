@@ -1,3 +1,4 @@
 allow hal_audio_default audio_socket:sock_file rw_file_perms;
 allow hal_audio_default hal_sensors_default:unix_stream_socket connectto;
+allow hal_audio_default smartpa_type:file r_file_perms;
 allow hal_audio_default vendor_persist_audio_file:file rw_file_perms;
