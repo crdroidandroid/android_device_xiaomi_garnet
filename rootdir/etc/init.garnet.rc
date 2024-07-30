@@ -67,17 +67,17 @@ service qti_esepowermanager_service_1_1 /vendor/bin/hw/vendor.qti.esepowermanage
 on property:ro.boot.product.hardware.sku=CN
     enable nqnfc_2_0_hal_service
     enable secureelement-hal_1_2
-    enable qti_esepowerman
+    enable qti_esepowermanager_service_1_1
 
 on property:ro.boot.product.hardware.sku=GL
     enable nqnfc_2_0_hal_service
     enable secureelement-hal_1_2
-    enable qti_esepowerman
+    enable qti_esepowermanager_service_1_1
 
 on property:ro.boot.product.hardware.sku=JP
     enable nqnfc_2_0_hal_service
     enable secureelement-hal_1_2
-    enable qti_esepowerman
+    enable qti_esepowermanager_service_1_1
 
 on property:sys.boot_completed=1
     write /sys/devices/virtual/thermal/thermal_message/sconfig 20
