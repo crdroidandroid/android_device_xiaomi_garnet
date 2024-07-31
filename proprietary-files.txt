@@ -82,6 +82,7 @@ vendor/etc/audio_policy_engine_stream_volumes.xml
 
 # Audio firmware
 vendor/firmware/aw882xx_acf.bin
+vendor/firmware/fs19xx.fsm
 
 # Audio graph manager
 -vendor/lib/libagm.so
