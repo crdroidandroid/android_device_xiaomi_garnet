@@ -89,6 +89,8 @@ class XiaomiGarnetUdfpsHander : public UdfpsHandler {
         touch_fd_ = android::base::unique_fd(open(TOUCH_DEV_PATH, O_RDWR));
         disp_fd_ = android::base::unique_fd(open(DISP_FEATURE_PATH, O_RDWR));
 
+        setFodStatus(FOD_STATUS_ON);
+
         // Thread to notify fingeprint hwmodule about fod presses
         std::thread([this]() {
             int fd = open(FOD_PRESS_STATUS_PATH, O_RDONLY);
@@ -187,7 +189,6 @@ class XiaomiGarnetUdfpsHander : public UdfpsHandler {
 
     void cancel() {
         LOG(INFO) << __func__;
-        setFodStatus(FOD_STATUS_OFF);
         setFingerDown(false);
     }
 
