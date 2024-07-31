@@ -7,7 +7,6 @@
 #define LOG_TAG "UdfpsHandler.garnet"
 
 #include <android-base/logging.h>
-#include <android-base/properties.h>
 #include <android-base/unique_fd.h>
 
 #include <poll.h>
@@ -90,10 +89,6 @@ class XiaomiGarnetUdfpsHander : public UdfpsHandler {
         touch_fd_ = android::base::unique_fd(open(TOUCH_DEV_PATH, O_RDWR));
         disp_fd_ = android::base::unique_fd(open(DISP_FEATURE_PATH, O_RDWR));
 
-        std::string fpVendor = android::base::GetProperty("persist.vendor.sys.fp.vendor", "none");
-        LOG(DEBUG) << __func__ << "fingerprint vendor is: " << fpVendor;
-        isFpcFod = fpVendor == "fpc_fod";
-
         // Thread to notify fingeprint hwmodule about fod presses
         std::thread([this]() {
             int fd = open(FOD_PRESS_STATUS_PATH, O_RDONLY);
@@ -173,15 +168,6 @@ class XiaomiGarnetUdfpsHander : public UdfpsHandler {
     void onFingerDown(uint32_t /*x*/, uint32_t /*y*/, float /*minor*/, float /*major*/) {
         LOG(INFO) << __func__;
 
-        /*
-         * On fpc_fod devices, the waiting for finger message is not reliably sent...
-         * The finger down message is only reliably sent when the screen is turned off, so enable
-         * fod_status better late than never.
-         */
-        if (isFpcFod) {
-            setFodStatus(FOD_STATUS_ON);
-        }
-
         // Ensure touchscreen is aware of the press state, ideally this is not needed
         setFingerDown(true);
     }
@@ -198,17 +184,12 @@ class XiaomiGarnetUdfpsHander : public UdfpsHandler {
             setFingerDown(false);
         }
 
-        /* vendorCode for goodix_fod devices:
+        /* vendorCode
          * 21: waiting for finger
          * 22: finger down
          * 23: finger up
-         * On fpc_fod devices, the waiting for finger message is not reliably sent...
-         * The finger down message is only reliably sent when the screen is turned off, so enable
-         * fod_status better late than never.
          */
-        if (!isFpcFod && vendorCode == 21) {
-            setFodStatus(FOD_STATUS_ON);
-        } else if (isFpcFod && vendorCode == 22) {
+        if (vendorCode == 21) {
             setFodStatus(FOD_STATUS_ON);
         }
     }
@@ -223,7 +204,6 @@ class XiaomiGarnetUdfpsHander : public UdfpsHandler {
     fingerprint_device_t* mDevice;
     android::base::unique_fd touch_fd_;
     android::base::unique_fd disp_fd_;
-    bool isFpcFod;
 
     void setFodStatus(int value) {
         int buf[MAX_BUF_SIZE] = {MI_DISP_PRIMARY, Touch_Fod_Enable, value};
