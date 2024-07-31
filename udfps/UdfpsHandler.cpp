@@ -183,15 +183,6 @@ class XiaomiGarnetUdfpsHander : public UdfpsHandler {
         if (result == FINGERPRINT_ACQUIRED_GOOD) {
             setFingerDown(false);
         }
-
-        /* vendorCode
-         * 21: waiting for finger
-         * 22: finger down
-         * 23: finger up
-         */
-        if (vendorCode == 21) {
-            setFodStatus(FOD_STATUS_ON);
-        }
     }
 
     void cancel() {
