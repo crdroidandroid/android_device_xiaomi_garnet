@@ -320,6 +320,10 @@ PRODUCT_PACKAGES += \
     libjson \
     libjsoncpp.vendor
 
+# Keylayout
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/keylayout/parrot-qrd-snd-card_Button_Jack.kl:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/usr/keylayout/parrot-qrd-snd-card_Button_Jack.kl
+
 # Keymaster
 PRODUCT_PACKAGES += \
     android.hardware.authsecret@1.0.vendor \
