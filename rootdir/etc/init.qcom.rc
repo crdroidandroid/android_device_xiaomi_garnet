@@ -985,6 +985,7 @@ on property:sys.boot_completed=1 && property:ro.product.debugfs_restrictions.ena
 
 on property:sys.boot_completed=1 && property:ro.build.type=user && property:ro.debuggable="1"
    mount debugfs debugfs /sys/kernel/debug
+   chown system system /sys/kernel/debug
    chmod 0755 /sys/kernel/debug
 
     # cooling device used to set 4Rx or 2Rx
