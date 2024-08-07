@@ -1,6 +1,7 @@
 # Bluetooth
 bluetooth.device.class_of_device=90,2,12
 bluetooth.hfp.codec_aptx_voice.enabled=true
+bluetooth.hfp.swb.aptx.power_management.enabled=true
 bluetooth.leaudio.dual_bidirection_swb.supported=true
 bluetooth.profile.pbap.sim.enabled=true
 bluetooth.profile.sap.server.enabled=true
