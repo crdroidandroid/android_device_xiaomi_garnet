@@ -19,7 +19,7 @@
          -2 is invalid so setting will resort to int value specified above.
          Set this to 0.0 to allow screen to go to minimal brightness.
          The user is forbidden from setting the brightness below this level. -->
-    <item name="config_screenBrightnessSettingMinimumFloat" type="dimen">8.54597E-4</item>
+    <item name="config_screenBrightnessSettingMinimumFloat" type="dimen">0.0059</item>
 
     <!-- Maximum screen brightness allowed by the power manager.
          -2 is invalid so setting will resort to int value specified above.
@@ -52,7 +52,7 @@
     <!-- Screen brightness used to dim the screen when the user activity
          timeout expires.  May be less than the minimum allowed brightness setting
          that can be set by the user. -->
-    <integer name="config_screenBrightnessDim">15</integer>
+    <integer name="config_screenBrightnessDim">2</integer>
     <item name="config_screenBrightnessDimFloat" type="dimen">8.54597E-4</item>
 
     <!-- Array of light sensor lux values to define our levels for auto backlight brightness support.
