@@ -72,6 +72,7 @@
 # Thermal
 /(vendor|system/vendor)/bin/mi_thermald u:object_r:mi_thermald_exec:s0
 /data/vendor/thermal(/.*)? u:object_r:thermal_data_file:s0
+/vendor/bin/hw/android\.hardware\.thermal@2\.0-service\.qti   u:object_r:hal_thermal_default_exec:s0
 /sys/class/thermal/thermal_message/thermal_max_brightness u:object_r:sys_thermal_max_brightness:s0
 /sys/class/thermal/thermal_message/wifi_limit u:object_r:sys_thermal_wifi_limit:s0
 /sys/devices/virtual/thermal/thermal_message/thermal_max_brightness u:object_r:sys_thermal_max_brightness:s0
