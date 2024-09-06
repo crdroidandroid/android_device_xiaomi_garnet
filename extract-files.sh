@@ -87,6 +87,9 @@ function blob_fixup() {
         vendor/lib64/hw/audio.primary.parrot.so)
             "${PATCHELF}" --replace-needed "libstagefright_foundation.so" "libstagefright_foundation-v33.so" "${2}"
             ;;
+        vendor/lib64/vendor.libdpmframework.so)
+            "${PATCHELF_0_17_2}" --add-needed "libhidlbase_shim.so" "${2}"
+            ;;
     esac
 }
 
