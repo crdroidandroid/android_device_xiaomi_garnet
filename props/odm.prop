@@ -1,5 +1,8 @@
 # Audio
 ro.vendor.soundtrigger.dfs.support=1
 
+# NFC
+ro.vendor.nfc.debounce_field_on=1
+
 # Qcom
 ro.vendor.qti.va_odm.support=1

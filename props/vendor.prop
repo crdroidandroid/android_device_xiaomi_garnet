@@ -183,11 +183,7 @@ debug.stagefright.c2inputsurface=-1
 debug.stagefright.ccodec=4
 debug.stagefright.omx_default_rank=0
 ro.media.xml_variant.profiles=_parrot_v0
-ro.mediaserver.64b.enable=true
 vendor.media.omx=0
-
-# NFC
-ro.vendor.nfc.debounce_field_on=1
 
 # PASR
 vendor.pasr.activemode.enabled=false
@@ -213,9 +209,6 @@ ro.vendor.radio.build_profile=u-stable
 
 # RCS
 persist.vendor.rcs.singlereg.feature=1
-
-# SSR
-persist.vendor.ssr.restart_level=ALL_ENABLE
 
 # USB
 sys.usb.mtp.batchcancel=1

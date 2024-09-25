@@ -12,6 +12,9 @@ dalvik.vm.dex2oat-filter=speed
 dalvik.vm.dex2oat-threads=8
 dalvik.vm.dex2oat64.enabled=true
 
+# Media
+ro.mediaserver.64b.enable=true
+
 # QTI
 ro.vendor.qti.va_aosp.support=1
 
@@ -20,3 +23,6 @@ DEVICE_PROVISIONED=1
 ril.subscription.types=NV,RUIM
 ro.telephony.default_network=33,33
 telephony.lteOnCdmaDevice=1
+
+# SSR
+persist.vendor.ssr.restart_level=ALL_ENABLE
