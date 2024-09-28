@@ -1901,6 +1901,7 @@ vendor/lib64/qti.video.utils.videobufferlayout.so
 # Media Config
 vendor/etc/media_codecs_c2_audio.xml
 vendor/etc/media_codecs_cape_vendor.xml
+vendor/etc/media_codecs_dolby_audio.xml
 vendor/etc/media_codecs_parrot_v0.xml
 vendor/etc/media_codecs_parrot_v1.xml
 vendor/etc/media_codecs_parrot_v2.xml
@@ -1911,6 +1912,7 @@ vendor/etc/media_codecs_performance_ravelin.xml
 vendor/etc/media_codecs_ravelin.xml
 vendor/etc/media_codecs_system_default.xml
 vendor/etc/media_codecs_taro_vendor.xml
+vendor/etc/media_codecs_vendor_audio.xml
 vendor/etc/media_codecs.xml
 vendor/etc/media_codecs_with_dolby_taro.xml
 vendor/etc/media_parrot_v0/video_system_specs.json
