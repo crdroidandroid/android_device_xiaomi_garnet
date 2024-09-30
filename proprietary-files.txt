@@ -1,4 +1,4 @@
-# All unpinned blobs below are extracted from garnet V816.0.9.0.UNRMIXM - miui_GARNETGlobal_OS1.0.9.0.UNRMIXM
+# All unpinned blobs below are extracted from garnet V816.0.12.0.UNRMIXM - miui_GARNETGlobal_OS1.0.12.0.UNRMIXM
 
 # ACDB
 vendor/etc/acdbdata/Mise/Mise_acdb_cal.acdb
