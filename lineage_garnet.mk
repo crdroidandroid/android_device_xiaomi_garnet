@@ -19,6 +19,7 @@ $(call inherit-product, device/xiaomi/garnet/device.mk)
 TARGET_HAS_UDFPS := true
 EXTRA_UDFPS_ANIMATIONS := true
 TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_EXCLUDES_AUDIOFX := true
 
 PRODUCT_NAME := lineage_garnet
 PRODUCT_DEVICE := garnet
