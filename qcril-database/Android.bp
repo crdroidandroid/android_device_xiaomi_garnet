@@ -7,6 +7,7 @@ filegroup {
     name: "rildb_config_sql_files",
     srcs: [
         "config/15.0_config.sql",
+        "config/15.1_config.sql",
     ],
 }
 
@@ -33,5 +34,6 @@ prebuilt_etc {
     vendor: true,
     required: [
         "15.0_config.sql",
+        "15.1_config.sql",
     ],
 }
