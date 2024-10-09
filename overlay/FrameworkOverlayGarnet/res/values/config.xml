@@ -995,8 +995,25 @@
         <item>reboot_fastboot</item>
     </string-array>
 
+    <!-- Smart 5G -->
+    <bool name="config_supportSmart5G">true</bool>
+
+    <!-- Whether device supports sensor based doze customizations -->
+    <bool name="config_dozePulseTilt">true</bool>
+    <bool name="config_dozePulseProximity">true</bool>
+    <bool name="config_deviceHaveWakeUpProximity">true</bool>
+
+    <!-- Whether doze feature is enabled by default in settings -->
+    <bool name="config_doze_enabled_by_default">true</bool>
+
+    <!-- Whether to enable Lineage Health Service -->
+    <bool name="config_lineageHealthSupported">true</bool>
+
     <!-- Whether the device supports Smart Pixels -->
     <bool name="config_supportSmartPixels">true</bool>
+
+    <!-- Whether device implements proximity sensor based checks to prevent accidental unlocks when the screen is off. -->
+    <bool name="config_proximityCheckOnFpsUnlock">true</bool>   
 
     <!-- the padding on the top of the statusbar (usually 0) -->
     <dimen name="status_bar_padding_top">0dp</dimen>
