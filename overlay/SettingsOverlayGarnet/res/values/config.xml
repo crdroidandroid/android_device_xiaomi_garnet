@@ -43,4 +43,7 @@
 
     <!-- Whether to show double tap ambient settings -->
     <bool name="config_supports_double_tap_ambient" translatable="false">true</bool>
+
+    <!-- Whether to show volume steps settings -->
+    <bool name="config_supports_volume_steps" translatable="false">true</bool>
 </resources>
