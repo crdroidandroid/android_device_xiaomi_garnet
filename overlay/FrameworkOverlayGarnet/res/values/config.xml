@@ -959,14 +959,6 @@
     <!-- Smart 5G -->
     <bool name="config_supportSmart5G">true</bool>
 
-    <!-- Whether device supports sensor based doze customizations -->
-    <bool name="config_dozePulseTilt">true</bool>
-    <bool name="config_dozePulseProximity">true</bool>
-    <bool name="config_deviceHaveWakeUpProximity">true</bool>
-
-    <!-- Whether doze feature is enabled by default in settings -->
-    <bool name="config_doze_enabled_by_default">true</bool>
-
     <!-- Whether to enable Lineage Health Service -->
     <bool name="config_lineageHealthSupported">true</bool>
 
