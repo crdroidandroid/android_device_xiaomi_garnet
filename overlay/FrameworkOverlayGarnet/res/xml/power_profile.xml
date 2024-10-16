@@ -28,10 +28,12 @@
         <value>940800</value>
         <value>1113600</value>
         <value>1324800</value>
-        <value>1497600</value>
-        <value>1651200</value>
-        <value>1804800</value>
-        <value>1958400</value>
+        <value>1497600</value> <!-- 1.4976 GHz (around 1.5 GHz) -->
+        <value>1500000</value> <!-- 1.5 GHz -->
+        <!-- <value>1651200</value> --> <!-- Removed higher frequencies -->
+        <!-- <value>1804800</value> -->
+        <!-- <value>1958400</value> -->
+
     </array>
 
     <!-- Additional power used by a CPU from cluster 0 when running at different
@@ -57,12 +59,13 @@
         <value>1344000</value>
         <value>1497600</value>
         <value>1651200</value>
-        <value>1900800</value>
-        <value>2054400</value>
-        <value>2112000</value>
-        <value>2208000</value>
-        <value>2304000</value>
-        <value>2400000</value>
+        <value>1800000</value> <!-- 1.8 GHz (manually added) -->
+        <!-- <value>1900800</value> --> <!-- Removed higher frequencies -->
+        <!-- <value>2054400</value> -->
+        <!-- <value>2112000</value> -->
+        <!-- <value>2208000</value> -->
+        <!-- <value>2304000</value> -->
+        <!-- <value>2400000</value> -->
     </array>
 
     <!-- Additional power used by a CPU from cluster 1 when running at different
