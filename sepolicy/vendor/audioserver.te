@@ -1,2 +1,0 @@
-allow hal_audio_default hal_audio_default:process { execmem };
-hal_client_domain(audioserver, hal_dms)
