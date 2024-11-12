@@ -10,6 +10,10 @@ soong_namespace {
     ],
 }
 
+cc_library_shared {
+    name: "libldacBT_bco",
+}
+
 install_symlink {
     name: "firmware_wlan_mac.bin_symlink",
     vendor: true,
