@@ -112,7 +112,6 @@ vendor.display.enable_optimize_refresh=0
 vendor.display.idle_time=1100
 
 # Dolby Atmos
-vendor.audio.dolby.ds2.enabled=false
 vendor.audio.dolby.ds2.hardbypass=false
 
 # Dolby Vision
