@@ -66,7 +66,7 @@
             </intent-filter>
         </receiver>
 
-       <!--  <activity
+        <activity
             android:name=".thermal.ThermalActivity"
             android:label="@string/thermal_title">
             <intent-filter>
@@ -83,19 +83,6 @@
         <service
             android:name=".thermal.ThermalService"
             android:permission="ThermalService">
-        </service>-->
-
-        <!-- Thermal Profiles tile service -->
-        
-        <service
-            android:name=".thermal.ThermalTileService"
-            android:label="@string/thermal_tile_label"
-            android:icon="@drawable/ic_thermal_tile"
-            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.service.quicksettings.action.QS_TILE" />
-            </intent-filter>
         </service>
 
         <activity
