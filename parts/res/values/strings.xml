@@ -36,13 +36,6 @@
     <string name="thermal_gaming">Gaming</string>
     <string name="thermal_streaming">Streaming</string>
 
-    <!-- Thermal Tile Strings -->
-    <string name="thermal_tile_label">Thermal Mode</string>
-    <string name="thermal_mode_default">Default Mode</string>
-    <string name="thermal_mode_performance">Performance Mode</string>
-    <string name="thermal_mode_battery_saver">Battery Saver Mode</string>
-    <string name="thermal_mode_gaming">Gaming Mode</string>
-
     <!-- Per-app refresh rate -->
     <string name="refresh_title">Per-app refresh rate</string>
     <string name="refresh_summary">Set the maximum refresh rate for a specific application</string>

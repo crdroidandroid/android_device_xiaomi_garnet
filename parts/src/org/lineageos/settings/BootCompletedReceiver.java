@@ -33,7 +33,6 @@ import android.view.Display;
 import android.view.Display.HdrCapabilities;
 
 import org.lineageos.settings.thermal.ThermalUtils;
-import org.lineageos.settings.thermal.ThermalTileService;
 import org.lineageos.settings.refreshrate.RefreshUtils;
 
 public class BootCompletedReceiver extends BroadcastReceiver {
