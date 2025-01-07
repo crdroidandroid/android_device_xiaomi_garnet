@@ -63,6 +63,11 @@ static disp_event_resp* parseDispEvent(int fd) {
     return response;
 }
 
+struct disp_base displayBasePrimary = {
+        .flag = 0,
+        .disp_id = MI_DISP_PRIMARY,
+};
+
 }  // anonymous namespace
 
 class XiaomiGarnetUdfpsHander : public UdfpsHandler {
@@ -80,11 +85,11 @@ class XiaomiGarnetUdfpsHander : public UdfpsHandler {
             }
 
             // Register for FOD events
-            disp_event_req req;
-            req.base.flag = 0;
-            req.base.disp_id = MI_DISP_PRIMARY;
-            req.type = MI_DISP_EVENT_FOD;
-            ioctl(fd, MI_DISP_IOCTL_REGISTER_EVENT, &req);
+            struct disp_event_req displayEventRequest = {
+                    .base = displayBasePrimary,
+                    .type = MI_DISP_EVENT_FOD,
+            };
+            ioctl(fd, MI_DISP_IOCTL_REGISTER_EVENT, &displayEventRequest);
 
             struct pollfd dispEventPoll = {
                     .fd = fd,
@@ -126,11 +131,11 @@ class XiaomiGarnetUdfpsHander : public UdfpsHandler {
         mDevice->extCmd(mDevice, COMMAND_FOD_PRESS_STATUS, PARAM_FOD_PRESSED);
 
         // Request HBM
-        disp_local_hbm_req req;
-        req.base.flag = 0;
-        req.base.disp_id = MI_DISP_PRIMARY;
-        req.local_hbm_value = LHBM_TARGET_BRIGHTNESS_WHITE_1000NIT;
-        ioctl(disp_fd_.get(), MI_DISP_IOCTL_SET_LOCAL_HBM, &req);
+        struct disp_local_hbm_req displayLhbmRequest = {
+                .base = displayBasePrimary,
+                .local_hbm_value = LHBM_TARGET_BRIGHTNESS_WHITE_1000NIT,
+        };
+        ioctl(disp_fd_.get(), MI_DISP_IOCTL_SET_LOCAL_HBM, &displayLhbmRequest);
     }
 
     void onFingerUp() {
@@ -139,11 +144,11 @@ class XiaomiGarnetUdfpsHander : public UdfpsHandler {
         mDevice->extCmd(mDevice, COMMAND_FOD_PRESS_STATUS, PARAM_FOD_RELEASED);
 
         // Disable HBM
-        disp_local_hbm_req req;
-        req.base.flag = 0;
-        req.base.disp_id = MI_DISP_PRIMARY;
-        req.local_hbm_value = LHBM_TARGET_BRIGHTNESS_OFF_FINGER_UP;
-        ioctl(disp_fd_.get(), MI_DISP_IOCTL_SET_LOCAL_HBM, &req);
+        struct disp_local_hbm_req displayLhbmRequest = {
+                .base = displayBasePrimary,
+                .local_hbm_value = LHBM_TARGET_BRIGHTNESS_OFF_FINGER_UP,
+        };
+        ioctl(disp_fd_.get(), MI_DISP_IOCTL_SET_LOCAL_HBM, &displayLhbmRequest);
     }
 
     void onAcquired(int32_t result, int32_t vendorCode) {
