@@ -969,4 +969,7 @@
         <item>"/system_ext/priv-app/daxService/daxService.apk"</item>
     </string-array>
 
+    <!-- Whether the device supports Smart Pixels -->
+    <bool name="config_supportSmartPixels">true</bool>
+
 </resources>
