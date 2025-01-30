@@ -20,7 +20,7 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 $(call inherit-product, hardware/qcom-caf/common/common.mk)
 
 # Call the MiuiCamera setup
-$(call inherit-product-if-exists, vendor/xiaomi/garnet-miuicamera/products/miuicamera.mk)
+$(call inherit-product-if-exists, device/xiaomi/miuicamera-garnet/device.mk)
 
 # A/B
 AB_OTA_POSTINSTALL_CONFIG += \
