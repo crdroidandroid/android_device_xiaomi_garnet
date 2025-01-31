@@ -16,3 +16,10 @@ prebuilt_etc {
     relative_install_path: "qcril_database/upgrade/config",
     vendor: true,
 }
+
+prebuilt_etc {
+    name: "15.2_config.sql",
+    src: "15.2_config.sql",
+    relative_install_path: "qcril_database/upgrade/config",
+    vendor: true,
+}
