@@ -174,6 +174,7 @@ ro.surface_flinger.support_kernel_idle_timer=true
 ro.surface_flinger.use_color_management=true
 ro.surface_flinger.use_content_detection_for_refresh_rate=true
 ro.surface_flinger.wcg_composition_dataspace=142671872
+ro.surface_flinger.clear_slots_with_set_layer_buffer=true
 vendor.gralloc.disable_ubwc=0
 
 # Keystore
