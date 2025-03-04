@@ -1,2 +1,3 @@
 set_prop(vendor_init, vendor_qcc_prop)
 set_prop(vendor_init, vendor_fp_prop)
+allow vendor_init cgroup:file { getattr read write };
