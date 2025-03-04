@@ -4,3 +4,4 @@ allow vendor_hal_perf_default hal_graphics_composer_default:file { open read wri
 allow vendor_hal_perf_default proc_type:file { getattr };
 allow vendor_hal_perf_default surfaceflinger:dir { search };
 allow vendor_hal_perf_default surfaceflinger:process { getpgid };
+allow vendor_hal_perf_default surfaceflinger:file { read };
