@@ -1,0 +1,1 @@
+type vendor_hal_alarmaidl_service, service_manager_type, hal_service_type;
