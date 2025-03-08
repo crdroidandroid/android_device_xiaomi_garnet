@@ -569,7 +569,6 @@ PRODUCT_PACKAGES += \
     hostapd_cli \
     libwifi-hal-ctrl:64 \
     libwifi-hal-qcom:64 \
-    libwpa_client:64 \
     libkeystore-engine-wifi-hidl \
     libkeystore-wifi-hidl \
     libwifi-hal

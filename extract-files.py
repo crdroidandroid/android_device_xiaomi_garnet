@@ -52,7 +52,6 @@ lib_fixups: lib_fixups_user_type = {
         'libagmmixer',
         'libwifi-hal-ctrl',
         'libpalclient',
-        'libwpa_client',
         'vendor.qti.hardware.pal@1.0-impl',
     ): lib_fixup_remove,
 }
