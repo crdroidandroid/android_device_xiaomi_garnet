@@ -64,7 +64,7 @@ static bool readBool(int fd) {
 }
 
 static disp_event_resp* parseDispEvent(int fd) {
-    char event_data[1024] = {0};
+    static char event_data[1024] = {0};
     ssize_t size;
 
     memset(event_data, 0x0, sizeof(event_data));
