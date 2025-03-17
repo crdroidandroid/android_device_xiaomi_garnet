@@ -62,6 +62,8 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('libinput_shim.so'),
     'system_ext/lib64/libwfdmmsrc_system.so': blob_fixup()
         .add_needed('libgui_shim.so'),
+    'vendor/lib64/nfc_nci.nqx.default.hw.v1.so': blob_fixup()
+        .add_needed('libbase_shim.so'),
     'vendor/lib64/libQnnDspV65CalculatorStub.so': blob_fixup()
         .add_needed('liblog.so'),
     'vendor/bin/qcc-trd': blob_fixup()
