@@ -257,3 +257,12 @@ vendor.netflix.bsp_rev=Q6450-36256-1
 
 # Logcat spam
 persist.log.tag.android.hardware.power-service-qti=E
+
+# Fling
+ro.min.fling_velocity=160
+ro.max.fling_velocity=20000
+ro.max.fling_velocity=20000
+ro.vendor.qti.cgroup_follow.enable=true
+persist.vendor.qti.inputopts.enable=true
+persist.vendor.qti.inputopts.movetouchslop=0.6
+ro.qcom.adreno.qgl.ShaderStorageImageExtendedFormats=0
