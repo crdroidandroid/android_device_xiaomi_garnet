@@ -1,0 +1,26 @@
+//
+// SPDX-FileCopyrightText: 2025 The LineageOS Project
+// SPDX-License-Identifier: Apache-2.0
+//
+
+genrule {
+    name: "qcril_config_database",
+    enabled: true,
+    srcs: [
+        "//vendor/xiaomi/garnet:proprietary_rildb_other_sql_files",
+        "//vendor/xiaomi/garnet:proprietary_rildb_config_sql_files",
+    ],
+    tools: [
+        "generate_qcril_db",
+    ],
+    cmd: "$(location generate_qcril_db) $(out) $(in)",
+    out: ["qcrilNr.db"],
+}
+
+prebuilt_etc {
+    name: "qcrilNrDb_vendor",
+    filename: "qcrilNr.db",
+    src: ":qcril_config_database",
+    relative_install_path: "qcril_database",
+    vendor: true,
+}
