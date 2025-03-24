@@ -30,25 +30,6 @@ on boot
     chmod 0700 /sys/bus/platform/devices/soc:fingerprint_fpc/power_ctrl
     chmod 0700 /sys/bus/platform/devices/soc:fingerprint_fpc/screen
     chmod 0666 /dev/input/event2
-    
-    # Fix for ANDR-PERF-OPTSHANDLER permission denied error
-    chmod 0664 /dev/cpu_dma_latency
-    chown system system /dev/cpu_dma_latency
-    
-    # Configure CPU set permissions
-    mkdir /dev/cpuset/system-background 0775 system system
-    write /dev/cpuset/system-background/cpus 0-3
-    write /dev/cpuset/system-background/mems 0
-    chown system system /dev/cpuset/system-background/tasks
-    chmod 0664 /dev/cpuset/system-background/tasks
-    
-    # Set permissions for performance service
-    chown system system /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
-    chmod 0664 /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
-    
-    # Set proc access for PERF-OPTSHANDLER
-    chmod 0444 /proc/stat
-    chmod 0664 /proc/meminfo
 
 on post-fs-data
     mkdir /data/vendor/misc 01771 system system
@@ -124,11 +105,3 @@ service vendor.sensors-hal-multihal /vendor/bin/hw/android.hardware.sensors-serv
     socket audio_us_socket_1 seqpacket 0666 system system
     capabilities BLOCK_SUSPEND
     rlimit rtprio 10 10
-
-# Configure performance service
-service vendor.perf-hal-2-3 /vendor/bin/hw/vendor.qti.hardware.perf@2.3-service
-    class hal
-    user root
-    group root readproc system
-    capabilities SYS_NICE SYS_PTRACE
-    socket perfd seqpacket 0666 root system
