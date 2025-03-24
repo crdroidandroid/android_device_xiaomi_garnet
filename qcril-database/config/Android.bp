@@ -1,0 +1,11 @@
+//
+// SPDX-FileCopyrightText: 2025 The LineageOS Project
+// SPDX-License-Identifier: Apache-2.0
+//
+
+prebuilt_etc {
+    name: "13.1_config.sql",
+    src: "13.1_config.sql",
+    relative_install_path: "qcril_database/upgrade/config",
+    vendor: true,
+}

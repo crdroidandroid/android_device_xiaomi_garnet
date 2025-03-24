@@ -131,8 +131,6 @@ blob_fixups: blob_fixups_user_type = {
             'android.hardware.gnss-V1-ndk_platform.so',
             'android.hardware.gnss-V1-ndk.so',
     ),
-    ('vendor/lib64/libqcrilNr.so', 'vendor/lib64/libril-db.so'): blob_fixup()
-        .binary_regex_replace(rb'persist\.vendor\.radio\.poweron_opt', rb'persist.vendor.radio.poweron_ign'),
     ('vendor/lib64/libalLDC.so', 'vendor/lib64/libalhLDC.so'): blob_fixup()
         .clear_symbol_version('AHardwareBuffer_allocate')
         .clear_symbol_version('AHardwareBuffer_describe')
