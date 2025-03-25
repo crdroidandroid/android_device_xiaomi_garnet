@@ -36,7 +36,7 @@ using ::aidl::android::hardware::biometrics::fingerprint::AcquiredInfo;
 
 namespace {
 
-static disp_event_resp* parseDispEvent(int fd) {
+static std::shared_ptr<disp_event_resp> parseDispEvent(int fd) {
     disp_event header;
     ssize_t headerSize = read(fd, &header, sizeof(header));
     if (headerSize < sizeof(header)) {
@@ -44,8 +44,12 @@ static disp_event_resp* parseDispEvent(int fd) {
         return nullptr;
     }
 
-    struct disp_event_resp* response =
-            reinterpret_cast<struct disp_event_resp*>(malloc(header.length));
+    std::shared_ptr<disp_event_resp> response(static_cast<disp_event_resp*>(malloc(header.length)),
+                                              free);
+    if (!response) {
+        LOG(ERROR) << "failed to allocate memory for display event response";
+        return nullptr;
+    }
     response->base = header;
 
     int dataLength = response->base.length - sizeof(response->base);
@@ -78,7 +82,7 @@ class XiaomiGarnetUdfpsHander : public UdfpsHandler {
 
         // Thread to listen for fod ui changes
         std::thread([this]() {
-            int fd = open(DISP_FEATURE_PATH, O_RDWR);
+            android::base::unique_fd fd(open(DISP_FEATURE_PATH, O_RDWR));
             if (fd < 0) {
                 LOG(ERROR) << "failed to open " << DISP_FEATURE_PATH << " , err: " << fd;
                 return;
@@ -89,10 +93,13 @@ class XiaomiGarnetUdfpsHander : public UdfpsHandler {
                     .base = displayBasePrimary,
                     .type = MI_DISP_EVENT_FOD,
             };
-            ioctl(fd, MI_DISP_IOCTL_REGISTER_EVENT, &displayEventRequest);
+            if (ioctl(fd.get(), MI_DISP_IOCTL_REGISTER_EVENT, &displayEventRequest) < 0) {
+                LOG(ERROR) << "failed to register FOD event";
+                return;
+            }
 
             struct pollfd dispEventPoll = {
-                    .fd = fd,
+                    .fd = fd.get(),
                     .events = POLLIN,
                     .revents = 0,
             };
@@ -104,8 +111,8 @@ class XiaomiGarnetUdfpsHander : public UdfpsHandler {
                     continue;
                 }
 
-                struct disp_event_resp* response = parseDispEvent(fd);
-                if (response == nullptr) {
+                std::shared_ptr<disp_event_resp> response = parseDispEvent(fd.get());
+                if (!response) {
                     continue;
                 }
 
