@@ -21,7 +21,7 @@
     <!-- version section contains a “version” tag in the form “major.minor” e.g version=”1.0” -->
 
     <!-- Global configuration Decalaration -->
-    <globalConfiguration speaker_drc_enabled="true" call_screen_mode_supported="true"/>
+    <globalConfiguration speaker_drc_enabled="true" call_screen_mode_supported="true" dual_speaker_enabled="true"/>
 
 
     <!-- Modules section:
@@ -62,6 +62,21 @@
                     <profile name="" format="AUDIO_FORMAT_PCM_24_BIT_PACKED"
                              samplingRates="48000" channelMasks="AUDIO_CHANNEL_OUT_STEREO"/>
                 </mixPort>
+                <mixPort name="dual_speaker_output" role="source" flags="AUDIO_OUTPUT_FLAG_DEEP_BUFFER">
+                     <profile name="" format="AUDIO_FORMAT_PCM_24_BIT_PACKED"
+                              samplingRates="48000 96000" channelMasks="AUDIO_CHANNEL_OUT_STEREO"/>
+                     <gains>
+                         <gain name="eq_bands" mode="AUDIO_GAIN_MODE_JOINT"
+                               minValueMB="-8400" maxValueMB="4000" defaultValueMB="0" stepValueMB="100"/>
+                     </gains>
+                     <extraParams>
+                         <param name="eq_band_60hz" value="30"/>
+                         <param name="eq_band_230hz" value="20"/>
+                         <param name="eq_band_910hz" value="0"/>
+                         <param name="eq_band_3600hz" value="15"/>
+                         <param name="eq_band_14000hz" value="10"/>
+                     </extraParams>
+                 </mixPort>
                 <mixPort name="raw" role="source" flags="AUDIO_OUTPUT_FLAG_FAST AUDIO_OUTPUT_FLAG_RAW">
                     <profile name="" format="AUDIO_FORMAT_PCM_24_BIT_PACKED"
                              samplingRates="48000" channelMasks="AUDIO_CHANNEL_OUT_STEREO"/>
@@ -73,7 +88,7 @@
                 <mixPort name="deep_buffer" role="source"
                         flags="AUDIO_OUTPUT_FLAG_DEEP_BUFFER">
                     <profile name="" format="AUDIO_FORMAT_PCM_24_BIT_PACKED"
-                             samplingRates="48000" channelMasks="AUDIO_CHANNEL_OUT_STEREO"/>
+                             samplingRates="48000 96000" channelMasks="AUDIO_CHANNEL_OUT_STEREO"/>
                 </mixPort>
                 <mixPort name="mmap_no_irq_out" role="source" flags="AUDIO_OUTPUT_FLAG_DIRECT AUDIO_OUTPUT_FLAG_MMAP_NOIRQ">
                     <profile name="" format="AUDIO_FORMAT_PCM_16_BIT"
@@ -97,6 +112,10 @@
                   <profile name="" format="AUDIO_FORMAT_PCM_32_BIT"
                              samplingRates="8000 11025 12000 16000 22050 24000 32000 44100 48000 64000 88200 96000 128000 176400 192000 352800 384000"
                              channelMasks="AUDIO_CHANNEL_OUT_MONO AUDIO_CHANNEL_OUT_STEREO AUDIO_CHANNEL_OUT_2POINT1 AUDIO_CHANNEL_OUT_QUAD AUDIO_CHANNEL_OUT_PENTA AUDIO_CHANNEL_OUT_5POINT1 AUDIO_CHANNEL_OUT_6POINT1 AUDIO_CHANNEL_OUT_7POINT1"/>
+                </mixPort>
+                <mixPort name="surround_sound" role="source" flags="AUDIO_OUTPUT_FLAG_DIRECT">
+                    <profile name="" format="AUDIO_FORMAT_PCM_16_BIT"
+                             samplingRates="48000" channelMasks="AUDIO_CHANNEL_OUT_5POINT1"/>
                 </mixPort>
                 <mixPort name="compressed_offload" role="source"
                          flags="AUDIO_OUTPUT_FLAG_DIRECT AUDIO_OUTPUT_FLAG_COMPRESS_OFFLOAD AUDIO_OUTPUT_FLAG_NON_BLOCKING AUDIO_OUTPUT_FLAG_GAPLESS_OFFLOAD">
@@ -215,8 +234,19 @@
                             samplingRates="48000" channelMasks="AUDIO_CHANNEL_OUT_MONO"/>
                 </devicePort>
                 <devicePort tagName="Speaker" role="sink" type="AUDIO_DEVICE_OUT_SPEAKER" address="">
-                    <profile name="" format="AUDIO_FORMAT_PCM_16_BIT"
-                             samplingRates="48000" channelMasks="AUDIO_CHANNEL_OUT_STEREO"/>
+                   <profile name="" format="AUDIO_FORMAT_PCM_24_BIT_PACKED"
+                             samplingRates="48000 96000" channelMasks="AUDIO_CHANNEL_OUT_STEREO"/>
+                    <gains>
+                        <gain name="speaker_gain" mode="AUDIO_GAIN_MODE_JOINT"
+                              minValueMB="-8400" maxValueMB="4000" defaultValueMB="0" stepValueMB="100"/>
+                    </gains>
+                    <!-- Special parameters for dual speaker balancing -->
+                    <extraParams>
+                        <param name="dual_speaker_balance" value="0"/>
+                        <param name="bass_boost" value="30"/>
+                        <param name="clarity_enhance" value="25"/>
+                        <param name="stereo_widening" value="40"/>
+                    </extraParams>
                 </devicePort>
                 <devicePort tagName="Wired Headset" type="AUDIO_DEVICE_OUT_WIRED_HEADSET" role="sink">
                     <profile name="" format="AUDIO_FORMAT_PCM_16_BIT"
@@ -297,7 +327,7 @@
                 <route type="mix" sink="Earpiece"
                        sources="primary output,deep_buffer,direct_pcm,compressed_offload,voip_rx,mmap_no_irq_out,haptics output"/>
                 <route type="mix" sink="Speaker"
-                       sources="primary output,deep_buffer,direct_pcm,compressed_offload,voip_rx,mmap_no_irq_out,haptics output"/>
+                       sources="primary output,deep_buffer,dual_speaker_output,surround_sound,direct_pcm,compressed_offload,voip_rx,mmap_no_irq_out,haptics output"/>
                 <route type="mix" sink="Wired Headset"
                        sources="primary output,deep_buffer,direct_pcm,compressed_offload,voip_rx,mmap_no_irq_out,haptics output"/>
                 <route type="mix" sink="Wired Headphones"
@@ -338,6 +368,12 @@
                        sources="Built-In Mic,Built-In Back Mic,Wired Headset Mic,USB Device In,USB Headset In"/>
                 <route type="mix" sink="hifi_input" sources="USB Device In,USB Headset In" />
             </routes>
+            <postprocessors>
+                 <postprocessor name="dual_speaker_enhancer">
+                     <param name="preset" value="dual_speaker_music"/>
+                     <param name="strength" value="60"/>
+                </postprocessor>
+             </postprocessors>
 
         </module>
 
