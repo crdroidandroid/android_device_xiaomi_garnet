@@ -188,7 +188,7 @@ PRODUCT_COPY_FILES += \
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.4.vendor:64 \
-    android.hardware.drm-service.clearkey65 \
+    android.hardware.drm-service.clearkey:64 \
     libcrypto_shim.vendor:64
 
 # Device-specific settings
