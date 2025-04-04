@@ -120,6 +120,8 @@ PRODUCT_PACKAGES += \
     android.hardware.boot-service.qti.recovery
 
 # Camera
+TARGET_BUILD_DEVICE_AS_WEBCAM := true
+
 PRODUCT_PACKAGES += \
     libcamera2ndk_vendor
 
