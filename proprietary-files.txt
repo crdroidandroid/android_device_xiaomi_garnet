@@ -1540,6 +1540,7 @@ vendor/lib64/libvideotxr.so
 vendor/lib64/qti.video.utils.videobufferlayout.so
 
 # Media Config
+vendor/etc/media_codecs_c2_audio.xml
 vendor/etc/media_codecs_parrot_v0.xml
 vendor/etc/media_codecs_performance_parrot_v0.xml
 vendor/etc/media_parrot_v0/video_system_specs.json
