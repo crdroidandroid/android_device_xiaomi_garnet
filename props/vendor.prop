@@ -254,3 +254,6 @@ wifi.aware.interface=wifi-aware0
 
 # Netflix
 vendor.netflix.bsp_rev=Q6450-36256-1
+
+# Logcat spam
+persist.log.tag.android.hardware.power-service-qti=E
