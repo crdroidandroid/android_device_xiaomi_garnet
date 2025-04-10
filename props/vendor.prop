@@ -55,6 +55,12 @@ vendor.qc2audio.suspend.enabled=true
 use.voice.path.for.pcm.voip=true
 persist.vendor.btstack.enable.twsplus=true 
 persist.vendor.btstack.enable.twsplussho=true
+af.resampler.quality=7
+ro.audio.usb.period_us=20375
+ro.audio.resampler.psd.stopband=132
+ro.audio.resampler.psd.halflength=960
+ro.audio.resampler.psd.cutoff_percent=98
+ro.audio.resampler.psd.tbwcheat=0
 
 # Bluetooth
 bluetooth.device.class_of_device=90,2,12
