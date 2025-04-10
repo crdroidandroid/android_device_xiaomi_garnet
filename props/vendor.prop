@@ -108,7 +108,7 @@ ro.soc.manufacturer=QTI
 # Dex2oat
 dalvik.vm.dex2oat64.enabled=true
 
-# Display
+# 5Display
 ro.vendor.display.sensortype=2
 ro.vendor.display.svi=1
 vendor.display.comp_mask=0
@@ -230,6 +230,7 @@ persist.vendor.rcs.singlereg.feature=1
 ro.vendor.sensors.xiaomi.double_tap=true
 ro.vendor.sensors.xiaomi.single_tap=true
 ro.vendor.sensors.xiaomi.udfps=true
+persist.vendor.sensors.debug.hal=0
 
 # SSR
 persist.vendor.ssr.restart_level=ALL_ENABLE
