@@ -222,3 +222,11 @@ wifi.aware.interface=wifi-aware0
 
 # Netflix
 vendor.netflix.bsp_rev=Q6450-36256-1
+
+# Resampler
+af.resampler.quality=7
+ro.audio.resampler.psd.stopband=132
+ro.audio.resampler.psd.halflength=960
+ro.audio.resampler.psd.cutoff_percent=98
+ro.audio.resampler.psd.tbwcheat=0
+ro.audio.usb.period_us=20375
