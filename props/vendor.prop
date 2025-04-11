@@ -219,3 +219,6 @@ persist.vendor.vcb.enable=false
 
 # WLAN
 wifi.aware.interface=wifi-aware0
+
+# Netflix
+vendor.netflix.bsp_rev=Q6450-36256-1
