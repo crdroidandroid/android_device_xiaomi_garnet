@@ -108,7 +108,8 @@ ro.soc.manufacturer=QTI
 # Dex2oat
 dalvik.vm.dex2oat64.enabled=true
 
-# 5Display
+# Display
+ro.hwui.render_ahead=10
 ro.vendor.display.sensortype=2
 ro.vendor.display.svi=1
 vendor.display.comp_mask=0
