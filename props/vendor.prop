@@ -172,6 +172,7 @@ debug.sf.enable_adpf_cpu_hint=true
 debug.sf.late.app.duration=20500000
 debug.sf.late.sf.duration=10500000
 debug.sf.use_phase_offsets_as_durations=1
+persist.mm.enable.prefetch=true
 persist.sys.sf.color_mode=0
 persist.sys.sf.color_saturation=1.0
 ro.gfx.driver.1=com.qualcomm.qti.gpudrivers.pineapple.api34
