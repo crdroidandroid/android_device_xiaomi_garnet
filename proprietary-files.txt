@@ -1,4 +1,4 @@
-# All unpinned blobs below are extracted from garnet OS2.0.6.0.VNRMIXM - HyperOS_GARNETGlobal_OS2.0.6.0.VNRMIXM
+# All unpinned blobs below are extracted from garnet OS2.0.9.0.VNRMIXM - HyperOS_GARNETGlobal_OS2.0.9.0.VNRMIXM
 
 # Current blobs with ELF checks disabled:
 # audio.primary.parrot depends on vendor.qti.hardware.pal@1.0-impl, which is a gnu makefile target
