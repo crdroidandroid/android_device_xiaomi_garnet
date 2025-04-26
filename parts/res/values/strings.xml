@@ -92,4 +92,10 @@
     <string name="overlay_permission_denied">Overlay permission denied</string>
     <string name="game_bar_tile_label">GameBar</string>
     <string name="game_bar_tile_description">Toggle the game overlay</string>
+
+    <!-- Charge bypass strings -->
+    <string name="charge_bypass_title">Bypass charging</string>
+    <string name="charge_bypass_summary">Enable direct charging, bypassing battery</string>
+    <string name="charge_bypass_warning">Warning: Bypass charging may cause increased device temperature or battery damage. Use with caution.</string>
+    <string name="charge_bypass_unavailable">Bypass charging is not supported on this device</string>
 </resources>
