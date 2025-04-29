@@ -131,6 +131,8 @@ vendor.display.idle_time=0
 vendor.display.vds_allow_hwc=0
 ro.config.avoid_gfx_accel=true
 ro.surface_flinger.support_kernel_idle_timer=true
+debug.sf.enable_hwc_vds=0
+debug.sdm.support_writeback=0
 
 # DPM
 persist.vendor.dpm.vndr.feature=1
@@ -158,7 +160,6 @@ debug.sf.early.sf.duration=16000000
 debug.sf.earlyGl.app.duration=21000000
 debug.sf.earlyGl.sf.duration=13500000
 debug.sf.enable_gl_backpressure=0
-debug.sf.enable_hwc_vds=1
 debug.sf.hw=0
 debug.sf.late.app.duration=20500000
 debug.sf.late.sf.duration=10500000
