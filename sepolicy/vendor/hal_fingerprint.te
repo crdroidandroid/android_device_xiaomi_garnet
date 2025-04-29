@@ -28,10 +28,14 @@ allow hal_fingerprint_default vendor_sysfs_fingerprint:dir r_dir_perms;
 allow hal_fingerprint_default vendor_sysfs_fingerprint:file rw_file_perms;
 allow hal_fingerprint_default vendor_sysfs_graphics:dir r_dir_perms;
 allow hal_fingerprint_default vendor_sysfs_graphics:file rw_file_perms;
+allow hal_fingerprint_default vendor_sysfs_sensors:file rw_file_perms;
 allow hal_fingerprint_default vendor_xdsp_device:chr_file r_file_perms;
 allow hal_fingerprint_default vendor_xdsp_device:file r_file_perms;
+allow hal_fingerprint_default vendor_system_prop:file { read open getattr };
 allow hal_fingerprint_default rootfs:dir read;
 
 get_prop(hal_fingerprint_default, vendor_panel_info_prop)
 set_prop(hal_fingerprint_default, vendor_fp_info_prop)
 set_prop(hal_fingerprint_default, vendor_fp_prop)
+
+allow vendor_hal_perf_default hal_fingerprint_default:file read;
