@@ -1,0 +1,9 @@
+type devicesettings_app, domain;
+app_domain(devicesettings_app)
+
+allow devicesettings_app vendor_sysfs_battery_supply:dir search;
+allow devicesettings_app vendor_sysfs_battery_supply:file r_file_perms;
+
+allow devicesettings_app proc_stat:file { read open getattr };
+
+allow devicesettings_app vendor_sysfs_kgsl_gpuclk:file { read open getattr };
