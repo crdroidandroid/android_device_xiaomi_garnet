@@ -189,6 +189,7 @@ debug.sdm.support_writeback=0
 
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
+vendor.perf.framepacing.enable=1
 
 # Qcomd
 persist.vendor.qcomsysd.enabled=1
