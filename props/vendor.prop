@@ -137,6 +137,7 @@ ro.config.avoid_gfx_accel=true
 ro.surface_flinger.support_kernel_idle_timer=true
 debug.sf.enable_hwc_vds=0
 debug.sdm.support_writeback=0
+debug.hwui.skia_atrace_enabled=false
 
 # DPM
 persist.vendor.dpm.vndr.feature=1
