@@ -815,3 +815,7 @@ on init
 
 on property:sys.boot_completed=1
     write /sys/devices/virtual/thermal/thermal_message/sconfig 20
+
+on property:sys.boot_completed=1
+    # Disable native stats collection service
+    stop statsd
