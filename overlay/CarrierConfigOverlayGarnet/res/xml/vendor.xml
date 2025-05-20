@@ -53,7 +53,7 @@
         <boolean name="carrier_cross_sim_ims_available_bool" value="true" />
         <boolean name="carrier_b2c_enriched_calling_supported_bool" value="false" />
         <boolean name="carrier_call_progress_notification" value="true" />
-        <boolean name="config_volte_on_by_default_after_ota" value="false" />
+        <boolean name="config_volte_on_by_default_after_ota" value="true" />
         <boolean name="config_volte_play_local_hold_tone" value="false" />
         <boolean name="mtk_vt_over_wifi_check_volte_enable_bool" value="true" />
         <boolean name="config_wifi_disconnect_delay_for_vowifi_detach" value="false" />
