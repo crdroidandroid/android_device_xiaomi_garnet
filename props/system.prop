@@ -18,3 +18,100 @@ persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=1
 persist.dbg.wfc_avail_ovr=1
 
+# Disable MTE Async for system server
+persist.arm64.memtag.system_server=off
+
+# Graphics
+debug.sf.disable_backpressure=1
+
+# Hint Manager
+debug.hwui.use_hint_manager=true
+debug.hwui.target_cpu_time_percent=30
+
+# HWUI
+debug.hwui.skia_atrace_enabled=false
+
+# SPAMMY S Log Tags
+persist.log.tag.AnalyticsService=S
+persist.log.tag.KernelCpuUidActiveTimeReader=S
+persist.log.tag.Tracer=S
+persist.log.tag.NearbySharing=S
+persist.log.tag.IntervalStats=S
+persist.log.tag.CompatibilityChangeReporter=S
+persist.log.tag.SQLiteLog=S
+persist.log.tag.wificond=S
+persist.log.tag.b/223498680=S
+persist.log.tag.TrafficStats=S
+persist.log.tag.ContrastColorUtil=S
+persist.log.tag.OpenGLRenderer=S
+persist.log.tag.ultrasound_extn=S
+
+# SPAMMY E Log Tags
+persist.log.tag.ApexManager=E
+persist.log.tag.ApexManagerTiming=E
+persist.log.tag.CoreBackPreview=E
+persist.log.tag.CompatConfig=E
+persist.log.tag.GameManagerService=E
+persist.log.tag.HotseatPredictionController=E
+persist.log.tag.JobScheduler=E
+persist.log.tag.LineageSystemServer=E
+persist.log.tag.MiStcImpl=E
+persist.log.tag.NearbyConnections=E
+persist.log.tag.PackageManager=E
+persist.log.tag.PackageParsing=E
+persist.log.tag.PackageSettings=E
+persist.log.tag.RecyclerView=E
+persist.log.tag.SDM=E
+persist.log.tag.SDM-histogram=E
+persist.log.tag.ShellRecents=E
+persist.log.tag.SRE=E
+persist.log.tag.StorageManagerService=E
+persist.log.tag.SystemConfig=E
+persist.log.tag.SystemServerTiming=E
+persist.log.tag.SystemServerTimingAsync=E
+persist.log.tag.SystemServiceManager=E
+persist.log.tag.Telecom=E
+persist.log.tag.UserManagerService=E
+persist.log.tag.UserSystemPackageInstaller=E
+persist.log.tag.WifiHAL=E
+persist.log.tag.WindowManager=E
+persist.log.tag.WindowManagerShell=E
+persist.log.tag.android.vending=E
+
+# LMKD
+ro.lmk.kill_heaviest_task=true
+ro.lmk.kill_timeout_ms=100
+ro.lmk.stall_limit_critical=40 
+ro.lmk.thrashing_limit=30 
+ro.lmk.thrashing_limit_decay=50
+ro.lmk.upgrade_pressure=40 
+ro.lmk.use_minfree_levels=true
+ro.lmk.critical_upgrade=true 
+ro.lmk.downgrade_pressure=60 
+ro.lmk.filecache_min_kb=153600   
+
+# Enable Just-In-Time (JIT) compilation
+dalvik.vm.usejit=true
+
+# Enable dalvik VM's experimental features
+dalvik.vm.dexopt-flags=m=y
+
+# Enable Background Compilation
+dalvik.vm.bg-dexopt=true
+
+# Minimize GC pauses
+dalvik.vm.dex2oat-Xms64m
+dalvik.vm.dex2oat-Xmx512m
+
+# Disable kernel panic for better stability
+ro.kernel.android.checkjni=0
+ro.kernel.checkjni=0
+
+# Reduce the delay before killing inactive processes
+persist.sys.purgeable_assets=1
+
+# Miscellaneous performance tweaks
+persist.service.lgospd.enable=0
+persist.service.pcsync.enable=0
+persist.service.mount.playsnd=0
+ro.config.nocheckin=1
