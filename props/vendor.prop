@@ -98,6 +98,14 @@ ro.soc.manufacturer=QTI
 
 # Dex2oat
 dalvik.vm.dex2oat64.enabled=true
+pm.dexopt.boot=verify
+pm.dexopt.bg-dexopt=everything
+pm.dexopt.first-boot=quicken
+pm.dexopt.install=speed-profile
+dalvik.vm.image-dex2oat-filter=speed
+dalvik.vm.image-dex2oat-threads=8
+dalvik.vm.dex2oat-filter=speed
+dalvik.vm.dex2oat-threads=8
 
 # Display
 ro.vendor.display.sensortype=2
@@ -172,6 +180,8 @@ ro.surface_flinger.use_color_management=true
 ro.surface_flinger.use_content_detection_for_refresh_rate=true
 ro.surface_flinger.wcg_composition_dataspace=142671872
 vendor.gralloc.disable_ubwc=0
+ro.surface_flinger.set_display_power_timer_ms=1000
+ro.surface_flinger.set_idle_timer_ms=4000
 
 # Keystore
 ro.hardware.keystore_desede=true
@@ -233,3 +243,42 @@ persist.vendor.vcb.enable=false
 
 # WLAN
 wifi.aware.interface=wifi-aware0
+
+# Touch Hax 
+touch.size.scale=1
+touch.size.bias=0
+touch.size.isSummed=0
+touch.pressure.scale=0.001
+touch.distance.calibration=none
+touch.distance.scale=0
+touch.coverage.calibration=box
+touch.gestureMode=spots
+MultitouchSettleInterval=1ms
+MultitouchMinDistance=1px
+TapInterval=1ms
+TapSlop=1px
+
+# Phantom process monitoring
+sys.fflag.override.settings_enable_monitor_phantom_procs=false
+
+# HWUI
+debug.hwui.use_hint_manager=true
+debug.hwui.target_cpu_time_percent=30
+debug.sdm.support_writeback=0
+ro.hwui.render_ahead=10
+
+# Radio
+persist.sys.radio.force_lte_ca=true
+
+# Iorapd
+ro.iorapd.enable=false
+iorapd.perfetto.enable=false
+iorapd.readahead.enable=false
+persist.device_config.runtime_native_boot.iorap_readahead_enable=false
+
+# Skia tracing
+debug.hwui.skia_atrace_enabled=false
+
+# Perf
+debug.performance.tuning=1
+vendor.gralloc.enable_fb_ubwc=1
