@@ -819,3 +819,7 @@ on property:sys.boot_completed=1
 on property:sys.boot_completed=1
     # Disable native stats collection service
     stop statsd
+
+# Start audio adsp rpc daemon at early init stage
+on early-init
+    start vendor.audioadsprpcd_audiopd
