@@ -1,4 +1,4 @@
-# Copyright (c) 2009-2012, 2014-2021, The Linux Foundation. All rights reserved.
+,# Copyright (c) 2009-2012, 2014-2021, The Linux Foundation. All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
 # modification, are permitted provided that the following conditions are met:
@@ -1015,3 +1015,49 @@ service qrtr-lookup /vendor/bin/qrtr-lookup
     disabled
     oneshot
 
+on boot
+    # Disable kernel logging for better performance
+    write /proc/sys/kernel/printk "0 0 0 0"
+
+    # Optimize I/O scheduler
+    write /sys/block/mmcblk0/queue/scheduler "bfq"
+    write /sys/block/mmcblk1/queue/scheduler "bfq"
+
+    # Adjust read-ahead buffer size
+    write /sys/block/mmcblk0/queue/read_ahead_kb 2048
+    write /sys/block/mmcblk1/queue/read_ahead_kb 2048
+
+on init
+    # Boot time stune
+    write /dev/stune/schedtune.prefer_idle 1
+    write /dev/stune/schedtune.boost 100
+    on property:sys.boot_completed=1
+    # Reset stune
+    write /dev/stune/schedtune.prefer_idle 0
+    write /dev/stune/schedtune.boost 0
+
+    # Also disable EAS during boot
+    on init
+    write /sys/kernel/debug/sched_features NO_ENERGY_AWARE
+    on property:sys.boot_completed=1
+    write /sys/kernel/debug/sched_features ENERGY_AWARE
+
+on init
+    # Disable UFS powersaving
+    write /sys/devices/soc/${ro.boot.bootdevice}/clkscale_enable 0
+    write /sys/devices/soc/${ro.boot.bootdevice}/clkgate_enable 0
+    write /sys/devices/soc/${ro.boot.bootdevice}/hibern8_on_idle_enable 0
+    write /sys/module/lpm_levels/parameters/sleep_disabled Y
+on property:sys.boot_completed=1
+    # Enable UFS powersaving
+    write /sys/devices/soc/${ro.boot.bootdevice}/clkscale_enable 1
+    write /sys/devices/soc/${ro.boot.bootdevice}/clkgate_enable 1
+    write /sys/devices/soc/${ro.boot.bootdevice}/hibern8_on_idle_enable 1
+    write /sys/module/lpm_levels/parameters/sleep_disabled N
+on charger
+    # Enable UFS powersaving
+    write /sys/devices/soc/${ro.boot.bootdevice}/clkscale_enable 1
+    write /sys/devices/soc/${ro.boot.bootdevice}/clkgate_enable 1
+    write /sys/devices/soc/${ro.boot.bootdevice}/hibern8_on_idle_enable 1
+    write /sys/class/typec/port0/port_type sink
+    write /sys/module/lpm_levels/parameters/sleep_disabled N
