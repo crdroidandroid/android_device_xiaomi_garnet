@@ -820,6 +820,7 @@ vendor/lib64/hw/vendor.xiaomi.hardware.quickcamera@1.0-impl.so
 vendor/lib64/libAF.so
 vendor/lib64/libHISCppAlgos.so
 vendor/lib64/libMiMotion.so
+vendor/lib64/libMiVideoFilter.so
 vendor/lib64/libPlatformValidatorShared.so
 vendor/lib64/libSNPE.so
 vendor/lib64/libSnpeDspV65Stub.so;FIX_SONAME
@@ -881,6 +882,7 @@ vendor/lib64/libcom.xiaomi.mawutils.so
 vendor/lib64/libcom.xiaomi.metadatautils.so
 vendor/lib64/libcom.xiaomi.pluginutils.so
 vendor/lib64/libdeflicker.so
+vendor/lib64/libdlrmsc.so
 vendor/lib64/libhdr10plus.so
 vendor/lib64/libhme.so
 vendor/lib64/libhta_hexagon_runtime_snpe.so
