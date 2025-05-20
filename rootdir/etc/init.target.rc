@@ -653,6 +653,162 @@ on property:sys.volume.stream.music.device.bluetooth=*
 on property:sys.volume.stream.bluetoothsco=*
     setprop vendor.volume.stream.bluetoothsco ${sys.volume.stream.bluetoothsco}
 
-on property:sys.boot_completed=1
+on early-init
     # Enable suspend to RAM
     write /sys/power/mem_sleep "deep"
+    # Disable multiple kswapd threads
+    write /proc/sys/vm/kswapd_threads 1
+    # Set CPU Boost Duration
+    write /sys/devices/system/cpu/cpu_boost/input_boost_ms 200
+    write /proc/sys/walt/input_boost/input_boost_ms 200
+    write /proc/sys/walt/input_boost/powerkey_input_boost_ms 500
+    # Disable vblank IRQ immediately after turning off
+    write /sys/module/drm/parameters/vblankoffdelay -1
+    # Configure uclamp
+    write /dev/cpuctl/top-app/cpu.uclamp.latency_sensitive 1
+    # Import userdata tuning from oriole
+    write /dev/sys/fs/by-name/userdata/data_io_flag 56
+    write /dev/sys/fs/by-name/userdata/node_io_flag 56
+    write /dev/sys/fs/by-name/userdata/data_io_flag 8
+    write /dev/sys/fs/by-name/userdata/node_io_flag 8
+    # configure governor settings for silver cluster
+    write /sys/devices/system/cpu/cpufreq/policy0/walt/up_rate_limit_us 500
+    write /sys/devices/system/cpu/cpufreq/policy0/walt/down_rate_limit_us 20000
+    # configure governor settings for gold cluster
+    write /sys/devices/system/cpu/cpufreq/policy4/walt/up_rate_limit_us 500
+    write /sys/devices/system/cpu/cpufreq/policy4/walt/down_rate_limit_us 10000
+
+on post-fs-data
+    # Disable zram readahead
+    write /proc/sys/vm/page-cluster 0
+
+    # Override readahead to 2MiB during boot
+    write /sys/block/dm-0/queue/read_ahead_kb 2048
+    write /sys/block/dm-1/queue/read_ahead_kb 2048
+    write /sys/block/dm-2/queue/read_ahead_kb 2048
+    write /sys/block/dm-3/queue/read_ahead_kb 2048
+    write /sys/block/dm-4/queue/read_ahead_kb 2048
+    write /sys/block/dm-5/queue/read_ahead_kb 2048
+    write /sys/block/dm-6/queue/read_ahead_kb 2048
+    write /sys/block/dm-7/queue/read_ahead_kb 2048
+    write /sys/block/dm-8/queue/read_ahead_kb 2048
+    write /sys/block/dm-9/queue/read_ahead_kb 2048
+    write /sys/block/mmcblk0/queue/read_ahead_kb 2048
+    write /sys/block/sda/queue/read_ahead_kb 2048
+    write /sys/block/sdb/queue/read_ahead_kb 2048
+    write /sys/block/sdc/queue/read_ahead_kb 2048
+    write /sys/block/sdd/queue/read_ahead_kb 2048
+    write /sys/block/sde/queue/read_ahead_kb 2048
+    write /sys/block/sdf/queue/read_ahead_kb 2048
+
+on boot
+    chown system system /dev/cpuset/cgroup.procs
+    chown system system /dev/cpuset/foreground/cgroup.procs
+    chown system system /dev/cpuset/background/cgroup.procs
+    chown system system /dev/cpuset/system-background/cgroup.procs
+    chown system system /dev/cpuset/top-app/cgroup.procs
+
+    chmod 0666 /dev/cpuset/foreground/cgroup.procs
+    chmod 0666 /dev/cpuset/background/cgroup.procs
+    chmod 0666 /dev/cpuset/system-background/cgroup.procs
+    chmod 0666 /dev/cpuset/top-app/cgroup.procs
+    chmod 0666 /dev/cpuset/cgroup.procs
+
+    chown system system /dev/stune/background/cgroup.procs
+    chown system system /dev/stune/top-app/cgroup.procs
+    chmod 0666 /dev/stune/background/cgroup.procs
+    chmod 0666 /dev/stune/top-app/cgroup.procs
+
+on property:vendor.post_boot.parsed=1
+    # Set background cpuset
+    write /dev/cpuset/background/cpus 0-1
+
+    # Set audio-app cpuset
+    write /dev/cpuset/audio-app/cpus 1-2
+
+    # Set restricted cpuset to the same CPUs as system-background
+    copy /dev/cpuset/system-background/cpus /dev/cpuset/restricted/cpus
+
+    # Reset readahead to 128KiB
+    write /sys/block/dm-0/queue/read_ahead_kb 128
+    write /sys/block/dm-1/queue/read_ahead_kb 128
+    write /sys/block/dm-2/queue/read_ahead_kb 128
+    write /sys/block/dm-3/queue/read_ahead_kb 128
+    write /sys/block/dm-4/queue/read_ahead_kb 128
+    write /sys/block/dm-5/queue/read_ahead_kb 128
+    write /sys/block/dm-6/queue/read_ahead_kb 128
+    write /sys/block/dm-7/queue/read_ahead_kb 128
+    write /sys/block/dm-8/queue/read_ahead_kb 128
+    write /sys/block/dm-9/queue/read_ahead_kb 128
+    write /sys/block/dm-10/queue/read_ahead_kb 128
+    write /sys/block/dm-11/queue/read_ahead_kb 128
+    write /sys/block/dm-12/queue/read_ahead_kb 128
+    write /sys/block/dm-13/queue/read_ahead_kb 128
+    write /sys/block/dm-14/queue/read_ahead_kb 128
+    write /sys/block/dm-15/queue/read_ahead_kb 128
+    write /sys/block/dm-16/queue/read_ahead_kb 128
+    write /sys/block/dm-17/queue/read_ahead_kb 128
+    write /sys/block/dm-18/queue/read_ahead_kb 128
+    write /sys/block/dm-19/queue/read_ahead_kb 128
+    write /sys/block/dm-20/queue/read_ahead_kb 128
+    write /sys/block/dm-21/queue/read_ahead_kb 128
+    write /sys/block/dm-22/queue/read_ahead_kb 128
+    write /sys/block/dm-23/queue/read_ahead_kb 128
+    write /sys/block/dm-24/queue/read_ahead_kb 128
+    write /sys/block/dm-25/queue/read_ahead_kb 128
+    write /sys/block/dm-26/queue/read_ahead_kb 128
+    write /sys/block/dm-27/queue/read_ahead_kb 128
+    write /sys/block/dm-28/queue/read_ahead_kb 128
+    write /sys/block/dm-29/queue/read_ahead_kb 128
+    write /sys/block/dm-30/queue/read_ahead_kb 128
+    write /sys/block/dm-31/queue/read_ahead_kb 128
+    write /sys/block/dm-32/queue/read_ahead_kb 128
+    write /sys/block/dm-33/queue/read_ahead_kb 128
+    write /sys/block/dm-34/queue/read_ahead_kb 128
+    write /sys/block/dm-35/queue/read_ahead_kb 128
+    write /sys/block/dm-36/queue/read_ahead_kb 128
+    write /sys/block/dm-37/queue/read_ahead_kb 128
+    write /sys/block/dm-38/queue/read_ahead_kb 128
+    write /sys/block/dm-39/queue/read_ahead_kb 128
+    write /sys/block/dm-40/queue/read_ahead_kb 128
+    write /sys/block/dm-41/queue/read_ahead_kb 128
+    write /sys/block/dm-42/queue/read_ahead_kb 128
+    write /sys/block/dm-43/queue/read_ahead_kb 128
+    write /sys/block/dm-44/queue/read_ahead_kb 128
+    write /sys/block/dm-45/queue/read_ahead_kb 128
+    write /sys/block/dm-46/queue/read_ahead_kb 128
+    write /sys/block/dm-47/queue/read_ahead_kb 128
+    write /sys/block/dm-48/queue/read_ahead_kb 128
+    write /sys/block/dm-49/queue/read_ahead_kb 128
+    write /sys/block/mmcblk0/queue/read_ahead_kb 128
+    write /sys/block/sda/queue/read_ahead_kb 128
+    write /sys/block/sdb/queue/read_ahead_kb 128
+    write /sys/block/sdc/queue/read_ahead_kb 128
+    write /sys/block/sdd/queue/read_ahead_kb 128
+    write /sys/block/sde/queue/read_ahead_kb 128
+    write /sys/block/sdf/queue/read_ahead_kb 128
+
+on init
+    write /dev/stune/foreground/schedtune.sched_boost_no_override 1
+    write /dev/stune/top-app/schedtune.sched_boost_no_override 1
+    write /dev/stune/schedtune.colocate 0
+    write /dev/stune/background/schedtune.colocate 0
+    write /dev/stune/system-background/schedtune.colocate 0
+    write /dev/stune/foreground/schedtune.colocate 0
+    write /dev/stune/top-app/schedtune.colocate 1
+
+    # Boot time stune
+    write /dev/stune/foreground/schedtune.prefer_high_cap 1
+    write /dev/stune/foreground/schedtune.boost 100
+
+    write /dev/stune/schedtune.prefer_idle 1
+    write /dev/stune/schedtune.prefer_high_cap 1
+    write /dev/stune/schedtune.boost 100
+
+    write /dev/stune/top-app/schedtune.prefer_high_cap 1
+    write /dev/stune/top-app/schedtune.boost 100
+
+    # Boot time fs tuning
+    write /sys/block/sda/queue/scheduler cfq
+    write /sys/block/sda/queue/iosched/slice_idle 0
+    write /sys/block/sda/queue/nr_requests 256
