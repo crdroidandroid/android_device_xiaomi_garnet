@@ -282,3 +282,13 @@ debug.hwui.skia_atrace_enabled=false
 # Perf
 debug.performance.tuning=1
 vendor.gralloc.enable_fb_ubwc=1
+
+# Battery Backup
+ro.config.hw_power_extreme_saving=1
+ro.config.hw_power_saving=1
+ro.ril.power_collapse=1
+ro.ril.disable.power.collapse=0
+pm.sleep_mode=1
+
+# Sensors
+persist.vendor.sensors.debug.hal=0
