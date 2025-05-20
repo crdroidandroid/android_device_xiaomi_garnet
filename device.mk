@@ -171,6 +171,11 @@ PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := everything
 PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
 USE_DEX2OAT_DEBUG := false
 
+# Preopt critical applications
+PRODUCT_DEXPREOPT_SPEED_APPS += \
+    SettingsGoogle \
+    SystemUIGoogle
+
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@4.0-impl-qti-display \
