@@ -936,7 +936,7 @@
     <bool name="config_enableShellMainThread">true</bool>
 
     <!-- Pocket Lock -->
-    <bool name="config_pocketModeSupported">false</bool>
+    <bool name="config_pocketModeSupported">true</bool>
 
     <!-- Flag indicating whether the surface flinger is inefficient
          at performing a blur.  Used by parts of the UI to turn off
