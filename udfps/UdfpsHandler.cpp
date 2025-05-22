@@ -1,12 +1,11 @@
 /*
- * Copyright (C) 2024 The LineageOS Project
+ * Copyright (C) 2022-2025 The LineageOS Project
  *
  * SPDX-License-Identifier: Apache-2.0
  */
 
 #define LOG_TAG "UdfpsHandler.garnet"
 
-#include <aidl/android/hardware/biometrics/fingerprint/BnFingerprint.h>
 #include <android-base/logging.h>
 #include <android-base/properties.h>
 #include <android-base/unique_fd.h>
@@ -31,8 +30,6 @@
 #define PARAM_FOD_RELEASED 0
 
 #define DISP_FEATURE_PATH "/dev/mi_display/disp_feature"
-
-using ::aidl::android::hardware::biometrics::fingerprint::AcquiredInfo;
 
 namespace {
 
@@ -146,16 +143,9 @@ class XiaomiGarnetUdfpsHander : public UdfpsHandler {
         ioctl(disp_fd_.get(), MI_DISP_IOCTL_SET_LOCAL_HBM, &req);
     }
 
-    void onAcquired(int32_t result, int32_t vendorCode) {
-        LOG(DEBUG) << __func__ << " result: " << result << " vendorCode: " << vendorCode;
-        if (static_cast<AcquiredInfo>(result) == AcquiredInfo::GOOD) {
-            onFingerUp();
-        }
-    }
+    void onAuthenticationSucceeded() { onFingerUp(); }
 
-    void cancel() {
-        LOG(DEBUG) << __func__;
-    }
+    void onAuthenticationFailed() { onFingerUp(); }
 
     void preEnroll() {
         LOG(DEBUG) << __func__;
