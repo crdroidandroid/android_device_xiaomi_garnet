@@ -1413,7 +1413,6 @@ vendor/firmware/a710_zap.mdt
 vendor/firmware/gmu_gen70000.bin
 
 # Graphics (Vulkan)
-vendor/lib/hw/vulkan.adreno.so
 vendor/lib64/hw/vulkan.adreno.so
  
 # Hotword enrollment
