@@ -1787,10 +1787,6 @@ vendor/etc/init/qmipriod.debug.rc
 vendor/etc/init/qmipriod.rc
 vendor/etc/sec_config
 vendor/etc/seccomp_policy/qti-systemd.policy
-vendor/lib/libdiag.so
-vendor/lib/libqmi_cci.so
-vendor/lib/libqmi_common_so.so
-vendor/lib/libqmi_encdec.so
 vendor/lib64/libdiag.so
 vendor/lib64/libdsi_netctrl.so
 vendor/lib64/libdsutils.so
