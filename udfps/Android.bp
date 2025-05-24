@@ -11,6 +11,9 @@ cc_library {
     shared_libs: [
         "libbase",
     ],
+    static_libs: [
+        "android.hardware.biometrics.fingerprint-V4-ndk",
+    ],
     header_libs: [
         "generated_kernel_headers",
         "//hardware/xiaomi:xiaomifingerprint_headers",

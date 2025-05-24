@@ -6,6 +6,7 @@
 
 #define LOG_TAG "UdfpsHandler.garnet"
 
+#include <aidl/android/hardware/biometrics/fingerprint/BnFingerprint.h>
 #include <android-base/logging.h>
 #include <android-base/properties.h>
 #include <android-base/unique_fd.h>
@@ -30,6 +31,8 @@
 #define PARAM_FOD_RELEASED 0
 
 #define DISP_FEATURE_PATH "/dev/mi_display/disp_feature"
+
+using ::aidl::android::hardware::biometrics::fingerprint::AcquiredInfo;
 
 namespace {
 
@@ -141,6 +144,26 @@ class XiaomiGarnetUdfpsHander : public UdfpsHandler {
         req.base.disp_id = MI_DISP_PRIMARY;
         req.local_hbm_value = LHBM_TARGET_BRIGHTNESS_OFF_FINGER_UP;
         ioctl(disp_fd_.get(), MI_DISP_IOCTL_SET_LOCAL_HBM, &req);
+    }
+
+    void onAcquired(int32_t result, int32_t vendorCode) {
+        LOG(DEBUG) << __func__ << " result: " << result << " vendorCode: " << vendorCode;
+        switch (static_cast<AcquiredInfo>(result)) {
+            case AcquiredInfo::GOOD:
+            case AcquiredInfo::PARTIAL:
+            case AcquiredInfo::INSUFFICIENT:
+            case AcquiredInfo::SENSOR_DIRTY:
+            case AcquiredInfo::TOO_SLOW:
+            case AcquiredInfo::TOO_FAST:
+            case AcquiredInfo::TOO_DARK:
+            case AcquiredInfo::TOO_BRIGHT:
+            case AcquiredInfo::IMMOBILE:
+            case AcquiredInfo::LIFT_TOO_SOON:
+                onFingerUp();
+                break;
+            default:
+                break;
+        }
     }
 
     void onAuthenticationSucceeded() { onFingerUp(); }
