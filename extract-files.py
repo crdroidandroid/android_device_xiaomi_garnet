@@ -47,6 +47,7 @@ lib_fixups: lib_fixups_user_type = {
     (
         'libagmclient',
         'libwifi-hal-ctrl',
+        'libar-pal',
         'libpalclient',
         'vendor.qti.hardware.pal@1.0-impl',
     ): lib_fixup_remove,

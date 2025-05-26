@@ -83,9 +83,21 @@ vendor/firmware/aw882xx_acf.bin
 vendor/firmware/fs19xx.fsm
 
 # Audio graph manager
-vendor/lib64/libagm.so
+vendor/bin/agmcap;MAKE_COPY_RULE_ONLY
+vendor/bin/agmcompressplay;MAKE_COPY_RULE_ONLY
+vendor/bin/agmplay;MAKE_COPY_RULE_ONLY
+vendor/bin/hw/vendor.qti.hardware.AGMIPC@1.0-service;MAKE_COPY_RULE_ONLY
+vendor/etc/init/vendor.qti.hardware.AGMIPC@1.0-service.rc
+vendor/lib64/libagm.so;MAKE_COPY_RULE_ONLY
+vendor/lib64/libagm_compress_plugin.so;MAKE_COPY_RULE_ONLY
+vendor/lib64/libagm_mixer_plugin.so;MAKE_COPY_RULE_ONLY
+vendor/lib64/libagm_pcm_plugin.so;MAKE_COPY_RULE_ONLY
+vendor/lib64/libagmclient.so;MAKE_COPY_RULE_ONLY
+vendor/lib64/libagmmixer.so;MAKE_COPY_RULE_ONLY
 vendor/lib64/libmisight.so
-vendor/lib64/vendor.qti.hardware.AGMIPC@1.0-impl.so
+vendor/lib64/libsndcardparser.so;MAKE_COPY_RULE_ONLY
+vendor/lib64/vendor.qti.hardware.AGMIPC@1.0-impl.so;MAKE_COPY_RULE_ONLY
+vendor/lib64/vendor.qti.hardware.AGMIPC@1.0.so;MAKE_COPY_RULE_ONLY
 
 # Audio libraries
 vendor/etc/audio_cloud_control_white_list.xml
@@ -93,31 +105,34 @@ vendor/etc/audio_diag.cfg
 vendor/etc/models/acd/event.eai
 vendor/etc/models/acd/music.eai
 vendor/etc/models/acd/speech.eai
-vendor/lib64/hw/audio.primary.parrot.so
-vendor/lib64/hw/gyro_fusion_interface.so
-vendor/lib64/lib_misound_asc.so
-vendor/lib64/libadm.so
+vendor/lib64/hw/audio.primary.parrot.so;MAKE_COPY_RULE_ONLY
+vendor/lib64/hw/gyro_fusion_interface.so;MAKE_COPY_RULE_ONLY
+vendor/lib64/lib_misound_asc.so;MAKE_COPY_RULE_ONLY
+vendor/lib64/libadm.so;MAKE_COPY_RULE_ONLY
 vendor/lib64/libadsprpc.so
-vendor/lib64/libar-acdb.so
-vendor/lib64/libar-gpr.so
-vendor/lib64/libar-gsl.so
-vendor/lib64/libar-pal.so
-vendor/lib64/libats.so
-vendor/lib64/libaudio_log_utils.so
-vendor/lib64/libaudiocloudctrl.so
-vendor/lib64/libaudioroute_ext.so
-vendor/lib64/libawcal.so
-vendor/lib64/libcapiv2svacnnvendor.so
-vendor/lib64/libcapiv2svarnnvendor.so
-vendor/lib64/libcapiv2uvvendor.so
-vendor/lib64/libfsalgocal.so
-vendor/lib64/libkaraokepal.so
-vendor/lib64/liblx-ar_util.so
-vendor/lib64/liblx-osal.so
-vendor/lib64/libmcs.so
-vendor/lib64/libqtigefar.so
-vendor/lib64/libresampler.so
+vendor/lib64/libar-acdb.so;MAKE_COPY_RULE_ONLY
+vendor/lib64/libar-gpr.so;MAKE_COPY_RULE_ONLY
+vendor/lib64/libar-gsl.so;MAKE_COPY_RULE_ONLY
+vendor/lib64/libar-pal.so;MAKE_COPY_RULE_ONLY
+vendor/lib64/libats.so;MAKE_COPY_RULE_ONLY
+vendor/lib64/libaudio_log_utils.so;MAKE_COPY_RULE_ONLY
+vendor/lib64/libaudiocloudctrl.so;MAKE_COPY_RULE_ONLY
+vendor/lib64/libaudioroute_ext.so;MAKE_COPY_RULE_ONLY
+vendor/lib64/libawcal.so;MAKE_COPY_RULE_ONLY
+vendor/lib64/libcapiv2svacnnvendor.so;MAKE_COPY_RULE_ONLY
+vendor/lib64/libcapiv2svarnnvendor.so;MAKE_COPY_RULE_ONLY
+vendor/lib64/libcapiv2uvvendor.so;MAKE_COPY_RULE_ONLY
+vendor/lib64/libfsalgocal.so;MAKE_COPY_RULE_ONLY
+vendor/lib64/libkaraokepal.so;MAKE_COPY_RULE_ONLY
+vendor/lib64/liblx-ar_util.so;MAKE_COPY_RULE_ONLY
+vendor/lib64/liblx-osal.so;MAKE_COPY_RULE_ONLY
+vendor/lib64/libmcs.so;MAKE_COPY_RULE_ONLY
+vendor/lib64/libpalclient.so;DISABLE_CHECKELF;MAKE_COPY_RULE_ONLY
+vendor/lib64/libqtigefar.so;MAKE_COPY_RULE_ONLY
+vendor/lib64/libresampler.so;MAKE_COPY_RULE_ONLY
 vendor/lib64/libxlog.so
+vendor/lib64/vendor.qti.hardware.pal@1.0-impl.so;MAKE_COPY_RULE_ONLY
+vendor/lib64/vendor.qti.hardware.pal@1.0.so;MAKE_COPY_RULE_ONLY
 
 # Audio soundfx
 vendor/lib64/soundfx/libasphere.so
@@ -140,9 +155,9 @@ vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.1-impl.so
 vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so
 vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so
 vendor/lib64/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so
-vendor/lib64/lib_bt_aptx.so
-vendor/lib64/lib_bt_ble.so
-vendor/lib64/lib_bt_bundle.so
+vendor/lib64/lib_bt_aptx.so;MAKE_COPY_RULE_ONLY
+vendor/lib64/lib_bt_ble.so;MAKE_COPY_RULE_ONLY
+vendor/lib64/lib_bt_bundle.so;MAKE_COPY_RULE_ONLY
 vendor/lib64/libbluetooth_audio_session_qti.so
 vendor/lib64/libbluetooth_audio_session_qti_2_1.so
 vendor/lib64/libbt-hidlclient.so
@@ -1475,7 +1490,9 @@ vendor/lib64/vendor.qti.hardware.limits@1.0.so
 vendor/lib64/vendor.qti.hardware.limits@1.1.so
 
 # Listen
-vendor/lib64/hw/sound_trigger.primary.parrot.so
+vendor/etc/vintf/manifest/manifest_non_qmaa.xml
+vendor/etc/vintf/manifest/manifest_non_qmaa_extn.xml
+vendor/lib64/hw/sound_trigger.primary.parrot.so;DISABLE_CHECKELF
 vendor/lib64/libeai_fixed.so
 vendor/lib64/libeai_float.so
 vendor/lib64/liblistensoundmodel2vendor.so
@@ -1502,7 +1519,7 @@ vendor/lib64/libqc2audio_base.so
 vendor/lib64/libqc2audio_basecodec.so
 vendor/lib64/libqc2audio_core.so
 vendor/lib64/libqc2audio_hooks.so
-vendor/lib64/libqc2audio_hwaudiocodec.so
+vendor/lib64/libqc2audio_hwaudiocodec.so;DISABLE_CHECKELF
 vendor/lib64/libqc2audio_platform.so
 vendor/lib64/libqc2audio_swaudiocodec.so
 vendor/lib64/libqc2audio_utils.so
