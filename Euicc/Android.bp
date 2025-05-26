@@ -10,10 +10,10 @@ android_app {
     srcs: ["src/**/*.kt"],
     resource_dirs: ["res"],
 
-    sdk_version: "current",
-    product_specific: true,
     certificate: "platform",
+    platform_apis: true,
     privileged: true,
+    system_ext_specific: true,
 
     optimize: {
         proguard_flags_files: ["proguard.flags"],
@@ -29,7 +29,7 @@ prebuilt_etc {
     name: "org.lineageos.euicc.xml",
     filename: "org.lineageos.euicc.xml",
     src: "org.lineageos.euicc.xml",
-    product_specific: true,
+    system_ext_specific: true,
 }
 
 prebuilt_etc {
@@ -37,5 +37,5 @@ prebuilt_etc {
     name: "hidden-api-whitelist-org.lineageos.euicc.xml",
     filename: "hidden-api-whitelist-org.lineageos.euicc.xml",
     src: "hidden-api-whitelist-org.lineageos.euicc.xml",
-    product_specific: true,
+    system_ext_specific: true,
 }
