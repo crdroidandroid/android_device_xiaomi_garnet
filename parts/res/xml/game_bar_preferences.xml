@@ -50,6 +50,18 @@
             android:defaultValue="false" />
 
         <SwitchPreferenceCompat
+            android:key="game_bar_ram_speed_enable"
+            android:title="RAM Frequency"
+            android:summary="Show current RAM frequency(bus) in GHz"
+            android:defaultValue="false" />
+
+        <SwitchPreferenceCompat
+            android:key="game_bar_ram_temp_enable"
+            android:title="RAM Temperature"
+            android:summary="Show current RAM temperature"
+            android:defaultValue="false" />
+
+        <SwitchPreferenceCompat
             android:key="game_bar_gpu_usage_enable"
             android:title="GPU Usage"
             android:summary="Show GPU usage percentage"
