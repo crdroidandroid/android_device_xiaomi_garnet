@@ -62,4 +62,42 @@ public class GameBarMemInfo {
             return 0;
         }
     }
+
+    public static String getRamSpeed() {
+        String path = "/sys/devices/system/cpu/bus_dcvs/DDR/cur_freq";
+        try (BufferedReader br = new BufferedReader(new FileReader(path))) {
+            String line = br.readLine();
+            if (line != null && !line.isEmpty()) {
+                try {
+                    int khz = Integer.parseInt(line.trim());
+                    float mhz = khz / 1000f;
+                    if (mhz >= 1000) {
+                        return String.format("%.3f GHz", mhz / 1000f);
+                    } else {
+                        return String.format("%.0f MHz", mhz);
+                    }
+                } catch (NumberFormatException ignored) {}
+            }
+        } catch (IOException e) {
+            // ignore
+        }
+        return "N/A";
+    }
+
+    public static String getRamTemp() {
+        String path = "/sys/class/thermal/thermal_zone27/temp";
+        try (BufferedReader br = new BufferedReader(new FileReader(path))) {
+            String line = br.readLine();
+            if (line != null && !line.isEmpty()) {
+                try {
+                    int raw = Integer.parseInt(line.trim());
+                    float c = raw / 1000f;
+                    return String.format("%.1f°C", c);
+                } catch (NumberFormatException ignored) {}
+            }
+        } catch (IOException e) {
+            // ignore
+        }
+        return "N/A";
+    }
 }
