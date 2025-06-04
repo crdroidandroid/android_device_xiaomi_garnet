@@ -60,7 +60,7 @@ public class GameBarMonitorService extends Service {
         }
         
         String foreground = ForegroundAppDetector.getForegroundPackageName(this);
-        Set<String> autoApps = prefs.getStringSet(GameBarAppSelectorFragment.PREF_AUTO_APPS, new HashSet<>());
+        Set<String> autoApps = prefs.getStringSet(org.lineageos.settings.gamebar.GameBarPerAppConfigFragment.PREF_AUTO_APPS, new HashSet<>());
         if (autoApps.contains(foreground)) {
             GameBar.getInstance(this).applyPreferences();
             GameBar.getInstance(this).show();

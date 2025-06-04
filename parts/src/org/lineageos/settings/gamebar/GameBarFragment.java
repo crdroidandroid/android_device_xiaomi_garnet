@@ -113,19 +113,10 @@ public class GameBarFragment extends PreferenceFragmentCompat {
         mSplitModePref      = findPreference("game_bar_split_mode");
         mOverlayFormatPref  = findPreference("game_bar_format");
 
-        Preference appSelectorPref = findPreference("game_bar_app_selector");
-        if (appSelectorPref != null) {
-            appSelectorPref.setOnPreferenceClickListener(pref -> {
-                Intent intent = new Intent(getContext(), GameBarAppSelectorActivity.class);
-                startActivity(intent);
-                return true;
-            });
-        }
-        Preference appRemoverPref = findPreference("game_bar_app_remover");
-        if (appRemoverPref != null) {
-            appRemoverPref.setOnPreferenceClickListener(pref -> {
-                Intent intent = new Intent(getContext(), GameBarAppRemoverActivity.class);
-                startActivity(intent);
+        Preference perAppConfigPref = findPreference("game_bar_per_app_config");
+        if (perAppConfigPref != null) {
+            perAppConfigPref.setOnPreferenceClickListener(pref -> {
+                startActivity(new android.content.Intent(getContext(), GameBarPerAppConfigActivity.class));
                 return true;
             });
         }
