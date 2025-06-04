@@ -270,10 +270,6 @@
                 android:resource="@drawable/ic_gamebar" />
         </activity>
 
-        <!-- GameBar AppSelector -->
-        <activity android:name=".gamebar.GameBarAppSelectorActivity" />
-        <activity android:name=".gamebar.GameBarAppRemoverActivity" />
-
         <!-- GameBar Overlay Tile Service -->
         <service
             android:name=".gamebar.GameBarTileService"
@@ -293,6 +289,11 @@
         <service
             android:name=".gamebar.GameBarMonitorService"
             android:exported="false" />
+
+        <activity
+            android:name=".gamebar.GameBarPerAppConfigActivity"
+            android:exported="false"
+            android:theme="@style/Theme.SubSettingsBase" />    
 
         <!-- GameBar BootReceiver -->
         <receiver
