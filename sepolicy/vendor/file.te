@@ -20,3 +20,6 @@ type thermal_data_file, data_file_type, file_type;
 
 # Wifi
 type vendor_mac_vendor_data_file, data_file_type, file_type, mlstrustedobject;
+
+# Core Control
+type vendor_sysfs_corecontrol, fs_type, sysfs_type;

@@ -41,6 +41,9 @@
 /dev/mi_display/disp_feature u:object_r:vendor_displayfeature_device:s0
 /sys/devices/virtual/mi_display/disp_feature/disp-DSI-+[0-1](/.*)? u:object_r:vendor_sysfs_displayfeature:s0
 
+# Core Control
+/sys/devices/system/cpu/cpu[0-7]/online					       u:object_r:vendor_sysfs_corecontrol:s0
+
 # Fingerprint
 /(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint-service\.xiaomi u:object_r:hal_fingerprint_default_exec:s0
 /data/vendor/fpc(/.*)? u:object_r:vendor_fingerprint_data_file:s0
