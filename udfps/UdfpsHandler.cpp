@@ -60,23 +60,24 @@ static bool readBool(int fd) {
 }
 
 static disp_event_resp* parseDispEvent(int fd) {
-    static char event_data[1024] = {0};
-    ssize_t size;
-
-    memset(event_data, 0x0, sizeof(event_data));
-    size = read(fd, event_data, sizeof(event_data));
-    if (size < 0) {
-        LOG(ERROR) << "read fod event failed";
+    disp_event header;
+    ssize_t headerSize = read(fd, &header, sizeof(header));
+    if (headerSize < sizeof(header)) {
+        LOG(ERROR) << "unexpected display event header size: " << headerSize;
         return nullptr;
     }
 
-    if (size < sizeof(struct disp_event)) {
-        LOG(ERROR) << "Invalid event size " << size << ", expect at least "
-                   << sizeof(struct disp_event);
+    struct disp_event_resp* response =
+            reinterpret_cast<struct disp_event_resp*>(malloc(header.length));
+    response->base = header;
+    int dataLength = response->base.length - sizeof(response->base);
+    ssize_t dataSize = read(fd, &response->data, dataLength);
+    if (dataSize < dataLength) {
+        LOG(ERROR) << "unexpected display event data size: " << dataSize;
         return nullptr;
     }
 
-    return (struct disp_event_resp*)&event_data[0];
+    return response;
 }
 
 }  // anonymous namespace
