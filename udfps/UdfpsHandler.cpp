@@ -8,6 +8,7 @@
 
 #include <aidl/android/hardware/biometrics/fingerprint/BnFingerprint.h>
 #include <android-base/logging.h>
+#include <android-base/properties.h>
 #include <android-base/unique_fd.h>
 
 #include <poll.h>
@@ -95,7 +96,9 @@ class XiaomiGarnetUdfpsHander : public UdfpsHandler {
         touch_fd_ = android::base::unique_fd(open(TOUCH_DEV_PATH, O_RDWR));
         disp_fd_ = android::base::unique_fd(open(DISP_FEATURE_PATH, O_RDWR));
 
-        setFodStatus(FOD_STATUS_ON);
+        std::string fpVendor = android::base::GetProperty("persist.vendor.sys.fp.vendor", "none");
+        LOG(DEBUG) << __func__ << "fingerprint vendor is: " << fpVendor;
+        isFpcFod = fpVendor == "fpc_fod";
 
         // Thread to notify fingeprint hwmodule about fod presses
         std::thread([this]() {
@@ -121,6 +124,14 @@ class XiaomiGarnetUdfpsHander : public UdfpsHandler {
                 bool pressed = readBool(fd);
                 mDevice->extCmd(mDevice, COMMAND_FOD_PRESS_STATUS,
                                 pressed ? PARAM_FOD_PRESSED : PARAM_FOD_RELEASED);
+
+                // Request HBM
+                disp_local_hbm_req req;
+                req.base.flag = 0;
+                req.base.disp_id = MI_DISP_PRIMARY;
+                req.local_hbm_value = pressed ? LHBM_TARGET_BRIGHTNESS_WHITE_1000NIT
+                                              : LHBM_TARGET_BRIGHTNESS_OFF_FINGER_UP;
+                ioctl(disp_fd_.get(), MI_DISP_IOCTL_SET_LOCAL_HBM, &req);
             }
         }).detach();
 
@@ -176,6 +187,15 @@ class XiaomiGarnetUdfpsHander : public UdfpsHandler {
     void onFingerDown(uint32_t /*x*/, uint32_t /*y*/, float /*minor*/, float /*major*/) {
         LOG(INFO) << __func__;
 
+        /*
+         * On fpc_fod devices, the waiting for finger message is not reliably sent...
+         * The finger down message is only reliably sent when the screen is turned off, so enable
+         * fod_status better late than never.
+         */
+        if (isFpcFod) {
+            setFodStatus(FOD_STATUS_ON);
+        }
+
         // Ensure touchscreen is aware of the press state, ideally this is not needed
         setFingerDown(true);
     }
@@ -189,13 +209,32 @@ class XiaomiGarnetUdfpsHander : public UdfpsHandler {
     void onAcquired(int32_t result, int32_t vendorCode) {
         LOG(INFO) << __func__ << " result: " << result << " vendorCode: " << vendorCode;
         if (static_cast<AcquiredInfo>(result) == AcquiredInfo::GOOD) {
-            setFingerDown(false);
+            // Request to disable HBM already, even if the finger is still pressed
+            disp_local_hbm_req req;
+            req.base.flag = 0;
+            req.base.disp_id = MI_DISP_PRIMARY;
+            req.local_hbm_value = LHBM_TARGET_BRIGHTNESS_OFF_FINGER_UP;
+            ioctl(disp_fd_.get(), MI_DISP_IOCTL_SET_LOCAL_HBM, &req);
+        }
+
+        /* vendorCode for goodix_fod devices:
+         * 21: waiting for finger
+         * 22: finger down
+         * 23: finger up
+         * On fpc_fod devices, the waiting for finger message is not reliably sent...
+         * The finger down message is only reliably sent when the screen is turned off, so enable
+         * fod_status better late than never.
+         */
+        if (!isFpcFod && vendorCode == 21) {
+            setFodStatus(FOD_STATUS_ON);
+        } else if (isFpcFod && vendorCode == 22) {
+            setFodStatus(FOD_STATUS_ON);
         }
     }
 
     void cancel() {
         LOG(INFO) << __func__;
-        setFingerDown(false);
+        setFodStatus(FOD_STATUS_OFF);
     }
 
     void preEnroll() {
@@ -214,6 +253,7 @@ class XiaomiGarnetUdfpsHander : public UdfpsHandler {
     fingerprint_device_t* mDevice;
     android::base::unique_fd touch_fd_;
     android::base::unique_fd disp_fd_;
+    bool isFpcFod;
 
     void setFodStatus(int value) {
         int buf[MAX_BUF_SIZE] = {MI_DISP_PRIMARY, Touch_Fod_Enable, value};
@@ -221,11 +261,6 @@ class XiaomiGarnetUdfpsHander : public UdfpsHandler {
     }
 
     void setFingerDown(bool pressed) {
-        disp_local_hbm_req req;
-        req.base.flag = 0;
-        req.base.disp_id = MI_DISP_PRIMARY;
-        req.local_hbm_value = pressed ? LHBM_TARGET_BRIGHTNESS_WHITE_1000NIT : LHBM_TARGET_BRIGHTNESS_OFF_FINGER_UP;
-        ioctl(disp_fd_.get(), MI_DISP_IOCTL_SET_LOCAL_HBM, &req);
         int buf[MAX_BUF_SIZE] = {MI_DISP_PRIMARY, THP_FOD_DOWNUP_CTL, pressed ? 1 : 0};
         ioctl(touch_fd_.get(), TOUCH_IOC_SET_CUR_VALUE, &buf);
     }
