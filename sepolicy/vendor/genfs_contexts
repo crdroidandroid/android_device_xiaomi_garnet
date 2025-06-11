@@ -7,6 +7,8 @@ genfscon sysfs /devices/platform/soc/soc:spf_core_platform/soc:spf_core_platform
 # Fingerprint
 genfscon sysfs /devices/platform/soc/soc:fingerprint_fpc u:object_r:vendor_sysfs_fingerprint:s0
 genfscon sysfs /devices/virtual/touch/touch_dev/fod_press_status u:object_r:sysfs_tp_fodstatus:s0
+genfscon sysfs /devices/virtual/touch/touch_dev/fod_longpress_gesture_enabled u:object_r:vendor_sysfs_sensors:s0
+
 
 # Wakeup
 genfscon sysfs /devices/platform/goodix_ts.0/wakeup u:object_r:sysfs_wakeup:s0
