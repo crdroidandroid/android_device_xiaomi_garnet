@@ -262,52 +262,6 @@ on property:vendor.display.lcd_density=560
 on property:vendor.display.lcd_density=640
    setprop dalvik.vm.heapgrowthlimit 512m
 
-
-on property:ro.product.name=garnet_eea
-   setprop ro.vendor.miui.support_esim true
-
-on property:ro.product.name=garnet_global && property:ro.product.mod_device=garnet_global
-   setprop ro.vendor.miui.support_esim true
-
-on property:ro.product.name=garnet_ru
-   setprop ro.vendor.miui.support_esim true
-
-on property:ro.product.name=garnet_tr
-   setprop ro.vendor.miui.support_esim true
-
-on property:ro.product.name=garnet_id
-   setprop ro.vendor.miui.support_esim true
-
-on property:ro.product.name=garnet_global && property:ro.product.mod_device=garnet_tw_global
-   setprop ro.vendor.miui.support_esim true
-
-on property:ro.product.mod_device=garnet_jp_kd_global
-   setprop ro.vendor.miui.support_esim true
-   setprop ro.vendor.miui.esim_mode 1
-
-on property:ro.product.name=garnet_global && property:ro.product.mod_device=garnet_lm_cr_global
-   setprop ro.vendor.miui.support_esim true
-
-on property:ro.product.name=garnet_global && property:ro.product.mod_device=garnet_dc_global
-   setprop ro.vendor.miui.support_esim true
-
-# pre-branch
-on property:ro.product.name=garnet_global && property:ro.product.mod_device=garnet_pre_global
-   setprop ro.vendor.miui.support_esim true
-
-on property:ro.product.mod_device=garnet_pre_jp_kd_global
-   setprop ro.vendor.miui.support_esim true
-   setprop ro.vendor.miui.esim_mode 1
-
-on property:ro.product.name=garnet_global && property:ro.product.mod_device=garnet_pre_lm_cr_global
-   setprop ro.vendor.miui.support_esim true
-
-on property:ro.product.name=garnet_global && property:ro.product.mod_device=garnet_pre_tw_global
-   setprop ro.vendor.miui.support_esim true
-
-on property:ro.product.name=garnet_global && property:ro.product.mod_device=garnet_pre_dc_global
-   setprop ro.vendor.miui.support_esim true
-
 on init && property:ro.boot.mode=charger
     wait_for_prop vendor.all.modules.ready 1
     mount_all /vendor/etc/charger_fw_fstab.qti --early
