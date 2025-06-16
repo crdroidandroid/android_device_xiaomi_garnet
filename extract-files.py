@@ -84,6 +84,8 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/lib64/libcamxcommonutils.so',
     'vendor/lib64/libmialgoengine.so',
     ): blob_fixup().add_needed('libprocessgroup_shim.so'),
+    ('vendor/lib64/libagm.so', 'vendor/lib64/libar-pal.so', 'vendor/lib64/libaudioroute_ext.so', 'vendor/lib64/libkaraokepal.so', 'vendor/lib64/libmcs.so'): blob_fixup()
+        .replace_needed('libaudioroute.so', 'libaudioroute-v34.so'),
     'vendor/etc/seccomp_policy/c2audio.vendor.ext-arm64.policy': blob_fixup()
         .add_line_if_missing('setsockopt: 1'),
     'vendor/etc/media_codecs_parrot_v0.xml': blob_fixup()
