@@ -1,0 +1,10 @@
+# Bluetooth
+bluetooth.device.default_name=Redmi Note 13 Pro 5G
+
+# Device
+ro.product.odm.brand=Redmi
+ro.product.odm.model=2312DRA50G
+ro.product.odm.name=garnet_global
+
+# USB
+vendor.usb.product_string=Redmi Note 13 Pro 5G

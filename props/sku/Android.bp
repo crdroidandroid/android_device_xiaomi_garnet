@@ -1,0 +1,17 @@
+prebuilt_etc {
+    name: "garnet_sku_properties",
+    srcs: [
+        "CN_garnet_17.0.9_build.prop",
+        "CN_garnet_17.1.9_build.prop",
+        "CN_garnet_17.2.6_build.prop",
+        "CN_garnet_17.2.9_build.prop",
+        "CN_garnet_17.9.9_build.prop",
+        "CN_garnet_build.prop",
+        "GL_garnet_build.prop",
+        "GL_garnetp_build.prop",
+        "IN_garnet_build.prop",
+        "IN_garnetp_build.prop",
+        "JP_XIG05_build.prop",
+    ],
+    device_specific: true,
+}

@@ -1,0 +1,10 @@
+# Bluetooth
+bluetooth.device.default_name=POCO X6 5G
+
+# Device
+ro.product.odm.brand=POCO
+ro.product.odm.model=23122PCD1G
+ro.product.odm.name=garnetp_global
+
+# USB
+vendor.usb.product_string=POCO X6 5G

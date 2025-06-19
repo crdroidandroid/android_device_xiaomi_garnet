@@ -1,6 +1,9 @@
 # CNE
 persist.vendor.cne.feature=1
 
+# Device
+ro.product.mod_device=garnet_global
+
 # QTI
 ro.vendor.qti.va_aosp.support=1
 

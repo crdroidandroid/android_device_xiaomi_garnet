@@ -3,3 +3,7 @@ ro.vendor.soundtrigger.dfs.support=1
 
 # Qcom
 ro.vendor.qti.va_odm.support=1
+
+# SKU properties
+ro.product.property_source_order=odm,product,vendor,system_ext,system
+import /odm/etc/${ro.boot.hwc}_${ro.boot.hardware.sku}_build.prop

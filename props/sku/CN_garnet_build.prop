@@ -1,0 +1,11 @@
+# Bluetooth
+bluetooth.device.default_name=Redmi Note 13 Pro
+
+# Device
+ro.product.odm.brand=Redmi
+ro.product.odm.model=2312DRA50C
+ro.product.odm.name=garnet
+import /odm/etc/CN_garnet_${ro.boot.hwversion}_build.prop
+
+# USB
+vendor.usb.product_string=Redmi Note 13 Pro
