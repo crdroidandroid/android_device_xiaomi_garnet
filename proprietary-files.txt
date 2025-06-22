@@ -1,11 +1,5 @@
 # All unpinned blobs below are extracted from garnet OS2.0.10.0.VNRMIXM - HyperOS_GARNETGlobal_OS2.0.10.0.VNRMIXM
 
-# Current blobs with ELF checks disabled:
-# audio.primary.parrot depends on vendor.qti.hardware.pal@1.0-impl, which is a gnu makefile target
-# libar-pal depends on libagmclient, which is a gnu makefile target
-# libawcal, libfsalgocal depends on libagmmixer, which is a gnu makefile target
-# libqc2audio_hwaudiocodec depends on libpalclient, which is a gnu makefile target
-
 # ACDB
 vendor/etc/acdbdata/Mise/Mise_acdb_cal.acdb
 vendor/etc/acdbdata/Mise/Mise_workspaceFileXml.qwsp
@@ -99,7 +93,7 @@ vendor/etc/audio_diag.cfg
 vendor/etc/models/acd/event.eai
 vendor/etc/models/acd/music.eai
 vendor/etc/models/acd/speech.eai
-vendor/lib64/hw/audio.primary.parrot.so;DISABLE_CHECKELF
+vendor/lib64/hw/audio.primary.parrot.so
 vendor/lib64/hw/gyro_fusion_interface.so
 vendor/lib64/lib_misound_asc.so
 vendor/lib64/libadm.so
@@ -107,16 +101,16 @@ vendor/lib64/libadsprpc.so
 vendor/lib64/libar-acdb.so
 vendor/lib64/libar-gpr.so
 vendor/lib64/libar-gsl.so
-vendor/lib64/libar-pal.so;DISABLE_CHECKELF
+vendor/lib64/libar-pal.so
 vendor/lib64/libats.so
 vendor/lib64/libaudio_log_utils.so
 vendor/lib64/libaudiocloudctrl.so
 vendor/lib64/libaudioroute_ext.so
-vendor/lib64/libawcal.so;DISABLE_CHECKELF
+vendor/lib64/libawcal.so
 vendor/lib64/libcapiv2svacnnvendor.so
 vendor/lib64/libcapiv2svarnnvendor.so
 vendor/lib64/libcapiv2uvvendor.so
-vendor/lib64/libfsalgocal.so;DISABLE_CHECKELF
+vendor/lib64/libfsalgocal.so
 vendor/lib64/libkaraokepal.so
 vendor/lib64/liblx-ar_util.so
 vendor/lib64/liblx-osal.so
@@ -1508,7 +1502,7 @@ vendor/lib64/libqc2audio_base.so
 vendor/lib64/libqc2audio_basecodec.so
 vendor/lib64/libqc2audio_core.so
 vendor/lib64/libqc2audio_hooks.so
-vendor/lib64/libqc2audio_hwaudiocodec.so;DISABLE_CHECKELF
+vendor/lib64/libqc2audio_hwaudiocodec.so
 vendor/lib64/libqc2audio_platform.so
 vendor/lib64/libqc2audio_swaudiocodec.so
 vendor/lib64/libqc2audio_utils.so
