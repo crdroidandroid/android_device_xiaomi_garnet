@@ -70,7 +70,6 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('vendor.qti.hardware.display.config-V2-ndk_platform.so', 'vendor.qti.hardware.display.config-V2-ndk.so'),
     (
         'vendor/bin/hw/android.hardware.security.keymint-service-qti',
-        'vendor/lib/libqtikeymint.so',
         'vendor/lib64/libqtikeymint.so',
     ): blob_fixup()
         .replace_needed(
