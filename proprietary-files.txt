@@ -1480,6 +1480,9 @@ vendor/etc/vintf/manifest/vendor.qti.hardware.limits-service.xml
 vendor/lib64/vendor.qti.hardware.limits@1.0.so
 vendor/lib64/vendor.qti.hardware.limits@1.1.so
 
+# Listen
+vendor/lib64/hw/sound_trigger.primary.parrot.so
+
 # Media
 vendor/bin/hw/vendor.qti.media.c2@1.0-service
 vendor/bin/hw/vendor.qti.media.c2audio@1.0-service
