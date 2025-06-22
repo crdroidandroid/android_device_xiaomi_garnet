@@ -20,32 +20,24 @@
     <ctl name="ADC2 Volume" value="6" />
     <ctl name="ADC3 Volume" value="6" />
     <ctl name="ADC4 Volume" value="6" />
-    <!-- add new awinic aw88261 controls -->
-    <ctl name="aw_dev_0_switch" value="Disable" />
-    <ctl name="aw_dev_0_prof"  value="Music" />
-    <ctl name="aw_dev_1_switch" value="Disable" />
-    <ctl name="aw_dev_1_prof"  value="Music" />
-    <ctl name="aw882xx_spk_sw_gpio_switch" value="0"/>
-    <!-- awinic controls end -->
+    <!-- add fs19xx control -->
+    <ctl name="FSM_Scene" value="0" />
+    <ctl name="FSM_Ultrasound_Enable" value="0" />
 
     <!-- swr haptic contorls begin-->
     <ctl name="SWR DAC_Port Switch" value="1" />
     <!-- swr haptic controls end -->
 
     <path name="speaker">
-        <ctl name="aw_dev_0_switch" value="Enable" />
-        <ctl name="aw_dev_1_switch" value="Enable" />
+        <ctl name="FSM_Scene" value="0" />
     </path>
 
     <path name="speaker-mono">
-        <ctl name="aw_dev_0_switch" value="Enable" />
+        <ctl name="FSM_Scene" value="0" />
     </path>
 
     <path name="speaker-mono-2">
-        <ctl name="aw_dev_0_prof"  value="Voice" />
-        <ctl name="aw_dev_0_switch" value="Enable" />
-        <ctl name="aw_dev_1_prof"  value="Voice" />
-        <ctl name="aw_dev_1_switch" value="Enable" />
+        <ctl name="FSM_Scene" value="1" />
     </path>
 
    <path name="speaker-mono-vbat">
@@ -85,9 +77,7 @@
     </path>
 
     <path name="handset">
-        <ctl name="aw_dev_0_prof"  value="Receiver" />
-        <ctl name="aw_dev_0_switch" value="Enable" />
-        <ctl name="aw882xx_spk_sw_gpio_switch" value="1" />
+        <ctl name="FSM_Scene" value="15" />
     </path>
 
     <path name="amic2">
@@ -196,9 +186,7 @@
 
     <!--ultrasound begin-->
     <path name="ultrasound-handset">
-    <!-- changed from Receiver to Music -->
-        <ctl name="aw_dev_0_prof"  value="Music" />
-        <ctl name="aw_dev_0_switch" value="Enable" />
+        <ctl name="FSM_Ultrasound_Enable" value="1" />
     </path>
 
     <path name="ultrasound-mic">
@@ -214,13 +202,11 @@
     </path>
 
     <path name="speaker-top">
-        <ctl name="aw_dev_0_prof"  value="Music" />
-        <ctl name="aw_dev_0_switch" value="Enable" />
+        <ctl name="FSM_Scene"  value="7" />
     </path>
 
     <path name="speaker-bot">
-        <ctl name="aw_dev_1_prof"  value="Music" />
-        <ctl name="aw_dev_1_switch" value="Enable" />
+        <ctl name="FSM_Scene"  value="9" />
     </path>
     <!--ultrasound end-->
 
