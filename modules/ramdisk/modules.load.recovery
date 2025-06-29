@@ -169,7 +169,6 @@ hvc_gunyah.ko
 msm_rng.ko
 frpc-adsprpc.ko
 rdbg.ko
-xlogchar.ko
 msm_kgsl.ko
 zram.ko
 hdcp.ko
