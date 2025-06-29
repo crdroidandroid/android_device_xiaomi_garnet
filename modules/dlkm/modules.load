@@ -99,7 +99,6 @@ wlan_firmware_service.ko
 cnss_plat_ipc_qmi_svc.ko
 cnss_nl.ko
 cnss_prealloc.ko
-mi_cnss_statistic.ko
 asix.ko
 ax88179_178a.ko
 msm_sharedmem.ko
