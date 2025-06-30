@@ -5,5 +5,5 @@
 -->
 <resources>
     <string name="sim_illustration_lottie_mappings_json">{\"sim_illustration_lottie_mappings\":[{\"devices\":[\"garnet\"],\"illustration_lottie\":\"sim_illustration_lottie_bottom\"}]}</string>
-    <string name="sim_slot_mappings_json">{\"sim-slot-mappings\":[{\"devices\":[\"garnet\"],\"esim-slot-ids\":[1],\"psim-slot-ids\":[0]}]}</string>
+    <string name="sim_slot_mappings_json">{\"sim-slot-mappings\":[{\"devices\":[\"garnet\",\"XIG05\"],\"esim-slot-ids\":[1],\"psim-slot-ids\":[0]}]}</string>
 </resources>
