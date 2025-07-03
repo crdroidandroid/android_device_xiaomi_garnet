@@ -1595,21 +1595,6 @@ vendor/bin/pm-service
 vendor/lib64/libperipheral_client.so
 vendor/lib64/libspcom.so
 
-# Power
-vendor/etc/powerhint.xml
-vendor/etc/powerhintOfUltra.xml
-vendor/etc/pwr/PSMPowerOptFeature.xml
-vendor/etc/pwr/PowerFeatureConfig.xml
-vendor/etc/pwr/StandbyFeature.xml
-vendor/etc/pwr/VendorScenarioPowerOptFeature.xml
-vendor/etc/pwr/VideoPowerOptFeature.xml
-vendor/etc/vintf/manifest/vendor.qti.hardware.power.powermodule.xml
-vendor/lib64/libpsmoptfeature.so
-vendor/lib64/libstandbyfeature.so
-vendor/lib64/libvendorscenariopoweroptfeature.so
-vendor/lib64/libvideooptfeature.so
-vendor/lib64/vendor.qti.hardware.power.powermodule@1.0.so
-
 # Power-off alarm
 system_ext/app/PowerOffAlarm/PowerOffAlarm.apk
 system_ext/framework/vendor.qti.hardware.alarm-V1.0-java.jar
@@ -1618,12 +1603,6 @@ vendor/bin/power_off_alarm
 vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc
 vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.alarm@1.0.so
-
-# Poweropt
-vendor/bin/poweropt-service
-vendor/etc/init/poweropt-service.rc
-vendor/lib64/libpowercallback.so
-vendor/lib64/libpowercore.so
 
 # QCC
 system_ext/app/QCC/QCC.apk
