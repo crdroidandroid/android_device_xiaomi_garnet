@@ -41,7 +41,6 @@ lib_fixups: lib_fixups_user_type = {
         'vendor.qti.hardware.qccvndhal@1.0',
         'vendor.qti.imsrtpservice@3.0',
         'vendor.qti.diaghal@1.0',
-        'vendor.qti.hardware.wifidisplaysession@1.0',
         'com.qualcomm.qti.dpm.api@1.0',
     ): lib_fixup_vendor_suffix,
     (
@@ -54,21 +53,6 @@ lib_fixups: lib_fixups_user_type = {
 }
 
 blob_fixups: blob_fixups_user_type = {
-    'system_ext/bin/wfdservice64': blob_fixup()
-        .add_needed('libwfdservice_shim.so'),
-    'system_ext/lib64/libwfdnative.so': blob_fixup()
-        .add_needed('libinput_shim.so'),
-    'system_ext/lib64/libwfdmmsrc_system.so': blob_fixup()
-        .add_needed('libgui_shim.so'),
-    'vendor/lib64/nfc_nci.nqx.default.hw.v1.so': blob_fixup()
-        .add_needed('libbase_shim.so'),
-    'vendor/lib64/libQnnDspV65CalculatorStub.so': blob_fixup()
-        .add_needed('liblog.so'),
-    'vendor/bin/qcc-trd': blob_fixup()
-         .replace_needed('libgrpc++_unsecure.so', 'libgrpc++_unsecure_prebuilt.so'),
-    'vendor/lib64/libcamximageformatutils.so': blob_fixup()
-        .replace_needed('vendor.qti.hardware.display.config-V2-ndk_platform.so', 'vendor.qti.hardware.display.config-V2-ndk.so'),
-    (
         'vendor/bin/hw/android.hardware.security.keymint-service-qti',
         'vendor/lib64/libqtikeymint.so',
     ): blob_fixup()
