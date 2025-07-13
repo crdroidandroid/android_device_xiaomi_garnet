@@ -92,12 +92,12 @@ BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_IMAGE_NAME := Image
 
-TARGET_KERNEL_ADDITIONAL_FLAGS := TARGET_PRODUCT=garnet
-TARGET_KERNEL_SOURCE := kernel/xiaomi/sm7435
+TARGET_KERNEL_SOURCE := kernel/xiaomi/garnet
 TARGET_KERNEL_CONFIG := \
     gki_defconfig \
     vendor/parrot_GKI.config \
     vendor/garnet_GKI.config \
+    vendor/custom.config \
     vendor/debugfs.config
 
 BOARD_BOOT_HEADER_VERSION := 4
@@ -117,7 +117,7 @@ BOARD_BOOTCONFIG := \
     androidboot.usbcontroller=a600000.dwc3
 
 # Kernel modules
-TARGET_KERNEL_EXT_MODULE_ROOT := kernel/xiaomi/sm7435-modules
+TARGET_KERNEL_EXT_MODULE_ROOT := kernel/xiaomi/garnet-modules
 TARGET_KERNEL_EXT_MODULES := \
 	qcom/opensource/mmrm-driver \
 	qcom/opensource/audio-kernel \
