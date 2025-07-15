@@ -59,6 +59,10 @@
 # Nfc
 /(vendor|system/vendor)/bin/hw/vendor\.nxp\.hardware\.nfc@2\.0-service        u:object_r:hal_nfc_default_exec:s0
 
+# Sound Control
+/sys/kernel/sound_control/mic_gain                                                               u:object_r:sysfs_sndctrl:s0
+/sys/kernel/sound_control/headphone_gain                                                         u:object_r:sysfs_sndctrl:s0
+
 # Sensors
 /(vendor|system/vendor)/bin/hw/android\.hardware\.sensors-service\.xiaomi-multihal u:object_r:hal_sensors_default_exec:s0
 

@@ -34,6 +34,7 @@ import android.view.Display.HdrCapabilities;
 
 import org.lineageos.settings.thermal.ThermalUtils;
 import org.lineageos.settings.refreshrate.RefreshUtils;
+import org.lineageos.settings.soundcontrol.SoundControlUtils;
 
 public class BootCompletedReceiver extends BroadcastReceiver {
     private static final boolean DEBUG = false;
@@ -56,6 +57,7 @@ public class BootCompletedReceiver extends BroadcastReceiver {
             ThermalUtils.startService(context);
             RefreshUtils.startService(context);
             overrideHdrTypes(context);
+            SoundControlUtils.applyAll(context);
     }
 
     private static void overrideHdrTypes(Context context) {

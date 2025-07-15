@@ -111,4 +111,12 @@
     <string name="core_5">Core 5 (Big)</string>
     <string name="core_6">Core 6 (Big)</string>
     <string name="core_7">Core 7 (Big)</string>
+
+    <!-- Sound Control -->
+    <string name="sound_control_title">Sound Control</string>
+    <string name="mic_gain">Microphone gain (dB)</string>
+    <string name="hp_left_gain">Left headphone gain</string>
+    <string name="hp_right_gain">Right headphone gain</string>
+    <string name="sound_control_enable">Enable sound control</string>
+
 </resources>

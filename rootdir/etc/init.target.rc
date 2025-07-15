@@ -601,3 +601,9 @@ on property:sys.volume.stream.bluetoothsco=*
 on property:sys.boot_completed=1
     # Enable suspend to RAM
     write /sys/power/mem_sleep "deep"
+
+    # Sound Control
+    chown system system /sys/kernel/sound_control/mic_gain
+    chmod 0664 /sys/kernel/sound_control/mic_gain
+    chown system system /sys/kernel/sound_control/headphone_gain
+    chmod 0664 /sys/kernel/sound_control/headphone_gain
