@@ -2,6 +2,8 @@
 bluetooth.core.le.max_number_of_concurrent_connections=10
 bluetooth.device.class_of_device=90,2,12
 bluetooth.leaudio.dual_bidirection_swb.supported=true
+bluetooth.profile.pan.nap.enabled=true
+bluetooth.profile.pan.panu.enabled=true
 bluetooth.profile.pbap.sim.enabled=true
 bluetooth.profile.sap.server.enabled=true
 persist.bluetooth.leaudio.allow.multiple.context=false
