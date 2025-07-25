@@ -185,10 +185,6 @@
     </path>
 
     <!--ultrasound begin-->
-    <path name="ultrasound-handset">
-        <ctl name="FSM_Ultrasound_Enable" value="1" />
-    </path>
-
     <path name="ultrasound-mic">
          <ctl name="TX_DEC4 Volume" value="84" />
         <ctl name="TX DEC4 MUX" value="SWR_MIC" />
