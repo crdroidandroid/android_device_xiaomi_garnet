@@ -195,12 +195,6 @@
     </path>
 
     <!--ultrasound begin-->
-    <path name="ultrasound-handset">
-        <ctl name="aw_dev_0_prof"  value="Receiver" />
-        <ctl name="aw_dev_0_switch" value="Enable" />
-        <ctl name="aw882xx_spk_sw_gpio_switch" value="1" />
-    </path>
-
     <path name="ultrasound-mic">
          <ctl name="TX_DEC4 Volume" value="84" />
         <ctl name="TX DEC4 MUX" value="SWR_MIC" />
