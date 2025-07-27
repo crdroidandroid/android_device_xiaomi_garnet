@@ -43,10 +43,10 @@ on post-fs-data
     mkdir /mnt/vendor/persist/goodix 0770 system system
     mkdir /mnt/vendor/persist/fpc 0770 system system
 
-service nqnfc_2_0_hal_service /vendor/bin/hw/vendor.nxp.hardware.nfc@2.0-service
+service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc-service.nxp
     class early_hal
     user nfc
-    group nfc
+    group nfc drmrpc system
     override
     disabled
 
@@ -65,17 +65,17 @@ service qti_esepowermanager_service_1_1 /vendor/bin/hw/vendor.qti.esepowermanage
     disabled
 
 on property:ro.boot.product.hardware.sku=CN
-    enable nqnfc_2_0_hal_service
+    enable vendor.nfc_hal_service
     enable secureelement-hal_1_2
     enable qti_esepowermanager_service_1_1
 
 on property:ro.boot.product.hardware.sku=GL
-    enable nqnfc_2_0_hal_service
+    enable vendor.nfc_hal_service
     enable secureelement-hal_1_2
     enable qti_esepowermanager_service_1_1
 
 on property:ro.boot.product.hardware.sku=JP
-    enable nqnfc_2_0_hal_service
+    enable vendor.nfc_hal_service
     enable secureelement-hal_1_2
     enable qti_esepowermanager_service_1_1
 
