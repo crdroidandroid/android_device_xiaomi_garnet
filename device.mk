@@ -244,7 +244,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(AUDIO_HAL_DIR)/configs/common/codec2/media_codecs_c2_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_c2_audio.xml
 
-# Memtrack
+$(call soong_config_set,stagefright,target_disable_thumbnail_block_model,true)
+
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.memtrack-service
 
