@@ -31,3 +31,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     DeviceProduct=garnet_global
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+TARGET_ENABLE_BLUR := true
