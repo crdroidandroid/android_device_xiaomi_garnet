@@ -18,3 +18,6 @@ persist.sys.radio.force_lte_ca=true
 
 # Silence minksocket logs
 persist.log.tag.minksocket=S
+
+# Blur
+ro.sf.blurs_are_expensive=1
