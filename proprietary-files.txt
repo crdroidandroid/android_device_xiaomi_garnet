@@ -1,4 +1,4 @@
-# All unpinned blobs below are extracted from garnet OS2.0.10.0.VNRMIXM - HyperOS_GARNETGlobal_OS2.0.10.0.VNRMIXM
+# All unpinned blobs below are extracted from garnet OS2.0.11.0.VNRMIXM
 
 # ACDB
 vendor/etc/acdbdata/Mise/Mise_acdb_cal.acdb
