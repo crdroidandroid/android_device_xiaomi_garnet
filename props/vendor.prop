@@ -113,7 +113,6 @@ dalvik.vm.image-dex2oat-cpu-set=4,5,6,7
 dalvik.vm.image-dex2oat-threads=4
 
 # Display
-ro.hwui.render_ahead=10
 ro.vendor.display.sensortype=2
 ro.vendor.display.svi=1
 vendor.display.comp_mask=0
@@ -160,18 +159,11 @@ vendor.gatekeeper.disable_spu=true
 # Graphics
 debug.sf.auto_latch_unsignaled=0
 debug.sf.disable_client_composition_cache=1
-debug.sf.early.app.duration=16500000
-debug.sf.early.sf.duration=16000000
-debug.sf.earlyGl.app.duration=21000000
-debug.sf.earlyGl.sf.duration=13500000
 debug.sf.enable_gl_backpressure=0
 debug.sf.hw=0
-debug.sf.late.app.duration=20500000
-debug.sf.late.sf.duration=10500000
 debug.sf.predict_hwc_composition_strategy=0
 debug.sf.set_idle_timer_ms=1100
 debug.sf.treat_170m_as_sRGB=1
-debug.sf.use_phase_offsets_as_durations=1
 persist.sys.sf.color_mode=0
 persist.sys.sf.color_saturation=1.0
 ro.gfx.driver.1=com.qualcomm.qti.gpudrivers.pineapple.api34
@@ -267,3 +259,8 @@ ro.vendor.qti.cgroup_follow.enable=true
 persist.vendor.qti.inputopts.enable=true
 persist.vendor.qti.inputopts.movetouchslop=0.6
 ro.qcom.adreno.qgl.ShaderStorageImageExtendedFormats=0
+
+# HWUI
+ro.hwui.render_ahead=5
+debug.hwui.use_hint_manager=true
+debug.hwui.target_cpu_time_percent=30
