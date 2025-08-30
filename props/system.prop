@@ -15,3 +15,6 @@ ro.telephony.default_network=33,33
 telephony.lteOnCdmaDevice=1
 persist.vendor.vonr_setting_support=1
 persist.sys.radio.force_lte_ca=true
+
+# Silence minksocket logs
+persist.log.tag.minksocket=S
