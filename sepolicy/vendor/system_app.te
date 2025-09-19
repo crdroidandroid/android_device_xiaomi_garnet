@@ -20,6 +20,9 @@ allow system_app vendor_sysfs_kgsl_gpuclk:file read;
 allow system_app proc_stat:file open;
 allow system_app vendor_sysfs_kgsl:file open;
 allow system_app vendor_sysfs_kgsl_gpuclk:file open;
+allow system_app proc_stat:file { getattr open read };
+allow system_app vendor_sysfs_kgsl:file { getattr open read };
+allow system_app vendor_sysfs_kgsl_gpuclk:file { getattr open read };
 
 # HBM
 allow system_app vendor_sysfs_graphics:dir search;
