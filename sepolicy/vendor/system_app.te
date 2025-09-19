@@ -1,0 +1,11 @@
+# Allow system_app to access a get true info
+allow system_app proc_stat:file read;
+allow system_app sysfs_thermal:file write;
+allow system_app vendor_sysfs_kgsl:file read;
+allow system_app vendor_sysfs_kgsl_gpuclk:file read;
+allow system_app proc_stat:file open;
+allow system_app vendor_sysfs_kgsl:file open;
+allow system_app vendor_sysfs_kgsl_gpuclk:file open;
+allow system_app proc_stat:file { getattr open read };
+allow system_app vendor_sysfs_kgsl:file { getattr open read };
+allow system_app vendor_sysfs_kgsl_gpuclk:file { getattr open read };
