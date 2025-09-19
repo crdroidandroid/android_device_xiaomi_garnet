@@ -5,7 +5,7 @@ remote_provisioning.hostname=remoteprovisioning.googleapis.com
 # Bluetooth
 bluetooth.profile.a2dp.source.enabled=true
 bluetooth.profile.asha.central.enabled=true
-bluetooth.profile.avrcp.controller.enabled=false
+bluetooth.profile.avrcp.controller.enabled=true
 bluetooth.profile.avrcp.target.enabled=true
 bluetooth.profile.gatt.enabled=true
 bluetooth.profile.hfp.ag.enabled=true
