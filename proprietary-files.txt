@@ -1374,6 +1374,14 @@ vendor/lib/egl/libGLESv2_adreno.so;SYMLINK=vendor/lib/libGLESv2_adreno.so
 vendor/lib/egl/libVkLayer_ADRENO_qprofiler.so
 vendor/lib/egl/libq3dtools_adreno.so;SYMLINK=vendor/lib/libq3dtools_adreno.so
 vendor/lib/egl/libq3dtools_esx.so
+vendor/lib/hw/gralloc.default.so
+vendor/lib/hw/memtrack.starlet.so
+vendor/lib/hw/vulkan.adreno.so
+vendor/lib/hw/vulkan.pastel.so
+vendor/lib/libdmabufheap.so
+vendor/lib/libgame_enhance.so
+vendor/lib/libgamepoweroptfeature.so
+vendor/lib/vkbgsl.so
 vendor/lib/libC2D2.so
 vendor/lib/libCB.so
 vendor/lib/libOpenCL.so
@@ -1393,6 +1401,8 @@ vendor/lib64/egl/libGLESv2_adreno.so;SYMLINK=vendor/lib64/libGLESv2_adreno.so
 vendor/lib64/egl/libVkLayer_ADRENO_qprofiler.so
 vendor/lib64/egl/libq3dtools_adreno.so;SYMLINK=vendor/lib64/libq3dtools_adreno.so
 vendor/lib64/egl/libq3dtools_esx.so
+vendor/lib64/egl/libPipeline_plugin.so
+vendor/lib64/egl/libVkLayer_khronos_validation.so
 vendor/lib64/libC2D2.so
 vendor/lib64/libCB.so
 vendor/lib64/libOpenCL.so
@@ -1406,7 +1416,17 @@ vendor/lib64/libkernelmanager.so
 vendor/lib64/libllvm-glnext.so
 vendor/lib64/libllvm-qcom.so
 vendor/lib64/libllvm-qgl.so
- 
+vendor/lib64/libdmabufheap.so
+vendor/lib64/libgamepoweroptfeature.so
+vendor/lib64/vkbadreno_utils.so
+vendor/lib64/vkbgsl.so
+vendor/lib64/vkbllvm-glnext.so
+vendor/lib64/vkbllvm-qgl.so
+vendor/lib64/hw/gralloc.default.so
+vendor/lib64/hw/memtrack.starlet.so
+vendor/lib64/hw/power.default.so
+vendor/lib64/hw/vulkan.pastel.so
+
 # Graphics (Adreno firmware)
 vendor/firmware/a710_sqe.fw
 vendor/firmware/a710_zap.b00
