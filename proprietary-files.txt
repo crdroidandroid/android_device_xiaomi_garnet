@@ -105,6 +105,7 @@ vendor/etc/audio_diag.cfg
 vendor/etc/models/acd/event.eai
 vendor/etc/models/acd/music.eai
 vendor/etc/models/acd/speech.eai
+vendor/lib64/android.hardware.audio.common@7.0-util.so;MAKE_COPY_RULE_ONLY
 vendor/lib64/hw/audio.primary.parrot.so;MAKE_COPY_RULE_ONLY
 vendor/lib64/hw/gyro_fusion_interface.so;MAKE_COPY_RULE_ONLY
 vendor/lib64/lib_misound_asc.so;MAKE_COPY_RULE_ONLY
