@@ -23,3 +23,6 @@ rm -rf hardware/qcom-caf/sm8450/display && git clone https://github.com/MySelly/
 
 echo 'Cloning camera'
 git clone https://github.com/stuff-garnet/vendor_xiaomi_miuicamera-garnet vendor/xiaomi/miuicamera-garnet && git clone https://github.com/stuff-garnet/device_xiaomi_miuicamera-garnet device/xiaomi/miuicamera-garnet
+
+echo 'Cloning dolby'
+git clone https://github.com/MySelly/android_hardware_dolby -b 16.0 hardware/dolby
