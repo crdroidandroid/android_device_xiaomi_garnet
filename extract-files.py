@@ -107,16 +107,24 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/lib64/libgarden_haltests_e2e.so',
     ): blob_fixup()
         .replace_needed(
-            'android.hardware.gnss-V1-ndk_platform.so',
-            'android.hardware.gnss-V1-ndk.so',
-    ),
-    ('vendor/lib64/libalLDC.so', 'vendor/lib64/libalhLDC.so'): blob_fixup()
-        .clear_symbol_version('AHardwareBuffer_allocate')
-        .clear_symbol_version('AHardwareBuffer_describe')
-        .clear_symbol_version('AHardwareBuffer_lock')
-        .clear_symbol_version('AHardwareBuffer_release')
-        .clear_symbol_version('AHardwareBuffer_unlock'),
-    'vendor/lib64/libTrueSight.so': blob_fixup()
+            'libaudioroute.so',
+            'libaudioroute-v34.so'
+        ),
+    (
+        'vendor/lib64/hw/camera.qcom.so',
+        'vendor/lib64/hw/com.qti.chi.override.so',
+        'vendor/lib64/libcamxcommonutils.so',
+        'vendor/lib64/libmialgoengine.so'
+    ): blob_fixup()
+        .add_needed('libprocessgroup_shim.so'),
+    'vendor/lib64/libQnnDspV65CalculatorStub.so': blob_fixup()
+        .add_needed('liblog.so'),
+    (
+        'odm/lib64/libMiVideoFilter.so',
+        'vendor/lib64/libalhLDC.so',
+        'vendor/lib64/libalLDC.so',
+        'vendor/lib64/libTrueSight.so'
+    ): blob_fixup()
         .clear_symbol_version('AHardwareBuffer_allocate')
         .clear_symbol_version('AHardwareBuffer_describe')
         .clear_symbol_version('AHardwareBuffer_lock')
