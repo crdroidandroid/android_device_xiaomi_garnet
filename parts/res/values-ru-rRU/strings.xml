@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_title">Настройки Xiaomi</string>
+    <string name="tile_add">Добавить плитку</string>
+    <string name="tile_added">Плитка добавлена</string>
+    <string name="tile_not_added">Плитка не добавлена</string>
+    <string name="tile_already_added">Плитка уже добавлена</string>
+    <string name="tile_on">Вкл.</string>
+    <string name="tile_off">Выкл.</string>
+
+    <string name="thermal_title">Профили производительности</string>
+    <string name="thermal_summary">Настройка профилей производительности для каждого приложения</string>
+    <string name="thermal_default">Без оптимизации</string>
+    <string name="thermal_benchmark">Производительность</string>
+    <string name="thermal_browser">Браузер</string>
+    <string name="thermal_camera">Камера</string>
+    <string name="thermal_dialer">Телефон</string>
+    <string name="thermal_gaming">Игры</string>
+    <string name="thermal_streaming">Стриминг</string>
+
+    <string name="refresh_title">Частота обновления для приложений</string>
+    <string name="refresh_summary">Установка максимальной частоты обновления для каждого приложения</string>
+    <string name="refresh_default">По умолчанию</string>
+    <string name="refresh_standard">60 Гц</string>
+    <string name="refresh_high">90 Гц</string>
+    <string name="refresh_extreme">120 Гц</string>
+
+    <string name="clear_speaker_title">Очистка динамика</string>
+   <string name="clear_speaker_summary">Воспроизвести 30-секундный звук для очистки динамика</string>
+   <string name="clear_speaker_description">Используйте эту функцию один или два раза, если динамик незначительно забит пылью. Установите громкость мультимедиа на максимум.\n\nЕсли динамик сильно забит, запустите эту функцию 2-5 раз, встряхивая устройство динамиком вниз.</string>
+
+    <string name="saturation_title">Насыщенность дисплея</string>
+    <string name="saturation_summary">Управление уровнем насыщенности дисплея</string>
+    <string name="saturation_footer_summary">Изменение цветового режима в настройках экрана отменит текущий уровень насыщенности, его потребуется применить заново.</string>
+
+    <string name="image_preview_content_description">Предпросмотр</string>
+    <string name="image_preview_next_page_content_description">Далее</string>
+    <string name="image_preview_previous_page_content_description">Назад</string>
+
+    <string name="custom_seekbar_value">Значение: <xliff:g id="v">%s</xliff:g></string>
+    <string name="custom_seekbar_default_value">по умолчанию</string>
+    <string name="custom_seekbar_default_value_to_set">Значение по умолчанию: <xliff:g id="v">%s</xliff:g>\nДлительное нажатие для установки</string>
+    <string name="custom_seekbar_default_value_is_set">Установлено значение по умолчанию</string>
+    
+    <string name="auto_hbm_title">Автоматический режим высокой яркости (HBM)</string>
+    <string name="auto_hbm_main_switch_title">Использовать автоматический HBM</string>
+    <string name="tile_auto_hbm">Авто-HBM</string>
+    <string name="tile_hbm_on">Включён</string>
+    <string name="tile_hbm_off">Выключен</string>
+    <string name="tile_hbm">HBM</string>
+    <string name="tile_hbm_unavailable">HBM недоступен</string>
+    <string name="tile_auto_hbm_or_brightness_enabled">Авто-HBM или автояркость включены</string>
+    <string name="hbm_mode_title">Режим высокой яркости</string>
+    <string name="hbm_mode_notification">Режим высокой яркости активирован. Длительное использование может повредить дисплей.</string>
+    <string name="auto_hbm_summary">Автоматически включать режим высокой яркости в зависимости от интенсивности солнечного света (в люксах)</string>
+    <string name="auto_hbm_threshold_title">Порог освещённости</string>
+    <string name="auto_hbm_threshold_summary">Установите порог интенсивности света в люксах, при котором будет активирован HBM</string>
+    <string name="auto_hbm_enable_time_title">Время включения</string>
+    <string name="auto_hbm_enable_time_summary">Продолжительность в секундах, в течение которой порог освещенности должен постоянно соблюдаться для активации HBM</string>
+    <string name="auto_hbm_disable_time_title">Время выключения</string>
+    <string name="auto_hbm_disable_time_summary">Продолжительность в секундах, по истечении которой HBM будет деактивирован, если порог освещенности упадет ниже установленного уровня</string>
+
+    <string name="game_bar_title">Игровая панель</string>
+    <string name="game_bar_summary">Включить системный оверлей (FPS, температура и т.д.)</string>
+    <string name="overlay_permission_required">Требуется разрешение на отображение поверх других приложений</string>
+    <string name="overlay_permission_granted">Разрешение на отображение поверх других приложений предоставлено</string>
+    <string name="overlay_permission_denied">В разрешении на отображение поверх других приложений отказано</string>
+    <string name="game_bar_tile_label">Игровая панель</string>
+    <string name="game_bar_tile_description">Переключить игровой оверлей</string>
+
+    <string name="charge_bypass_title">Прямое питание</string>
+    <string name="charge_bypass_summary">Включить питание напрямую, в обход аккумулятора</string>
+    <string name="charge_bypass_warning">Внимание: Прямое питание может привести к повышению температуры устройства или повреждению аккумулятора. Используйте с осторожностью.</string>
+    <string name="charge_bypass_unavailable">Прямое питание не поддерживается на этом устройстве</string>
+
+    <string name="core_control_title">Управление ядрами</string>
+    <string name="core_control_summary">Ручное включение или отключение отдельных ядер ЦП</string>
+    <string name="core_control_description">Расширенное управление ЦП. Отключение ядер может сэкономить заряд батареи или снизить тепловую нагрузку, но может повлиять на производительность и стабильность.\n\nНеобходимо, чтобы как минимум два малых ядра всегда оставались в сети.</string>
+    <string name="core_0">Ядро 0 (малое)</string>
+    <string name="core_1">Ядро 1 (малое)</string>
+    <string name="core_2">Ядро 2 (малое)</string>
+    <string name="core_3">Ядро 3 (малое)</string>
+    <string name="core_4">Ядро 4 (большое)</string>
+    <string name="core_5">Ядро 5 (большое)</string>
+    <string name="core_6">Ядро 6 (большое)</string>
+    <string name="core_7">Ядро 7 (большое)</string>
+
+    <string name="sound_control_title">Управление звуком</string>
+    <string name="mic_gain">Усиление микрофона (дБ)</string>
+    <string name="hp_left_gain">Усиление левого наушника</string>
+    <string name="hp_right_gain">Усиление правого наушника</string>
+    <string name="sound_control_enable">Включить управление звуком</string>
+
+</resources>
