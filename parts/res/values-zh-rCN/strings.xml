@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2020 The LineageOS Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- 小米设置 -->
+    <string name="app_title">小米设置</string>
+    <string name="tile_add">添加磁贴</string>
+    <string name="tile_added">磁贴已添加</string>
+    <string name="tile_not_added">磁贴添加失败</string>
+    <string name="tile_already_added">磁贴已存在</string>
+    <string name="tile_on">开</string>
+    <string name="tile_off">关</string>
+
+    <!-- 温度配置文件 -->
+    <string name="thermal_title">温度配置文件</string>
+    <string name="thermal_summary">调整应用温度配置文件以获得最佳性能</string>
+    <string name="thermal_default">无优化</string>
+    <string name="thermal_benchmark">性能模式</string>
+    <string name="thermal_browser">浏览器</string>
+    <string name="thermal_camera">相机</string>
+    <string name="thermal_dialer">拨号</string>
+    <string name="thermal_gaming">游戏</string>
+    <string name="thermal_streaming">流媒体</string>
+
+    <!-- 应用刷新率 -->
+    <string name="refresh_title">应用刷新率</string>
+    <string name="refresh_summary">为特定应用设置最大刷新率</string>
+    <string name="refresh_default">默认</string>
+    <string name="refresh_standard">60 Hz</string>
+    <string name="refresh_high">90 Hz</string>
+    <string name="refresh_extreme">120 Hz</string>
+
+    <!-- 扬声器清理 -->
+   <string name="clear_speaker_title">扬声器清理</string>
+   <string name="clear_speaker_summary">播放30秒音频以清理扬声器</string>
+   <string name="clear_speaker_description">如果您发现扬声器轻微被灰尘堵塞，请运行此功能一至两次。请将媒体音量调至最大。\n\n如果扬声器堵塞严重，请在运行此功能2-5次的同时，将设备扬声器朝下摇晃。</string>
+
+    <!-- 饱和度 -->
+    <string name="saturation_title">显示饱和度</string>
+    <string name="saturation_summary">控制显示屏的饱和度级别</string>
+    <string name="saturation_footer_summary">在显示设置中更改色彩模式将覆盖饱和度级别，需要重新应用。</string>
+
+    <!-- 图片预览 -->
+    <string name="image_preview_content_description">预览</string>
+    <string name="image_preview_next_page_content_description">下一页</string>
+    <string name="image_preview_previous_page_content_description">上一页</string>
+
+    <!-- 自定义滑动条 -->
+    <string name="custom_seekbar_value">数值: <xliff:g id="v">%s</xliff:g></string>
+    <string name="custom_seekbar_default_value">默认</string>
+    <string name="custom_seekbar_default_value_to_set">默认值: <xliff:g id="v">%s</xliff:g>\n长按以设置</string>
+    <string name="custom_seekbar_default_value_is_set">默认值已设置</string>
+    
+    <!-- 自动高亮度模式 -->
+    <string name="auto_hbm_title">自动高亮度模式 (HBM)</string>
+    <string name="auto_hbm_main_switch_title">使用自动 HBM</string>
+    <string name="tile_auto_hbm">自动 HBM</string>
+    <string name="tile_hbm_on">已启用</string>
+    <string name="tile_hbm_off">已禁用</string>
+    <string name="tile_hbm">HBM</string>
+    <string name="tile_hbm_unavailable">HBM 不可用</string>
+    <string name="tile_auto_hbm_or_brightness_enabled">自动 HBM 或自动亮度已启用</string>
+    <string name="hbm_mode_title">高亮度模式</string>
+    <string name="hbm_mode_notification">高亮度模式现已激活。长时间使用可能会损坏您的显示屏。</string>
+    <string name="auto_hbm_summary">根据阳光强度 (lux) 自动启用高亮度模式</string>
+    <string name="auto_hbm_threshold_title">光线阈值</string>
+    <string name="auto_hbm_threshold_summary">定义激活 HBM 的光线强度阈值 (lux 单位)</string>
+    <string name="auto_hbm_enable_time_title">启用时间</string>
+    <string name="auto_hbm_enable_time_summary">光线阈值持续满足以激活 HBM 所需的持续时间 (秒)</string>
+    <string name="auto_hbm_disable_time_title">禁用时间</string>
+    <string name="auto_hbm_disable_time_summary">当光线强度低于设定水平时，HBM 停用的持续时间 (秒)</string>
+
+    <!-- 游戏工具栏悬浮窗 -->
+    <string name="game_bar_title">游戏工具栏</string>
+    <string name="game_bar_summary">启用系统悬浮窗 (FPS, 温度等)</string>
+    <string name="overlay_permission_required">需要悬浮窗权限</string>
+    <string name="overlay_permission_granted">悬浮窗权限已授予</string>
+    <string name="overlay_permission_denied">悬浮窗权限被拒绝</string>
+    <string name="game_bar_tile_label">游戏工具栏</string>
+    <string name="game_bar_tile_description">切换游戏悬浮窗</string>
+
+    <!-- 旁路充电字符串 -->
+    <string name="charge_bypass_title">旁路充电</string>
+    <string name="charge_bypass_summary">启用直接充电，绕过电池</string>
+    <string name="charge_bypass_warning">警告：旁路充电可能导致设备温度升高或电池损坏。请谨慎使用。</string>
+    <string name="charge_bypass_unavailable">此设备不支持旁路充电</string>
+
+    <!-- 核心控制 -->
+    <string name="core_control_title">核心控制</string>
+    <string name="core_control_summary">手动启用或禁用单个 CPU 核心</string>
+    <string name="core_control_description">高级 CPU 控制。关闭核心可能节省电量或减轻热负载，但可能影响性能和稳定性。\n\n至少需要保持两个小核心始终在线。</string>
+    <string name="core_0">核心 0 (小核)</string>
+    <string name="core_1">核心 1 (小核)</string>
+    <string name="core_2">核心 2 (小核)</string>
+    <string name="core_3">核心 3 (小核)</string>
+    <string name="core_4">核心 4 (大核)</string>
+    <string name="core_5">核心 5 (大核)</string>
+    <string name="core_6">核心 6 (大核)</string>
+    <string name="core_7">核心 7 (大核)</string>
+
+    <!-- 声音控制 -->
+    <string name="sound_control_title">声音控制</string>
+    <string name="mic_gain">麦克风增益 (dB)</string>
+    <string name="hp_left_gain">左耳机增益</string>
+    <string name="hp_right_gain">右耳机增益</string>
+    <string name="sound_control_enable">启用声音控制</string>
+
+</resources>

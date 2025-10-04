@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2020 The LineageOS Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Xiaomi Settings -->
+    <string name="app_title">Ajustes Xiaomi</string>
+    <string name="tile_add">Agregar mosaico</string>
+    <string name="tile_added">Mosaico agregado</string>
+    <string name="tile_not_added">Mosaico no agregado</string>
+    <string name="tile_already_added">Mosaico ya agregado</string>
+    <string name="tile_on">Activado</string>
+    <string name="tile_off">Desactivado</string>
+
+    <!-- Thermal profiles -->
+    <string name="thermal_title">Perfiles térmicos</string>
+    <string name="thermal_summary">Ajusta perfiles térmicos por aplicación para un rendimiento óptimo</string>
+    <string name="thermal_default">Sin optimización</string>
+    <string name="thermal_benchmark">Rendimiento</string>
+    <string name="thermal_browser">Navegador</string>
+    <string name="thermal_camera">Cámara</string>
+    <string name="thermal_dialer">Teléfono</string>
+    <string name="thermal_gaming">Juegos</string>
+    <string name="thermal_streaming">Transmisión</string>
+
+    <!-- Per-app refresh rate -->
+    <string name="refresh_title">Frecuencia de actualización por aplicación</string>
+    <string name="refresh_summary">Establece la frecuencia de actualización máxima para una aplicación específica</string>
+    <string name="refresh_default">Predeterminado</string>
+    <string name="refresh_standard">60 Hz</string>
+    <string name="refresh_high">90 Hz</string>
+    <string name="refresh_extreme">120 Hz</string>
+
+    <!-- Clear Speaker -->
+   <string name="clear_speaker_title">Limpiar altavoz</string>
+   <string name="clear_speaker_summary">Reproducir un audio de 30 segundos para limpiar el altavoz</string>
+   <string name="clear_speaker_description">Ejecuta esta función una o dos veces si observas que tu altavoz está ligeramente obstruido por polvo. Ajusta el volumen multimedia al máximo.\n\nSi el altavoz está muy obstruido, ejecuta esta función 2-5 veces mientras sacudes el dispositivo con el altavoz orientado hacia abajo.</string>
+
+    <!-- Saturation -->
+    <string name="saturation_title">Saturación de pantalla</string>
+    <string name="saturation_summary">Controla el nivel de saturación de la pantalla</string>
+    <string name="saturation_footer_summary">Cambiar el modo de color en los ajustes de pantalla anulará el nivel de saturación, por lo que será necesario volver a aplicarlo.</string>
+
+    <!-- Image preview -->
+    <string name="image_preview_content_description">Vista previa</string>
+    <string name="image_preview_next_page_content_description">Siguiente</string>
+    <string name="image_preview_previous_page_content_description">Anterior</string>
+
+    <!-- Custom seekbar -->
+    <string name="custom_seekbar_value">Valor: <xliff:g id="v">%s</xliff:g></string>
+    <string name="custom_seekbar_default_value">por defecto</string>
+    <string name="custom_seekbar_default_value_to_set">Valor predeterminado: <xliff:g id="v">%s</xliff:g>\nMantén pulsado para establecer</string>
+    <string name="custom_seekbar_default_value_is_set">El valor predeterminado está establecido</string>
+    
+    <!-- Auto HBM -->
+    <string name="auto_hbm_title">Modo de alta luminosidad automático (HBM)</string>
+    <string name="auto_hbm_main_switch_title">Usar HBM automático</string>
+    <string name="tile_auto_hbm">HBM automático</string>
+    <string name="tile_hbm_on">Activado</string>
+    <string name="tile_hbm_off">Desactivado</string>
+    <string name="tile_hbm">HBM</string>
+    <string name="tile_hbm_unavailable">Modo alta luminosidad no disponible</string>
+    <string name="tile_auto_hbm_or_brightness_enabled">El modo de alta luminosidad automático o el brillo automático están activados</string>
+    <string name="hbm_mode_title">Modo de alta luminosidad</string>
+    <string name="hbm_mode_notification">El modo de alta luminosidad está activado. El uso prolongado puede dañar la pantalla.</string>
+    <string name="auto_hbm_summary">Activa automáticamente el modo de alta luminosidad según la intensidad de la luz solar (lux)</string>
+    <string name="auto_hbm_threshold_title">Umbral de luz</string>
+    <string name="auto_hbm_threshold_summary">Define el umbral de intensidad de luz en unidades lux al que se activa el modo de alta luminosidad</string>
+    <string name="auto_hbm_enable_time_title">Tiempo de activación</string>
+    <string name="auto_hbm_enable_time_summary">Duración en segundos que el umbral de luz debe mantenerse continuamente para activar el modo de alta luminosidad</string>
+    <string name="auto_hbm_disable_time_title">Tiempo de desactivación</string>
+    <string name="auto_hbm_disable_time_summary">Duración en segundos durante la cual el modo de alta luminosidad se desactiva si el umbral de luz cae por debajo del nivel establecido</string>
+
+    <!-- GameBar Overlay -->
+    <string name="game_bar_title">GameBar</string>
+    <string name="game_bar_summary">Activa la superposición del sistema (FPS, Temp, etc.)</string>
+    <string name="overlay_permission_required">Se requiere permiso para mostrar sobre otras aplicaciones</string>
+    <string name="overlay_permission_granted">Permiso de superposición concedido</string>
+    <string name="overlay_permission_denied">Permiso de superposición denegado</string>
+    <string name="game_bar_tile_label">GameBar</string>
+    <string name="game_bar_tile_description">Alternar la superposición de juego</string>
+
+    <!-- Charge bypass strings -->
+    <string name="charge_bypass_title">Carga directa</string>
+    <string name="charge_bypass_summary">Habilita la carga directa, omitiendo la batería</string>
+    <string name="charge_bypass_warning">Aviso: la carga directa puede aumentar la temperatura del dispositivo o dañar la batería. Úsalo con precaución.</string>
+    <string name="charge_bypass_unavailable">La carga directa no es compatible con este dispositivo</string>
+
+    <!-- Core Control -->
+    <string name="core_control_title">Control de núcleos</string>
+    <string name="core_control_summary">Activa o desactiva manualmente núcleos de CPU individuales</string>
+    <string name="core_control_description">Control avanzado de CPU. Apagar núcleos puede ahorrar batería o reducir la carga térmica, pero puede afectar el rendimiento y la estabilidad.\n\nAl menos dos núcleos pequeños deben permanecer en línea en todo momento.</string>
+    <string name="core_0">Núcleo 0 (pequeño)</string>
+    <string name="core_1">Núcleo 1 (pequeño)</string>
+    <string name="core_2">Núcleo 2 (pequeño)</string>
+    <string name="core_3">Núcleo 3 (pequeño)</string>
+    <string name="core_4">Núcleo 4 (grande)</string>
+    <string name="core_5">Núcleo 5 (grande)</string>
+    <string name="core_6">Núcleo 6 (grande)</string>
+    <string name="core_7">Núcleo 7 (grande)</string>
+
+    <!-- Sound Control -->
+    <string name="sound_control_title">Control de sonido</string>
+    <string name="mic_gain">Ganancia del micrófono (dB)</string>
+    <string name="hp_left_gain">Ganancia auriculares izquierdo</string>
+    <string name="hp_right_gain">Ganancia auriculares derecho</string>
+    <string name="sound_control_enable">Habilitar control de sonido</string>
+
+</resources>

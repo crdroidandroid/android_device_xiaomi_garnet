@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2020 The LineageOS Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Xiaomi Settings -->
+    <string name="app_title">Setelan Xiaomi</string>
+    <string name="tile_add">Tambahkan tile</string>
+    <string name="tile_added">Tile ditambahkan</string>
+    <string name="tile_not_added">Tile tidak ditambahkan</string>
+    <string name="tile_already_added">Tile sudah ditambahkan</string>
+    <string name="tile_on">Aktif</string>
+    <string name="tile_off">Non-aktif</string>
+
+    <!-- Thermal profiles -->
+    <string name="thermal_title">Profil Thermal</string>
+    <string name="thermal_summary">Atur profil thermal per-aplikasi untuk performa optimal</string>
+    <string name="thermal_default">Tanpa optimalisasi</string>
+    <string name="thermal_benchmark">Performa</string>
+    <string name="thermal_browser">Browser</string>
+    <string name="thermal_camera">Kamera</string>
+    <string name="thermal_dialer">Panggilan</string>
+    <string name="thermal_gaming">Gaming</string>
+    <string name="thermal_streaming">Streaming</string>
+
+    <!-- Per-app refresh rate -->
+    <string name="refresh_title">Refresh rate per-aplikasi</string>
+    <string name="refresh_summary">Atur maksimum refresh rate untuk aplikasi tertentu</string>
+    <string name="refresh_default">Bawaan</string>
+    <string name="refresh_standard">60 Hz</string>
+    <string name="refresh_high">90 Hz</string>
+    <string name="refresh_extreme">120 Hz</string>
+
+    <!-- Clear Speaker -->
+   <string name="clear_speaker_title">Bersihkan speaker</string>
+   <string name="clear_speaker_summary">Memutar suara 30 detik untuk membersihkan speaker</string>
+   <string name="clear_speaker_description">Gunakan fitur ini sekali atau dua kali jika speaker tertutup debu. Atur volume ke maksimal.\n\nJikas Speaker tertutup penuh, gunakan fitur ini 2-5 kali sambil "mengocok" perangkatmu dengan speaker mengarah kebawah</string>
+
+    <!-- Saturation -->
+    <string name="saturation_title">Saturasi Tampilan</string>
+    <string name="saturation_summary">Atur level saturasi dari tamplan</string>
+    <string name="saturation_footer_summary">Mengubah mode warna dari pengaturan tampilan akan menimpa level saturasi, butuh diterapkan ulang</string>
+
+    <!-- Image preview -->
+    <string name="image_preview_content_description">Preview</string>
+    <string name="image_preview_next_page_content_description">Lanjut</string>
+    <string name="image_preview_previous_page_content_description">Kembali</string>
+
+    <!-- Custom seekbar -->
+    <string name="custom_seekbar_value">Value: <xliff:g id="v">%s</xliff:g></string>
+    <string name="custom_seekbar_default_value">secara bawaan</string>
+    <string name="custom_seekbar_default_value_to_set">Nilai bawaan: <xliff:g id="v">%s</xliff:g>\nTahan untuk menerapkan</string>
+    <string name="custom_seekbar_default_value_is_set">Nilai bawaan ditetapkan</string>
+    
+    <!-- Auto HBM -->
+    <string name="auto_hbm_title">Mode Kecerahan Tinggi otomatis (HBM)</string>
+    <string name="auto_hbm_main_switch_title">Hidupkan HBM otomatis</string>
+    <string name="tile_auto_hbm">HBM Otomatis</string>
+    <string name="tile_hbm_on">Diaktifkan</string>
+    <string name="tile_hbm_off">Dinonaktifkan</string>
+    <string name="tile_hbm">HBM</string>
+    <string name="tile_hbm_unavailable">HBM Tidak Tersedia</string>
+    <string name="tile_auto_hbm_or_brightness_enabled">HBM Otomatis atau Kecerahan Otomatis diaktifkan</string>
+    <string name="hbm_mode_title">Mode Kecerahan Tinggi</string>
+    <string name="hbm_mode_notification">Mode Kecerahan Tinggi diaktifkan. Penggunaan terlalu lama mungkin merusak layar.</string>
+    <string name="auto_hbm_summary">Hidupkan otomatis mode kecerahan tinggi berdasarkan intensitas cahaya (lux)</string>
+    <string name="auto_hbm_threshold_title">Batas Cahaya</string>
+    <string name="auto_hbm_threshold_summary">Tentukan batas intensitas cahaya pada saat nilai lux berapa HBM aktif</string>
+    <string name="auto_hbm_enable_time_title">Waktu aktif</string>
+    <string name="auto_hbm_enable_time_summary">Durasi dalam detik berapa batas waktu harus terus dipenuhi untuk mengaktifkan HBM</string>
+    <string name="auto_hbm_disable_time_title">Waktu nonaktif</string>
+    <string name="auto_hbm_disable_time_summary">Durasi dalam detik berapa HBM dinonaktifkan jika intensitas cahaya jatuh dibawah level batas yang ditentukan</string>
+
+    <!-- GameBar Overlay -->
+    <string name="game_bar_title">GameBar</string>
+    <string name="game_bar_summary">Mengaktifkan overlay sistem (FPS, Temp, dll.)</string>
+    <string name="overlay_permission_required">Izin overlay dibutuhkan</string>
+    <string name="overlay_permission_granted">Izin overlay diberikan</string>
+    <string name="overlay_permission_denied">Izin overlay ditolak</string>
+    <string name="game_bar_tile_label">GameBar</string>
+    <string name="game_bar_tile_description">Hidupkan overlay game</string>
+
+    <!-- Charge bypass strings -->
+    <string name="charge_bypass_title">Bypass charging</string>
+    <string name="charge_bypass_summary">Hidupkan pengisian daya langsung, tanpa menggunakan baterai</string>
+    <string name="charge_bypass_warning">Peringatan: Bypass charging mungkin menyebabkan peningkatan suhu perangkat atau kerusakan baterai. Gunakan dengan hati-hati</string>
+    <string name="charge_bypass_unavailable">Bypass charging tidak didukung pada perangkat ini</string>
+
+    <!-- Core Control -->
+    <string name="core_control_title">Core Control</string>
+    <string name="core_control_summary">Aktifkan atau nonaktifkan CPU core tertentu secara manual</string>
+    <string name="core_control_description">CPU control lanjutan. Menonaktifkan core mungkin menghemat baterai atau mengurangi suhu, tapi mungkin mempengaruhi performa dan stabilitas. \n\nSetidaknya biarkan 2 core kecil harus tetap hidup setiap saat</string>
+    <string name="core_0">Core 0 (Kecil)</string>
+    <string name="core_1">Core 1 (Kecil)</string>
+    <string name="core_2">Core 2 (Kecil)</string>
+    <string name="core_3">Core 3 (Kecil)</string>
+    <string name="core_4">Core 4 (Besar)</string>
+    <string name="core_5">Core 5 (Besar)</string>
+    <string name="core_6">Core 6 (Besar)</string>
+    <string name="core_7">Core 7 (Besar)</string>
+
+    <!-- Sound Control -->
+    <string name="sound_control_title">Kontrol Suara</string>
+    <string name="mic_gain">Microphone gain (dB)</string>
+    <string name="hp_left_gain">Gain headphone kiri</string>
+    <string name="hp_right_gain">Gain headphone kanan</string>
+    <string name="sound_control_enable">Aktifkan kontrol suara</string>
+
+</resources>

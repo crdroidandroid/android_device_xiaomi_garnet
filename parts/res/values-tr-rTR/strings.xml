@@ -1,93 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <!-- Xiaomi Ayarları -->
+    <!-- Xiaomi Settings -->
     <string name="app_title">Xiaomi Ayarları</string>
-    <string name="tile_add">Karo ekle</string>
-    <string name="tile_added">Karo eklendi</string>
-    <string name="tile_not_added">Karo eklenmedi</string>
-    <string name="tile_already_added">Karo zaten eklenmiş</string>
+    <string name="tile_add">Döşeme ekle</string>
+    <string name="tile_added">Döşeme eklendi</string>
+    <string name="tile_not_added">Döşeme eklenemedi</string>
+    <string name="tile_already_added">Döşeme zaten ekli</string>
     <string name="tile_on">Açık</string>
     <string name="tile_off">Kapalı</string>
 
-    <!-- Termal profiller -->
+    <!-- Thermal profiles -->
     <string name="thermal_title">Termal profiller</string>
-    <string name="thermal_summary">Uygulama bazlı termal profilleri optimum performans için ayarla</string>
+    <string name="thermal_summary">Optimum performans için uygulamaya özel termal profilleri ayarla</string>
     <string name="thermal_default">Optimizasyon yok</string>
     <string name="thermal_benchmark">Performans</string>
     <string name="thermal_browser">Tarayıcı</string>
     <string name="thermal_camera">Kamera</string>
-    <string name="thermal_dialer">Arama</string>
+    <string name="thermal_dialer">Çevirici</string>
     <string name="thermal_gaming">Oyun</string>
-    <string name="thermal_streaming">Yayın</string>
+    <string name="thermal_streaming">Yayın Akışı</string>
 
-    <!-- Uygulama bazlı yenileme hızı -->
-    <string name="refresh_title">Uygulama bazlı yenileme hızı</string>
+    <!-- Per-app refresh rate -->
+    <string name="refresh_title">Uygulamaya özel yenileme hızı</string>
     <string name="refresh_summary">Belirli bir uygulama için maksimum yenileme hızını ayarla</string>
     <string name="refresh_default">Varsayılan</string>
     <string name="refresh_standard">60 Hz</string>
     <string name="refresh_high">90 Hz</string>
     <string name="refresh_extreme">120 Hz</string>
 
-    <!-- Hoparlör temizleme -->
-    <string name="clear_speaker_title">Hoparlörü temizle</string>
-    <string name="clear_speaker_summary">Hoparlörü temizlemek için 30 saniyelik ses çal</string>
-    <string name="clear_speaker_description">Hoparlörünüzün hafifçe tozla kaplandığını fark ederseniz bu özelliği bir veya iki kez çalıştırın. Medya sesini en yükseğe ayarlayın.\n\nHoparlör çok tozla tıkalıysa, cihazı hoparlör aşağı bakacak şekilde sallayarak bu özelliği 2-5 kez çalıştırın.</string>
+    <!-- Clear Speaker -->
+    <string name="clear_speaker_title">Hoparlör Temizleyici</string>
+    <string name="clear_speaker_summary">Hoparlörü temizlemek için 30 saniyelik bir ses çal</string>
+    <string name="clear_speaker_description">Hoparlörünüzün hafifçe tozla tıkandığını düşünüyorsanız bu özelliği bir veya iki kez çalıştırın. Medya ses düzeyini maksimuma ayarlayın.\n\nHoparlör aşırı tıkalıysa, cihazınızı hoparlör aşağı bakacak şekilde sallarken bu özelliği 2-5 kez çalıştırın.</string>
 
-    <!-- Doygunluk -->
+    <!-- Saturation -->
     <string name="saturation_title">Ekran Doygunluğu</string>
     <string name="saturation_summary">Ekranın doygunluk seviyesini kontrol et</string>
-    <string name="saturation_footer_summary">Ekran ayarlarından renk modu değiştirildiğinde doygunluk seviyesi geçersiz olur ve yeniden uygulanması gerekir.</string>
+    <string name="saturation_footer_summary">Ekran ayarlarında renk modunu değiştirmek, doygunluk seviyesini geçersiz kılacak ve yeniden uygulanmasını gerektirecektir.</string>
 
-    <!-- Görsel önizleme -->
+    <!-- Image preview -->
     <string name="image_preview_content_description">Önizleme</string>
     <string name="image_preview_next_page_content_description">Sonraki</string>
     <string name="image_preview_previous_page_content_description">Önceki</string>
 
-    <!-- Özel kaydırma çubuğu -->
+    <!-- Custom seekbar -->
     <string name="custom_seekbar_value">Değer: <xliff:g id="v">%s</xliff:g></string>
-    <string name="custom_seekbar_default_value">varsayılan</string>
-    <string name="custom_seekbar_default_value_to_set">Varsayılan değer: <xliff:g id="v">%s</xliff:g>\nAyarlamak için uzun basın</string>
+    <string name="custom_seekbar_default_value">varsayılan olarak</string>
+    <string name="custom_seekbar_default_value_to_set">Varsayılan değer: <xliff:g id="v">%s</xliff:g>\nAyarlamak için uzun dokunun</string>
     <string name="custom_seekbar_default_value_is_set">Varsayılan değer ayarlandı</string>
     
-    <!-- Otomatik HBM -->
-    <string name="auto_hbm_title">Otomatik Yüksek Parlaklık Modu (HBM)</string>
-    <string name="auto_hbm_main_switch_title">Otomatik HBM kullan</string>
-    <string name="tile_auto_hbm">Oto HBM</string>
+    <!-- Auto HBM -->
+    <string name="auto_hbm_title">Otomatik Yüksek Parlaklık Modu (YPM)</string>
+    <string name="auto_hbm_main_switch_title">Otomatik YPM kullan</string>
+    <string name="tile_auto_hbm">Otomatik YPM</string>
     <string name="tile_hbm_on">Etkin</string>
-    <string name="tile_hbm_off">Devre dışı</string>
-    <string name="tile_hbm">HBM</string>
-    <string name="tile_hbm_unavailable">HBM Kullanılamıyor</string>
-    <string name="tile_auto_hbm_or_brightness_enabled">Oto HBM veya Otomatik Parlaklık etkin</string>
+    <string name="tile_hbm_off">Devre Dışı</string>
+    <string name="tile_hbm">YPM</string>
+    <string name="tile_hbm_unavailable">YPM Kullanılamıyor</string>
+    <string name="tile_auto_hbm_or_brightness_enabled">Otomatik YPM veya Otomatik Parlaklık etkinleştirildi</string>
     <string name="hbm_mode_title">Yüksek Parlaklık Modu</string>
-    <string name="hbm_mode_notification">Yüksek Parlaklık Modu etkinleştirildi. Uzun süreli kullanım ekranınıza zarar verebilir.</string>
+    <string name="hbm_mode_notification">Yüksek Parlaklık Modu şimdi etkinleştirildi. Uzun süreli kullanım ekranınıza zarar verebilir.</string>
     <string name="auto_hbm_summary">Güneş ışığı yoğunluğuna (lüks) göre yüksek parlaklık modunu otomatik olarak etkinleştir</string>
     <string name="auto_hbm_threshold_title">Işık eşiği</string>
-    <string name="auto_hbm_threshold_summary">HBM’nin etkinleştirileceği ışık yoğunluğu eşiğini lüks cinsinden tanımla</string>
+    <string name="auto_hbm_threshold_summary">YPM’nin etkinleştirileceği lüks birimindeki ışık yoğunluğu eşiğini tanımla</string>
     <string name="auto_hbm_enable_time_title">Etkinleştirme süresi</string>
-    <string name="auto_hbm_enable_time_summary">HBM’nin etkinleşmesi için ışık eşiğinin sürekli karşılanması gereken saniye süresi</string>
+    <string name="auto_hbm_enable_time_summary">YPM’yi etkinleştirmek için ışık eşiğinin sürekli olarak karşılanması gereken süre (saniye)</string>
     <string name="auto_hbm_disable_time_title">Devre dışı bırakma süresi</string>
-    <string name="auto_hbm_disable_time_summary">Işık eşiği belirlenen seviyenin altına düştüğünde HBM’nin devre dışı kalacağı saniye süresi</string>
+    <string name="auto_hbm_disable_time_summary">Işık eşiği ayarlanan seviyenin altına düşerse YPM’nin devre dışı bırakılacağı süre (saniye)</string>
 
-    <!-- GameBar Katmanı -->
-    <string name="game_bar_title">GameBar</string>
-    <string name="game_bar_summary">Sistem katmanını (FPS, Sıcaklık vb.) etkinleştir</string>
-    <string name="overlay_permission_required">Katman izni gerekli</string>
+    <!-- GameBar Overlay -->
+    <string name="game_bar_title">Oyun Çubuğu</string>
+    <string name="game_bar_summary">Sistem katmanını etkinleştir (FPS, Sıcaklık, vb.)</string>
+    <string name="overlay_permission_required">Katman izni gerekiyor</string>
     <string name="overlay_permission_granted">Katman izni verildi</string>
     <string name="overlay_permission_denied">Katman izni reddedildi</string>
-    <string name="game_bar_tile_label">GameBar</string>
+    <string name="game_bar_tile_label">Oyun Çubuğu</string>
     <string name="game_bar_tile_description">Oyun katmanını aç/kapat</string>
 
-    <!-- Şarj atlatma -->
-    <string name="charge_bypass_title">Şarjı atlat</string>
+    <!-- Charge bypass strings -->
+    <string name="charge_bypass_title">Şarjı baypas et</string>
     <string name="charge_bypass_summary">Bataryayı atlayarak doğrudan şarj etmeyi etkinleştir</string>
-    <string name="charge_bypass_warning">Uyarı: Şarj atlatma cihaz sıcaklığını artırabilir veya bataryaya zarar verebilir. Dikkatli kullanın.</string>
-    <string name="charge_bypass_unavailable">Bu cihazda şarj atlatma desteklenmiyor</string>
+    <string name="charge_bypass_warning">Uyarı: Şarjı baypas etmek cihaz sıcaklığını artırabilir veya bataryaya zarar verebilir. Dikkatli kullanın.</string>
+    <string name="charge_bypass_unavailable">Şarjı baypas etme bu cihazda desteklenmiyor</string>
 
-    <!-- Çekirdek kontrolü -->
+    <!-- Core Control -->
     <string name="core_control_title">Çekirdek Kontrolü</string>
-    <string name="core_control_summary">Bireysel CPU çekirdeklerini manuel olarak aç veya kapat</string>
-    <string name="core_control_description">Gelişmiş CPU kontrolü. Çekirdekleri kapatmak batarya tasarrufu veya ısıl yük azaltımı sağlayabilir, ancak performans ve stabiliteyi etkileyebilir.\n\nHer zaman en az iki küçük çekirdek açık kalmalıdır.</string>
+    <string name="core_control_summary">Tek tek CPU çekirdeklerini manuel olarak etkinleştir veya devre dışı bırak</string>
+    <string name="core_control_description">Gelişmiş CPU kontrolü. Çekirdekleri kapatmak pil veya termal yükten tasarruf sağlayabilir, ancak performansı ve kararlılığı etkileyebilir.\n\nEn az iki küçük çekirdeğin her zaman çevrimiçi kalması gerekir.</string>
     <string name="core_0">Çekirdek 0 (Küçük)</string>
     <string name="core_1">Çekirdek 1 (Küçük)</string>
     <string name="core_2">Çekirdek 2 (Küçük)</string>
@@ -97,11 +97,10 @@
     <string name="core_6">Çekirdek 6 (Büyük)</string>
     <string name="core_7">Çekirdek 7 (Büyük)</string>
 
-    <!-- Ses kontrolü -->
+    <!-- Sound Control -->
     <string name="sound_control_title">Ses Kontrolü</string>
     <string name="mic_gain">Mikrofon kazancı (dB)</string>
     <string name="hp_left_gain">Sol kulaklık kazancı</string>
     <string name="hp_right_gain">Sağ kulaklık kazancı</string>
     <string name="sound_control_enable">Ses kontrolünü etkinleştir</string>
 </resources>
-
