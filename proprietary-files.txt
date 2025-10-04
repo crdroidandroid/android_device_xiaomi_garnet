@@ -1363,6 +1363,10 @@ vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
 vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
 
 # Graphics (Adreno)
+vendor/etc/permissions/android.hardware.vulkan.version-1_1.xml:vendor/etc/permissions/android.hardware.vulkan.version-1_1.xml
+vendor/etc/permissions/android.hardware.vulkan.version-1_3.xml:vendor/etc/permissions/android.hardware.vulkan.version-1_3.xml
+vendor/etc/permissions/android.software.opengles.deqp.level.xml:vendor/etc/permissions/android.software.opengles.deqp.level.xml
+vendor/etc/permissions/android.software.vulkan.deqp.level.xml:vendor/etc/permissions/android.software.vulkan.deqp.level.xml
 vendor/gpu/kbc/sequence_manifest.bin
 vendor/gpu/kbc/unified_kbcs_32.bin
 vendor/gpu/kbc/unified_kbcs_64.bin
