@@ -77,21 +77,12 @@ vendor/firmware/aw882xx_acf.bin
 vendor/firmware/fs19xx.fsm
 
 # Audio graph manager
-vendor/bin/agmcap;MAKE_COPY_RULE_ONLY
-vendor/bin/agmcompressplay;MAKE_COPY_RULE_ONLY
-vendor/bin/agmplay;MAKE_COPY_RULE_ONLY
 vendor/bin/hw/vendor.qti.hardware.AGMIPC@1.0-service;MAKE_COPY_RULE_ONLY
-vendor/etc/init/vendor.qti.hardware.AGMIPC@1.0-service.rc
+vendor/etc/init/vendor.qti.hardware.AGMIPC@1.0-service.rc:vendor/etc/init/vendor.qti.hardware.AGMIPC@1.0-service_garnet.rc
 vendor/lib64/libagm.so;MAKE_COPY_RULE_ONLY
-vendor/lib64/libagm_compress_plugin.so;MAKE_COPY_RULE_ONLY
-vendor/lib64/libagm_mixer_plugin.so;MAKE_COPY_RULE_ONLY
-vendor/lib64/libagm_pcm_plugin.so;MAKE_COPY_RULE_ONLY
-vendor/lib64/libagmclient.so;MAKE_COPY_RULE_ONLY
 vendor/lib64/libagmmixer.so;MAKE_COPY_RULE_ONLY
 vendor/lib64/libmisight.so
-vendor/lib64/libsndcardparser.so;MAKE_COPY_RULE_ONLY
 vendor/lib64/vendor.qti.hardware.AGMIPC@1.0-impl.so;MAKE_COPY_RULE_ONLY
-vendor/lib64/vendor.qti.hardware.AGMIPC@1.0.so;MAKE_COPY_RULE_ONLY
 
 # Audio libraries
 vendor/etc/audio_cloud_control_white_list.xml
@@ -126,7 +117,6 @@ vendor/lib64/libqtigefar.so;MAKE_COPY_RULE_ONLY
 vendor/lib64/libresampler.so;MAKE_COPY_RULE_ONLY
 vendor/lib64/libxlog.so
 vendor/lib64/vendor.qti.hardware.pal@1.0-impl.so;MAKE_COPY_RULE_ONLY
-vendor/lib64/vendor.qti.hardware.pal@1.0.so;MAKE_COPY_RULE_ONLY
 
 # Audio soundfx
 vendor/lib64/soundfx/libasphere.so
@@ -147,9 +137,6 @@ vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.1-impl.so
 vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so
 vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so
 vendor/lib64/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so
-vendor/lib64/lib_bt_aptx.so;MAKE_COPY_RULE_ONLY
-vendor/lib64/lib_bt_ble.so;MAKE_COPY_RULE_ONLY
-vendor/lib64/lib_bt_bundle.so;MAKE_COPY_RULE_ONLY
 vendor/lib64/libbluetooth_audio_session_qti.so
 vendor/lib64/libbluetooth_audio_session_qti_2_1.so
 vendor/lib64/libbt-hidlclient.so
