@@ -493,4 +493,8 @@ PRODUCT_COPY_FILES += \
 # Vendor
 $(call inherit-product, vendor/xiaomi/garnet/garnet-vendor.mk)
 
+# Sign Keys
 -include vendor/lineage-priv/keys/keys.mk
+
+# Board Platform
+TARGET_BOARD_PLATFORM := parrot
