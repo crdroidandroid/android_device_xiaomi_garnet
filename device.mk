@@ -57,7 +57,6 @@ PRODUCT_PACKAGES += \
     audio.usb.default
 
 PRODUCT_PACKAGES += \
-    libaudioroute-v34 \
     lib_bt_aptx \
     lib_bt_ble \
     lib_bt_bundle \
@@ -72,10 +71,6 @@ PRODUCT_PACKAGES += \
     libqcomvoiceprocessing \
     libsndcardparser \
     libvolumelistener
-
-PRODUCT_PACKAGES += \
-    vendor.qti.hardware.AGMIPC@1.0.vendor \
-    vendor.qti.hardware.pal@1.0.vendor
 
 AUDIO_HAL_DIR := hardware/qcom-caf/sm8450/audio/primary-hal
 
