@@ -212,7 +212,6 @@ TARGET_ODM_PROP += $(DEVICE_PATH)/props/odm.prop
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/props/system.prop
 TARGET_SYSTEM_EXT_PROP += $(DEVICE_PATH)/props/system_ext.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/props/vendor.prop
-TARGET_PRODUCT_PROP += $(DEVICE_PATH)/props/product.prop
 
 # Vendor security patch
 VENDOR_SECURITY_PATCH := 2025-08-01
