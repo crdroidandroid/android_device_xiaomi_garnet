@@ -1,19 +1,19 @@
 echo 'Time to cook crDroid v12.x'
 
 echo 'Cloning device tree'
-git clone https://github.com/crdroidandroid/android_device_xiaomi_garnet -b 16.0 device/xiaomi/garnet
+git clone https://github.com/crdroidandroid/android_device_xiaomi_garnet -b 15.0 device/xiaomi/garnet
 
 echo 'Cloning vendor tree'
-git clone https://github.com/crdroidandroid/proprietary_vendor_xiaomi_garnet -b 16.0 vendor/xiaomi/garnet
+git clone https://github.com/crdroidandroid/proprietary_vendor_xiaomi_garnet -b 15.0 vendor/xiaomi/garnet
 
 echo 'Cloning kernel'
-git clone https://github.com/crdroidandroid/android_xiaomi_kernel_garnet -b 16.0 kernel/xiaomi/garnet
+git clone https://github.com/crdroidandroid/android_xiaomi_kernel_garnet -b 15.0 kernel/xiaomi/garnet
 
 echo 'Cloning kernel modules'
-git clone https://github.com/MySelly/android_kernel_xiaomi_garnet-modules -b lineage-23.0 kernel/xiaomi/garnet-modules
+git clone https://github.com/MySelly/android_kernel_xiaomi_garnet-modules -b lineage-22.2 kernel/xiaomi/garnet-modules
 
 echo 'Cloning kernel devicetrees'
-git clone https://github.com/MySelly/android_kernel_xiaomi_garnet-devicetrees -b lineage-23.0 kernel/xiaomi/garnet-devicetrees
+git clone https://github.com/MySelly/android_kernel_xiaomi_garnet-devicetrees -b lineage-22.2 kernel/xiaomi/garnet-devicetrees
 
 echo 'Cloning hardware'
 git clone https://github.com/MySelly/android_hardware_xiaomi_garnet hardware/xiaomi
