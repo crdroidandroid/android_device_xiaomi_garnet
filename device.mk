@@ -59,12 +59,11 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     audioadsprpcd:64 \
-    libaudioroute-v34 \
+    audio.primary.parrot:64 \
     audio.r_submix.default:64 \
     audio.usb.default:64
 
 PRODUCT_PACKAGES += \
-    libaudioroute-v34 \
     libbatterylistener:64 \
     libfmpal:64 \
     libldacBT_bco:64 \
