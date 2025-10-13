@@ -289,7 +289,7 @@ ro.hwui.texture_cache_flushrate=0.4
 ro.hwui.texture_cache_size=72
 debug.hwui.use_hint_manager=true
 debug.hwui.target_cpu_time_percent=30
-debug.hwui.renderer=skiagl
+debug.hwui.renderer=skiavk
 debug.hwui.show_overdraw=false
 debug.hwui.use_triple_buffering=true
 
