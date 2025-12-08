@@ -16,9 +16,6 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 # Qualcomm
 $(call inherit-product, hardware/qcom-caf/common/common.mk)
 
-# MiuiCamera
-$(call inherit-product-if-exists, device/xiaomi/garnet-miuicamera/device.mk)
-
 # A/B
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_system=true \
@@ -462,3 +459,6 @@ PRODUCT_COPY_FILES += \
 
 # Vendor
 $(call inherit-product, vendor/xiaomi/garnet/garnet-vendor.mk)
+
+# Vendor MiuiCamera
+$(call inherit-product-if-exists, device/xiaomi/garnet-miuicamera/device.mk)
