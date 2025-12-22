@@ -84,6 +84,8 @@ vendor.hw.fm.init=0
 camera.disable_zsl_mode=true
 ro.camera.enableCamera1MaxZsl=1
 ro.hardware.camera=xiaomi
+persist.vendor.camera.eis.enable=1
+persist.vendor.camera.is_type=4
 
 # Chipset
 ro.soc.manufacturer=QTI
