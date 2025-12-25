@@ -86,6 +86,8 @@ ro.camera.enableCamera1MaxZsl=1
 ro.hardware.camera=xiaomi
 persist.vendor.camera.eis.enable=1
 persist.vendor.camera.is_type=4
+persist.vendor.camera.aux.packagelist=*
+persist.camera.aux.packagelist=*
 
 # Chipset
 ro.soc.manufacturer=QTI
