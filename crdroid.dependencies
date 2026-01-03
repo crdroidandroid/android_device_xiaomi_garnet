@@ -1,0 +1,22 @@
+[
+  {
+    "repository": "crdroidandroid/proprietary_vendor_xiaomi_garnet",
+    "target_path": "vendor/xiaomi/garnet"
+  },
+  {
+    "repository": "crdroidandroid/android_xiaomi_kernel_garnet",
+    "target_path": "kernel/xiaomi/garnet"
+  },
+  {
+    "repository": "crdroidandroid/android_kernel_xiaomi_garnet-modules",
+    "target_path": "kernel/xiaomi/garnet-modules"
+  },
+  {
+    "repository": "crdroidandroid/android_kernel_xiaomi_garnet-devicetrees",
+    "target_path": "kernel/xiaomi/garnet-devicetrees"
+  },
+  {
+    "repository": "crdroidandroid/android_hardware_xiaomi",
+    "target_path": "hardware/xiaomi"
+  }
+]
