@@ -249,7 +249,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(AUDIO_HAL_DIR)/configs/common/codec2/media_codecs_c2_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_c2_audio.xml
 
-$(call soong_config_set,stagefright,target_disable_thumbnail_block_model,true)
+$(call soong_config_set_bool,stagefright,target_disable_thumbnail_block_model,true)
 
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.memtrack-service
@@ -438,7 +438,7 @@ PRODUCT_COPY_FILES += \
 
 # Vibrator
 $(call soong_config_set,qti_vibrator,effect_lib,libqtivibratoreffect.xiaomi)
-$(call soong_config_set,qti_vibrator,use_effect_stream,true)
+$(call soong_config_set_bool,qti_vibrator,use_effect_stream,true)
 
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.vibrator.service
