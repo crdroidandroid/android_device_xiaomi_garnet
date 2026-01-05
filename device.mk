@@ -476,7 +476,7 @@ PRODUCT_COPY_FILES += \
 $(call inherit-product, vendor/xiaomi/garnet/garnet-vendor.mk)
 
 # Vendor MiuiCamera
-$(call inherit-product-if-exists, device/xiaomi/garnet-miuicamera/device.mk)
+$(call inherit-product-if-exists, device/xiaomi/miuicamera-garnet/device.mk)
 
 # Sign Keys
 -include vendor/lineage-priv/keys/keys.mk
