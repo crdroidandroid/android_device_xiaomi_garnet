@@ -3,6 +3,7 @@ remote_provisioning.enable_rkpd=true
 remote_provisioning.hostname=remoteprovisioning.googleapis.com
 
 # Bluetooth
+bluetooth.auto_connect_profiles.enabled=true
 bluetooth.device_id.vendor_id=0x001D
 bluetooth.profile.a2dp.source.enabled=true
 bluetooth.profile.avrcp.controller.enabled=true
