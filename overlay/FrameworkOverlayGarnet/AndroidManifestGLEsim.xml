@@ -7,6 +7,6 @@
     <overlay android:targetPackage="android"
                    android:isStatic="true"
                    android:priority="1000"
-                   android:requiredSystemPropertyName="ro.boot.product.hardware.sku"
-                   android:requiredSystemPropertyValue="GL"/>
+                   android:requiredSystemPropertyName="ro.boot.hardware.sku,ro.boot.product.hardware.sku"
+                   android:requiredSystemPropertyValue="garnet,GL"/>
 </manifest>
