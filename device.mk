@@ -387,9 +387,13 @@ PRODUCT_BOOT_JARS += \
     telephony-ext \
     xiaomi-telephony-stub
 
-$(foreach sku, GL JP, \
+$(foreach sku, garnet XIG05, \
     $(eval PRODUCT_COPY_FILES += \
-        frameworks/native/data/etc/android.hardware.telephony.euicc.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_$(sku)/android.hardware.telephony.euicc.xml))
+        frameworks/native/data/etc/android.hardware.telephony.euicc.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/sku_$(sku)/android.hardware.telephony.euicc.xml))
+
+$(foreach sku, CN IN, \
+    $(eval PRODUCT_COPY_FILES += \
+        $(LOCAL_PATH)/configs/permissions/android.hardware.telephony.exclude-euicc.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_$(sku)/android.hardware.telephony.exclude-euicc.xml))
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.cdma.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.cdma.xml \
