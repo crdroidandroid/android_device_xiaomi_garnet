@@ -29,3 +29,8 @@ genfscon sysfs /devices/platform/soc/a80000.i2c/i2c-3/3-0028/wakeup u:object_r:s
 
 # Walt
 genfscon proc /sys/walt u:object_r:proc_walt:s0
+
+# Torch control
+genfscon sysfs /devices/platform/soc/c42d000.qcom,spmi/spmi-0/0-05/c42d000.qcom,spmi:qcom,pm6150l@5:qcom,leds@d300/led:torch_0/brightness u:object_r:sysfs_leds:s0
+genfscon sysfs /devices/platform/soc/c42d000.qcom,spmi/spmi-0/0-05/c42d000.qcom,spmi:qcom,pm6150l@5:qcom,leds@d300/led:torch_0/max_brightness u:object_r:sysfs_leds:s0
+genfscon sysfs /devices/platform/soc/c42d000.qcom,spmi/spmi-0/0-05/c42d000.qcom,spmi:qcom,pm6150l@5:qcom,leds@d300/led:switch_2/brightness u:object_r:sysfs_leds:s0
