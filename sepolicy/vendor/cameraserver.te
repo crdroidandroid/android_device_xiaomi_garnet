@@ -1,1 +1,2 @@
+allow cameraserver property_socket:sock_file { read write };
 allow cameraserver sysfs_torch:file rw_file_perms;

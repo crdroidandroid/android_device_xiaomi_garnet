@@ -11,3 +11,7 @@ allow hal_camera_default vendor_sysfs_kgsl:file r_file_perms;
 allow hal_camera_default vendor_sysfs_kgsl:dir r_dir_perms;
 
 allow hal_camera_default sysfs_devices_system_cpu:file r_file_perms;
+
+allow hal_camera_default sysfs_thermal:dir search;
+allow hal_camera_default sysfs_thermal:file w_file_perms;
+
