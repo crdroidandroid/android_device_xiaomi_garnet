@@ -31,6 +31,9 @@ on boot
     chmod 0700 /sys/bus/platform/devices/soc:fingerprint_fpc/screen
     chmod 0666 /dev/input/event2
 
+    chown cameraserver camera /sys/devices/platform/soc/c42d000.qcom,spmi/spmi-0/0-05/c42d000.qcom,spmi:qcom,pm6150l@5:qcom,leds@d300/leds/led:torch_0/brightness
+    chown cameraserver camera /sys/devices/platform/soc/c42d000.qcom,spmi/spmi-0/0-05/c42d000.qcom,spmi:qcom,pm6150l@5:qcom,leds@d300/leds/led:switch_2/brightness
+
 on post-fs-data
     mkdir /data/vendor/misc 01771 system system
     mkdir /data/vendor/misc/mi_fp 0770 system system
