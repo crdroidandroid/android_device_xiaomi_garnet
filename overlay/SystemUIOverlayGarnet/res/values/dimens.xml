@@ -4,6 +4,11 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Blur Radius -->
+    <dimen name="max_shade_window_blur_radius">17dp</dimen>
+
+    <!-- Status Bar -->
     <dimen name="status_bar_padding_start">20.0px</dimen>
     <dimen name="status_bar_padding_end">8.0px</dimen>
 
