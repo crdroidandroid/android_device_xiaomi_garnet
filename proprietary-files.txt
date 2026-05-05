@@ -1,4 +1,4 @@
-# All unpinned blobs below are extracted from garnet OS2.0.206.0.VNRMIXM
+# All unpinned blobs below are extracted from garnet OS3.0.5.0.WNRMIXM
 
 # ACDB
 vendor/etc/acdbdata/Mise/Mise_acdb_cal.acdb
@@ -231,6 +231,7 @@ vendor/lib64/vendor.qti.latency@2.1.so
 
 # Camera
 odm/etc/camera/camerabooster.json
+odm/etc/camera/cameradfx_config.json
 odm/etc/camera/camerascene.json
 odm/etc/camera/videofilter/110_BlackGold.png
 odm/etc/camera/videofilter/129_LeicaVivid.png
@@ -260,7 +261,8 @@ odm/etc/camera/videofilter/163_KG200.png
 odm/etc/camera/videofilter/164_FC400.png
 odm/etc/camera/videofilter/165_C50D.png
 odm/etc/camera/videofilter/166_F50.png
-odm/lib64/libMiVideoFilter.so
+odm/lib64/com.xiaomi.camdfx.so
+odm/lib64/libMiPhotoFilter.so
 odm/lib64/librfs_warp.so
 vendor/bin/hw/vendor.qti.camera.provider@2.7-service_64
 vendor/bin/hw/vendor.xiaomi.hardware.quickcamera@1.0-service
@@ -1656,6 +1658,10 @@ vendor/lib64/libqmi_legacy.so
 vendor/lib64/libqmiextservices.so
 vendor/lib64/libqmiservices.so
 
+# QSPA
+system_ext/etc/init/qspa_system.rc
+system_ext/etc/qspa/qspa_default.rc
+
 # QSPM
 vendor/bin/vendor.qti.qspmhal@1.0-service
 vendor/etc/init/vendor.qti.qspmhal@1.0-service.rc
@@ -1688,13 +1694,11 @@ product/framework/uimgbalibrary.jar
 product/framework/uimgbamanagerlibrary.jar
 product/framework/uimservicelibrary.jar
 system_ext/app/AtFwd2/AtFwd2.apk
-system_ext/app/ImsRcsService/ImsRcsService.apk
 system_ext/app/QtiTelephonyService/QtiTelephonyService.apk
 system_ext/etc/permissions/qcrilhook.xml
 system_ext/etc/permissions/qti_permissions.xml
 system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml
 system_ext/etc/permissions/vendor.qti.ims.rcsservice.xml
-system_ext/framework/mirilhook.jar
 system_ext/framework/qcrilhook.jar
 system_ext/framework/vendor.qti.ims.connection-V1.0-java.jar
 system_ext/framework/vendor.qti.ims.connectionaidlservice-V1-java.jar
@@ -1710,6 +1714,7 @@ system_ext/framework/vendor.qti.ims.rcsuce-V1.0-java.jar
 system_ext/framework/vendor.qti.ims.rcsuce-V1.1-java.jar
 system_ext/framework/vendor.qti.ims.rcsuce-V1.2-java.jar
 system_ext/framework/vendor.qti.ims.rcsuceaidlservice-V1-java.jar
+system_ext/framework/xiaomi-modem-common.jar
 system_ext/lib64/lib-imsvideocodec.so
 system_ext/lib64/lib-imsvt.so
 system_ext/lib64/lib-imsvtextutils.so
@@ -1718,6 +1723,7 @@ system_ext/lib64/libdiag_system.so
 system_ext/lib64/libimscamera_jni.so;SYMLINK=system_ext/priv-app/ims/lib/arm64/libimscamera_jni.so
 system_ext/lib64/libimsmedia_jni.so;SYMLINK=system_ext/priv-app/ims/lib/arm64/libimsmedia_jni.so
 system_ext/lib64/vendor.qti.ImsRtpService-V1-ndk.so
+system_ext/lib64/vendor.qti.ImsRtpService-V2-ndk.so
 system_ext/lib64/vendor.qti.imsrtpservice@3.0.so
 system_ext/lib64/vendor.qti.imsrtpservice@3.1.so
 system_ext/priv-app/QtiTelephony/QtiTelephony.apk;REQUIRED=QtiTelephonyCompat
