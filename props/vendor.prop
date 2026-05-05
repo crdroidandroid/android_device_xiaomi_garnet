@@ -193,7 +193,7 @@ persist.vendor.radio.snapshot_timer=0
 persist.vendor.sys.modem.diag=0
 persist.vendor.ssr.enable_ramdumps=0
 persist.vendor.perf.enable_logger=false
-ro.vendor.radio.build_profile=v-stable
+ro.vendor.radio.build_profile=w-stable
 
 # RCS
 persist.vendor.rcs.singlereg.feature=1
