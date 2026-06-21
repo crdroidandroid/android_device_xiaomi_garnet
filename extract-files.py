@@ -114,6 +114,7 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/lib64/libQnnDspV65CalculatorStub.so': blob_fixup()
         .add_needed('liblog.so'),
     (
+        'odm/lib64/libMiVideoFilter.so',
         'vendor/lib64/libalhLDC.so',
         'vendor/lib64/libalLDC.so',
         'vendor/lib64/libTrueSight.so'
