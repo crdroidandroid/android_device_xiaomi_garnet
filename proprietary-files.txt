@@ -1362,24 +1362,6 @@ vendor/gpu/kbc/sequence_manifest.bin
 vendor/gpu/kbc/unified_kbcs_32.bin
 vendor/gpu/kbc/unified_kbcs_64.bin
 vendor/gpu/kbc/unified_ksqs.bin
-vendor/lib/egl/eglSubDriverAndroid.so
-vendor/lib/egl/libEGL_adreno.so;SYMLINK=vendor/lib/libEGL_adreno.so
-vendor/lib/egl/libGLESv1_CM_adreno.so
-vendor/lib/egl/libGLESv2_adreno.so;SYMLINK=vendor/lib/libGLESv2_adreno.so
-vendor/lib/egl/libVkLayer_ADRENO_qprofiler.so
-vendor/lib/egl/libq3dtools_adreno.so;SYMLINK=vendor/lib/libq3dtools_adreno.so
-vendor/lib/egl/libq3dtools_esx.so
-vendor/lib/libCB.so
-vendor/lib/libOpenCL.so
-vendor/lib/libadreno_app_profiles.so
-vendor/lib/libadreno_utils.so
-vendor/lib/libgpudataproducer.so
-vendor/lib/libgsl.so
-vendor/lib/libkcl.so
-vendor/lib/libkernelmanager.so
-vendor/lib/libllvm-glnext.so
-vendor/lib/libllvm-qcom.so
-vendor/lib/libllvm-qgl.so
 vendor/lib64/egl/eglSubDriverAndroid.so
 vendor/lib64/egl/libEGL_adreno.so;SYMLINK=vendor/lib64/libEGL_adreno.so
 vendor/lib64/egl/libGLESv1_CM_adreno.so
@@ -1663,8 +1645,6 @@ system_ext/etc/qspa/qspa_default.rc
 vendor/bin/vendor.qti.qspmhal@1.0-service
 vendor/etc/init/vendor.qti.qspmhal@1.0-service.rc
 vendor/etc/seccomp_policy/qspm.policy
-vendor/lib/vendor.qti.qspmhal@1.0-impl.so
-vendor/lib/vendor.qti.qspmhal@1.0.so
 vendor/lib64/vendor.qti.qspmhal@1.0-impl.so
 vendor/lib64/vendor.qti.qspmhal@1.0.so
 
@@ -1739,7 +1719,6 @@ vendor/bin/port-bridge
 vendor/bin/qti
 vendor/bin/rmt_storage
 vendor/bin/shsusrd
-vendor/bin/ssgqmigd
 vendor/bin/ssgtzd
 vendor/bin/tftp_server
 vendor/etc/data/dsi_config.xml
@@ -2116,7 +2095,6 @@ vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
 vendor/app/TrustZoneAccessService/TrustZoneAccessService.apk
 
 # VM mem
-vendor/lib/libvmmem.so
 vendor/lib64/libvmmem.so
 
 # VM mgr
