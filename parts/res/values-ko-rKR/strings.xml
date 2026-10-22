@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2020 The LineageOS Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Xiaomi Settings -->
+    <string name="app_title">Xiaomi 설정</string>
+    <string name="tile_add">타일 추가</string>
+    <string name="tile_added">타일이 추가됨</string>
+    <string name="tile_not_added">타일이 추가되지 않음</string>
+    <string name="tile_already_added">타일이 이미 추가됨</string>
+    <string name="tile_on">켜짐</string>
+    <string name="tile_off">꺼짐</string>
+
+    <!-- Thermal profiles -->
+    <string name="thermal_title">열 프로필</string>
+    <string name="thermal_summary">최적의 성능을 위해 앱별 열 프로필 조정</string>
+    <string name="thermal_default">최적화 없음</string>
+    <string name="thermal_benchmark">성능</string>
+    <string name="thermal_browser">브라우저</string>
+    <string name="thermal_camera">카메라</string>
+    <string name="thermal_dialer">전화</string>
+    <string name="thermal_gaming">게임</string>
+    <string name="thermal_streaming">스트리밍</string>
+
+    <!-- Clear Speaker -->
+   <string name="clear_speaker_title">스피커 청소</string>
+   <string name="clear_speaker_summary">30초 오디오를 재생하여 스피커 청소</string>
+   <string name="clear_speaker_description">스피커가 먼지로 가볍게 막힌 경우 이 기능을 한두 번 실행하세요. 미디어 볼륨을 최대로 설정하세요.\n\n스피커가 심하게 막힌 경우 스피커가 아래를 향하도록 기기를 흔들면서 이 기능을 2~5회 실행하세요.</string>
+
+    <!-- Saturation -->
+    <string name="saturation_title">화면 채도</string>
+    <string name="saturation_summary">화면의 채도 수준 제어</string>
+    <string name="saturation_footer_summary">화면 설정에서 색상 모드를 변경하면 채도 수준이 덮어씌워져 다시 적용해야 합니다.</string>
+
+    <!-- Image preview -->
+    <string name="image_preview_content_description">미리보기</string>
+    <string name="image_preview_next_page_content_description">다음</string>
+    <string name="image_preview_previous_page_content_description">이전</string>
+
+    <!-- Custom seekbar -->
+    <string name="custom_seekbar_value">값: <xliff:g id="v">%s</xliff:g></string>
+    <string name="custom_seekbar_default_value">기본값으로</string>
+    <string name="custom_seekbar_default_value_to_set">기본값: <xliff:g id="v">%s</xliff:g>\n길게 눌러 설정</string>
+    <string name="custom_seekbar_default_value_is_set">기본값이 설정되었습니다</string>
+
+    <!-- Auto HBM -->
+    <string name="auto_hbm_title">자동 고휘도 모드 (HBM)</string>
+    <string name="auto_hbm_main_switch_title">자동 HBM 사용</string>
+    <string name="tile_auto_hbm">자동 HBM</string>
+    <string name="tile_hbm_on">활성화됨</string>
+    <string name="tile_hbm_off">비활성화됨</string>
+    <string name="tile_hbm">HBM</string>
+    <string name="tile_hbm_unavailable">HBM을 사용할 수 없음</string>
+    <string name="tile_auto_hbm_or_brightness_enabled">자동 HBM 또는 자동 밝기가 활성화되어 있습니다</string>
+    <string name="hbm_mode_title">고휘도 모드</string>
+    <string name="hbm_mode_notification">고휘도 모드가 활성화되었습니다. 장시간 사용하면 디스플레이가 손상될 수 있습니다.</string>
+    <string name="auto_hbm_summary">햇빛 강도(lux)에 따라 고휘도 모드를 자동으로 활성화</string>
+    <string name="auto_hbm_threshold_title">빛 임계값</string>
+    <string name="auto_hbm_threshold_summary">HBM이 활성화되는 빛 강도 임계값(lux 단위)을 정의</string>
+    <string name="auto_hbm_enable_time_title">활성화 시간</string>
+    <string name="auto_hbm_enable_time_summary">HBM을 활성화하기 위해 빛 임계값을 계속 충족해야 하는 시간(초)</string>
+    <string name="auto_hbm_disable_time_title">비활성화 시간</string>
+    <string name="auto_hbm_disable_time_summary">빛 임계값이 설정 수준 아래로 떨어질 경우 HBM이 비활성화되는 시간(초)</string>
+
+    <!-- GameBar Overlay -->
+    <string name="game_bar_title">GameBar</string>
+    <string name="game_bar_summary">시스템 오버레이 활성화 (FPS, 온도 등)</string>
+    <string name="overlay_permission_required">오버레이 권한이 필요합니다</string>
+    <string name="overlay_permission_granted">오버레이 권한이 허용됨</string>
+    <string name="overlay_permission_denied">오버레이 권한이 거부됨</string>
+    <string name="game_bar_tile_label">GameBar</string>
+    <string name="game_bar_tile_description">게임 오버레이 전환</string>
+
+</resources>

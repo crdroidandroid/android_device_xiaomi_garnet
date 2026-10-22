@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2020 The LineageOS Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Xiaomi Settings -->
+    <string name="app_title">Socruithe Xiaomi</string>
+    <string name="tile_add">Cuir tíl leis</string>
+    <string name="tile_added">Tíl curtha leis</string>
+    <string name="tile_not_added">Níor cuireadh tíl leis</string>
+    <string name="tile_already_added">Tá an tíl curtha leis cheana</string>
+    <string name="tile_on">Ar siúl</string>
+    <string name="tile_off">As</string>
+
+    <!-- Thermal profiles -->
+    <string name="thermal_title">Próifílí teirmeacha</string>
+    <string name="thermal_summary">Coigeartaigh próifílí teirmeacha in aghaidh an aip le haghaidh feidhmíochta is fearr</string>
+    <string name="thermal_default">Gan aon optamú</string>
+    <string name="thermal_benchmark">Feidhmíocht</string>
+    <string name="thermal_browser">Brabhsálaí</string>
+    <string name="thermal_camera">Ceamara</string>
+    <string name="thermal_dialer">Dialaí</string>
+    <string name="thermal_gaming">Cluichí</string>
+    <string name="thermal_streaming">Sruthú</string>
+
+    <!-- Clear Speaker -->
+   <string name="clear_speaker_title">Glan an callaire</string>
+   <string name="clear_speaker_summary">Seinn fuaim 30 soicind chun an callaire a ghlanadh</string>
+   <string name="clear_speaker_description">Rith an ghné seo uair nó dhó má tá do challaire beagán bactha le deannach. Socraigh toirt na meán ar a huasmhéid.\n\nMá tá an callaire bactha go trom, rith an ghné seo 2-5 huaire agus tú ag croitheadh do ghléis leis an gcallaire ag féachaint síos.</string>
+
+    <!-- Saturation -->
+    <string name="saturation_title">Sáithiú an taispeántais</string>
+    <string name="saturation_summary">Rialaigh leibhéal sáithithe an taispeántais</string>
+    <string name="saturation_footer_summary">Athróidh mód datha sna socruithe taispeántais an leibhéal sáithithe, agus beidh ort é a athchur i bhfeidhm.</string>
+
+    <!-- Image preview -->
+    <string name="image_preview_content_description">Réamhamharc</string>
+    <string name="image_preview_next_page_content_description">Ar aghaidh</string>
+    <string name="image_preview_previous_page_content_description">Roimhe seo</string>
+
+    <!-- Custom seekbar -->
+    <string name="custom_seekbar_value">Luach: <xliff:g id="v">%s</xliff:g></string>
+    <string name="custom_seekbar_default_value">de réir réamhshocraithe</string>
+    <string name="custom_seekbar_default_value_to_set">Luach réamhshocraithe: <xliff:g id="v">%s</xliff:g>\nBrúigh go fada chun a shocrú</string>
+    <string name="custom_seekbar_default_value_is_set">Tá an luach réamhshocraithe socraithe</string>
+    
+    <!-- Auto HBM -->
+    <string name="auto_hbm_title">Mód Gile Ard Uathoibríoch (HBM)</string>
+    <string name="auto_hbm_main_switch_title">Úsáid HBM uathoibríoch</string>
+    <string name="tile_auto_hbm">HBM uathoibríoch</string>
+    <string name="tile_hbm_on">Cumasaithe</string>
+    <string name="tile_hbm_off">Díchumasaithe</string>
+    <string name="tile_hbm">HBM</string>
+    <string name="tile_hbm_unavailable">HBM gan a bheith ar fáil</string>
+    <string name="tile_auto_hbm_or_brightness_enabled">Tá HBM uathoibríoch nó Gile Uathoibríoch cumasaithe</string>
+    <string name="hbm_mode_title">Mód Gile Ard</string>
+    <string name="hbm_mode_notification">Tá Mód Gile Ard gníomhachtaithe anois. D\'fhéadfadh úsáid fhada dochar a dhéanamh do do thaispeántas.</string>
+    <string name="auto_hbm_summary">Cumasaigh mód gile ard go huathoibríoch bunaithe ar dhéine sholas na gréine (lux)</string>
+    <string name="auto_hbm_threshold_title">Tairseach solais</string>
+    <string name="auto_hbm_threshold_summary">Sainigh an tairseach déine solais in aonaid lux ag a ngníomhaítear HBM</string>
+    <string name="auto_hbm_enable_time_title">Am cumasaithe</string>
+    <string name="auto_hbm_enable_time_summary">Fad i soicindí nach mór an tairseach solais a chomhlíonadh go leanúnach chun HBM a ghníomhachtú</string>
+    <string name="auto_hbm_disable_time_title">Am díchumasaithe</string>
+    <string name="auto_hbm_disable_time_summary">Fad i soicindí a dhíchumasaítear HBM má thiteann an tairseach solais faoin leibhéal socraithe</string>
+
+    <!-- GameBar Overlay -->
+    <string name="game_bar_title">GameBar</string>
+    <string name="game_bar_summary">Cumasaigh forchur an chórais (FPS, Teocht, srl.)</string>
+    <string name="overlay_permission_required">Tá cead forchuir ag teastáil</string>
+    <string name="overlay_permission_granted">Cead forchuir deonaithe</string>
+    <string name="overlay_permission_denied">Cead forchuir diúltaithe</string>
+    <string name="game_bar_tile_label">GameBar</string>
+    <string name="game_bar_tile_description">Scoránaigh forchur an chluiche</string>
+
+</resources>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2020 The LineageOS Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Xiaomi Settings -->
+    <string name="app_title">Xiaomi அமைப்புகள்</string>
+    <string name="tile_add">ஓடு சேர்</string>
+    <string name="tile_added">ஓடு சேர்க்கப்பட்டது</string>
+    <string name="tile_not_added">ஓடு சேர்க்கப்படவில்லை</string>
+    <string name="tile_already_added">ஓடு ஏற்கனவே சேர்க்கப்பட்டது</string>
+    <string name="tile_on">இயக்கம்</string>
+    <string name="tile_off">முடக்கம்</string>
+
+    <!-- Thermal profiles -->
+    <string name="thermal_title">வெப்ப சுயவிவரங்கள்</string>
+    <string name="thermal_summary">சிறந்த செயல்திறனுக்காக ஒவ்வொரு பயன்பாட்டிற்கும் வெப்ப சுயவிவரங்களை சரிசெய்யவும்</string>
+    <string name="thermal_default">உகந்ததாக்கம் இல்லை</string>
+    <string name="thermal_benchmark">செயல்திறன்</string>
+    <string name="thermal_browser">உலாவி</string>
+    <string name="thermal_camera">கேமரா</string>
+    <string name="thermal_dialer">டயலர்</string>
+    <string name="thermal_gaming">விளையாட்டு</string>
+    <string name="thermal_streaming">ஸ்ட்ரீமிங்</string>
+
+    <!-- Clear Speaker -->
+   <string name="clear_speaker_title">ஒலிப்பெருக்கியை சுத்தம் செய்</string>
+   <string name="clear_speaker_summary">ஒலிப்பெருக்கியை சுத்தம் செய்ய 30 வினாடி ஆடியோவை இயக்கவும்</string>
+   <string name="clear_speaker_description">உங்கள் ஒலிப்பெருக்கி தூசியால் லேசாக அடைக்கப்பட்டிருந்தால் இந்த அம்சத்தை ஒன்று அல்லது இரண்டு முறை இயக்கவும். மீடியா ஒலியளவை அதிகபட்சமாக அமைக்கவும்.\n\nஒலிப்பெருக்கி அதிகமாக அடைக்கப்பட்டிருந்தால், ஒலிப்பெருக்கி கீழ்நோக்கி இருக்கும் வகையில் சாதனத்தை அசைத்து இந்த அம்சத்தை 2-5 முறை இயக்கவும்.</string>
+
+    <!-- Saturation -->
+    <string name="saturation_title">திரை செறிவு</string>
+    <string name="saturation_summary">திரையின் செறிவு அளவைக் கட்டுப்படுத்தவும்</string>
+    <string name="saturation_footer_summary">திரை அமைப்புகளில் வண்ணப் பயன்முறையை மாற்றுவது செறிவு அளவை மேலெழுதும், அதை மீண்டும் பயன்படுத்த வேண்டும்.</string>
+
+    <!-- Image preview -->
+    <string name="image_preview_content_description">முன்னோட்டம்</string>
+    <string name="image_preview_next_page_content_description">அடுத்து</string>
+    <string name="image_preview_previous_page_content_description">முந்தைய</string>
+
+    <!-- Custom seekbar -->
+    <string name="custom_seekbar_value">மதிப்பு: <xliff:g id="v">%s</xliff:g></string>
+    <string name="custom_seekbar_default_value">இயல்புநிலையாக</string>
+    <string name="custom_seekbar_default_value_to_set">இயல்புநிலை மதிப்பு: <xliff:g id="v">%s</xliff:g>\nஅமைக்க நீண்ட நேரம் அழுத்தவும்</string>
+    <string name="custom_seekbar_default_value_is_set">இயல்புநிலை மதிப்பு அமைக்கப்பட்டது</string>
+    
+    <!-- Auto HBM -->
+    <string name="auto_hbm_title">தானியங்கி உயர் பிரகாச பயன்முறை (HBM)</string>
+    <string name="auto_hbm_main_switch_title">தானியங்கி HBM ஐப் பயன்படுத்து</string>
+    <string name="tile_auto_hbm">தானியங்கி HBM</string>
+    <string name="tile_hbm_on">இயக்கப்பட்டது</string>
+    <string name="tile_hbm_off">முடக்கப்பட்டது</string>
+    <string name="tile_hbm">HBM</string>
+    <string name="tile_hbm_unavailable">HBM கிடைக்கவில்லை</string>
+    <string name="tile_auto_hbm_or_brightness_enabled">தானியங்கி HBM அல்லது தானியங்கி பிரகாசம் இயக்கப்பட்டுள்ளது</string>
+    <string name="hbm_mode_title">உயர் பிரகாச பயன்முறை</string>
+    <string name="hbm_mode_notification">உயர் பிரகாச பயன்முறை இப்போது செயல்படுத்தப்பட்டுள்ளது. நீண்ட நேர பயன்பாடு உங்கள் திரையை சேதப்படுத்தலாம்.</string>
+    <string name="auto_hbm_summary">சூரிய ஒளியின் தீவிரத்தின் (lux) அடிப்படையில் உயர் பிரகாச பயன்முறையை தானாகவே இயக்கவும்</string>
+    <string name="auto_hbm_threshold_title">ஒளி வரம்பு</string>
+    <string name="auto_hbm_threshold_summary">HBM செயல்படுத்தப்படும் lux அலகுகளில் ஒளி தீவிர வரம்பை வரையறுக்கவும்</string>
+    <string name="auto_hbm_enable_time_title">இயக்கும் நேரம்</string>
+    <string name="auto_hbm_enable_time_summary">HBM ஐ செயல்படுத்த ஒளி வரம்பு தொடர்ந்து பூர்த்தி செய்யப்பட வேண்டிய வினாடிகளில் கால அளவு</string>
+    <string name="auto_hbm_disable_time_title">முடக்கும் நேரம்</string>
+    <string name="auto_hbm_disable_time_summary">ஒளி வரம்பு அமைக்கப்பட்ட அளவுக்குக் கீழே குறைந்தால் HBM முடக்கப்படும் வினாடிகளில் கால அளவு</string>
+
+    <!-- GameBar Overlay -->
+    <string name="game_bar_title">GameBar</string>
+    <string name="game_bar_summary">கணினி மேலடுக்கை இயக்கவும் (FPS, வெப்பநிலை போன்றவை)</string>
+    <string name="overlay_permission_required">மேலடுக்கு அனுமதி தேவை</string>
+    <string name="overlay_permission_granted">மேலடுக்கு அனுமதி வழங்கப்பட்டது</string>
+    <string name="overlay_permission_denied">மேலடுக்கு அனுமதி மறுக்கப்பட்டது</string>
+    <string name="game_bar_tile_label">GameBar</string>
+    <string name="game_bar_tile_description">விளையாட்டு மேலடுக்கை மாற்றவும்</string>
+
+</resources>

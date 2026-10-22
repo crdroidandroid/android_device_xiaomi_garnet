@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2020 The LineageOS Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Xiaomi Settings -->
+    <string name="app_title">إعدادات شاومي</string>
+    <string name="tile_add">إضافة مربع</string>
+    <string name="tile_added">تمت إضافة المربع</string>
+    <string name="tile_not_added">لم تتم إضافة المربع</string>
+    <string name="tile_already_added">المربع مضاف بالفعل</string>
+    <string name="tile_on">مفعّل</string>
+    <string name="tile_off">معطّل</string>
+
+    <!-- Thermal profiles -->
+    <string name="thermal_title">ملفات الحرارة</string>
+    <string name="thermal_summary">اضبط ملفات الحرارة لكل تطبيق للحصول على أداء مثالي</string>
+    <string name="thermal_default">بدون تحسين</string>
+    <string name="thermal_benchmark">الأداء</string>
+    <string name="thermal_browser">المتصفح</string>
+    <string name="thermal_camera">الكاميرا</string>
+    <string name="thermal_dialer">الهاتف</string>
+    <string name="thermal_gaming">الألعاب</string>
+    <string name="thermal_streaming">البث</string>
+
+    <!-- Clear Speaker -->
+   <string name="clear_speaker_title">تنظيف مكبر الصوت</string>
+   <string name="clear_speaker_summary">تشغيل صوت لمدة 30 ثانية لتنظيف مكبر الصوت</string>
+   <string name="clear_speaker_description">شغّل هذه الميزة مرة أو مرتين إذا كان مكبر الصوت مسدودًا قليلًا بالغبار. اضبط مستوى صوت الوسائط على الحد الأقصى.\n\nإذا كان مكبر الصوت مسدودًا بشدة، شغّل هذه الميزة من 2 إلى 5 مرات أثناء هز الجهاز مع توجيه مكبر الصوت لأسفل.</string>
+
+    <!-- Saturation -->
+    <string name="saturation_title">تشبع الشاشة</string>
+    <string name="saturation_summary">التحكم في مستوى تشبع الشاشة</string>
+    <string name="saturation_footer_summary">سيؤدي تغيير وضع الألوان في إعدادات الشاشة إلى تجاوز مستوى التشبع، ما يتطلب إعادة تطبيقه.</string>
+
+    <!-- Image preview -->
+    <string name="image_preview_content_description">معاينة</string>
+    <string name="image_preview_next_page_content_description">التالي</string>
+    <string name="image_preview_previous_page_content_description">السابق</string>
+
+    <!-- Custom seekbar -->
+    <string name="custom_seekbar_value">القيمة: <xliff:g id="v">%s</xliff:g></string>
+    <string name="custom_seekbar_default_value">افتراضيًا</string>
+    <string name="custom_seekbar_default_value_to_set">القيمة الافتراضية: <xliff:g id="v">%s</xliff:g>\nاضغط مطولًا للتعيين</string>
+    <string name="custom_seekbar_default_value_is_set">تم تعيين القيمة الافتراضية</string>
+
+    <!-- Auto HBM -->
+    <string name="auto_hbm_title">وضع السطوع العالي التلقائي (HBM)</string>
+    <string name="auto_hbm_main_switch_title">استخدام HBM التلقائي</string>
+    <string name="tile_auto_hbm">HBM التلقائي</string>
+    <string name="tile_hbm_on">مفعّل</string>
+    <string name="tile_hbm_off">معطّل</string>
+    <string name="tile_hbm">HBM</string>
+    <string name="tile_hbm_unavailable">HBM غير متاح</string>
+    <string name="tile_auto_hbm_or_brightness_enabled">تم تفعيل HBM التلقائي أو السطوع التلقائي</string>
+    <string name="hbm_mode_title">وضع السطوع العالي</string>
+    <string name="hbm_mode_notification">وضع السطوع العالي مفعّل الآن. قد يؤدي الاستخدام المطول إلى تلف الشاشة.</string>
+    <string name="auto_hbm_summary">تفعيل وضع السطوع العالي تلقائيًا بناءً على شدة ضوء الشمس (لوكس)</string>
+    <string name="auto_hbm_threshold_title">عتبة الضوء</string>
+    <string name="auto_hbm_threshold_summary">حدّد عتبة شدة الضوء بوحدات اللوكس التي يتم عندها تفعيل HBM</string>
+    <string name="auto_hbm_enable_time_title">وقت التفعيل</string>
+    <string name="auto_hbm_enable_time_summary">المدة بالثواني التي يجب أن تتحقق خلالها عتبة الضوء باستمرار لتفعيل HBM</string>
+    <string name="auto_hbm_disable_time_title">وقت التعطيل</string>
+    <string name="auto_hbm_disable_time_summary">المدة بالثواني التي يتم خلالها تعطيل HBM إذا انخفضت عتبة الضوء عن المستوى المحدد</string>
+
+    <!-- GameBar Overlay -->
+    <string name="game_bar_title">GameBar</string>
+    <string name="game_bar_summary">تفعيل تراكب النظام (FPS، الحرارة، إلخ)</string>
+    <string name="overlay_permission_required">إذن التراكب مطلوب</string>
+    <string name="overlay_permission_granted">تم منح إذن التراكب</string>
+    <string name="overlay_permission_denied">تم رفض إذن التراكب</string>
+    <string name="game_bar_tile_label">GameBar</string>
+    <string name="game_bar_tile_description">تبديل تراكب اللعبة</string>
+
+</resources>

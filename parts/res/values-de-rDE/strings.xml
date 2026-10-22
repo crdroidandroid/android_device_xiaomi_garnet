@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2020 The LineageOS Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Xiaomi Settings -->
+    <string name="app_title">Xiaomi Einstellungen</string>
+    <string name="tile_add">Kachel hinzufügen</string>
+    <string name="tile_added">Kachel hinzugefügt</string>
+    <string name="tile_not_added">Kachel nicht hinzugefügt</string>
+    <string name="tile_already_added">Kachel bereits hinzugefügt</string>
+    <string name="tile_on">Ein</string>
+    <string name="tile_off">Aus</string>
+
+    <!-- Thermal profiles -->
+    <string name="thermal_title">Thermoprofile</string>
+    <string name="thermal_summary">Passen Sie die Thermoprofile pro App für optimale Leistung an</string>
+    <string name="thermal_default">Keine Optimierung</string>
+    <string name="thermal_benchmark">Leistung</string>
+    <string name="thermal_browser">Browser</string>
+    <string name="thermal_camera">Kamera</string>
+    <string name="thermal_dialer">Telefon</string>
+    <string name="thermal_gaming">Gaming</string>
+    <string name="thermal_streaming">Streaming</string>
+
+    <!-- Clear Speaker -->
+   <string name="clear_speaker_title">Lautsprecher reinigen</string>
+   <string name="clear_speaker_summary">Einen 30-sekündigen Ton abspielen, um den Lautsprecher zu reinigen</string>
+   <string name="clear_speaker_description">Führen Sie diese Funktion ein- oder zweimal aus, wenn Ihr Lautsprecher leicht durch Staub verstopft ist. Stellen Sie die Medienlautstärke auf Maximum.\n\nIst der Lautsprecher stark verstopft, führen Sie diese Funktion 2- bis 5-mal aus, während Sie das Gerät mit dem Lautsprecher nach unten schütteln.</string>
+
+    <!-- Saturation -->
+    <string name="saturation_title">Display-Sättigung</string>
+    <string name="saturation_summary">Steuern Sie die Sättigung des Displays</string>
+    <string name="saturation_footer_summary">Das Ändern des Farbmodus in den Display-Einstellungen überschreibt die Sättigung, sodass sie erneut angewendet werden muss.</string>
+
+    <!-- Image preview -->
+    <string name="image_preview_content_description">Vorschau</string>
+    <string name="image_preview_next_page_content_description">Weiter</string>
+    <string name="image_preview_previous_page_content_description">Zurück</string>
+
+    <!-- Custom seekbar -->
+    <string name="custom_seekbar_value">Wert: <xliff:g id="v">%s</xliff:g></string>
+    <string name="custom_seekbar_default_value">standardmäßig</string>
+    <string name="custom_seekbar_default_value_to_set">Standardwert: <xliff:g id="v">%s</xliff:g>\nZum Festlegen lange tippen</string>
+    <string name="custom_seekbar_default_value_is_set">Standardwert ist festgelegt</string>
+
+    <!-- Auto HBM -->
+    <string name="auto_hbm_title">Automatischer Hochhelligkeitsmodus (HBM)</string>
+    <string name="auto_hbm_main_switch_title">Automatischen HBM verwenden</string>
+    <string name="tile_auto_hbm">Auto-HBM</string>
+    <string name="tile_hbm_on">Aktiviert</string>
+    <string name="tile_hbm_off">Deaktiviert</string>
+    <string name="tile_hbm">HBM</string>
+    <string name="tile_hbm_unavailable">HBM nicht verfügbar</string>
+    <string name="tile_auto_hbm_or_brightness_enabled">Auto-HBM oder automatische Helligkeit ist aktiviert</string>
+    <string name="hbm_mode_title">Hochhelligkeitsmodus</string>
+    <string name="hbm_mode_notification">Der Hochhelligkeitsmodus ist jetzt aktiviert. Längere Nutzung kann Ihr Display beschädigen.</string>
+    <string name="auto_hbm_summary">Hochhelligkeitsmodus automatisch basierend auf der Sonnenlichtintensität (Lux) aktivieren</string>
+    <string name="auto_hbm_threshold_title">Lichtschwelle</string>
+    <string name="auto_hbm_threshold_summary">Definieren Sie die Lichtintensitätsschwelle in Lux, bei der HBM aktiviert wird</string>
+    <string name="auto_hbm_enable_time_title">Aktivierungszeit</string>
+    <string name="auto_hbm_enable_time_summary">Dauer in Sekunden, die die Lichtschwelle kontinuierlich erreicht werden muss, um HBM zu aktivieren</string>
+    <string name="auto_hbm_disable_time_title">Deaktivierungszeit</string>
+    <string name="auto_hbm_disable_time_summary">Dauer in Sekunden, für die HBM deaktiviert wird, wenn die Lichtschwelle unter den eingestellten Wert fällt</string>
+
+    <!-- GameBar Overlay -->
+    <string name="game_bar_title">GameBar</string>
+    <string name="game_bar_summary">System-Overlay aktivieren (FPS, Temp. usw.)</string>
+    <string name="overlay_permission_required">Overlay-Berechtigung ist erforderlich</string>
+    <string name="overlay_permission_granted">Overlay-Berechtigung erteilt</string>
+    <string name="overlay_permission_denied">Overlay-Berechtigung verweigert</string>
+    <string name="game_bar_tile_label">GameBar</string>
+    <string name="game_bar_tile_description">Spiel-Overlay umschalten</string>
+
+</resources>

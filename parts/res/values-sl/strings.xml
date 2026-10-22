@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2020 The LineageOS Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Xiaomi Settings -->
+    <string name="app_title">Nastavitve Xiaomi</string>
+    <string name="tile_add">Dodaj ploščico</string>
+    <string name="tile_added">Ploščica dodana</string>
+    <string name="tile_not_added">Ploščica ni dodana</string>
+    <string name="tile_already_added">Ploščica je že dodana</string>
+    <string name="tile_on">Vklopljeno</string>
+    <string name="tile_off">Izklopljeno</string>
+
+    <!-- Thermal profiles -->
+    <string name="thermal_title">Toplotni profili</string>
+    <string name="thermal_summary">Prilagodite toplotne profile za posamezne aplikacije za optimalno delovanje</string>
+    <string name="thermal_default">Brez optimizacije</string>
+    <string name="thermal_benchmark">Zmogljivost</string>
+    <string name="thermal_browser">Brskalnik</string>
+    <string name="thermal_camera">Kamera</string>
+    <string name="thermal_dialer">Klicalnik</string>
+    <string name="thermal_gaming">Igre</string>
+    <string name="thermal_streaming">Pretakanje</string>
+
+    <!-- Clear Speaker -->
+   <string name="clear_speaker_title">Počisti zvočnik</string>
+   <string name="clear_speaker_summary">Predvajajte 30-sekundni zvok za čiščenje zvočnika</string>
+   <string name="clear_speaker_description">To funkcijo zaženite enkrat ali dvakrat, če je vaš zvočnik rahlo zamašen s prahom. Glasnost medijev nastavite na najvišjo.\n\nČe je zvočnik močno zamašen, to funkcijo zaženite 2-5 krat, medtem ko napravo tresete z zvočnikom obrnjenim navzdol.</string>
+
+    <!-- Saturation -->
+    <string name="saturation_title">Nasičenost zaslona</string>
+    <string name="saturation_summary">Nadzirajte raven nasičenosti zaslona</string>
+    <string name="saturation_footer_summary">Sprememba barvnega načina v nastavitvah zaslona bo prepisala raven nasičenosti, zato jo bo treba znova uporabiti.</string>
+
+    <!-- Image preview -->
+    <string name="image_preview_content_description">Predogled</string>
+    <string name="image_preview_next_page_content_description">Naprej</string>
+    <string name="image_preview_previous_page_content_description">Nazaj</string>
+
+    <!-- Custom seekbar -->
+    <string name="custom_seekbar_value">Vrednost: <xliff:g id="v">%s</xliff:g></string>
+    <string name="custom_seekbar_default_value">privzeto</string>
+    <string name="custom_seekbar_default_value_to_set">Privzeta vrednost: <xliff:g id="v">%s</xliff:g>\nZa nastavitev pritisnite in zadržite</string>
+    <string name="custom_seekbar_default_value_is_set">Privzeta vrednost je nastavljena</string>
+    
+    <!-- Auto HBM -->
+    <string name="auto_hbm_title">Samodejni način visoke svetlosti (HBM)</string>
+    <string name="auto_hbm_main_switch_title">Uporabi samodejni HBM</string>
+    <string name="tile_auto_hbm">Samodejni HBM</string>
+    <string name="tile_hbm_on">Omogočeno</string>
+    <string name="tile_hbm_off">Onemogočeno</string>
+    <string name="tile_hbm">HBM</string>
+    <string name="tile_hbm_unavailable">HBM ni na voljo</string>
+    <string name="tile_auto_hbm_or_brightness_enabled">Samodejni HBM ali samodejna svetlost je omogočena</string>
+    <string name="hbm_mode_title">Način visoke svetlosti</string>
+    <string name="hbm_mode_notification">Način visoke svetlosti je zdaj aktiviran. Dolgotrajna uporaba lahko poškoduje vaš zaslon.</string>
+    <string name="auto_hbm_summary">Samodejno omogočite način visoke svetlosti glede na jakost sončne svetlobe (luks)</string>
+    <string name="auto_hbm_threshold_title">Prag svetlobe</string>
+    <string name="auto_hbm_threshold_summary">Določite prag jakosti svetlobe v luksih, pri katerem se HBM aktivira</string>
+    <string name="auto_hbm_enable_time_title">Čas omogočanja</string>
+    <string name="auto_hbm_enable_time_summary">Trajanje v sekundah, v katerem mora biti prag svetlobe neprekinjeno dosežen za aktiviranje HBM</string>
+    <string name="auto_hbm_disable_time_title">Čas onemogočanja</string>
+    <string name="auto_hbm_disable_time_summary">Trajanje v sekundah, za katerega je HBM onemogočen, če prag svetlobe pade pod nastavljeno raven</string>
+
+    <!-- GameBar Overlay -->
+    <string name="game_bar_title">GameBar</string>
+    <string name="game_bar_summary">Omogočite sistemsko prekrivanje (FPS, temperatura itd.)</string>
+    <string name="overlay_permission_required">Potrebno je dovoljenje za prekrivanje</string>
+    <string name="overlay_permission_granted">Dovoljenje za prekrivanje odobreno</string>
+    <string name="overlay_permission_denied">Dovoljenje za prekrivanje zavrnjeno</string>
+    <string name="game_bar_tile_label">GameBar</string>
+    <string name="game_bar_tile_description">Preklopite prekrivanje igre</string>
+
+</resources>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2020 The LineageOS Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Xiaomi Settings -->
+    <string name="app_title">הגדרות Xiaomi</string>
+    <string name="tile_add">הוסף אריח</string>
+    <string name="tile_added">האריח נוסף</string>
+    <string name="tile_not_added">האריח לא נוסף</string>
+    <string name="tile_already_added">האריח כבר נוסף</string>
+    <string name="tile_on">פעיל</string>
+    <string name="tile_off">כבוי</string>
+
+    <!-- Thermal profiles -->
+    <string name="thermal_title">פרופילים תרמיים</string>
+    <string name="thermal_summary">התאם פרופילים תרמיים לפי אפליקציה לביצועים מיטביים</string>
+    <string name="thermal_default">ללא אופטימיזציה</string>
+    <string name="thermal_benchmark">ביצועים</string>
+    <string name="thermal_browser">דפדפן</string>
+    <string name="thermal_camera">מצלמה</string>
+    <string name="thermal_dialer">חייגן</string>
+    <string name="thermal_gaming">משחקים</string>
+    <string name="thermal_streaming">סטרימינג</string>
+
+    <!-- Clear Speaker -->
+   <string name="clear_speaker_title">ניקוי הרמקול</string>
+   <string name="clear_speaker_summary">השמע שמע של 30 שניות כדי לנקות את הרמקול</string>
+   <string name="clear_speaker_description">הפעל תכונה זו פעם או פעמיים אם הרמקול שלך חסום קלות באבק. הגדר את עוצמת הקול של המדיה למקסימום.\n\nאם הרמקול חסום מאוד, הפעל תכונה זו 2-5 פעמים תוך כדי ניעור המכשיר כשהרמקול פונה כלפי מטה.</string>
+
+    <!-- Saturation -->
+    <string name="saturation_title">רוויה של התצוגה</string>
+    <string name="saturation_summary">שלוט ברמת הרוויה של התצוגה</string>
+    <string name="saturation_footer_summary">שינוי מצב הצבע בהגדרות התצוגה יעקוף את רמת הרוויה ויידרש להחיל אותה מחדש.</string>
+
+    <!-- Image preview -->
+    <string name="image_preview_content_description">תצוגה מקדימה</string>
+    <string name="image_preview_next_page_content_description">הבא</string>
+    <string name="image_preview_previous_page_content_description">הקודם</string>
+
+    <!-- Custom seekbar -->
+    <string name="custom_seekbar_value">ערך: <xliff:g id="v">%s</xliff:g></string>
+    <string name="custom_seekbar_default_value">כברירת מחדל</string>
+    <string name="custom_seekbar_default_value_to_set">ערך ברירת מחדל: <xliff:g id="v">%s</xliff:g>\nלחץ לחיצה ארוכה כדי להגדיר</string>
+    <string name="custom_seekbar_default_value_is_set">ערך ברירת המחדל הוגדר</string>
+    
+    <!-- Auto HBM -->
+    <string name="auto_hbm_title">מצב בהירות גבוהה אוטומטי (HBM)</string>
+    <string name="auto_hbm_main_switch_title">השתמש ב-HBM אוטומטי</string>
+    <string name="tile_auto_hbm">HBM אוטומטי</string>
+    <string name="tile_hbm_on">מופעל</string>
+    <string name="tile_hbm_off">מושבת</string>
+    <string name="tile_hbm">HBM</string>
+    <string name="tile_hbm_unavailable">HBM לא זמין</string>
+    <string name="tile_auto_hbm_or_brightness_enabled">HBM אוטומטי או בהירות אוטומטית מופעלים</string>
+    <string name="hbm_mode_title">מצב בהירות גבוהה</string>
+    <string name="hbm_mode_notification">מצב בהירות גבוהה מופעל כעת. שימוש ממושך עלול לפגוע בתצוגה.</string>
+    <string name="auto_hbm_summary">הפעל אוטומטית מצב בהירות גבוהה בהתבסס על עוצמת אור השמש (לוקס)</string>
+    <string name="auto_hbm_threshold_title">סף אור</string>
+    <string name="auto_hbm_threshold_summary">הגדר את סף עוצמת האור ביחידות לוקס שבו HBM מופעל</string>
+    <string name="auto_hbm_enable_time_title">זמן הפעלה</string>
+    <string name="auto_hbm_enable_time_summary">משך בשניות שסף האור חייב להתקיים ברציפות כדי להפעיל את HBM</string>
+    <string name="auto_hbm_disable_time_title">זמן השבתה</string>
+    <string name="auto_hbm_disable_time_summary">משך בשניות שבו HBM מושבת אם סף האור יורד מתחת לרמה שנקבעה</string>
+
+    <!-- GameBar Overlay -->
+    <string name="game_bar_title">GameBar</string>
+    <string name="game_bar_summary">הפעל את שכבת העל של המערכת (FPS, טמפרטורה וכו\')</string>
+    <string name="overlay_permission_required">נדרשת הרשאת שכבת על</string>
+    <string name="overlay_permission_granted">הרשאת שכבת העל ניתנה</string>
+    <string name="overlay_permission_denied">הרשאת שכבת העל נדחתה</string>
+    <string name="game_bar_tile_label">GameBar</string>
+    <string name="game_bar_tile_description">החלף את שכבת העל של המשחק</string>
+
+</resources>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2020 The LineageOS Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Xiaomi Settings -->
+    <string name="app_title">Cilësimet e Xiaomi</string>
+    <string name="tile_add">Shto pllakë</string>
+    <string name="tile_added">Pllaka u shtua</string>
+    <string name="tile_not_added">Pllaka nuk u shtua</string>
+    <string name="tile_already_added">Pllaka është shtuar tashmë</string>
+    <string name="tile_on">Aktiv</string>
+    <string name="tile_off">Joaktiv</string>
+
+    <!-- Thermal profiles -->
+    <string name="thermal_title">Profilet termike</string>
+    <string name="thermal_summary">Rregullo profilet termike për çdo aplikacion për performancë optimale</string>
+    <string name="thermal_default">Pa optimizim</string>
+    <string name="thermal_benchmark">Performanca</string>
+    <string name="thermal_browser">Shfletuesi</string>
+    <string name="thermal_camera">Kamera</string>
+    <string name="thermal_dialer">Telefoni</string>
+    <string name="thermal_gaming">Lojëra</string>
+    <string name="thermal_streaming">Transmetim</string>
+
+    <!-- Clear Speaker -->
+   <string name="clear_speaker_title">Pastro altoparlantin</string>
+   <string name="clear_speaker_summary">Luaj një audio 30-sekondëshe për të pastruar altoparlantin</string>
+   <string name="clear_speaker_description">Ekzekuto këtë funksion një ose dy herë nëse altoparlanti yt është i bllokuar lehtë nga pluhuri. Vendos volumin e medias në maksimum.\n\nNëse altoparlanti është i bllokuar rëndë, ekzekuto këtë funksion 2-5 herë ndërsa tund pajisjen me altoparlantin drejtuar poshtë.</string>
+
+    <!-- Saturation -->
+    <string name="saturation_title">Ngopja e ekranit</string>
+    <string name="saturation_summary">Kontrollo nivelin e ngopjes së ekranit</string>
+    <string name="saturation_footer_summary">Ndryshimi i modalitetit të ngjyrave në cilësimet e ekranit do të anashkalojë nivelin e ngopjes, duke kërkuar riaplikimin e tij.</string>
+
+    <!-- Image preview -->
+    <string name="image_preview_content_description">Pamje paraprake</string>
+    <string name="image_preview_next_page_content_description">Tjetra</string>
+    <string name="image_preview_previous_page_content_description">E mëparshmja</string>
+
+    <!-- Custom seekbar -->
+    <string name="custom_seekbar_value">Vlera: <xliff:g id="v">%s</xliff:g></string>
+    <string name="custom_seekbar_default_value">si parazgjedhje</string>
+    <string name="custom_seekbar_default_value_to_set">Vlera e parazgjedhur: <xliff:g id="v">%s</xliff:g>\nMbaj shtypur për ta vendosur</string>
+    <string name="custom_seekbar_default_value_is_set">Vlera e parazgjedhur është vendosur</string>
+    
+    <!-- Auto HBM -->
+    <string name="auto_hbm_title">Modaliteti automatik i ndriçimit të lartë (HBM)</string>
+    <string name="auto_hbm_main_switch_title">Përdor HBM automatik</string>
+    <string name="tile_auto_hbm">HBM automatik</string>
+    <string name="tile_hbm_on">I aktivizuar</string>
+    <string name="tile_hbm_off">I çaktivizuar</string>
+    <string name="tile_hbm">HBM</string>
+    <string name="tile_hbm_unavailable">HBM i padisponueshëm</string>
+    <string name="tile_auto_hbm_or_brightness_enabled">HBM automatik ose ndriçimi automatik është i aktivizuar</string>
+    <string name="hbm_mode_title">Modaliteti i ndriçimit të lartë</string>
+    <string name="hbm_mode_notification">Modaliteti i ndriçimit të lartë është aktivizuar tani. Përdorimi i gjatë mund të dëmtojë ekranin tuaj.</string>
+    <string name="auto_hbm_summary">Aktivizo automatikisht modalitetin e ndriçimit të lartë bazuar në intensitetin e dritës së diellit (lux)</string>
+    <string name="auto_hbm_threshold_title">Pragu i dritës</string>
+    <string name="auto_hbm_threshold_summary">Përcakto pragun e intensitetit të dritës në njësi lux në të cilin aktivizohet HBM</string>
+    <string name="auto_hbm_enable_time_title">Koha e aktivizimit</string>
+    <string name="auto_hbm_enable_time_summary">Kohëzgjatja në sekonda që pragu i dritës duhet të plotësohet vazhdimisht për të aktivizuar HBM</string>
+    <string name="auto_hbm_disable_time_title">Koha e çaktivizimit</string>
+    <string name="auto_hbm_disable_time_summary">Kohëzgjatja në sekonda për të cilën HBM çaktivizohet nëse pragu i dritës bie nën nivelin e vendosur</string>
+
+    <!-- GameBar Overlay -->
+    <string name="game_bar_title">GameBar</string>
+    <string name="game_bar_summary">Aktivizo mbivendosjen e sistemit (FPS, Temp, etj.)</string>
+    <string name="overlay_permission_required">Kërkohet leja e mbivendosjes</string>
+    <string name="overlay_permission_granted">Leja e mbivendosjes u dha</string>
+    <string name="overlay_permission_denied">Leja e mbivendosjes u refuzua</string>
+    <string name="game_bar_tile_label">GameBar</string>
+    <string name="game_bar_tile_description">Ndrysho mbivendosjen e lojës</string>
+
+</resources>

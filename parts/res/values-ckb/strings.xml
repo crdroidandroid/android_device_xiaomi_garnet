@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2020 The LineageOS Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Xiaomi Settings -->
+    <string name="app_title">ڕێکخستنەکانی Xiaomi</string>
+    <string name="tile_add">کاشی زیاد بکە</string>
+    <string name="tile_added">کاشی زیاد کرا</string>
+    <string name="tile_not_added">کاشی زیاد نەکرا</string>
+    <string name="tile_already_added">کاشی پێشتر زیاد کراوە</string>
+    <string name="tile_on">داگیرساوە</string>
+    <string name="tile_off">کوژاوەتەوە</string>
+
+    <!-- Thermal profiles -->
+    <string name="thermal_title">پرۆفایلە گەرمییەکان</string>
+    <string name="thermal_summary">پرۆفایلە گەرمییەکان بۆ هەر بەرنامەیەک ڕێکبخە بۆ باشترین کارایی</string>
+    <string name="thermal_default">هیچ باشترکردنێک نییە</string>
+    <string name="thermal_benchmark">کارایی</string>
+    <string name="thermal_browser">وێبگەڕ</string>
+    <string name="thermal_camera">کامێرا</string>
+    <string name="thermal_dialer">تەلەفۆن</string>
+    <string name="thermal_gaming">یاری</string>
+    <string name="thermal_streaming">پەخش</string>
+
+    <!-- Clear Speaker -->
+   <string name="clear_speaker_title">بلندگۆ پاک بکەرەوە</string>
+   <string name="clear_speaker_summary">دەنگێکی 30 چرکەیی لێبدە بۆ پاککردنەوەی بلندگۆکە</string>
+   <string name="clear_speaker_description">ئەگەر بلندگۆکەت بە سووکی بە تۆز گیراوە، ئەم تایبەتمەندییە یەک یان دوو جار کارپێبکە. دەنگی میدیا بکە بە زۆرترین.\n\nئەگەر بلندگۆکە زۆر گیراوە، ئەم تایبەتمەندییە 2-5 جار کارپێبکە لە کاتێکدا ئامێرەکە دەلەرزێنیت و بلندگۆکە ڕوو لە خوارەوە بێت.</string>
+
+    <!-- Saturation -->
+    <string name="saturation_title">تێری ڕەنگی ڕوونما</string>
+    <string name="saturation_summary">ئاستی تێری ڕەنگی ڕوونما کۆنتڕۆڵ بکە</string>
+    <string name="saturation_footer_summary">گۆڕینی دۆخی ڕەنگ لە ڕێکخستنەکانی ڕوونمادا ئاستی تێری ڕەنگ دەگۆڕێت و پێویستی بە دووبارە جێبەجێکردن دەبێت.</string>
+
+    <!-- Image preview -->
+    <string name="image_preview_content_description">پێشبینین</string>
+    <string name="image_preview_next_page_content_description">دواتر</string>
+    <string name="image_preview_previous_page_content_description">پێشتر</string>
+
+    <!-- Custom seekbar -->
+    <string name="custom_seekbar_value">نرخ: <xliff:g id="v">%s</xliff:g></string>
+    <string name="custom_seekbar_default_value">بە شێوەی بنەڕەتی</string>
+    <string name="custom_seekbar_default_value_to_set">نرخی بنەڕەتی: <xliff:g id="v">%s</xliff:g>\nبۆ دانان درێژ دایبگرە</string>
+    <string name="custom_seekbar_default_value_is_set">نرخی بنەڕەتی دانراوە</string>
+    
+    <!-- Auto HBM -->
+    <string name="auto_hbm_title">دۆخی ڕووناکی بەرزی خۆکار (HBM)</string>
+    <string name="auto_hbm_main_switch_title">HBMی خۆکار بەکاربهێنە</string>
+    <string name="tile_auto_hbm">HBMی خۆکار</string>
+    <string name="tile_hbm_on">چالاکە</string>
+    <string name="tile_hbm_off">ناچالاکە</string>
+    <string name="tile_hbm">HBM</string>
+    <string name="tile_hbm_unavailable">HBM بەردەست نییە</string>
+    <string name="tile_auto_hbm_or_brightness_enabled">HBMی خۆکار یان ڕووناکی خۆکار چالاکە</string>
+    <string name="hbm_mode_title">دۆخی ڕووناکی بەرز</string>
+    <string name="hbm_mode_notification">دۆخی ڕووناکی بەرز ئێستا چالاک کراوە. بەکارهێنانی درێژخایەن لەوانەیە زیان بە ڕوونماکەت بگەیەنێت.</string>
+    <string name="auto_hbm_summary">دۆخی ڕووناکی بەرز بە خۆکاری چالاک بکە بە پشتبەستن بە چڕی ڕووناکی خۆر (lux)</string>
+    <string name="auto_hbm_threshold_title">سنووری ڕووناکی</string>
+    <string name="auto_hbm_threshold_summary">سنووری چڕی ڕووناکی بە یەکەی lux دیاری بکە کە HBMی تێدا چالاک دەبێت</string>
+    <string name="auto_hbm_enable_time_title">کاتی چالاککردن</string>
+    <string name="auto_hbm_enable_time_summary">ماوە بە چرکە کە پێویستە سنووری ڕووناکی بە بەردەوامی جێبەجێ ببێت بۆ چالاککردنی HBM</string>
+    <string name="auto_hbm_disable_time_title">کاتی ناچالاککردن</string>
+    <string name="auto_hbm_disable_time_summary">ماوە بە چرکە کە HBM ناچالاک دەبێت ئەگەر سنووری ڕووناکی بکەوێتە خوار ئاستی دیاریکراو</string>
+
+    <!-- GameBar Overlay -->
+    <string name="game_bar_title">GameBar</string>
+    <string name="game_bar_summary">سەرپۆشی سیستەم چالاک بکە (FPS، گەرمی، هتد.)</string>
+    <string name="overlay_permission_required">مۆڵەتی سەرپۆش پێویستە</string>
+    <string name="overlay_permission_granted">مۆڵەتی سەرپۆش درا</string>
+    <string name="overlay_permission_denied">مۆڵەتی سەرپۆش ڕەتکرایەوە</string>
+    <string name="game_bar_tile_label">GameBar</string>
+    <string name="game_bar_tile_description">سەرپۆشی یاری بگۆڕە</string>
+
+</resources>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2020 The LineageOS Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Xiaomi Settings -->
+    <string name="app_title">Ustawienia Xiaomi</string>
+    <string name="tile_add">Dodaj kafelek</string>
+    <string name="tile_added">Dodano kafelek</string>
+    <string name="tile_not_added">Nie dodano kafelka</string>
+    <string name="tile_already_added">Kafelek został już dodany</string>
+    <string name="tile_on">Włączone</string>
+    <string name="tile_off">Wyłączone</string>
+
+    <!-- Thermal profiles -->
+    <string name="thermal_title">Profile termiczne</string>
+    <string name="thermal_summary">Dostosuj profile termiczne dla poszczególnych aplikacji w celu uzyskania optymalnej wydajności</string>
+    <string name="thermal_default">Brak optymalizacji</string>
+    <string name="thermal_benchmark">Wydajność</string>
+    <string name="thermal_browser">Przeglądarka</string>
+    <string name="thermal_camera">Aparat</string>
+    <string name="thermal_dialer">Telefon</string>
+    <string name="thermal_gaming">Gry</string>
+    <string name="thermal_streaming">Streaming</string>
+
+    <!-- Clear Speaker -->
+   <string name="clear_speaker_title">Wyczyść głośnik</string>
+   <string name="clear_speaker_summary">Odtwórz 30-sekundowy dźwięk, aby wyczyścić głośnik</string>
+   <string name="clear_speaker_description">Uruchom tę funkcję raz lub dwa razy, jeśli głośnik jest lekko zablokowany kurzem. Ustaw głośność multimediów na maksimum.\n\nJeśli głośnik jest mocno zablokowany, uruchom tę funkcję 2-5 razy, potrząsając urządzeniem z głośnikiem skierowanym w dół.</string>
+
+    <!-- Saturation -->
+    <string name="saturation_title">Nasycenie ekranu</string>
+    <string name="saturation_summary">Kontroluj poziom nasycenia ekranu</string>
+    <string name="saturation_footer_summary">Zmiana trybu kolorów w ustawieniach ekranu zastąpi poziom nasycenia i będzie wymagać ponownego zastosowania.</string>
+
+    <!-- Image preview -->
+    <string name="image_preview_content_description">Podgląd</string>
+    <string name="image_preview_next_page_content_description">Dalej</string>
+    <string name="image_preview_previous_page_content_description">Wstecz</string>
+
+    <!-- Custom seekbar -->
+    <string name="custom_seekbar_value">Wartość: <xliff:g id="v">%s</xliff:g></string>
+    <string name="custom_seekbar_default_value">domyślnie</string>
+    <string name="custom_seekbar_default_value_to_set">Wartość domyślna: <xliff:g id="v">%s</xliff:g>\nNaciśnij i przytrzymaj, aby ustawić</string>
+    <string name="custom_seekbar_default_value_is_set">Ustawiono wartość domyślną</string>
+    
+    <!-- Auto HBM -->
+    <string name="auto_hbm_title">Automatyczny tryb wysokiej jasności (HBM)</string>
+    <string name="auto_hbm_main_switch_title">Używaj automatycznego HBM</string>
+    <string name="tile_auto_hbm">Automatyczny HBM</string>
+    <string name="tile_hbm_on">Włączone</string>
+    <string name="tile_hbm_off">Wyłączone</string>
+    <string name="tile_hbm">HBM</string>
+    <string name="tile_hbm_unavailable">HBM niedostępny</string>
+    <string name="tile_auto_hbm_or_brightness_enabled">Automatyczny HBM lub automatyczna jasność jest włączona</string>
+    <string name="hbm_mode_title">Tryb wysokiej jasności</string>
+    <string name="hbm_mode_notification">Tryb wysokiej jasności jest teraz aktywny. Długotrwałe używanie może uszkodzić ekran.</string>
+    <string name="auto_hbm_summary">Automatycznie włączaj tryb wysokiej jasności na podstawie natężenia światła słonecznego (luksy)</string>
+    <string name="auto_hbm_threshold_title">Próg światła</string>
+    <string name="auto_hbm_threshold_summary">Określ próg natężenia światła w luksach, przy którym aktywuje się HBM</string>
+    <string name="auto_hbm_enable_time_title">Czas włączenia</string>
+    <string name="auto_hbm_enable_time_summary">Czas w sekundach, przez który próg światła musi być stale spełniony, aby aktywować HBM</string>
+    <string name="auto_hbm_disable_time_title">Czas wyłączenia</string>
+    <string name="auto_hbm_disable_time_summary">Czas w sekundach, przez który HBM jest wyłączony, jeśli próg światła spadnie poniżej ustawionego poziomu</string>
+
+    <!-- GameBar Overlay -->
+    <string name="game_bar_title">GameBar</string>
+    <string name="game_bar_summary">Włącz nakładkę systemową (FPS, temperatura itd.)</string>
+    <string name="overlay_permission_required">Wymagane jest uprawnienie do nakładki</string>
+    <string name="overlay_permission_granted">Przyznano uprawnienie do nakładki</string>
+    <string name="overlay_permission_denied">Odrzucono uprawnienie do nakładki</string>
+    <string name="game_bar_tile_label">GameBar</string>
+    <string name="game_bar_tile_description">Przełącz nakładkę gry</string>
+
+</resources>

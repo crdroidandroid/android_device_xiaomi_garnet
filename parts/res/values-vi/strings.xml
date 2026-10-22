@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2020 The LineageOS Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Xiaomi Settings -->
+    <string name="app_title">Cài đặt Xiaomi</string>
+    <string name="tile_add">Thêm ô</string>
+    <string name="tile_added">Đã thêm ô</string>
+    <string name="tile_not_added">Chưa thêm ô</string>
+    <string name="tile_already_added">Ô đã được thêm</string>
+    <string name="tile_on">Bật</string>
+    <string name="tile_off">Tắt</string>
+
+    <!-- Thermal profiles -->
+    <string name="thermal_title">Hồ sơ nhiệt</string>
+    <string name="thermal_summary">Điều chỉnh hồ sơ nhiệt cho từng ứng dụng để đạt hiệu suất tối ưu</string>
+    <string name="thermal_default">Không tối ưu hóa</string>
+    <string name="thermal_benchmark">Hiệu suất</string>
+    <string name="thermal_browser">Trình duyệt</string>
+    <string name="thermal_camera">Máy ảnh</string>
+    <string name="thermal_dialer">Trình quay số</string>
+    <string name="thermal_gaming">Chơi game</string>
+    <string name="thermal_streaming">Phát trực tuyến</string>
+
+    <!-- Clear Speaker -->
+   <string name="clear_speaker_title">Làm sạch loa</string>
+   <string name="clear_speaker_summary">Phát âm thanh 30 giây để làm sạch loa</string>
+   <string name="clear_speaker_description">Chạy tính năng này một hoặc hai lần nếu loa của bạn bị bụi bám nhẹ. Đặt âm lượng đa phương tiện ở mức tối đa.\n\nNếu loa bị bám nặng, hãy chạy tính năng này 2-5 lần trong khi lắc thiết bị với loa hướng xuống dưới.</string>
+
+    <!-- Saturation -->
+    <string name="saturation_title">Độ bão hòa màn hình</string>
+    <string name="saturation_summary">Kiểm soát mức độ bão hòa của màn hình</string>
+    <string name="saturation_footer_summary">Thay đổi chế độ màu trong cài đặt màn hình sẽ ghi đè mức độ bão hòa, yêu cầu phải áp dụng lại.</string>
+
+    <!-- Image preview -->
+    <string name="image_preview_content_description">Xem trước</string>
+    <string name="image_preview_next_page_content_description">Tiếp theo</string>
+    <string name="image_preview_previous_page_content_description">Trước</string>
+
+    <!-- Custom seekbar -->
+    <string name="custom_seekbar_value">Giá trị: <xliff:g id="v">%s</xliff:g></string>
+    <string name="custom_seekbar_default_value">theo mặc định</string>
+    <string name="custom_seekbar_default_value_to_set">Giá trị mặc định: <xliff:g id="v">%s</xliff:g>\nNhấn giữ để đặt</string>
+    <string name="custom_seekbar_default_value_is_set">Đã đặt giá trị mặc định</string>
+    
+    <!-- Auto HBM -->
+    <string name="auto_hbm_title">Chế độ độ sáng cao tự động (HBM)</string>
+    <string name="auto_hbm_main_switch_title">Sử dụng HBM tự động</string>
+    <string name="tile_auto_hbm">HBM tự động</string>
+    <string name="tile_hbm_on">Đã bật</string>
+    <string name="tile_hbm_off">Đã tắt</string>
+    <string name="tile_hbm">HBM</string>
+    <string name="tile_hbm_unavailable">HBM không khả dụng</string>
+    <string name="tile_auto_hbm_or_brightness_enabled">HBM tự động hoặc Độ sáng tự động đang bật</string>
+    <string name="hbm_mode_title">Chế độ độ sáng cao</string>
+    <string name="hbm_mode_notification">Chế độ độ sáng cao hiện đã được kích hoạt. Sử dụng trong thời gian dài có thể làm hỏng màn hình của bạn.</string>
+    <string name="auto_hbm_summary">Tự động bật chế độ độ sáng cao dựa trên cường độ ánh sáng mặt trời (lux)</string>
+    <string name="auto_hbm_threshold_title">Ngưỡng ánh sáng</string>
+    <string name="auto_hbm_threshold_summary">Xác định ngưỡng cường độ ánh sáng theo đơn vị lux mà tại đó HBM được kích hoạt</string>
+    <string name="auto_hbm_enable_time_title">Thời gian bật</string>
+    <string name="auto_hbm_enable_time_summary">Thời lượng tính bằng giây mà ngưỡng ánh sáng phải được đáp ứng liên tục để kích hoạt HBM</string>
+    <string name="auto_hbm_disable_time_title">Thời gian tắt</string>
+    <string name="auto_hbm_disable_time_summary">Thời lượng tính bằng giây mà HBM bị tắt nếu ngưỡng ánh sáng giảm xuống dưới mức đã đặt</string>
+
+    <!-- GameBar Overlay -->
+    <string name="game_bar_title">GameBar</string>
+    <string name="game_bar_summary">Bật lớp phủ hệ thống (FPS, nhiệt độ, v.v.)</string>
+    <string name="overlay_permission_required">Cần có quyền lớp phủ</string>
+    <string name="overlay_permission_granted">Đã cấp quyền lớp phủ</string>
+    <string name="overlay_permission_denied">Quyền lớp phủ bị từ chối</string>
+    <string name="game_bar_tile_label">GameBar</string>
+    <string name="game_bar_tile_description">Bật/tắt lớp phủ trò chơi</string>
+
+</resources>

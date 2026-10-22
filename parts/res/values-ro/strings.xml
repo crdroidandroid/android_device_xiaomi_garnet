@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2020 The LineageOS Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Xiaomi Settings -->
+    <string name="app_title">Setări Xiaomi</string>
+    <string name="tile_add">Adaugă dală</string>
+    <string name="tile_added">Dală adăugată</string>
+    <string name="tile_not_added">Dala nu a fost adăugată</string>
+    <string name="tile_already_added">Dala a fost deja adăugată</string>
+    <string name="tile_on">Activat</string>
+    <string name="tile_off">Dezactivat</string>
+
+    <!-- Thermal profiles -->
+    <string name="thermal_title">Profiluri termice</string>
+    <string name="thermal_summary">Ajustați profilurile termice per aplicație pentru performanță optimă</string>
+    <string name="thermal_default">Fără optimizare</string>
+    <string name="thermal_benchmark">Performanță</string>
+    <string name="thermal_browser">Browser</string>
+    <string name="thermal_camera">Cameră</string>
+    <string name="thermal_dialer">Telefon</string>
+    <string name="thermal_gaming">Jocuri</string>
+    <string name="thermal_streaming">Streaming</string>
+
+    <!-- Clear Speaker -->
+   <string name="clear_speaker_title">Curăță difuzorul</string>
+   <string name="clear_speaker_summary">Redați un sunet de 30 de secunde pentru a curăța difuzorul</string>
+   <string name="clear_speaker_description">Rulați această funcție o dată sau de două ori dacă difuzorul este ușor blocat de praf. Setați volumul media la maximum.\n\nDacă difuzorul este blocat puternic, rulați această funcție de 2-5 ori în timp ce scuturați dispozitivul cu difuzorul orientat în jos.</string>
+
+    <!-- Saturation -->
+    <string name="saturation_title">Saturația afișajului</string>
+    <string name="saturation_summary">Controlați nivelul de saturație al afișajului</string>
+    <string name="saturation_footer_summary">Schimbarea modului de culoare în setările afișajului va suprascrie nivelul de saturație, necesitând reaplicarea acestuia.</string>
+
+    <!-- Image preview -->
+    <string name="image_preview_content_description">Previzualizare</string>
+    <string name="image_preview_next_page_content_description">Următorul</string>
+    <string name="image_preview_previous_page_content_description">Anterior</string>
+
+    <!-- Custom seekbar -->
+    <string name="custom_seekbar_value">Valoare: <xliff:g id="v">%s</xliff:g></string>
+    <string name="custom_seekbar_default_value">în mod implicit</string>
+    <string name="custom_seekbar_default_value_to_set">Valoare implicită: <xliff:g id="v">%s</xliff:g>\nApăsați lung pentru a seta</string>
+    <string name="custom_seekbar_default_value_is_set">Valoarea implicită este setată</string>
+    
+    <!-- Auto HBM -->
+    <string name="auto_hbm_title">Mod automat de luminozitate ridicată (HBM)</string>
+    <string name="auto_hbm_main_switch_title">Utilizați HBM automat</string>
+    <string name="tile_auto_hbm">HBM automat</string>
+    <string name="tile_hbm_on">Activat</string>
+    <string name="tile_hbm_off">Dezactivat</string>
+    <string name="tile_hbm">HBM</string>
+    <string name="tile_hbm_unavailable">HBM indisponibil</string>
+    <string name="tile_auto_hbm_or_brightness_enabled">HBM automat sau luminozitatea automată este activată</string>
+    <string name="hbm_mode_title">Mod de luminozitate ridicată</string>
+    <string name="hbm_mode_notification">Modul de luminozitate ridicată este acum activat. Utilizarea îndelungată poate deteriora afișajul.</string>
+    <string name="auto_hbm_summary">Activați automat modul de luminozitate ridicată în funcție de intensitatea luminii solare (lux)</string>
+    <string name="auto_hbm_threshold_title">Prag de lumină</string>
+    <string name="auto_hbm_threshold_summary">Definiți pragul de intensitate a luminii în unități lux la care se activează HBM</string>
+    <string name="auto_hbm_enable_time_title">Timp de activare</string>
+    <string name="auto_hbm_enable_time_summary">Durata în secunde în care pragul de lumină trebuie îndeplinit continuu pentru a activa HBM</string>
+    <string name="auto_hbm_disable_time_title">Timp de dezactivare</string>
+    <string name="auto_hbm_disable_time_summary">Durata în secunde pentru care HBM este dezactivat dacă pragul de lumină scade sub nivelul setat</string>
+
+    <!-- GameBar Overlay -->
+    <string name="game_bar_title">GameBar</string>
+    <string name="game_bar_summary">Activați suprapunerea de sistem (FPS, temperatură etc.)</string>
+    <string name="overlay_permission_required">Este necesară permisiunea de suprapunere</string>
+    <string name="overlay_permission_granted">Permisiunea de suprapunere a fost acordată</string>
+    <string name="overlay_permission_denied">Permisiunea de suprapunere a fost refuzată</string>
+    <string name="game_bar_tile_label">GameBar</string>
+    <string name="game_bar_tile_description">Comutați suprapunerea de joc</string>
+
+</resources>

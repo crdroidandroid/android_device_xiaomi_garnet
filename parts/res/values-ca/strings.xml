@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2020 The LineageOS Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Xiaomi Settings -->
+    <string name="app_title">Configuració de Xiaomi</string>
+    <string name="tile_add">Afegeix un mosaic</string>
+    <string name="tile_added">Mosaic afegit</string>
+    <string name="tile_not_added">Mosaic no afegit</string>
+    <string name="tile_already_added">El mosaic ja s\'ha afegit</string>
+    <string name="tile_on">Activat</string>
+    <string name="tile_off">Desactivat</string>
+
+    <!-- Thermal profiles -->
+    <string name="thermal_title">Perfils tèrmics</string>
+    <string name="thermal_summary">Ajusta els perfils tèrmics per aplicació per a un rendiment òptim</string>
+    <string name="thermal_default">Sense optimització</string>
+    <string name="thermal_benchmark">Rendiment</string>
+    <string name="thermal_browser">Navegador</string>
+    <string name="thermal_camera">Càmera</string>
+    <string name="thermal_dialer">Telèfon</string>
+    <string name="thermal_gaming">Jocs</string>
+    <string name="thermal_streaming">Transmissió</string>
+
+    <!-- Clear Speaker -->
+   <string name="clear_speaker_title">Neteja l\'altaveu</string>
+   <string name="clear_speaker_summary">Reprodueix un àudio de 30 segons per netejar l\'altaveu</string>
+   <string name="clear_speaker_description">Executeu aquesta funció una o dues vegades si l\'altaveu està lleugerament obstruït per la pols. Poseu el volum multimèdia al màxim.\n\nSi l\'altaveu està molt obstruït, executeu aquesta funció de 2 a 5 vegades mentre sacsegeu el dispositiu amb l\'altaveu cap avall.</string>
+
+    <!-- Saturation -->
+    <string name="saturation_title">Saturació de la pantalla</string>
+    <string name="saturation_summary">Controla el nivell de saturació de la pantalla</string>
+    <string name="saturation_footer_summary">Canviar el mode de color als ajustos de pantalla anul·larà el nivell de saturació i caldrà tornar-lo a aplicar.</string>
+
+    <!-- Image preview -->
+    <string name="image_preview_content_description">Vista prèvia</string>
+    <string name="image_preview_next_page_content_description">Següent</string>
+    <string name="image_preview_previous_page_content_description">Anterior</string>
+
+    <!-- Custom seekbar -->
+    <string name="custom_seekbar_value">Valor: <xliff:g id="v">%s</xliff:g></string>
+    <string name="custom_seekbar_default_value">per defecte</string>
+    <string name="custom_seekbar_default_value_to_set">Valor per defecte: <xliff:g id="v">%s</xliff:g>\nPremeu llargament per establir-lo</string>
+    <string name="custom_seekbar_default_value_is_set">El valor per defecte està establert</string>
+    
+    <!-- Auto HBM -->
+    <string name="auto_hbm_title">Mode de brillantor alta automàtic (HBM)</string>
+    <string name="auto_hbm_main_switch_title">Utilitza l\'HBM automàtic</string>
+    <string name="tile_auto_hbm">HBM automàtic</string>
+    <string name="tile_hbm_on">Activat</string>
+    <string name="tile_hbm_off">Desactivat</string>
+    <string name="tile_hbm">HBM</string>
+    <string name="tile_hbm_unavailable">HBM no disponible</string>
+    <string name="tile_auto_hbm_or_brightness_enabled">L\'HBM automàtic o la brillantor automàtica està activat</string>
+    <string name="hbm_mode_title">Mode de brillantor alta</string>
+    <string name="hbm_mode_notification">El mode de brillantor alta està activat ara. Un ús prolongat pot danyar la pantalla.</string>
+    <string name="auto_hbm_summary">Activa automàticament el mode de brillantor alta segons la intensitat de la llum solar (lux)</string>
+    <string name="auto_hbm_threshold_title">Llindar de llum</string>
+    <string name="auto_hbm_threshold_summary">Defineix el llindar d\'intensitat de llum en lux al qual s\'activa l\'HBM</string>
+    <string name="auto_hbm_enable_time_title">Temps d\'activació</string>
+    <string name="auto_hbm_enable_time_summary">Durada en segons durant la qual el llindar de llum s\'ha de complir contínuament per activar l\'HBM</string>
+    <string name="auto_hbm_disable_time_title">Temps de desactivació</string>
+    <string name="auto_hbm_disable_time_summary">Durada en segons durant la qual l\'HBM es desactiva si el llindar de llum cau per sota del nivell establert</string>
+
+    <!-- GameBar Overlay -->
+    <string name="game_bar_title">GameBar</string>
+    <string name="game_bar_summary">Activa la superposició del sistema (FPS, temperatura, etc.)</string>
+    <string name="overlay_permission_required">Es requereix el permís de superposició</string>
+    <string name="overlay_permission_granted">Permís de superposició concedit</string>
+    <string name="overlay_permission_denied">Permís de superposició denegat</string>
+    <string name="game_bar_tile_label">GameBar</string>
+    <string name="game_bar_tile_description">Activa o desactiva la superposició de joc</string>
+
+</resources>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2020 The LineageOS Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Xiaomi Settings -->
+    <string name="app_title">Xiaomi beállítások</string>
+    <string name="tile_add">Csempe hozzáadása</string>
+    <string name="tile_added">Csempe hozzáadva</string>
+    <string name="tile_not_added">Csempe nincs hozzáadva</string>
+    <string name="tile_already_added">A csempe már hozzá van adva</string>
+    <string name="tile_on">Be</string>
+    <string name="tile_off">Ki</string>
+
+    <!-- Thermal profiles -->
+    <string name="thermal_title">Hőprofil</string>
+    <string name="thermal_summary">Állítsa be az alkalmazásonkénti hőprofilokat az optimális teljesítmény érdekében</string>
+    <string name="thermal_default">Nincs optimalizálás</string>
+    <string name="thermal_benchmark">Teljesítmény</string>
+    <string name="thermal_browser">Böngésző</string>
+    <string name="thermal_camera">Kamera</string>
+    <string name="thermal_dialer">Tárcsázó</string>
+    <string name="thermal_gaming">Játék</string>
+    <string name="thermal_streaming">Streaming</string>
+
+    <!-- Clear Speaker -->
+   <string name="clear_speaker_title">Hangszóró tisztítása</string>
+   <string name="clear_speaker_summary">30 másodperces hang lejátszása a hangszóró tisztításához</string>
+   <string name="clear_speaker_description">Futtassa ezt a funkciót egyszer vagy kétszer, ha a hangszóró enyhén eldugult a portól. Állítsa a média hangerejét maximumra.\n\nHa a hangszóró erősen eldugult, futtassa ezt a funkciót 2-5 alkalommal, miközben a készüléket a hangszóróval lefelé rázza.</string>
+
+    <!-- Saturation -->
+    <string name="saturation_title">Kijelző telítettsége</string>
+    <string name="saturation_summary">A kijelző telítettségi szintjének szabályozása</string>
+    <string name="saturation_footer_summary">A színmód megváltoztatása a kijelzőbeállításokban felülírja a telítettségi szintet, amelyet újra alkalmazni kell.</string>
+
+    <!-- Image preview -->
+    <string name="image_preview_content_description">Előnézet</string>
+    <string name="image_preview_next_page_content_description">Következő</string>
+    <string name="image_preview_previous_page_content_description">Előző</string>
+
+    <!-- Custom seekbar -->
+    <string name="custom_seekbar_value">Érték: <xliff:g id="v">%s</xliff:g></string>
+    <string name="custom_seekbar_default_value">alapértelmezés szerint</string>
+    <string name="custom_seekbar_default_value_to_set">Alapértelmezett érték: <xliff:g id="v">%s</xliff:g>\nHosszan nyomja meg a beállításhoz</string>
+    <string name="custom_seekbar_default_value_is_set">Alapértelmezett érték beállítva</string>
+    
+    <!-- Auto HBM -->
+    <string name="auto_hbm_title">Automatikus nagy fényerő mód (HBM)</string>
+    <string name="auto_hbm_main_switch_title">Automatikus HBM használata</string>
+    <string name="tile_auto_hbm">Automatikus HBM</string>
+    <string name="tile_hbm_on">Engedélyezve</string>
+    <string name="tile_hbm_off">Letiltva</string>
+    <string name="tile_hbm">HBM</string>
+    <string name="tile_hbm_unavailable">HBM nem érhető el</string>
+    <string name="tile_auto_hbm_or_brightness_enabled">Az automatikus HBM vagy az automatikus fényerő engedélyezve van</string>
+    <string name="hbm_mode_title">Nagy fényerő mód</string>
+    <string name="hbm_mode_notification">A nagy fényerő mód most aktiválva van. A hosszú távú használat károsíthatja a kijelzőt.</string>
+    <string name="auto_hbm_summary">A nagy fényerő mód automatikus engedélyezése a napfény intenzitása (lux) alapján</string>
+    <string name="auto_hbm_threshold_title">Fény küszöbérték</string>
+    <string name="auto_hbm_threshold_summary">Határozza meg a fényintenzitás küszöbértékét lux egységekben, amelynél a HBM aktiválódik</string>
+    <string name="auto_hbm_enable_time_title">Engedélyezési idő</string>
+    <string name="auto_hbm_enable_time_summary">Időtartam másodpercben, ameddig a fényküszöbnek folyamatosan teljesülnie kell a HBM aktiválásához</string>
+    <string name="auto_hbm_disable_time_title">Letiltási idő</string>
+    <string name="auto_hbm_disable_time_summary">Időtartam másodpercben, ameddig a HBM le van tiltva, ha a fényküszöb a beállított szint alá esik</string>
+
+    <!-- GameBar Overlay -->
+    <string name="game_bar_title">GameBar</string>
+    <string name="game_bar_summary">A rendszerátfedés engedélyezése (FPS, hőmérséklet stb.)</string>
+    <string name="overlay_permission_required">Átfedési engedély szükséges</string>
+    <string name="overlay_permission_granted">Átfedési engedély megadva</string>
+    <string name="overlay_permission_denied">Átfedési engedély megtagadva</string>
+    <string name="game_bar_tile_label">GameBar</string>
+    <string name="game_bar_tile_description">A játék átfedésének kapcsolása</string>
+
+</resources>

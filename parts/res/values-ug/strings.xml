@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2020 The LineageOS Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Xiaomi Settings -->
+    <string name="app_title">Xiaomi تەڭشەكلىرى</string>
+    <string name="tile_add">كاشى قوشۇش</string>
+    <string name="tile_added">كاشى قوشۇلدى</string>
+    <string name="tile_not_added">كاشى قوشۇلمىدى</string>
+    <string name="tile_already_added">كاشى ئاللىبۇرۇن قوشۇلغان</string>
+    <string name="tile_on">ئوچۇق</string>
+    <string name="tile_off">ئېتىلگەن</string>
+
+    <!-- Thermal profiles -->
+    <string name="thermal_title">ئىسسىقلىق ئارخىپلىرى</string>
+    <string name="thermal_summary">ئەڭ ياخشى ئىقتىدار ئۈچۈن ھەر بىر ئەپنىڭ ئىسسىقلىق ئارخىپىنى تەڭشەڭ</string>
+    <string name="thermal_default">ئەلالاشتۇرۇش يوق</string>
+    <string name="thermal_benchmark">ئىقتىدار</string>
+    <string name="thermal_browser">تور كۆرگۈچ</string>
+    <string name="thermal_camera">كامېرا</string>
+    <string name="thermal_dialer">تېلېفون</string>
+    <string name="thermal_gaming">ئويۇن</string>
+    <string name="thermal_streaming">ئېقىم</string>
+
+    <!-- Clear Speaker -->
+   <string name="clear_speaker_title">ياڭراتقۇنى تازىلاش</string>
+   <string name="clear_speaker_summary">ياڭراتقۇنى تازىلاش ئۈچۈن 30 سېكۇنتلۇق ئاۋازنى قويۇڭ</string>
+   <string name="clear_speaker_description">ياڭراتقۇڭىز چاڭ بىلەن يېنىك توسۇلغان بولسا، بۇ ئىقتىدارنى بىر ياكى ئىككى قېتىم ئىجرا قىلىڭ. مېدىيا ئاۋازىنى ئەڭ يۇقىرىغا تەڭشەڭ.\n\nياڭراتقۇ قاتتىق توسۇلغان بولسا، ئۈسكۈنىنى ياڭراتقۇنى تۆۋەنگە قارىتىپ سىلكىۋېتىپ بۇ ئىقتىدارنى 2-5 قېتىم ئىجرا قىلىڭ.</string>
+
+    <!-- Saturation -->
+    <string name="saturation_title">ئېكران تويۇنۇشى</string>
+    <string name="saturation_summary">ئېكراننىڭ تويۇنۇش دەرىجىسىنى كونترول قىلىڭ</string>
+    <string name="saturation_footer_summary">ئېكران تەڭشەكلىرىدىكى رەڭ ھالىتىنى ئۆزگەرتىش تويۇنۇش دەرىجىسىنى بېسىپ چۈشىدۇ، قايتا قوللىنىشقا توغرا كېلىدۇ.</string>
+
+    <!-- Image preview -->
+    <string name="image_preview_content_description">ئالدىن كۆرۈش</string>
+    <string name="image_preview_next_page_content_description">كېيىنكى</string>
+    <string name="image_preview_previous_page_content_description">ئالدىنقى</string>
+
+    <!-- Custom seekbar -->
+    <string name="custom_seekbar_value">قىممەت: <xliff:g id="v">%s</xliff:g></string>
+    <string name="custom_seekbar_default_value">سۈكۈتتىكى</string>
+    <string name="custom_seekbar_default_value_to_set">سۈكۈتتىكى قىممەت: <xliff:g id="v">%s</xliff:g>\nتەڭشەش ئۈچۈن ئۇزۇن بېسىڭ</string>
+    <string name="custom_seekbar_default_value_is_set">سۈكۈتتىكى قىممەت تەڭشەلدى</string>
+    
+    <!-- Auto HBM -->
+    <string name="auto_hbm_title">ئاپتوماتىك يۇقىرى يورۇقلۇق ھالىتى (HBM)</string>
+    <string name="auto_hbm_main_switch_title">ئاپتوماتىك HBM نى ئىشلىتىش</string>
+    <string name="tile_auto_hbm">ئاپتوماتىك HBM</string>
+    <string name="tile_hbm_on">قوزغىتىلدى</string>
+    <string name="tile_hbm_off">چەكلەندى</string>
+    <string name="tile_hbm">HBM</string>
+    <string name="tile_hbm_unavailable">HBM ئىشلەتكىلى بولمايدۇ</string>
+    <string name="tile_auto_hbm_or_brightness_enabled">ئاپتوماتىك HBM ياكى ئاپتوماتىك يورۇقلۇق قوزغىتىلدى</string>
+    <string name="hbm_mode_title">يۇقىرى يورۇقلۇق ھالىتى</string>
+    <string name="hbm_mode_notification">يۇقىرى يورۇقلۇق ھالىتى ھازىر قوزغىتىلدى. ئۇزۇن ۋاقىت ئىشلىتىش ئېكرانىڭىزغا زىيان يەتكۈزۈشى مۇمكىن.</string>
+    <string name="auto_hbm_summary">قۇياش نۇرىنىڭ كۈچلۈكلۈكىگە (lux) ئاساسەن يۇقىرى يورۇقلۇق ھالىتىنى ئاپتوماتىك قوزغىتىڭ</string>
+    <string name="auto_hbm_threshold_title">نۇر چەكلىمىسى</string>
+    <string name="auto_hbm_threshold_summary">HBM قوزغىتىلىدىغان lux بىرلىكىدىكى نۇر كۈچلۈكلۈك چەكلىمىسىنى بەلگىلەڭ</string>
+    <string name="auto_hbm_enable_time_title">قوزغىتىش ۋاقتى</string>
+    <string name="auto_hbm_enable_time_summary">HBM نى قوزغىتىش ئۈچۈن نۇر چەكلىمىسىنىڭ ئۈزلۈكسىز تولۇقلىنىشى كېرەك بولغان سېكۇنتتىكى ۋاقىت</string>
+    <string name="auto_hbm_disable_time_title">چەكلەش ۋاقتى</string>
+    <string name="auto_hbm_disable_time_summary">نۇر چەكلىمىسى بەلگىلەنگەن دەرىجىدىن تۆۋەن چۈشسە HBM چەكلەنگەن سېكۇنتتىكى ۋاقىت</string>
+
+    <!-- GameBar Overlay -->
+    <string name="game_bar_title">GameBar</string>
+    <string name="game_bar_summary">سىستېما قەۋىتىنى قوزغىتىڭ (FPS، تېمپېراتۇرا قاتارلىقلار)</string>
+    <string name="overlay_permission_required">قەۋەت ئىجازىتى تەلەپ قىلىنىدۇ</string>
+    <string name="overlay_permission_granted">قەۋەت ئىجازىتى بېرىلدى</string>
+    <string name="overlay_permission_denied">قەۋەت ئىجازىتى رەت قىلىندى</string>
+    <string name="game_bar_tile_label">GameBar</string>
+    <string name="game_bar_tile_description">ئويۇن قەۋىتىنى ئالماشتۇرۇش</string>
+
+</resources>

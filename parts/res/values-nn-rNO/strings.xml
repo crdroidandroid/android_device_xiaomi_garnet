@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2020 The LineageOS Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Xiaomi Settings -->
+    <string name="app_title">Xiaomi-innstillingar</string>
+    <string name="tile_add">Legg til flis</string>
+    <string name="tile_added">Flis lagt til</string>
+    <string name="tile_not_added">Flis ikkje lagt til</string>
+    <string name="tile_already_added">Flisa er allereie lagt til</string>
+    <string name="tile_on">På</string>
+    <string name="tile_off">Av</string>
+
+    <!-- Thermal profiles -->
+    <string name="thermal_title">Termiske profilar</string>
+    <string name="thermal_summary">Juster termiske profilar per app for best mogleg yting</string>
+    <string name="thermal_default">Inga optimalisering</string>
+    <string name="thermal_benchmark">Yting</string>
+    <string name="thermal_browser">Nettlesar</string>
+    <string name="thermal_camera">Kamera</string>
+    <string name="thermal_dialer">Oppringing</string>
+    <string name="thermal_gaming">Spel</string>
+    <string name="thermal_streaming">Strøyming</string>
+
+    <!-- Clear Speaker -->
+   <string name="clear_speaker_title">Reingjer høgtalaren</string>
+   <string name="clear_speaker_summary">Spel av ein 30-sekunds lyd for å reingjere høgtalaren</string>
+   <string name="clear_speaker_description">Køyr denne funksjonen ein eller to gonger om høgtalaren din er lett blokkert av støv. Set medielydstyrken til maksimum.\n\nOm høgtalaren er sterkt blokkert, køyr denne funksjonen 2-5 gonger medan du ristar eininga med høgtalaren nedover.</string>
+
+    <!-- Saturation -->
+    <string name="saturation_title">Metting på skjermen</string>
+    <string name="saturation_summary">Styr mettingsnivået på skjermen</string>
+    <string name="saturation_footer_summary">Om du endrar fargemodus i skjerminnstillingane, vil det overstyre mettingsnivået, og det må brukast på nytt.</string>
+
+    <!-- Image preview -->
+    <string name="image_preview_content_description">Førehandsvising</string>
+    <string name="image_preview_next_page_content_description">Neste</string>
+    <string name="image_preview_previous_page_content_description">Førre</string>
+
+    <!-- Custom seekbar -->
+    <string name="custom_seekbar_value">Verdi: <xliff:g id="v">%s</xliff:g></string>
+    <string name="custom_seekbar_default_value">som standard</string>
+    <string name="custom_seekbar_default_value_to_set">Standardverdi: <xliff:g id="v">%s</xliff:g>\nTrykk lenge for å stille inn</string>
+    <string name="custom_seekbar_default_value_is_set">Standardverdi er sett</string>
+    
+    <!-- Auto HBM -->
+    <string name="auto_hbm_title">Automatisk høg lysstyrke-modus (HBM)</string>
+    <string name="auto_hbm_main_switch_title">Bruk automatisk HBM</string>
+    <string name="tile_auto_hbm">Automatisk HBM</string>
+    <string name="tile_hbm_on">Aktivert</string>
+    <string name="tile_hbm_off">Deaktivert</string>
+    <string name="tile_hbm">HBM</string>
+    <string name="tile_hbm_unavailable">HBM ikkje tilgjengeleg</string>
+    <string name="tile_auto_hbm_or_brightness_enabled">Automatisk HBM eller automatisk lysstyrke er aktivert</string>
+    <string name="hbm_mode_title">Høg lysstyrke-modus</string>
+    <string name="hbm_mode_notification">Høg lysstyrke-modus er no aktivert. Lang tids bruk kan skade skjermen din.</string>
+    <string name="auto_hbm_summary">Aktiver automatisk høg lysstyrke-modus basert på sollysintensitet (lux)</string>
+    <string name="auto_hbm_threshold_title">Lysterskel</string>
+    <string name="auto_hbm_threshold_summary">Definer terskelen for lysintensitet i lux-einingar der HBM blir aktivert</string>
+    <string name="auto_hbm_enable_time_title">Aktiveringstid</string>
+    <string name="auto_hbm_enable_time_summary">Varigheit i sekund som lysterskelen må vere oppfylt kontinuerleg for å aktivere HBM</string>
+    <string name="auto_hbm_disable_time_title">Deaktiveringstid</string>
+    <string name="auto_hbm_disable_time_summary">Varigheit i sekund som HBM blir deaktivert om lysterskelen fell under det innstilte nivået</string>
+
+    <!-- GameBar Overlay -->
+    <string name="game_bar_title">GameBar</string>
+    <string name="game_bar_summary">Aktiver systemoverlegget (FPS, temp, osv.)</string>
+    <string name="overlay_permission_required">Løyve til overlegg er påkravd</string>
+    <string name="overlay_permission_granted">Løyve til overlegg gjeve</string>
+    <string name="overlay_permission_denied">Løyve til overlegg avvist</string>
+    <string name="game_bar_tile_label">GameBar</string>
+    <string name="game_bar_tile_description">Veksle speloverlegget</string>
+
+</resources>

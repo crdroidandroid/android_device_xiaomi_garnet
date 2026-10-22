@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2020 The LineageOS Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Xiaomi Settings -->
+    <string name="app_title">تنظیمات شیائومی</string>
+    <string name="tile_add">افزودن کاشی</string>
+    <string name="tile_added">کاشی افزوده شد</string>
+    <string name="tile_not_added">کاشی افزوده نشد</string>
+    <string name="tile_already_added">کاشی قبلاً افزوده شده است</string>
+    <string name="tile_on">روشن</string>
+    <string name="tile_off">خاموش</string>
+
+    <!-- Thermal profiles -->
+    <string name="thermal_title">پروفایل‌های حرارتی</string>
+    <string name="thermal_summary">پروفایل‌های حرارتی هر برنامه را برای عملکرد بهینه تنظیم کنید</string>
+    <string name="thermal_default">بدون بهینه‌سازی</string>
+    <string name="thermal_benchmark">عملکرد</string>
+    <string name="thermal_browser">مرورگر</string>
+    <string name="thermal_camera">دوربین</string>
+    <string name="thermal_dialer">تلفن</string>
+    <string name="thermal_gaming">بازی</string>
+    <string name="thermal_streaming">پخش جریانی</string>
+
+    <!-- Clear Speaker -->
+   <string name="clear_speaker_title">تمیز کردن بلندگو</string>
+   <string name="clear_speaker_summary">پخش یک صدای 30 ثانیه‌ای برای تمیز کردن بلندگو</string>
+   <string name="clear_speaker_description">اگر بلندگوی شما کمی با گرد و غبار مسدود شده است، این قابلیت را یک یا دو بار اجرا کنید. صدای رسانه را روی حداکثر تنظیم کنید.\n\nاگر بلندگو به شدت مسدود است، این قابلیت را 2 تا 5 بار اجرا کنید و دستگاه را با بلندگو رو به پایین تکان دهید.</string>
+
+    <!-- Saturation -->
+    <string name="saturation_title">اشباع صفحه نمایش</string>
+    <string name="saturation_summary">سطح اشباع رنگ صفحه نمایش را کنترل کنید</string>
+    <string name="saturation_footer_summary">تغییر حالت رنگ در تنظیمات صفحه نمایش، سطح اشباع را لغو می‌کند و نیاز به اعمال مجدد آن خواهد بود.</string>
+
+    <!-- Image preview -->
+    <string name="image_preview_content_description">پیش‌نمایش</string>
+    <string name="image_preview_next_page_content_description">بعدی</string>
+    <string name="image_preview_previous_page_content_description">قبلی</string>
+
+    <!-- Custom seekbar -->
+    <string name="custom_seekbar_value">مقدار: <xliff:g id="v">%s</xliff:g></string>
+    <string name="custom_seekbar_default_value">به صورت پیش‌فرض</string>
+    <string name="custom_seekbar_default_value_to_set">مقدار پیش‌فرض: <xliff:g id="v">%s</xliff:g>\nبرای تنظیم، طولانی لمس کنید</string>
+    <string name="custom_seekbar_default_value_is_set">مقدار پیش‌فرض تنظیم شد</string>
+    
+    <!-- Auto HBM -->
+    <string name="auto_hbm_title">حالت روشنایی بالا خودکار (HBM)</string>
+    <string name="auto_hbm_main_switch_title">استفاده از HBM خودکار</string>
+    <string name="tile_auto_hbm">HBM خودکار</string>
+    <string name="tile_hbm_on">فعال</string>
+    <string name="tile_hbm_off">غیرفعال</string>
+    <string name="tile_hbm">HBM</string>
+    <string name="tile_hbm_unavailable">HBM در دسترس نیست</string>
+    <string name="tile_auto_hbm_or_brightness_enabled">HBM خودکار یا روشنایی خودکار فعال است</string>
+    <string name="hbm_mode_title">حالت روشنایی بالا</string>
+    <string name="hbm_mode_notification">حالت روشنایی بالا اکنون فعال است. استفاده طولانی مدت ممکن است به صفحه نمایش شما آسیب برساند.</string>
+    <string name="auto_hbm_summary">فعال‌سازی خودکار حالت روشنایی بالا بر اساس شدت نور خورشید (لوکس)</string>
+    <string name="auto_hbm_threshold_title">آستانه نور</string>
+    <string name="auto_hbm_threshold_summary">آستانه شدت نور بر حسب لوکس را که در آن HBM فعال می‌شود تعریف کنید</string>
+    <string name="auto_hbm_enable_time_title">زمان فعال‌سازی</string>
+    <string name="auto_hbm_enable_time_summary">مدت زمان بر حسب ثانیه که آستانه نور باید به طور مداوم برقرار باشد تا HBM فعال شود</string>
+    <string name="auto_hbm_disable_time_title">زمان غیرفعال‌سازی</string>
+    <string name="auto_hbm_disable_time_summary">مدت زمان بر حسب ثانیه که اگر آستانه نور به زیر سطح تنظیم شده بیاید، HBM غیرفعال می‌شود</string>
+
+    <!-- GameBar Overlay -->
+    <string name="game_bar_title">GameBar</string>
+    <string name="game_bar_summary">فعال کردن پوشش سیستم (FPS، دما و غیره)</string>
+    <string name="overlay_permission_required">مجوز پوشش لازم است</string>
+    <string name="overlay_permission_granted">مجوز پوشش اعطا شد</string>
+    <string name="overlay_permission_denied">مجوز پوشش رد شد</string>
+    <string name="game_bar_tile_label">GameBar</string>
+    <string name="game_bar_tile_description">تغییر وضعیت پوشش بازی</string>
+
+</resources>

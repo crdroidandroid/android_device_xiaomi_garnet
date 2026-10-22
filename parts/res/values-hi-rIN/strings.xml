@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2020 The LineageOS Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Xiaomi Settings -->
+    <string name="app_title">Xiaomi सेटिंग्स</string>
+    <string name="tile_add">टाइल जोड़ें</string>
+    <string name="tile_added">टाइल जोड़ा गया</string>
+    <string name="tile_not_added">टाइल नहीं जोड़ा गया</string>
+    <string name="tile_already_added">टाइल पहले से जोड़ा गया है</string>
+    <string name="tile_on">चालू</string>
+    <string name="tile_off">बंद</string>
+
+    <!-- Thermal profiles -->
+    <string name="thermal_title">थर्मल प्रोफ़ाइल</string>
+    <string name="thermal_summary">बेहतरीन प्रदर्शन के लिए प्रति-ऐप थर्मल प्रोफ़ाइल समायोजित करें</string>
+    <string name="thermal_default">कोई अनुकूलन नहीं</string>
+    <string name="thermal_benchmark">प्रदर्शन</string>
+    <string name="thermal_browser">ब्राउज़र</string>
+    <string name="thermal_camera">कैमरा</string>
+    <string name="thermal_dialer">फ़ोन</string>
+    <string name="thermal_gaming">गेमिंग</string>
+    <string name="thermal_streaming">स्ट्रीमिंग</string>
+
+    <!-- Clear Speaker -->
+   <string name="clear_speaker_title">स्पीकर साफ़ करें</string>
+   <string name="clear_speaker_summary">स्पीकर साफ़ करने के लिए 30 सेकंड का ऑडियो चलाएँ</string>
+   <string name="clear_speaker_description">अगर आपको लगे कि आपका स्पीकर धूल से हल्का सा बंद है, तो इस सुविधा को एक या दो बार चलाएँ। मीडिया वॉल्यूम अधिकतम पर रखें।\n\nअगर स्पीकर ज़्यादा बंद है, तो स्पीकर को नीचे की ओर करके डिवाइस को हिलाते हुए इस सुविधा को 2-5 बार चलाएँ।</string>
+
+    <!-- Saturation -->
+    <string name="saturation_title">डिस्प्ले सैचुरेशन</string>
+    <string name="saturation_summary">डिस्प्ले के सैचुरेशन स्तर को नियंत्रित करें</string>
+    <string name="saturation_footer_summary">डिस्प्ले सेटिंग्स में कलर मोड बदलने से सैचुरेशन स्तर बदल जाएगा, इसलिए इसे फिर से लागू करना होगा।</string>
+
+    <!-- Image preview -->
+    <string name="image_preview_content_description">पूर्वावलोकन</string>
+    <string name="image_preview_next_page_content_description">अगला</string>
+    <string name="image_preview_previous_page_content_description">पिछला</string>
+
+    <!-- Custom seekbar -->
+    <string name="custom_seekbar_value">मान: <xliff:g id="v">%s</xliff:g></string>
+    <string name="custom_seekbar_default_value">डिफ़ॉल्ट रूप से</string>
+    <string name="custom_seekbar_default_value_to_set">डिफ़ॉल्ट मान: <xliff:g id="v">%s</xliff:g>\nसेट करने के लिए देर तक दबाएँ</string>
+    <string name="custom_seekbar_default_value_is_set">डिफ़ॉल्ट मान सेट है</string>
+
+    <!-- Auto HBM -->
+    <string name="auto_hbm_title">स्वचालित हाई ब्राइटनेस मोड (HBM)</string>
+    <string name="auto_hbm_main_switch_title">स्वचालित HBM का उपयोग करें</string>
+    <string name="tile_auto_hbm">ऑटो HBM</string>
+    <string name="tile_hbm_on">सक्षम</string>
+    <string name="tile_hbm_off">अक्षम</string>
+    <string name="tile_hbm">HBM</string>
+    <string name="tile_hbm_unavailable">HBM उपलब्ध नहीं है</string>
+    <string name="tile_auto_hbm_or_brightness_enabled">ऑटो HBM या ऑटो ब्राइटनेस सक्षम है</string>
+    <string name="hbm_mode_title">हाई ब्राइटनेस मोड</string>
+    <string name="hbm_mode_notification">हाई ब्राइटनेस मोड अब सक्रिय है। लंबे समय तक उपयोग से आपकी डिस्प्ले खराब हो सकती है।</string>
+    <string name="auto_hbm_summary">सूर्य के प्रकाश की तीव्रता (lux) के आधार पर हाई ब्राइटनेस मोड स्वचालित रूप से सक्षम करें</string>
+    <string name="auto_hbm_threshold_title">प्रकाश सीमा</string>
+    <string name="auto_hbm_threshold_summary">वह प्रकाश तीव्रता सीमा (lux इकाइयों में) परिभाषित करें जिस पर HBM सक्रिय होता है</string>
+    <string name="auto_hbm_enable_time_title">सक्षम करने का समय</string>
+    <string name="auto_hbm_enable_time_summary">वह अवधि (सेकंड में) जिसके दौरान HBM सक्रिय करने के लिए प्रकाश सीमा लगातार पूरी होनी चाहिए</string>
+    <string name="auto_hbm_disable_time_title">अक्षम करने का समय</string>
+    <string name="auto_hbm_disable_time_summary">वह अवधि (सेकंड में) जिसके दौरान यदि प्रकाश सीमा निर्धारित स्तर से नीचे जाती है, तो HBM अक्षम रहता है</string>
+
+    <!-- GameBar Overlay -->
+    <string name="game_bar_title">GameBar</string>
+    <string name="game_bar_summary">सिस्टम ओवरले सक्षम करें (FPS, तापमान, आदि)</string>
+    <string name="overlay_permission_required">ओवरले अनुमति आवश्यक है</string>
+    <string name="overlay_permission_granted">ओवरले अनुमति दी गई</string>
+    <string name="overlay_permission_denied">ओवरले अनुमति अस्वीकृत</string>
+    <string name="game_bar_tile_label">GameBar</string>
+    <string name="game_bar_tile_description">गेम ओवरले टॉगल करें</string>
+
+</resources>

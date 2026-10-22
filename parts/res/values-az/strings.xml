@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2020 The LineageOS Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Xiaomi Settings -->
+    <string name="app_title">Xiaomi Parametrləri</string>
+    <string name="tile_add">Plitə əlavə et</string>
+    <string name="tile_added">Plitə əlavə edildi</string>
+    <string name="tile_not_added">Plitə əlavə edilmədi</string>
+    <string name="tile_already_added">Plitə artıq əlavə edilib</string>
+    <string name="tile_on">Açıq</string>
+    <string name="tile_off">Bağlı</string>
+
+    <!-- Thermal profiles -->
+    <string name="thermal_title">Termal profillər</string>
+    <string name="thermal_summary">Optimal performans üçün tətbiq üzrə termal profilləri tənzimləyin</string>
+    <string name="thermal_default">Optimallaşdırma yoxdur</string>
+    <string name="thermal_benchmark">Performans</string>
+    <string name="thermal_browser">Brauzer</string>
+    <string name="thermal_camera">Kamera</string>
+    <string name="thermal_dialer">Zənglər</string>
+    <string name="thermal_gaming">Oyun</string>
+    <string name="thermal_streaming">Yayım</string>
+
+    <!-- Clear Speaker -->
+   <string name="clear_speaker_title">Dinamiki təmizlə</string>
+   <string name="clear_speaker_summary">Dinamiki təmizləmək üçün 30 saniyəlik səs çalın</string>
+   <string name="clear_speaker_description">Dinamikiniz tozla yüngül tutulubsa, bu funksiyanı bir və ya iki dəfə işə salın. Media səsini maksimuma qoyun.\n\nDinamik güclü tutulubsa, cihazı dinamik aşağı baxaraq silkələyərkən bu funksiyanı 2-5 dəfə işə salın.</string>
+
+    <!-- Saturation -->
+    <string name="saturation_title">Ekran doyğunluğu</string>
+    <string name="saturation_summary">Ekranın doyğunluq səviyyəsini idarə edin</string>
+    <string name="saturation_footer_summary">Ekran parametrlərində rəng rejimini dəyişmək doyğunluq səviyyəsini əvəz edəcək və onun yenidən tətbiq olunması tələb olunacaq.</string>
+
+    <!-- Image preview -->
+    <string name="image_preview_content_description">Önizləmə</string>
+    <string name="image_preview_next_page_content_description">Növbəti</string>
+    <string name="image_preview_previous_page_content_description">Əvvəlki</string>
+
+    <!-- Custom seekbar -->
+    <string name="custom_seekbar_value">Dəyər: <xliff:g id="v">%s</xliff:g></string>
+    <string name="custom_seekbar_default_value">standart olaraq</string>
+    <string name="custom_seekbar_default_value_to_set">Standart dəyər: <xliff:g id="v">%s</xliff:g>\nTəyin etmək üçün uzun basın</string>
+    <string name="custom_seekbar_default_value_is_set">Standart dəyər təyin edildi</string>
+    
+    <!-- Auto HBM -->
+    <string name="auto_hbm_title">Avtomatik Yüksək Parlaqlıq Rejimi (HBM)</string>
+    <string name="auto_hbm_main_switch_title">Avtomatik HBM istifadə et</string>
+    <string name="tile_auto_hbm">Avto HBM</string>
+    <string name="tile_hbm_on">Aktiv</string>
+    <string name="tile_hbm_off">Deaktiv</string>
+    <string name="tile_hbm">HBM</string>
+    <string name="tile_hbm_unavailable">HBM əlçatan deyil</string>
+    <string name="tile_auto_hbm_or_brightness_enabled">Avto HBM və ya Avto Parlaqlıq aktivdir</string>
+    <string name="hbm_mode_title">Yüksək Parlaqlıq Rejimi</string>
+    <string name="hbm_mode_notification">Yüksək Parlaqlıq Rejimi indi aktivdir. Uzun müddət istifadə ekranınıza zərər verə bilər.</string>
+    <string name="auto_hbm_summary">Günəş işığının intensivliyinə (lüks) əsasən yüksək parlaqlıq rejimini avtomatik aktivləşdirin</string>
+    <string name="auto_hbm_threshold_title">İşıq həddi</string>
+    <string name="auto_hbm_threshold_summary">HBM-in aktivləşdiyi işıq intensivliyi həddini lüks vahidlərində təyin edin</string>
+    <string name="auto_hbm_enable_time_title">Aktivləşmə vaxtı</string>
+    <string name="auto_hbm_enable_time_summary">HBM-i aktivləşdirmək üçün işıq həddinin davamlı qarşılanmalı olduğu saniyələrlə müddət</string>
+    <string name="auto_hbm_disable_time_title">Deaktiv vaxtı</string>
+    <string name="auto_hbm_disable_time_summary">İşıq həddi təyin edilmiş səviyyədən aşağı düşərsə, HBM-in deaktiv qaldığı saniyələrlə müddət</string>
+
+    <!-- GameBar Overlay -->
+    <string name="game_bar_title">GameBar</string>
+    <string name="game_bar_summary">Sistem örtüyünü aktivləşdirin (FPS, Temp və s.)</string>
+    <string name="overlay_permission_required">Örtük icazəsi tələb olunur</string>
+    <string name="overlay_permission_granted">Örtük icazəsi verildi</string>
+    <string name="overlay_permission_denied">Örtük icazəsi rədd edildi</string>
+    <string name="game_bar_tile_label">GameBar</string>
+    <string name="game_bar_tile_description">Oyun örtüyünü dəyişin</string>
+
+</resources>
