@@ -21,14 +21,6 @@
     <string name="thermal_gaming">Oyun</string>
     <string name="thermal_streaming">Yayın Akışı</string>
 
-    <!-- Per-app refresh rate -->
-    <string name="refresh_title">Uygulamaya özel yenileme hızı</string>
-    <string name="refresh_summary">Belirli bir uygulama için maksimum yenileme hızını ayarla</string>
-    <string name="refresh_default">Varsayılan</string>
-    <string name="refresh_standard">60 Hz</string>
-    <string name="refresh_high">90 Hz</string>
-    <string name="refresh_extreme">120 Hz</string>
-
     <!-- Clear Speaker -->
     <string name="clear_speaker_title">Hoparlör Temizleyici</string>
     <string name="clear_speaker_summary">Hoparlörü temizlemek için 30 saniyelik bir ses çal</string>
@@ -78,29 +70,4 @@
     <string name="game_bar_tile_label">Oyun Çubuğu</string>
     <string name="game_bar_tile_description">Oyun katmanını aç/kapat</string>
 
-    <!-- Charge bypass strings -->
-    <string name="charge_bypass_title">Şarjı baypas et</string>
-    <string name="charge_bypass_summary">Bataryayı atlayarak doğrudan şarj etmeyi etkinleştir</string>
-    <string name="charge_bypass_warning">Uyarı: Şarjı baypas etmek cihaz sıcaklığını artırabilir veya bataryaya zarar verebilir. Dikkatli kullanın.</string>
-    <string name="charge_bypass_unavailable">Şarjı baypas etme bu cihazda desteklenmiyor</string>
-
-    <!-- Core Control -->
-    <string name="core_control_title">Çekirdek Kontrolü</string>
-    <string name="core_control_summary">Tek tek CPU çekirdeklerini manuel olarak etkinleştir veya devre dışı bırak</string>
-    <string name="core_control_description">Gelişmiş CPU kontrolü. Çekirdekleri kapatmak pil veya termal yükten tasarruf sağlayabilir, ancak performansı ve kararlılığı etkileyebilir.\n\nEn az iki küçük çekirdeğin her zaman çevrimiçi kalması gerekir.</string>
-    <string name="core_0">Çekirdek 0 (Küçük)</string>
-    <string name="core_1">Çekirdek 1 (Küçük)</string>
-    <string name="core_2">Çekirdek 2 (Küçük)</string>
-    <string name="core_3">Çekirdek 3 (Küçük)</string>
-    <string name="core_4">Çekirdek 4 (Büyük)</string>
-    <string name="core_5">Çekirdek 5 (Büyük)</string>
-    <string name="core_6">Çekirdek 6 (Büyük)</string>
-    <string name="core_7">Çekirdek 7 (Büyük)</string>
-
-    <!-- Sound Control -->
-    <string name="sound_control_title">Ses Kontrolü</string>
-    <string name="mic_gain">Mikrofon kazancı (dB)</string>
-    <string name="hp_left_gain">Sol kulaklık kazancı</string>
-    <string name="hp_right_gain">Sağ kulaklık kazancı</string>
-    <string name="sound_control_enable">Ses kontrolünü etkinleştir</string>
 </resources>

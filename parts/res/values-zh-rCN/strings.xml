@@ -37,12 +37,6 @@
     <string name="thermal_streaming">流媒体</string>
 
     <!-- 应用刷新率 -->
-    <string name="refresh_title">应用刷新率</string>
-    <string name="refresh_summary">为特定应用设置最大刷新率</string>
-    <string name="refresh_default">默认</string>
-    <string name="refresh_standard">60 Hz</string>
-    <string name="refresh_high">90 Hz</string>
-    <string name="refresh_extreme">120 Hz</string>
 
     <!-- 扬声器清理 -->
    <string name="clear_speaker_title">扬声器清理</string>
@@ -94,29 +88,9 @@
     <string name="game_bar_tile_description">切换游戏悬浮窗</string>
 
     <!-- 旁路充电字符串 -->
-    <string name="charge_bypass_title">旁路充电</string>
-    <string name="charge_bypass_summary">启用直接充电，绕过电池</string>
-    <string name="charge_bypass_warning">警告：旁路充电可能导致设备温度升高或电池损坏。请谨慎使用。</string>
-    <string name="charge_bypass_unavailable">此设备不支持旁路充电</string>
 
     <!-- 核心控制 -->
-    <string name="core_control_title">核心控制</string>
-    <string name="core_control_summary">手动启用或禁用单个 CPU 核心</string>
-    <string name="core_control_description">高级 CPU 控制。关闭核心可能节省电量或减轻热负载，但可能影响性能和稳定性。\n\n至少需要保持两个小核心始终在线。</string>
-    <string name="core_0">核心 0 (小核)</string>
-    <string name="core_1">核心 1 (小核)</string>
-    <string name="core_2">核心 2 (小核)</string>
-    <string name="core_3">核心 3 (小核)</string>
-    <string name="core_4">核心 4 (大核)</string>
-    <string name="core_5">核心 5 (大核)</string>
-    <string name="core_6">核心 6 (大核)</string>
-    <string name="core_7">核心 7 (大核)</string>
 
     <!-- 声音控制 -->
-    <string name="sound_control_title">声音控制</string>
-    <string name="mic_gain">麦克风增益 (dB)</string>
-    <string name="hp_left_gain">左耳机增益</string>
-    <string name="hp_right_gain">右耳机增益</string>
-    <string name="sound_control_enable">启用声音控制</string>
 
 </resources>

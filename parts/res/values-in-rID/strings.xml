@@ -36,14 +36,6 @@
     <string name="thermal_gaming">Gaming</string>
     <string name="thermal_streaming">Streaming</string>
 
-    <!-- Per-app refresh rate -->
-    <string name="refresh_title">Refresh rate per-aplikasi</string>
-    <string name="refresh_summary">Atur maksimum refresh rate untuk aplikasi tertentu</string>
-    <string name="refresh_default">Bawaan</string>
-    <string name="refresh_standard">60 Hz</string>
-    <string name="refresh_high">90 Hz</string>
-    <string name="refresh_extreme">120 Hz</string>
-
     <!-- Clear Speaker -->
    <string name="clear_speaker_title">Bersihkan speaker</string>
    <string name="clear_speaker_summary">Memutar suara 30 detik untuk membersihkan speaker</string>
@@ -92,31 +84,5 @@
     <string name="overlay_permission_denied">Izin overlay ditolak</string>
     <string name="game_bar_tile_label">GameBar</string>
     <string name="game_bar_tile_description">Hidupkan overlay game</string>
-
-    <!-- Charge bypass strings -->
-    <string name="charge_bypass_title">Bypass charging</string>
-    <string name="charge_bypass_summary">Hidupkan pengisian daya langsung, tanpa menggunakan baterai</string>
-    <string name="charge_bypass_warning">Peringatan: Bypass charging mungkin menyebabkan peningkatan suhu perangkat atau kerusakan baterai. Gunakan dengan hati-hati</string>
-    <string name="charge_bypass_unavailable">Bypass charging tidak didukung pada perangkat ini</string>
-
-    <!-- Core Control -->
-    <string name="core_control_title">Core Control</string>
-    <string name="core_control_summary">Aktifkan atau nonaktifkan CPU core tertentu secara manual</string>
-    <string name="core_control_description">CPU control lanjutan. Menonaktifkan core mungkin menghemat baterai atau mengurangi suhu, tapi mungkin mempengaruhi performa dan stabilitas. \n\nSetidaknya biarkan 2 core kecil harus tetap hidup setiap saat</string>
-    <string name="core_0">Core 0 (Kecil)</string>
-    <string name="core_1">Core 1 (Kecil)</string>
-    <string name="core_2">Core 2 (Kecil)</string>
-    <string name="core_3">Core 3 (Kecil)</string>
-    <string name="core_4">Core 4 (Besar)</string>
-    <string name="core_5">Core 5 (Besar)</string>
-    <string name="core_6">Core 6 (Besar)</string>
-    <string name="core_7">Core 7 (Besar)</string>
-
-    <!-- Sound Control -->
-    <string name="sound_control_title">Kontrol Suara</string>
-    <string name="mic_gain">Microphone gain (dB)</string>
-    <string name="hp_left_gain">Gain headphone kiri</string>
-    <string name="hp_right_gain">Gain headphone kanan</string>
-    <string name="sound_control_enable">Aktifkan kontrol suara</string>
 
 </resources>

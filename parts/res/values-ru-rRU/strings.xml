@@ -19,13 +19,6 @@
     <string name="thermal_gaming">Игры</string>
     <string name="thermal_streaming">Стриминг</string>
 
-    <string name="refresh_title">Частота обновления для приложений</string>
-    <string name="refresh_summary">Установка максимальной частоты обновления для каждого приложения</string>
-    <string name="refresh_default">По умолчанию</string>
-    <string name="refresh_standard">60 Гц</string>
-    <string name="refresh_high">90 Гц</string>
-    <string name="refresh_extreme">120 Гц</string>
-
     <string name="clear_speaker_title">Очистка динамика</string>
    <string name="clear_speaker_summary">Воспроизвести 30-секундный звук для очистки динамика</string>
    <string name="clear_speaker_description">Используйте эту функцию один или два раза, если динамик незначительно забит пылью. Установите громкость мультимедиа на максимум.\n\nЕсли динамик сильно забит, запустите эту функцию 2-5 раз, встряхивая устройство динамиком вниз.</string>
@@ -68,28 +61,5 @@
     <string name="overlay_permission_denied">В разрешении на отображение поверх других приложений отказано</string>
     <string name="game_bar_tile_label">Игровая панель</string>
     <string name="game_bar_tile_description">Переключить игровой оверлей</string>
-
-    <string name="charge_bypass_title">Прямое питание</string>
-    <string name="charge_bypass_summary">Включить питание напрямую, в обход аккумулятора</string>
-    <string name="charge_bypass_warning">Внимание: Прямое питание может привести к повышению температуры устройства или повреждению аккумулятора. Используйте с осторожностью.</string>
-    <string name="charge_bypass_unavailable">Прямое питание не поддерживается на этом устройстве</string>
-
-    <string name="core_control_title">Управление ядрами</string>
-    <string name="core_control_summary">Ручное включение или отключение отдельных ядер ЦП</string>
-    <string name="core_control_description">Расширенное управление ЦП. Отключение ядер может сэкономить заряд батареи или снизить тепловую нагрузку, но может повлиять на производительность и стабильность.\n\nНеобходимо, чтобы как минимум два малых ядра всегда оставались в сети.</string>
-    <string name="core_0">Ядро 0 (малое)</string>
-    <string name="core_1">Ядро 1 (малое)</string>
-    <string name="core_2">Ядро 2 (малое)</string>
-    <string name="core_3">Ядро 3 (малое)</string>
-    <string name="core_4">Ядро 4 (большое)</string>
-    <string name="core_5">Ядро 5 (большое)</string>
-    <string name="core_6">Ядро 6 (большое)</string>
-    <string name="core_7">Ядро 7 (большое)</string>
-
-    <string name="sound_control_title">Управление звуком</string>
-    <string name="mic_gain">Усиление микрофона (дБ)</string>
-    <string name="hp_left_gain">Усиление левого наушника</string>
-    <string name="hp_right_gain">Усиление правого наушника</string>
-    <string name="sound_control_enable">Включить управление звуком</string>
 
 </resources>
