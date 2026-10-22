@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: 2023-2025 Paranoid Android
+     SPDX-FileCopyrightText: 2026 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <string name="app_name">eSIM スイッチャー</string>
+    <string name="esim_title">eSIM</string>
+    <string name="esim_enable_name">eSIM を有効化</string>
+    <string name="esim_summary_enabled">有効</string>
+    <string name="esim_summary_disabled">無効</string>
+    <string name="esim_summary_unsupported">このデバイスでは eSIM はサポートされていません</string>
+    <string name="esim_warning_title">eSIM 使用中</string>
+    <string name="esim_warning_message">続行する前に現在の eSIM プロファイルを無効にするか削除してください</string>
+    <string name="esim_footer_note">eSIM を有効にすると2番目の物理 SIM スロットが無効になります</string>
+    <string name="esim_footer_note_unsupported">このデバイスは eSIM 機能をサポートしていません</string>
+</resources>

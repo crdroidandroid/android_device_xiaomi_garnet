@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: 2023-2025 Paranoid Android
+     SPDX-FileCopyrightText: 2026 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <string name="app_name">Alternador de eSIMs</string>
+    <string name="esim_title">eSIM</string>
+    <string name="esim_enable_name">Ativar eSIM</string>
+    <string name="esim_summary_enabled">Ativado</string>
+    <string name="esim_summary_disabled">Desativado</string>
+    <string name="esim_summary_unsupported">O eSIM não é compatível com este dispositivo</string>
+    <string name="esim_warning_title">eSIM em uso</string>
+    <string name="esim_warning_message">Desative ou remova o seu perfil do seu eSIM atual antes de continuar</string>
+    <string name="esim_footer_note">Ao ativar o eSIM, o segundo slot de SIM físico será desativado</string>
+    <string name="esim_footer_note_unsupported">Este dispositivo não é compatível com a funcionalidade eSIM</string>
+</resources>

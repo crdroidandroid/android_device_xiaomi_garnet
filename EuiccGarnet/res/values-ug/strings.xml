@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: 2023-2025 Paranoid Android
+     SPDX-FileCopyrightText: 2026 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <string name="app_name">eSIM ئالماشتۇرغۇچ</string>
+    <string name="esim_title">eSIM</string>
+    <string name="esim_enable_name">eSIM نى قوزغات</string>
+    <string name="esim_summary_enabled">قوزغىتىلدى</string>
+    <string name="esim_summary_disabled">چەكلەندى</string>
+    <string name="esim_summary_unsupported">eSIM بۇ ئۈسكۈنىدە قوللىمايدۇ</string>
+    <string name="esim_warning_title">eSIM ئىشلىتىلىۋاتىدۇ</string>
+    <string name="esim_warning_message">داۋاملاشتۇرۇشتىن ئىلگىرى نۆۋەتتىكى eSIM سەپلىمىسىنى چەكلەڭ ياكى چىقىرىۋېتىڭ</string>
+    <string name="esim_footer_note">eSIM قوزغىتىلسا ئىككىنچى فىزىكىلىق SIM ئوقۇرى چەكلىنىدۇ</string>
+    <string name="esim_footer_note_unsupported">بۇ ئۈسكۈنە eSIM ئىقتىدارىنى قوللىمايدۇ</string>
+</resources>

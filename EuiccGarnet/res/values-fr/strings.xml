@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: 2023-2025 Paranoid Android
+     SPDX-FileCopyrightText: 2026 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <string name="app_name">Commutateur eSIM</string>
+    <string name="esim_title">eSIM</string>
+    <string name="esim_enable_name">Activer l\'eSIM</string>
+    <string name="esim_summary_enabled">Activé</string>
+    <string name="esim_summary_disabled">Désactivé</string>
+    <string name="esim_summary_unsupported">L\'eSIM n\'est pas prise en charge sur cet appareil</string>
+    <string name="esim_warning_title">eSIM activée</string>
+    <string name="esim_warning_message">Veuillez désactiver ou supprimer votre profil eSIM actuel avant de continuer</string>
+    <string name="esim_footer_note">L\'activation de l\'eSIM désactivera le deuxième emplacement pour carte SIM physique</string>
+    <string name="esim_footer_note_unsupported">Cet appareil ne prend pas en charge la fonctionnalité eSIM</string>
+</resources>

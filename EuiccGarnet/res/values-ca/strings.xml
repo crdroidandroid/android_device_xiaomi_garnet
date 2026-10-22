@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: 2023-2025 Paranoid Android
+     SPDX-FileCopyrightText: 2026 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <string name="app_name">Commutador d\'eSIM</string>
+    <string name="esim_title">eSIM</string>
+    <string name="esim_enable_name">Activa l\'eSIM</string>
+    <string name="esim_summary_enabled">Activat</string>
+    <string name="esim_summary_disabled">Desactivat</string>
+    <string name="esim_summary_unsupported">L\'eSIM no és compatible amb aquest dispositiu</string>
+    <string name="esim_warning_title">eSIM en ús</string>
+    <string name="esim_warning_message">Desactiveu o elimineu el perfil d\'eSIM actual abans de continuar</string>
+    <string name="esim_footer_note">En activar l\'eSIM, es deshabilitarà la segona ranura SIM física</string>
+    <string name="esim_footer_note_unsupported">Aquest dispositiu no admet la funcionalitat eSIM</string>
+</resources>

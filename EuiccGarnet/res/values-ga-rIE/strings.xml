@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: 2023-2025 Paranoid Android
+     SPDX-FileCopyrightText: 2026 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <string name="app_name">Athróir eSIM</string>
+    <string name="esim_title">eSIM</string>
+    <string name="esim_enable_name">Cumasaigh eSIM</string>
+    <string name="esim_summary_enabled">Cumasaíthe</string>
+    <string name="esim_summary_disabled">Díchumasaíthe</string>
+    <string name="esim_summary_unsupported">Ní thacaítear le eSIM ar an ngléas seo</string>
+    <string name="esim_warning_title">eSIM i úsáid</string>
+    <string name="esim_warning_message">Díchumasaigh nó bain do phróifíl eSIM reatha sula leanann tú ar aghaidh</string>
+    <string name="esim_footer_note">Má chumasaítear eSIM, díchumasófar an dara sliotán fisiceach SIM</string>
+    <string name="esim_footer_note_unsupported">Ní thacaíonn an gléas seo le feidhmiúlacht eSIM</string>
+</resources>

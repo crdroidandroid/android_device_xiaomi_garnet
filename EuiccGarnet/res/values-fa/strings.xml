@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: 2023-2025 Paranoid Android
+     SPDX-FileCopyrightText: 2026 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <string name="app_name">تعویض سیم‌کارت مجازی</string>
+    <string name="esim_title">سیم‌مجازی</string>
+    <string name="esim_enable_name">فعال‌سازی سیم‌مجازی</string>
+    <string name="esim_summary_enabled">فعال</string>
+    <string name="esim_summary_disabled">غیرفعال</string>
+    <string name="esim_summary_unsupported">eSIM در این دستگاه پشتیبانی نمی‌شود</string>
+    <string name="esim_warning_title">سیم‌کارت مجازی در کار</string>
+    <string name="esim_warning_message">لطفاً قبل از ادامه، نمایه سیم کارت مجازی فعلی خود را غیرفعال یا حذف کنید</string>
+    <string name="esim_footer_note">فعال کردن سیم‌کارت مجازی باعث غیرفعال شدن درگاه سیم‌کارت فیزیکی دوم می‌شود.</string>
+    <string name="esim_footer_note_unsupported">این دستگاه از قابلیت eSIM پشتیبانی نمی‌کند</string>
+</resources>

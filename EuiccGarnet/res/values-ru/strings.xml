@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: 2023-2025 Paranoid Android
+     SPDX-FileCopyrightText: 2026 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <string name="app_name">Переключатель eSIM</string>
+    <string name="esim_title">eSIM</string>
+    <string name="esim_enable_name">Включить eSIM</string>
+    <string name="esim_summary_enabled">Включено</string>
+    <string name="esim_summary_disabled">Отключено</string>
+    <string name="esim_summary_unsupported">eSIM не поддерживается на этом устройстве</string>
+    <string name="esim_warning_title">eSIM используется</string>
+    <string name="esim_warning_message">Прежде чем продолжить, отключите или удалите текущий профиль eSIM</string>
+    <string name="esim_footer_note">Включение eSIM приведет к отключению физического слота для второй  SIM-карты</string>
+    <string name="esim_footer_note_unsupported">Это устройство не поддерживает функцию eSIM</string>
+</resources>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: 2023-2025 Paranoid Android
+     SPDX-FileCopyrightText: 2026 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <string name="app_name">eSIM மாற்றி</string>
+    <string name="esim_title">eSIM</string>
+    <string name="esim_enable_name">eSIM-ஐச் செயல்படுத்துக</string>
+    <string name="esim_summary_enabled">இயக்கப்பட்டது</string>
+    <string name="esim_summary_disabled">முடக்கப்பட்டது</string>
+    <string name="esim_summary_unsupported">இந்த சாதனத்தில் eSIM ஆதரிக்கப்படவில்லை</string>
+    <string name="esim_warning_title">eSIM செயல்பாட்டில்</string>
+    <string name="esim_warning_message">தொடர்வதற்கு முன், உங்கள் தற்போதைய eSIM விவரக்குறிப்பை முடக்கவும் அல்லது நீக்கவும்</string>
+    <string name="esim_footer_note">eSIM-ஐச் செயல்படுத்துவது இரண்டாவது இயல் SIM துளையை முடக்கும்</string>
+    <string name="esim_footer_note_unsupported">இந்த சாதனம் eSIM செயல்பாட்டை ஆதரிக்கவில்லை</string>
+</resources>

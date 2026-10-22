@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: 2023-2025 Paranoid Android
+     SPDX-FileCopyrightText: 2026 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <string name="app_name">eSIM 卡切换器</string>
+    <string name="esim_title">eSIM 卡</string>
+    <string name="esim_enable_name">启用 eSIM 卡</string>
+    <string name="esim_summary_enabled">已启用</string>
+    <string name="esim_summary_disabled">已禁用</string>
+    <string name="esim_summary_unsupported">此设备不支持 eSIM</string>
+    <string name="esim_warning_title">eSIM 卡正在使用</string>
+    <string name="esim_warning_message">请先禁用或删除您当前的 eSIM 配置，然后再继续操作。</string>
+    <string name="esim_footer_note">启用 eSIM 将会禁用第二个物理 SIM 卡槽。</string>
+    <string name="esim_footer_note_unsupported">此设备不支持 eSIM 功能</string>
+</resources>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: 2023-2025 Paranoid Android
+     SPDX-FileCopyrightText: 2026 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <string name="app_name">Pengalih eSIM</string>
+    <string name="esim_title">eSIM</string>
+    <string name="esim_enable_name">Aktifkan eSIM</string>
+    <string name="esim_summary_enabled">Diaktifkan</string>
+    <string name="esim_summary_disabled">Dinonaktifkan</string>
+    <string name="esim_summary_unsupported">eSIM tidak didukung di perangkat ini</string>
+    <string name="esim_warning_title">eSIM sedang digunakan</string>
+    <string name="esim_warning_message">Harap nonaktifkan atau hapus profil eSIM Anda saat ini sebelum melanjutkan</string>
+    <string name="esim_footer_note">Mengaktifkan eSIM akan menonaktifkan slot SIM fisik kedua</string>
+    <string name="esim_footer_note_unsupported">Perangkat ini tidak mendukung fungsi eSIM</string>
+</resources>

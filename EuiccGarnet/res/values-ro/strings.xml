@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: 2023-2025 Paranoid Android
+     SPDX-FileCopyrightText: 2026 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <string name="app_name">Comutator eSIM</string>
+    <string name="esim_title">eSIM</string>
+    <string name="esim_enable_name">Activare eSIM</string>
+    <string name="esim_summary_enabled">Activat</string>
+    <string name="esim_summary_disabled">Dezactivat</string>
+    <string name="esim_summary_unsupported">eSIM nu este acceptat pe acest dispozitiv</string>
+    <string name="esim_warning_title">Cartela eSIM în utilizare</string>
+    <string name="esim_warning_message">Vă rugăm să dezactivați sau să eliminați profilul dvs. eSIM curent înainte de a continua</string>
+    <string name="esim_footer_note">Activarea eSIM va dezactiva al doilea slot fizic pentru SIM</string>
+    <string name="esim_footer_note_unsupported">Acest dispozitiv nu acceptă funcționalitatea eSIM</string>
+</resources>

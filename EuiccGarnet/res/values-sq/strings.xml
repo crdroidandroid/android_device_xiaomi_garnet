@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: 2023-2025 Paranoid Android
+     SPDX-FileCopyrightText: 2026 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <string name="app_name">Ndërruesi i eSIM</string>
+    <string name="esim_title">eSIM</string>
+    <string name="esim_enable_name">Aktivizo eSIM</string>
+    <string name="esim_summary_enabled">Aktivizuar</string>
+    <string name="esim_summary_disabled">Çaktivizuar</string>
+    <string name="esim_summary_unsupported">eSIM nuk mbështetet në këtë pajisje</string>
+    <string name="esim_warning_title">eSIM është në përdorim</string>
+    <string name="esim_warning_message">Ju lutemi çaktivizoni ose hiqni profilin tuaj aktual të eSIM përpara se të vazhdoni</string>
+    <string name="esim_footer_note">Aktivizimi i eSIM do të çaktivizojë vendin e dytë fizik të kartës SIM</string>
+    <string name="esim_footer_note_unsupported">Kjo pajisje nuk e mbështet funksionalitetin eSIM</string>
+</resources>
