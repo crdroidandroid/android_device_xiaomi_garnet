@@ -20,8 +20,14 @@ package org.lineageos.settings.autohbm;
 import android.os.Bundle;
 
 import com.android.settingslib.collapsingtoolbar.CollapsingToolbarBaseActivity;
+import com.android.settingslib.widget.ExpressiveDesignEnabledProvider;
 
-public class AutoHbmActivity extends CollapsingToolbarBaseActivity {
+public class AutoHbmActivity extends CollapsingToolbarBaseActivity
+        implements ExpressiveDesignEnabledProvider {
+    @Override
+    public boolean isExpressiveDesignEnabled() {
+        return true;
+    }
 
     private static final String TAG = "AutoHbm";
 

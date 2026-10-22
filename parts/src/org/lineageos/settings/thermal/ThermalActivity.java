@@ -20,8 +20,14 @@ import android.os.Bundle;
 import android.view.MenuItem;
 
 import com.android.settingslib.collapsingtoolbar.CollapsingToolbarBaseActivity;
+import com.android.settingslib.widget.ExpressiveDesignEnabledProvider;
 
-public class ThermalActivity extends CollapsingToolbarBaseActivity {
+public class ThermalActivity extends CollapsingToolbarBaseActivity
+        implements ExpressiveDesignEnabledProvider {
+    @Override
+    public boolean isExpressiveDesignEnabled() {
+        return true;
+    }
 
     private static final String TAG_THERMAL = "thermal";
     private static final String THERMAL_SCONFIG = "/sys/class/thermal/thermal_message/sconfig";

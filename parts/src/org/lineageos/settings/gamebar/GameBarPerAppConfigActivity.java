@@ -18,9 +18,16 @@ package org.lineageos.settings.gamebar;
 
 import android.os.Bundle;
 import com.android.settingslib.collapsingtoolbar.CollapsingToolbarBaseActivity;
+import com.android.settingslib.widget.ExpressiveDesignEnabledProvider;
 import org.lineageos.settings.R;
 
-public class GameBarPerAppConfigActivity extends CollapsingToolbarBaseActivity {
+public class GameBarPerAppConfigActivity extends CollapsingToolbarBaseActivity
+        implements ExpressiveDesignEnabledProvider {
+    @Override
+    public boolean isExpressiveDesignEnabled() {
+        return true;
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

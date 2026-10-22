@@ -31,7 +31,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 
 import androidx.preference.Preference;
-import androidx.preference.PreferenceFragmentCompat;
+import com.android.settingslib.widget.SettingsBasePreferenceFragment;
 import androidx.preference.PreferenceManager;
 import androidx.viewpager.widget.PagerAdapter;
 import androidx.viewpager.widget.ViewPager;
@@ -45,7 +45,7 @@ import org.lineageos.settings.utils.TileUtils;
 
 import java.util.Arrays;
 
-public class SaturationFragment extends PreferenceFragmentCompat
+public class SaturationFragment extends SettingsBasePreferenceFragment
         implements Preference.OnPreferenceChangeListener {
 
     private View mViewArrowPrevious;

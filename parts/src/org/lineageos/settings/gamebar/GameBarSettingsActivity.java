@@ -23,10 +23,17 @@ import android.provider.Settings;
 import android.widget.Toast;
 
 import com.android.settingslib.collapsingtoolbar.CollapsingToolbarBaseActivity;
+import com.android.settingslib.widget.ExpressiveDesignEnabledProvider;
 
 import org.lineageos.settings.R;
 
-public class GameBarSettingsActivity extends CollapsingToolbarBaseActivity {
+public class GameBarSettingsActivity extends CollapsingToolbarBaseActivity
+        implements ExpressiveDesignEnabledProvider {
+    @Override
+    public boolean isExpressiveDesignEnabled() {
+        return true;
+    }
+
     private static final int OVERLAY_PERMISSION_REQUEST_CODE = 1234;
 
     @Override

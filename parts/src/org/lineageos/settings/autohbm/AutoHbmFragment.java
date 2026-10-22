@@ -34,7 +34,7 @@ import android.widget.CompoundButton;
 import android.widget.CompoundButton.OnCheckedChangeListener;
 
 import androidx.preference.Preference;
-import androidx.preference.PreferenceFragmentCompat;
+import com.android.settingslib.widget.SettingsBasePreferenceFragment;
 import androidx.preference.PreferenceManager;
 
 import com.android.settingslib.widget.MainSwitchPreference;
@@ -45,7 +45,7 @@ import org.lineageos.settings.CustomSeekBarPreference;
 import org.lineageos.settings.R;
 import org.lineageos.settings.utils.TileUtils;
 
-public class AutoHbmFragment extends PreferenceFragmentCompat
+public class AutoHbmFragment extends SettingsBasePreferenceFragment
         implements OnCheckedChangeListener, SensorEventListener, Preference.OnPreferenceChangeListener {
 
     private static final String[] AUTO_HBM_PREFERENCES = {
