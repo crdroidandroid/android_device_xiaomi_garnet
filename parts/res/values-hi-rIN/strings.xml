@@ -158,4 +158,17 @@
     <string name="game_bar_per_app_config_title">ऐप कॉन्फ़िगर करें</string>
     <string name="game_bar_per_app_config_summary">चुनें कि कौन से ऐप GameBar को स्वतः सक्षम करेंगे</string>
 
+    <string name="others_group_title">अन्य</string>
+
+    <string name="thermal_default_desc">सिस्टम का डिफ़ॉल्ट व्यवहार, प्रति-ऐप थर्मल ट्यूनिंग के बिना।</string>
+    <string name="thermal_benchmark_desc">शिथिल थर्मल सीमाओं के साथ अधिकतम प्रदर्शन। डिवाइस गर्म हो सकता है।</string>
+    <string name="thermal_browser_desc">वेब ब्राउज़िंग और पढ़ने के लिए संतुलित ट्यूनिंग।</string>
+    <string name="thermal_camera_desc">फ़ोटो लेने और वीडियो रिकॉर्ड करने के लिए ट्यून किया गया।</string>
+    <string name="thermal_dialer_desc">कम गर्मी और बिजली उपयोग के साथ, वॉइस कॉल के लिए हल्की ट्यूनिंग।</string>
+    <string name="thermal_gaming_desc">उच्च तापमान की अनुमति के साथ, गेम के लिए निरंतर प्रदर्शन।</string>
+    <string name="thermal_streaming_desc">लंबे वीडियो और संगीत स्ट्रीमिंग सत्रों के लिए संतुलित ट्यूनिंग।</string>
+    <string name="thermal_search_hint">ऐप खोजें</string>
+    <string name="thermal_search_hint_short">खोजें\u2026</string>
+    <string name="thermal_profile_footer">चुनी गई प्रोफ़ाइल ऐप के उपयोग के दौरान स्वचालित रूप से लागू होती है।</string>
+
 </resources>

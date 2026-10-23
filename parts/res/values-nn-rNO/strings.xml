@@ -158,4 +158,17 @@
     <string name="game_bar_per_app_config_title">Konfigurer appar</string>
     <string name="game_bar_per_app_config_summary">Vel kva appar som aktiverer GameBar automatisk</string>
 
+    <string name="others_group_title">Andre</string>
+
+    <string name="thermal_default_desc">Standardåtferda til systemet, utan termisk justering per app.</string>
+    <string name="thermal_benchmark_desc">Maksimal yting med avslappa termiske grenser. Eininga kan bli varm.</string>
+    <string name="thermal_browser_desc">Balansert justering for nettsurfing og lesing.</string>
+    <string name="thermal_camera_desc">Justert for å ta bilete og spele inn video.</string>
+    <string name="thermal_dialer_desc">Lett justering for talesamtalar, med låg varme og straumbruk.</string>
+    <string name="thermal_gaming_desc">Vedvarande yting for spel, med høgare temperaturar tillatne.</string>
+    <string name="thermal_streaming_desc">Balansert justering for lange video- og musikkstraumingsøkter.</string>
+    <string name="thermal_search_hint">Søk i appar</string>
+    <string name="thermal_search_hint_short">Søk\u2026</string>
+    <string name="thermal_profile_footer">Den valde profilen blir brukt automatisk medan appen er i bruk.</string>
+
 </resources>

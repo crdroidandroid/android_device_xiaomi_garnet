@@ -158,4 +158,17 @@
     <string name="game_bar_per_app_config_title">Konfiguro aplikacionet</string>
     <string name="game_bar_per_app_config_summary">Zgjidh cilat aplikacione e aktivizojnë GameBar automatikisht</string>
 
+    <string name="others_group_title">Të tjera</string>
+
+    <string name="thermal_default_desc">Sjellja e parazgjedhur e sistemit, pa rregullim termik për çdo aplikacion.</string>
+    <string name="thermal_benchmark_desc">Performancë maksimale me kufij termikë të relaksuar. Pajisja mund të nxehet.</string>
+    <string name="thermal_browser_desc">Rregullim i ekuilibruar për shfletim në ueb dhe lexim.</string>
+    <string name="thermal_camera_desc">Rregulluar për të bërë foto dhe për të regjistruar video.</string>
+    <string name="thermal_dialer_desc">Rregullim i lehtë për thirrjet zanore, me nxehtësi dhe konsum të ulët.</string>
+    <string name="thermal_gaming_desc">Performancë e qëndrueshme për lojëra, duke lejuar temperatura më të larta.</string>
+    <string name="thermal_streaming_desc">Rregullim i ekuilibruar për sesione të gjata transmetimi video dhe muzike.</string>
+    <string name="thermal_search_hint">Kërko aplikacione</string>
+    <string name="thermal_search_hint_short">Kërko\u2026</string>
+    <string name="thermal_profile_footer">Profili i zgjedhur zbatohet automatikisht ndërsa aplikacioni është në përdorim.</string>
+
 </resources>

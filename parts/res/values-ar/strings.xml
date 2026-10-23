@@ -158,4 +158,17 @@
     <string name="game_bar_per_app_config_title">تكوين التطبيقات</string>
     <string name="game_bar_per_app_config_summary">اختيار التطبيقات التي تفعّل GameBar تلقائيًا</string>
 
+    <string name="others_group_title">أخرى</string>
+
+    <string name="thermal_default_desc">سلوك النظام الافتراضي، دون ضبط حراري لكل تطبيق.</string>
+    <string name="thermal_benchmark_desc">أقصى أداء مع حدود حرارية مخففة. قد يسخن الجهاز.</string>
+    <string name="thermal_browser_desc">ضبط متوازن لتصفح الويب والقراءة.</string>
+    <string name="thermal_camera_desc">مضبوط لالتقاط الصور وتسجيل مقاطع الفيديو.</string>
+    <string name="thermal_dialer_desc">ضبط خفيف للمكالمات الصوتية، مع حرارة واستهلاك منخفضين.</string>
+    <string name="thermal_gaming_desc">أداء مستدام للألعاب، مع السماح بدرجات حرارة أعلى.</string>
+    <string name="thermal_streaming_desc">ضبط متوازن لجلسات بث الفيديو والموسيقى الطويلة.</string>
+    <string name="thermal_search_hint">البحث في التطبيقات</string>
+    <string name="thermal_search_hint_short">بحث\u2026</string>
+    <string name="thermal_profile_footer">يتم تطبيق الملف المحدد تلقائيًا أثناء استخدام التطبيق.</string>
+
 </resources>

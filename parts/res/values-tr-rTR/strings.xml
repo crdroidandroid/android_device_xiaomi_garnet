@@ -143,4 +143,17 @@
     <string name="game_bar_per_app_config_title">Uygulamaları Yapılandır</string>
     <string name="game_bar_per_app_config_summary">Hangi uygulamaların GameBar\'ı otomatik etkinleştireceğini seçin</string>
 
+    <string name="others_group_title">Diğer</string>
+
+    <string name="thermal_default_desc">Uygulama başına termal ayarı olmayan sistem varsayılan davranışı.</string>
+    <string name="thermal_benchmark_desc">Gevşetilmiş termal sınırlarla maksimum performans. Cihaz ısınabilir.</string>
+    <string name="thermal_browser_desc">Web\'de gezinme ve okuma için dengeli ayar.</string>
+    <string name="thermal_camera_desc">Fotoğraf çekmek ve video kaydetmek için ayarlandı.</string>
+    <string name="thermal_dialer_desc">Düşük ısı ve güç kullanımıyla sesli aramalar için hafif ayar.</string>
+    <string name="thermal_gaming_desc">Daha yüksek sıcaklıklara izin veren, oyunlar için sürdürülebilir performans.</string>
+    <string name="thermal_streaming_desc">Uzun video ve müzik akışı oturumları için dengeli ayar.</string>
+    <string name="thermal_search_hint">Uygulamalarda ara</string>
+    <string name="thermal_search_hint_short">Ara\u2026</string>
+    <string name="thermal_profile_footer">Seçilen profil, uygulama kullanılırken otomatik olarak uygulanır.</string>
+
 </resources>

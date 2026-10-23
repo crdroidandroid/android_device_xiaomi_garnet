@@ -158,4 +158,20 @@
     <string name="game_bar_per_app_config_title">Configure Apps</string>
     <string name="game_bar_per_app_config_summary">Choose which apps will auto-enable GameBar</string>
 
+    <!-- Dashboard group headers -->
+    <string name="parts_group_title">Parts</string>
+    <string name="others_group_title">Others</string>
+
+    <!-- Thermal profile descriptions -->
+    <string name="thermal_default_desc">System default behavior, with no per-app thermal tuning.</string>
+    <string name="thermal_benchmark_desc">Maximum performance with relaxed thermal limits. The device may heat up.</string>
+    <string name="thermal_browser_desc">Balanced tuning for browsing the web and reading.</string>
+    <string name="thermal_camera_desc">Tuned for taking photos and recording videos.</string>
+    <string name="thermal_dialer_desc">Light tuning for voice calls, with low heat and power use.</string>
+    <string name="thermal_gaming_desc">Sustained performance for games, allowing higher temperatures.</string>
+    <string name="thermal_streaming_desc">Balanced tuning for long video and music streaming sessions.</string>
+    <string name="thermal_search_hint">Search apps</string>
+    <string name="thermal_search_hint_short">Search\u2026</string>
+    <string name="thermal_profile_footer">The selected profile is applied automatically while the app is in use.</string>
+
 </resources>

@@ -17,23 +17,27 @@
 package org.lineageos.settings;
 
 import android.content.Context;
+import android.content.res.Resources;
 import android.content.res.TypedArray;
 import android.graphics.PorterDuff;
 import androidx.core.content.res.TypedArrayUtils;
 import androidx.preference.*;
 import android.util.AttributeSet;
 import android.util.Log;
+import android.view.ContextThemeWrapper;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewParent;
 import android.widget.ImageView;
-import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.material.slider.Slider;
+
 import org.lineageos.settings.R;
 
-public class CustomSeekBarPreference extends Preference implements SeekBar.OnSeekBarChangeListener {
+public class CustomSeekBarPreference extends Preference
+        implements Slider.OnChangeListener, Slider.OnSliderTouchListener {
     protected final String TAG = getClass().getName();
     private static final String SETTINGS_NS = "http://schemas.android.com/apk/res/com.android.settings";
     protected static final String ANDROIDNS = "http://schemas.android.com/apk/res/android";
@@ -56,7 +60,7 @@ public class CustomSeekBarPreference extends Preference implements SeekBar.OnSee
     protected ImageView mResetImageView;
     protected ImageView mMinusImageView;
     protected ImageView mPlusImageView;
-    protected SeekBar mSeekBar;
+    protected Slider mSeekBar;
 
     protected boolean mTrackingTouch = false;
     protected int mTrackingValue;
@@ -100,7 +104,17 @@ public class CustomSeekBarPreference extends Preference implements SeekBar.OnSee
             mValue = mMinValue;
         }
 
-        mSeekBar = new SeekBar(context, attrs);
+        // Use the system's expressive slider: the Material Slider with the
+        // SettingsLib expressive style and geometry, the same widget and setup
+        // that SettingsLib's own SliderPreference uses.
+        Resources res = context.getResources();
+        String pkg = context.getPackageName();
+        int sliderStyle = res.getIdentifier("SettingslibSliderStyle.Expressive", "style", pkg);
+        Context sliderContext = sliderStyle != 0
+                ? new ContextThemeWrapper(context, sliderStyle) : context;
+        mSeekBar = new Slider(sliderContext, attrs);
+        mSeekBar.setTickVisible(false);
+        applyExpressiveGeometry(res, pkg);
         setLayoutResource(R.layout.preference_custom_seekbar);
     }
 
@@ -116,6 +130,41 @@ public class CustomSeekBarPreference extends Preference implements SeekBar.OnSee
 
     public CustomSeekBarPreference(Context context) {
         this(context, null);
+    }
+
+    // Applies the same slider geometry SettingsLib's SliderPreference reads
+    // from its expressive dimensions.
+    private void applyExpressiveGeometry(Resources res, String pkg) {
+        int id = res.getIdentifier(
+                "settingslib_expressive_slider_track_height", "dimen", pkg);
+        if (id != 0) mSeekBar.setTrackHeight(res.getDimensionPixelSize(id));
+        id = res.getIdentifier(
+                "settingslib_expressive_slider_track_inside_corner_size", "dimen", pkg);
+        if (id != 0) mSeekBar.setTrackInsideCornerSize(res.getDimensionPixelSize(id));
+        id = res.getIdentifier(
+                "settingslib_expressive_slider_track_stop_indicator_size", "dimen", pkg);
+        if (id != 0) mSeekBar.setTrackStopIndicatorSize(res.getDimensionPixelSize(id));
+        id = res.getIdentifier(
+                "settingslib_expressive_slider_thumb_width", "dimen", pkg);
+        if (id != 0) mSeekBar.setThumbWidth(res.getDimensionPixelSize(id));
+        id = res.getIdentifier(
+                "settingslib_expressive_slider_thumb_height", "dimen", pkg);
+        if (id != 0) mSeekBar.setThumbHeight(res.getDimensionPixelSize(id));
+        id = res.getIdentifier(
+                "settingslib_expressive_slider_thumb_elevation", "dimen", pkg);
+        if (id != 0) mSeekBar.setThumbElevation(res.getDimensionPixelSize(id));
+        id = res.getIdentifier(
+                "settingslib_expressive_slider_thumb_stroke_width", "dimen", pkg);
+        if (id != 0) mSeekBar.setThumbStrokeWidth(res.getDimensionPixelSize(id));
+        id = res.getIdentifier(
+                "settingslib_expressive_slider_thumb_track_gap_size", "dimen", pkg);
+        if (id != 0) mSeekBar.setThumbTrackGapSize(res.getDimensionPixelSize(id));
+        id = res.getIdentifier(
+                "settingslib_expressive_slider_tick_radius", "dimen", pkg);
+        if (id != 0) {
+            mSeekBar.setTickActiveRadius(res.getDimensionPixelSize(id));
+            mSeekBar.setTickInactiveRadius(res.getDimensionPixelSize(id));
+        }
     }
 
     @Override
@@ -154,8 +203,15 @@ public class CustomSeekBarPreference extends Preference implements SeekBar.OnSee
             Log.e(TAG, "Error binding view: " + ex.toString());
         }
 
-        mSeekBar.setMax(getSeekValue(mMaxValue));
-        mSeekBar.setProgress(getSeekValue(mValue));
+        if (mMinValue >= 0) {
+            mSeekBar.setValueTo(mMaxValue);
+            mSeekBar.setValueFrom(mMinValue);
+        } else {
+            mSeekBar.setValueFrom(mMinValue);
+            mSeekBar.setValueTo(mMaxValue);
+        }
+        mSeekBar.setStepSize(mInterval);
+        mSeekBar.setValue(mValue);
         mSeekBar.setEnabled(isEnabled());
 
         mValueTextView = (TextView) holder.findViewById(R.id.value);
@@ -165,7 +221,10 @@ public class CustomSeekBarPreference extends Preference implements SeekBar.OnSee
 
         updateValueViews();
 
-        mSeekBar.setOnSeekBarChangeListener(this);
+        mSeekBar.clearOnChangeListeners();
+        mSeekBar.addOnChangeListener(this);
+        mSeekBar.clearOnSliderTouchListeners();
+        mSeekBar.addOnSliderTouchListener(this);
         mResetImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -210,10 +269,6 @@ public class CustomSeekBarPreference extends Preference implements SeekBar.OnSee
 
     protected int getLimitedValue(int v) {
         return v < mMinValue ? mMinValue : (v > mMaxValue ? mMaxValue : v);
-    }
-
-    protected int getSeekValue(int v) {
-        return 0 - Math.floorDiv(mMinValue - v, mInterval);
     }
 
     protected String getTextValue(int v) {
@@ -274,15 +329,15 @@ public class CustomSeekBarPreference extends Preference implements SeekBar.OnSee
     }
 
     @Override
-    public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-        int newValue = getLimitedValue(mMinValue + (progress * mInterval));
+    public void onValueChange(Slider slider, float value, boolean fromUser) {
+        int newValue = getLimitedValue(Math.round(value));
         if (mTrackingTouch && !mContinuousUpdates) {
             mTrackingValue = newValue;
             updateValueViews();
         } else if (mValue != newValue) {
             // change rejected, revert to the previous value
             if (!callChangeListener(newValue)) {
-                mSeekBar.setProgress(getSeekValue(mValue));
+                mSeekBar.setValue(mValue);
                 return;
             }
             // change accepted, store it
@@ -295,16 +350,16 @@ public class CustomSeekBarPreference extends Preference implements SeekBar.OnSee
     }
 
     @Override
-    public void onStartTrackingTouch(SeekBar seekBar) {
+    public void onStartTrackingTouch(Slider slider) {
         mTrackingValue = mValue;
         mTrackingTouch = true;
     }
 
     @Override
-    public void onStopTrackingTouch(SeekBar seekBar) {
+    public void onStopTrackingTouch(Slider slider) {
         mTrackingTouch = false;
         if (!mContinuousUpdates)
-            onProgressChanged(mSeekBar, getSeekValue(mTrackingValue), false);
+            onValueChange(mSeekBar, mTrackingValue, false);
         notifyChanged();
     }
 
@@ -344,14 +399,21 @@ public class CustomSeekBarPreference extends Preference implements SeekBar.OnSee
 
     public void setValue(int newValue) {
         mValue = getLimitedValue(newValue);
-        if (mSeekBar != null) mSeekBar.setProgress(getSeekValue(mValue));
+        // The Material Slider throws if the value is outside its configured
+        // range, which only exists after the first bind; before that, just
+        // storing the value is enough (the bind applies it).
+        if (mSeekBar != null && mValue >= mSeekBar.getValueFrom()
+                && mValue <= mSeekBar.getValueTo()) {
+            mSeekBar.setValue(mValue);
+        }
     }
 
     public void setValue(int newValue, boolean update) {
         newValue = getLimitedValue(newValue);
         if (mValue != newValue) {
-            if (update)
-                mSeekBar.setProgress(getSeekValue(newValue));
+            if (update && mSeekBar != null && newValue >= mSeekBar.getValueFrom()
+                    && newValue <= mSeekBar.getValueTo())
+                mSeekBar.setValue(newValue);
             else
                 mValue = newValue;
         }

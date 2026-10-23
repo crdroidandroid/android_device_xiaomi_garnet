@@ -158,4 +158,17 @@
     <string name="game_bar_per_app_config_title">பயன்பாடுகளை உள்ளமை</string>
     <string name="game_bar_per_app_config_summary">எந்தப் பயன்பாடுகள் GameBar ஐத் தானாக இயக்கும் என்பதைத் தேர்ந்தெடு</string>
 
+    <string name="others_group_title">மற்றவை</string>
+
+    <string name="thermal_default_desc">ஒவ்வொரு பயன்பாட்டிற்கும் வெப்பச் சரிசெய்தல் இல்லாத, அமைப்பின் இயல்புநிலை நடத்தை.</string>
+    <string name="thermal_benchmark_desc">தளர்வான வெப்ப வரம்புகளுடன் அதிகபட்ச செயல்திறன். சாதனம் சூடாகலாம்.</string>
+    <string name="thermal_browser_desc">வலை உலாவல் மற்றும் வாசிப்பிற்கான சமநிலையான சரிசெய்தல்.</string>
+    <string name="thermal_camera_desc">புகைப்படங்கள் எடுப்பதற்கும் வீடியோ பதிவு செய்வதற்கும் சரிசெய்யப்பட்டது.</string>
+    <string name="thermal_dialer_desc">குறைந்த வெப்பம் மற்றும் மின் பயன்பாட்டுடன், குரல் அழைப்புகளுக்கான இலகுவான சரிசெய்தல்.</string>
+    <string name="thermal_gaming_desc">அதிக வெப்பநிலையை அனுமதித்து, விளையாட்டுகளுக்கான நீடித்த செயல்திறன்.</string>
+    <string name="thermal_streaming_desc">நீண்ட வீடியோ மற்றும் இசை ஸ்ட்ரீமிங் அமர்வுகளுக்கான சமநிலையான சரிசெய்தல்.</string>
+    <string name="thermal_search_hint">பயன்பாடுகளைத் தேடு</string>
+    <string name="thermal_search_hint_short">தேடு\u2026</string>
+    <string name="thermal_profile_footer">தேர்ந்தெடுக்கப்பட்ட சுயவிவரம் பயன்பாடு பயன்பாட்டில் இருக்கும்போது தானாகவே பயன்படுத்தப்படும்.</string>
+
 </resources>

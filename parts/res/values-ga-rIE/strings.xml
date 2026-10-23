@@ -158,4 +158,17 @@
     <string name="game_bar_per_app_config_title">Cumraigh Aipeanna</string>
     <string name="game_bar_per_app_config_summary">Roghnaigh cé na haipeanna a chumasíonn GameBar go huathoibríoch</string>
 
+    <string name="others_group_title">Eile</string>
+
+    <string name="thermal_default_desc">Iompar réamhshocraithe an chórais, gan aon tiúnáil theirmeach in aghaidh an aip.</string>
+    <string name="thermal_benchmark_desc">Feidhmíocht uasta le teorainneacha teirmeacha scaoilte. D\'fhéadfadh an gléas éirí te.</string>
+    <string name="thermal_browser_desc">Tiúnáil chothromaithe chun an gréasán a bhrabhsáil agus a léamh.</string>
+    <string name="thermal_camera_desc">Tiúnta chun grianghraif a thógáil agus físeáin a thaifeadadh.</string>
+    <string name="thermal_dialer_desc">Tiúnáil éadrom do ghlaonna gutha, le teas agus úsáid íseal.</string>
+    <string name="thermal_gaming_desc">Feidhmíocht leanúnach do chluichí, ag ceadú teochtaí níos airde.</string>
+    <string name="thermal_streaming_desc">Tiúnáil chothromaithe do sheisiúin fhada sruthaithe físe agus ceoil.</string>
+    <string name="thermal_search_hint">Cuardaigh aipeanna</string>
+    <string name="thermal_search_hint_short">Cuardaigh\u2026</string>
+    <string name="thermal_profile_footer">Cuirtear an phróifíl roghnaithe i bhfeidhm go huathoibríoch fad atá an aip in úsáid.</string>
+
 </resources>

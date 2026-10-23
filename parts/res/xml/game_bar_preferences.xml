@@ -96,45 +96,50 @@
         android:title="@string/game_bar_category_customization"
         android:dependency="game_bar_enable">
 
-        <SeekBarPreference
+        <com.android.settingslib.widget.SliderPreference
             android:key="game_bar_text_size"
             android:title="@string/game_bar_text_size_title"
             android:summary="@string/game_bar_text_size_summary"
             android:defaultValue="16"
             android:max="32"
-            android:min="12" />
+            android:min="12"
+            settings:showSeekBarValue="true" />
 
-        <SeekBarPreference
+        <com.android.settingslib.widget.SliderPreference
             android:key="game_bar_background_alpha"
             android:title="@string/game_bar_background_alpha_title"
             android:summary="@string/game_bar_background_alpha_summary"
             android:defaultValue="128"
             android:max="255"
-            android:min="0" />
+            android:min="0"
+            settings:showSeekBarValue="true" />
 
-        <SeekBarPreference
+        <com.android.settingslib.widget.SliderPreference
             android:key="game_bar_corner_radius"
             android:title="@string/game_bar_corner_radius_title"
             android:summary="@string/game_bar_corner_radius_summary"
             android:defaultValue="16"
             android:max="100"
-            android:min="0" />
+            android:min="0"
+            settings:showSeekBarValue="true" />
 
-        <SeekBarPreference
+        <com.android.settingslib.widget.SliderPreference
             android:key="game_bar_padding"
             android:title="@string/game_bar_padding_title"
             android:summary="@string/game_bar_padding_summary"
             android:defaultValue="12"
             android:max="64"
-            android:min="0" />
+            android:min="0"
+            settings:showSeekBarValue="true" />
 
-        <SeekBarPreference
+        <com.android.settingslib.widget.SliderPreference
             android:key="game_bar_item_spacing"
             android:title="@string/game_bar_item_spacing_title"
             android:summary="@string/game_bar_item_spacing_summary"
             android:defaultValue="8"
             android:max="50"
-            android:min="0" />
+            android:min="0"
+            settings:showSeekBarValue="true" />
 
         <ListPreference
             android:key="game_bar_update_interval"

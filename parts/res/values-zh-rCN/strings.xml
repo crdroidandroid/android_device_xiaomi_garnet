@@ -166,4 +166,17 @@
     <string name="game_bar_per_app_config_title">配置应用</string>
     <string name="game_bar_per_app_config_summary">选择哪些应用自动启用 GameBar</string>
 
+    <string name="others_group_title">其他</string>
+
+    <string name="thermal_default_desc">系统默认行为，不对每个应用进行散热调节。</string>
+    <string name="thermal_benchmark_desc">最高性能，散热限制更宽松。设备可能会发热。</string>
+    <string name="thermal_browser_desc">为网页浏览和阅读优化的均衡调节。</string>
+    <string name="thermal_camera_desc">为拍照和录制视频进行了优化。</string>
+    <string name="thermal_dialer_desc">语音通话的轻量调节，发热和功耗低。</string>
+    <string name="thermal_gaming_desc">为游戏提供持续性能，允许更高的温度。</string>
+    <string name="thermal_streaming_desc">为长时间视频和音乐流媒体优化的均衡调节。</string>
+    <string name="thermal_search_hint">搜索应用</string>
+    <string name="thermal_search_hint_short">搜索\u2026</string>
+    <string name="thermal_profile_footer">所选配置会在应用使用期间自动应用。</string>
+
 </resources>

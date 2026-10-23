@@ -158,4 +158,17 @@
     <string name="game_bar_per_app_config_title">Alkalmazások beállítása</string>
     <string name="game_bar_per_app_config_summary">Válassza ki, mely alkalmazások engedélyezzék automatikusan a GameBart</string>
 
+    <string name="others_group_title">Egyéb</string>
+
+    <string name="thermal_default_desc">A rendszer alapértelmezett viselkedése, alkalmazásonkénti hőhangolás nélkül.</string>
+    <string name="thermal_benchmark_desc">Maximális teljesítmény lazított hőkorlátokkal. A készülék felmelegedhet.</string>
+    <string name="thermal_browser_desc">Kiegyensúlyozott hangolás webböngészéshez és olvasáshoz.</string>
+    <string name="thermal_camera_desc">Fotózáshoz és videofelvételhez hangolva.</string>
+    <string name="thermal_dialer_desc">Könnyű hangolás hanghívásokhoz, alacsony hővel és fogyasztással.</string>
+    <string name="thermal_gaming_desc">Tartós teljesítmény játékokhoz, magasabb hőmérsékleteket engedélyezve.</string>
+    <string name="thermal_streaming_desc">Kiegyensúlyozott hangolás hosszú videó- és zenelejátszási munkamenetekhez.</string>
+    <string name="thermal_search_hint">Alkalmazások keresése</string>
+    <string name="thermal_search_hint_short">Keresés\u2026</string>
+    <string name="thermal_profile_footer">A kiválasztott profil automatikusan érvénybe lép, amíg az alkalmazás használatban van.</string>
+
 </resources>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2020 The LineageOS Project
+
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
      You may obtain a copy of the License at
@@ -16,18 +17,18 @@
     android:layout_height="wrap_content"
     android:layout_marginTop="2dp"
     android:layout_marginBottom="2dp"
-    android:background="@drawable/settingslib_round_background"
+    android:gravity="center_vertical"
     android:minHeight="?android:attr/listPreferredItemHeight"
-    android:paddingBottom="4dp"
+    android:paddingBottom="8dp"
     android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"
     android:paddingStart="?android:attr/listPreferredItemPaddingStart"
-    android:paddingTop="4dp">
+    android:paddingTop="8dp">
 
     <ImageView
         android:id="@+id/app_icon"
-        android:layout_width="@android:dimen/app_icon_size"
-        android:layout_height="@android:dimen/app_icon_size"
-        android:layout_marginEnd="8dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="16dp"
         android:contentDescription="@null"
         android:scaleType="centerInside" />
 
@@ -41,27 +42,24 @@
             android:id="@+id/app_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="2dp"
-            android:ellipsize="marquee"
+            android:ellipsize="end"
             android:singleLine="true"
             android:textAlignment="viewStart"
             android:textAppearance="@android:style/TextAppearance.Material.Medium"
-            android:textColor="?android:attr/textColorPrimary" />
+            android:textColor="?android:attr/textColorPrimary"
+            android:textSize="15sp" />
 
-        <Spinner
-            android:id="@+id/app_mode"
-            android:layout_marginTop="2dp"
+        <TextView
+            android:id="@+id/app_profile"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textAlignment="viewStart"
+            android:textAppearance="@android:style/TextAppearance.Material.Small"
+            android:textColor="?android:attr/textColorSecondary"
+            android:textSize="13sp" />
 
     </LinearLayout>
 
-    <ImageView
-        android:id="@+id/state"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:padding="8dp"
-        android:scaleType="centerInside"
-        android:src="@drawable/ic_thermal_default" />
 </LinearLayout>

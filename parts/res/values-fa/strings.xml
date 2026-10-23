@@ -158,4 +158,17 @@
     <string name="game_bar_per_app_config_title">پیکربندی برنامه‌ها</string>
     <string name="game_bar_per_app_config_summary">انتخاب برنامه‌هایی که GameBar را به‌طور خودکار فعال می‌کنند</string>
 
+    <string name="others_group_title">سایر موارد</string>
+
+    <string name="thermal_default_desc">رفتار پیش‌فرض سیستم، بدون تنظیم حرارتی برای هر برنامه.</string>
+    <string name="thermal_benchmark_desc">حداکثر کارایی با محدودیت‌های حرارتی کمتر. ممکن است دستگاه داغ شود.</string>
+    <string name="thermal_browser_desc">تنظیم متعادل برای مرور وب و مطالعه.</string>
+    <string name="thermal_camera_desc">تنظیم‌شده برای گرفتن عکس و ضبط ویدیو.</string>
+    <string name="thermal_dialer_desc">تنظیم سبک برای تماس‌های صوتی، با حرارت و مصرف پایین.</string>
+    <string name="thermal_gaming_desc">کارایی پایدار برای بازی‌ها، با امکان دمای بالاتر.</string>
+    <string name="thermal_streaming_desc">تنظیم متعادل برای جلسات طولانی پخش ویدیو و موسیقی.</string>
+    <string name="thermal_search_hint">جستجوی برنامه‌ها</string>
+    <string name="thermal_search_hint_short">جستجو\u2026</string>
+    <string name="thermal_profile_footer">نمایه انتخاب‌شده هنگام استفاده از برنامه به‌طور خودکار اعمال می‌شود.</string>
+
 </resources>

@@ -20,6 +20,8 @@
             android:id="@+id/imageView"
             android:layout_width="match_parent"
             android:layout_height="320dp"
+            android:background="@drawable/image_preview_rounded"
+            android:clipToOutline="true"
             android:scaleType="centerCrop"
             android:cropToPadding="true"
             android:contentDescription="@null" />

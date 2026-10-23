@@ -158,4 +158,17 @@
     <string name="game_bar_per_app_config_title">Configurar aplicaciones</string>
     <string name="game_bar_per_app_config_summary">Elegir qué aplicaciones activan GameBar automáticamente</string>
 
+    <string name="others_group_title">Otros</string>
+
+    <string name="thermal_default_desc">Comportamiento predeterminado del sistema, sin ajuste térmico por aplicación.</string>
+    <string name="thermal_benchmark_desc">Rendimiento máximo con límites térmicos relajados. El dispositivo puede calentarse.</string>
+    <string name="thermal_browser_desc">Ajuste equilibrado para navegar por la web y leer.</string>
+    <string name="thermal_camera_desc">Ajustado para hacer fotos y grabar vídeos.</string>
+    <string name="thermal_dialer_desc">Ajuste ligero para llamadas de voz, con poco calor y consumo.</string>
+    <string name="thermal_gaming_desc">Rendimiento sostenido para juegos, permitiendo temperaturas más altas.</string>
+    <string name="thermal_streaming_desc">Ajuste equilibrado para sesiones largas de streaming de vídeo y música.</string>
+    <string name="thermal_search_hint">Buscar aplicaciones</string>
+    <string name="thermal_search_hint_short">Buscar\u2026</string>
+    <string name="thermal_profile_footer">El perfil seleccionado se aplica automáticamente mientras la aplicación está en uso.</string>
+
 </resources>

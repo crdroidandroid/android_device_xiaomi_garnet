@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Theme.SubSettingsBase.Expressive plus the AppCompat/Material theme
+         attributes those libraries expect. The SettingsLib theme is rooted
+         on the framework theme and does not define them; AppCompat hosts
+         receive them from the platform bridge overlay, these activities do
+         not, and without them stock components fail to inflate or resolve
+         their colors (the Material Slider's theme enforcement and label,
+         the AppCompat SearchView's layout, ...). Color values are the
+         SettingsLib Monet colors, so nothing changes visually. -->
+    <style name="Theme.Parts.Expressive" parent="@style/Theme.SubSettingsBase.Expressive">
+        <item name="colorPrimary">@color/settingslib_materialColorPrimary</item>
+        <item name="colorPrimaryVariant">@color/settingslib_materialColorPrimaryContainer</item>
+        <item name="colorOnPrimary">@color/settingslib_materialColorOnPrimary</item>
+        <item name="colorSecondary">@color/settingslib_materialColorSecondary</item>
+        <item name="colorSecondaryVariant">@color/settingslib_materialColorSecondaryContainer</item>
+        <item name="colorOnSecondary">@color/settingslib_materialColorOnSecondary</item>
+        <item name="colorSurface">@color/settingslib_materialColorSurface</item>
+        <item name="colorOnSurface">@color/settingslib_materialColorOnSurface</item>
+        <item name="colorOnBackground">@color/settingslib_materialColorOnBackground</item>
+        <item name="colorError">@color/settingslib_materialColorError</item>
+        <item name="colorOnError">@color/settingslib_materialColorOnError</item>
+        <!-- AppCompat's own theme markers and widget styles (the SubSettings
+             theme only sets the android: variants); AppCompat activities
+             refuse to start without them. -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <!-- AppCompat reads the up indicator from the theme and falls back
+             to its plain arrow when it is missing; use the same expressive
+             circle the collapsing toolbar shows. -->
+        <item name="homeAsUpIndicator">@drawable/settingslib_expressive_icon_back</item>
+        <item name="searchViewStyle">@style/Widget.Parts.SearchView</item>
+        <item name="autoCompleteTextViewStyle">@style/Widget.AppCompat.AutoCompleteTextView</item>
+        <item name="actionButtonStyle">@style/Widget.AppCompat.ActionButton</item>
+        <item name="selectableItemBackground">?android:attr/selectableItemBackground</item>
+        <item name="selectableItemBackgroundBorderless">?android:attr/selectableItemBackgroundBorderless</item>
+    </style>
+
+    <!-- AppCompat's SearchView with no hint icon: the stock style decorates
+         the hint text with a magnifier drawable, the Settings field shows
+         just the text. -->
+    <style name="Widget.Parts.SearchView" parent="@style/Widget.AppCompat.SearchView">
+        <item name="searchHintIcon">@null</item>
+    </style>
+</resources>

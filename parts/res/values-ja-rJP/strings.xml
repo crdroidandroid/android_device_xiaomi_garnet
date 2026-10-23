@@ -158,4 +158,17 @@
     <string name="game_bar_per_app_config_title">アプリを設定</string>
     <string name="game_bar_per_app_config_summary">GameBarを自動的に有効化するアプリを選択</string>
 
+    <string name="others_group_title">その他</string>
+
+    <string name="thermal_default_desc">システムのデフォルト動作で、アプリごとの温度調整は行いません。</string>
+    <string name="thermal_benchmark_desc">温度制限を緩和した最大パフォーマンス。端末が熱くなる場合があります。</string>
+    <string name="thermal_browser_desc">ウェブ閲覧や読書にバランスの取れた調整。</string>
+    <string name="thermal_camera_desc">写真撮影や動画録画に調整されています。</string>
+    <string name="thermal_dialer_desc">発熱と消費電力を抑えた、音声通話向けの軽い調整。</string>
+    <string name="thermal_gaming_desc">より高い温度を許容し、ゲーム向けに持続的なパフォーマンスを発揮します。</string>
+    <string name="thermal_streaming_desc">長時間の動画・音楽ストリーミングにバランスの取れた調整。</string>
+    <string name="thermal_search_hint">アプリを検索</string>
+    <string name="thermal_search_hint_short">検索\u2026</string>
+    <string name="thermal_profile_footer">選択したプロファイルは、アプリの使用中に自動的に適用されます。</string>
+
 </resources>

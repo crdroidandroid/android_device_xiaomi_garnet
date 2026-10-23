@@ -158,4 +158,17 @@
     <string name="game_bar_per_app_config_title">앱 구성</string>
     <string name="game_bar_per_app_config_summary">GameBar를 자동으로 활성화할 앱 선택</string>
 
+    <string name="others_group_title">기타</string>
+
+    <string name="thermal_default_desc">앱별 발열 조정 없이 시스템 기본 동작을 사용합니다.</string>
+    <string name="thermal_benchmark_desc">발열 제한을 완화한 최대 성능. 기기가 뜨거워질 수 있습니다.</string>
+    <string name="thermal_browser_desc">웹 탐색과 읽기에 균형 잡힌 조정.</string>
+    <string name="thermal_camera_desc">사진 촬영과 동영상 녹화에 맞게 조정되었습니다.</string>
+    <string name="thermal_dialer_desc">발열과 전력 사용이 적은 음성 통화용 가벼운 조정.</string>
+    <string name="thermal_gaming_desc">더 높은 온도를 허용하는 게임용 지속 성능.</string>
+    <string name="thermal_streaming_desc">긴 동영상 및 음악 스트리밍 세션에 균형 잡힌 조정.</string>
+    <string name="thermal_search_hint">앱 검색</string>
+    <string name="thermal_search_hint_short">검색\u2026</string>
+    <string name="thermal_profile_footer">선택한 프로필은 앱을 사용하는 동안 자동으로 적용됩니다.</string>
+
 </resources>

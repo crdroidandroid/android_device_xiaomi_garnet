@@ -25,7 +25,7 @@ import android.widget.Toast;
 import androidx.preference.ListPreference;
 import androidx.preference.Preference;
 import com.android.settingslib.widget.SettingsBasePreferenceFragment;
-import androidx.preference.SeekBarPreference;
+import com.android.settingslib.widget.SliderPreference;
 import androidx.preference.SwitchPreference;
 import androidx.preference.SwitchPreferenceCompat;
 
@@ -54,11 +54,11 @@ public class GameBarFragment extends SettingsBasePreferenceFragment {
     private SwitchPreferenceCompat mSingleTapTogglePref;
     private SwitchPreferenceCompat mLongPressEnablePref;
     private ListPreference  mLongPressTimeoutPref;
-    private SeekBarPreference mTextSizePref;
-    private SeekBarPreference mBgAlphaPref;
-    private SeekBarPreference mCornerRadiusPref;
-    private SeekBarPreference mPaddingPref;
-    private SeekBarPreference mItemSpacingPref;
+    private SliderPreference mTextSizePref;
+    private SliderPreference mBgAlphaPref;
+    private SliderPreference mCornerRadiusPref;
+    private SliderPreference mPaddingPref;
+    private SliderPreference mItemSpacingPref;
     private ListPreference mUpdateIntervalPref;
     private ListPreference mTextColorPref;
     private ListPreference mTitleColorPref;

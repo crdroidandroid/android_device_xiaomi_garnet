@@ -158,4 +158,17 @@
     <string name="game_bar_per_app_config_title">ئەپلەرنى سەپلەش</string>
     <string name="game_bar_per_app_config_summary">قايسى ئەپلەرنىڭ GameBar نى ئاپتوماتىك قوزغىتىدىغانلىقىنى تاللاش</string>
 
+    <string name="others_group_title">باشقىلار</string>
+
+    <string name="thermal_default_desc">ھەر ئەپ ئۈچۈن ئىسسىقلىق تەڭشىكى يوق، سىستېمىنىڭ كۆڭۈلدىكى ھەرىكىتى.</string>
+    <string name="thermal_benchmark_desc">بوشىتىلغان ئىسسىقلىق چېكى بىلەن ئەڭ يۇقىرى ئىقتىدار. ئۈسكۈنە قىزىپ كېتىشى مۇمكىن.</string>
+    <string name="thermal_browser_desc">تور كۆرۈش ۋە ئوقۇش ئۈچۈن تەڭپۇڭ تەڭشەك.</string>
+    <string name="thermal_camera_desc">سۈرەت تارتىش ۋە سىن ئېلىش ئۈچۈن تەڭشەلگەن.</string>
+    <string name="thermal_dialer_desc">ئاۋازلىق چاقىرىقلار ئۈچۈن يېنىك تەڭشەك، ئىسسىقلىق ۋە توك سەرپىياتى تۆۋەن.</string>
+    <string name="thermal_gaming_desc">يۇقىرى تېمپېراتۇرىغا يول قويىدىغان، ئويۇنلار ئۈچۈن داۋاملىق ئىقتىدار.</string>
+    <string name="thermal_streaming_desc">ئۇزۇن سىن ۋە مۇزىكا ئېقىمى ئۈچۈن تەڭپۇڭ تەڭشەك.</string>
+    <string name="thermal_search_hint">ئەپلەرنى ئىزدەش</string>
+    <string name="thermal_search_hint_short">ئىزدەش\u2026</string>
+    <string name="thermal_profile_footer">تاللانغان ئارخىپ ئەپ ئىشلىتىلىۋاتقاندا ئاپتوماتىك قوللىنىلىدۇ.</string>
+
 </resources>

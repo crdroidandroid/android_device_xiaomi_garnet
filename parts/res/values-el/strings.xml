@@ -158,4 +158,17 @@
     <string name="game_bar_per_app_config_title">Διαμόρφωση εφαρμογών</string>
     <string name="game_bar_per_app_config_summary">Επιλέξτε ποιες εφαρμογές ενεργοποιούν αυτόματα το GameBar</string>
 
+    <string name="others_group_title">Άλλα</string>
+
+    <string name="thermal_default_desc">Προεπιλεγμένη συμπεριφορά συστήματος, χωρίς θερμική ρύθμιση ανά εφαρμογή.</string>
+    <string name="thermal_benchmark_desc">Μέγιστη απόδοση με χαλαρωμένα θερμικά όρια. Η συσκευή μπορεί να ζεσταθεί.</string>
+    <string name="thermal_browser_desc">Ισορροπημένη ρύθμιση για περιήγηση στον ιστό και ανάγνωση.</string>
+    <string name="thermal_camera_desc">Ρυθμισμένο για λήψη φωτογραφιών και εγγραφή βίντεο.</string>
+    <string name="thermal_dialer_desc">Ελαφριά ρύθμιση για φωνητικές κλήσεις, με χαμηλή θερμότητα και κατανάλωση.</string>
+    <string name="thermal_gaming_desc">Σταθερή απόδοση για παιχνίδια, επιτρέποντας υψηλότερες θερμοκρασίες.</string>
+    <string name="thermal_streaming_desc">Ισορροπημένη ρύθμιση για μεγάλες συνεδρίες ροής βίντεο και μουσικής.</string>
+    <string name="thermal_search_hint">Αναζήτηση εφαρμογών</string>
+    <string name="thermal_search_hint_short">Αναζήτηση\u2026</string>
+    <string name="thermal_profile_footer">Το επιλεγμένο προφίλ εφαρμόζεται αυτόματα όσο η εφαρμογή χρησιμοποιείται.</string>
+
 </resources>
