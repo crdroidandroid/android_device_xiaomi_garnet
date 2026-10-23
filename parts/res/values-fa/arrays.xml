@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="game_bar_fps_method_entries">
+        <item>API جدید (پیش‌فرض)</item>
+        <item>Sysfs قدیمی</item>
+    </string-array>
+    <string-array name="fps_overlay_update_interval_entries">
+        <item>هر ۵۰۰ میلی‌ثانیه</item>
+        <item>هر ثانیه</item>
+        <item>هر ۲ ثانیه</item>
+        <item>هر ۵ ثانیه</item>
+    </string-array>
+    <string-array name="fps_overlay_position_entries">
+        <item>بالا چپ</item>
+        <item>بالا وسط</item>
+        <item>بالا راست</item>
+        <item>پایین چپ</item>
+        <item>پایین وسط</item>
+        <item>پایین راست</item>
+        <item>سفارشی (قابل کشیدن)</item>
+    </string-array>
+    <string-array name="fps_overlay_color_entries">
+        <item>سفید</item>
+        <item>زرشکی</item>
+        <item>سالاد میوه</item>
+        <item>آبی سلطنتی</item>
+        <item>کهربایی</item>
+        <item>سبز کله‌غازی</item>
+        <item>بنفش الکتریکی</item>
+        <item>سرخابی</item>
+    </string-array>
+    <string-array name="game_bar_format_entries">
+        <item>کامل</item>
+        <item>حداقلی</item>
+    </string-array>
+    <string-array name="game_bar_split_mode_entries">
+        <item>کنار هم</item>
+        <item>روی هم</item>
+    </string-array>
+    <string-array name="game_bar_longpress_entries">
+        <item>۱ ثانیه</item>
+        <item>۳ ثانیه</item>
+        <item>۵ ثانیه</item>
+        <item>۱۰ ثانیه</item>
+    </string-array>
+</resources>

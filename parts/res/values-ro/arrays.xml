@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="game_bar_fps_method_entries">
+        <item>API nou (implicit)</item>
+        <item>Sysfs vechi</item>
+    </string-array>
+    <string-array name="fps_overlay_update_interval_entries">
+        <item>La fiecare 500 ms</item>
+        <item>În fiecare secundă</item>
+        <item>La fiecare 2 secunde</item>
+        <item>La fiecare 5 secunde</item>
+    </string-array>
+    <string-array name="fps_overlay_position_entries">
+        <item>Sus stânga</item>
+        <item>Sus centru</item>
+        <item>Sus dreapta</item>
+        <item>Jos stânga</item>
+        <item>Jos centru</item>
+        <item>Jos dreapta</item>
+        <item>Personalizat (poate fi tras)</item>
+    </string-array>
+    <string-array name="fps_overlay_color_entries">
+        <item>Alb</item>
+        <item>Crimson</item>
+        <item>Salată de fructe</item>
+        <item>Albastru regal</item>
+        <item>Chihlimbar</item>
+        <item>Turcoaz</item>
+        <item>Violet electric</item>
+        <item>Magenta</item>
+    </string-array>
+    <string-array name="game_bar_format_entries">
+        <item>Complet</item>
+        <item>Minim</item>
+    </string-array>
+    <string-array name="game_bar_split_mode_entries">
+        <item>Alăturat</item>
+        <item>Suprapus</item>
+    </string-array>
+    <string-array name="game_bar_longpress_entries">
+        <item>1 secundă</item>
+        <item>3 secunde</item>
+        <item>5 secunde</item>
+        <item>10 secunde</item>
+    </string-array>
+</resources>

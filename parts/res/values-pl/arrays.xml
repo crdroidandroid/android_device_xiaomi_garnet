@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="game_bar_fps_method_entries">
+        <item>Nowe API (domyślne)</item>
+        <item>Starszy Sysfs</item>
+    </string-array>
+    <string-array name="fps_overlay_update_interval_entries">
+        <item>Co 500 ms</item>
+        <item>Co sekundę</item>
+        <item>Co 2 sekundy</item>
+        <item>Co 5 sekund</item>
+    </string-array>
+    <string-array name="fps_overlay_position_entries">
+        <item>Góra, lewo</item>
+        <item>Góra, środek</item>
+        <item>Góra, prawo</item>
+        <item>Dół, lewo</item>
+        <item>Dół, środek</item>
+        <item>Dół, prawo</item>
+        <item>Niestandardowa (przeciągana)</item>
+    </string-array>
+    <string-array name="fps_overlay_color_entries">
+        <item>Biały</item>
+        <item>Karmazynowy</item>
+        <item>Sałatka owocowa</item>
+        <item>Błękit królewski</item>
+        <item>Bursztynowy</item>
+        <item>Morski</item>
+        <item>Fiolet elektryczny</item>
+        <item>Magenta</item>
+    </string-array>
+    <string-array name="game_bar_format_entries">
+        <item>Pełny</item>
+        <item>Minimalny</item>
+    </string-array>
+    <string-array name="game_bar_split_mode_entries">
+        <item>Obok siebie</item>
+        <item>Jeden pod drugim</item>
+    </string-array>
+    <string-array name="game_bar_longpress_entries">
+        <item>1 sekunda</item>
+        <item>3 sekundy</item>
+        <item>5 sekund</item>
+        <item>10 sekund</item>
+    </string-array>
+</resources>

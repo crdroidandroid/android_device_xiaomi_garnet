@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="game_bar_fps_method_entries">
+        <item>API חדש (ברירת מחדל)</item>
+        <item>Sysfs ישן</item>
+    </string-array>
+    <string-array name="fps_overlay_update_interval_entries">
+        <item>כל 500 אלפיות שנייה</item>
+        <item>כל שנייה</item>
+        <item>כל 2 שניות</item>
+        <item>כל 5 שניות</item>
+    </string-array>
+    <string-array name="fps_overlay_position_entries">
+        <item>למעלה משמאל</item>
+        <item>למעלה באמצע</item>
+        <item>למעלה מימין</item>
+        <item>למטה משמאל</item>
+        <item>למטה באמצע</item>
+        <item>למטה מימין</item>
+        <item>מותאם אישית (ניתן לגרירה)</item>
+    </string-array>
+    <string-array name="fps_overlay_color_entries">
+        <item>לבן</item>
+        <item>ארגמן</item>
+        <item>סלט פירות</item>
+        <item>כחול מלכותי</item>
+        <item>ענבר</item>
+        <item>טורקיז</item>
+        <item>סגול חשמלי</item>
+        <item>מגנטה</item>
+    </string-array>
+    <string-array name="game_bar_format_entries">
+        <item>מלא</item>
+        <item>מינימלי</item>
+    </string-array>
+    <string-array name="game_bar_split_mode_entries">
+        <item>זה לצד זה</item>
+        <item>בערימה</item>
+    </string-array>
+    <string-array name="game_bar_longpress_entries">
+        <item>שנייה 1</item>
+        <item>3 שניות</item>
+        <item>5 שניות</item>
+        <item>10 שניות</item>
+    </string-array>
+</resources>

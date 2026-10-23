@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="game_bar_fps_method_entries">
+        <item>नई API (डिफ़ॉल्ट)</item>
+        <item>पुरानी Sysfs</item>
+    </string-array>
+    <string-array name="fps_overlay_update_interval_entries">
+        <item>हर 500ms</item>
+        <item>हर सेकंड</item>
+        <item>हर 2 सेकंड</item>
+        <item>हर 5 सेकंड</item>
+    </string-array>
+    <string-array name="fps_overlay_position_entries">
+        <item>ऊपर बाएँ</item>
+        <item>ऊपर मध्य</item>
+        <item>ऊपर दाएँ</item>
+        <item>नीचे बाएँ</item>
+        <item>नीचे मध्य</item>
+        <item>नीचे दाएँ</item>
+        <item>कस्टम (खींचने योग्य)</item>
+    </string-array>
+    <string-array name="fps_overlay_color_entries">
+        <item>सफ़ेद</item>
+        <item>गहरा लाल</item>
+        <item>फ्रूट सैलड</item>
+        <item>रॉयल ब्लू</item>
+        <item>एम्बर</item>
+        <item>टील</item>
+        <item>इलेक्ट्रिक वायलेट</item>
+        <item>मैजेंटा</item>
+    </string-array>
+    <string-array name="game_bar_format_entries">
+        <item>पूर्ण</item>
+        <item>न्यूनतम</item>
+    </string-array>
+    <string-array name="game_bar_split_mode_entries">
+        <item>साथ-साथ</item>
+        <item>एक के ऊपर एक</item>
+    </string-array>
+    <string-array name="game_bar_longpress_entries">
+        <item>1 सेकंड</item>
+        <item>3 सेकंड</item>
+        <item>5 सेकंड</item>
+        <item>10 सेकंड</item>
+    </string-array>
+</resources>

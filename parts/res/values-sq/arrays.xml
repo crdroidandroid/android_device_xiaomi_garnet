@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="game_bar_fps_method_entries">
+        <item>API e re (parazgjedhje)</item>
+        <item>Sysfs i vjetër</item>
+    </string-array>
+    <string-array name="fps_overlay_update_interval_entries">
+        <item>Çdo 500 ms</item>
+        <item>Çdo sekondë</item>
+        <item>Çdo 2 sekonda</item>
+        <item>Çdo 5 sekonda</item>
+    </string-array>
+    <string-array name="fps_overlay_position_entries">
+        <item>Lart majtas</item>
+        <item>Lart në mes</item>
+        <item>Lart djathtas</item>
+        <item>Poshtë majtas</item>
+        <item>Poshtë në mes</item>
+        <item>Poshtë djathtas</item>
+        <item>I personalizuar (i tërheqshëm)</item>
+    </string-array>
+    <string-array name="fps_overlay_color_entries">
+        <item>E bardhë</item>
+        <item>E kuqe e errët</item>
+        <item>Sallatë frutash</item>
+        <item>Blu mbretërore</item>
+        <item>Qelibar</item>
+        <item>Blu jeshile</item>
+        <item>Vjollcë elektrike</item>
+        <item>Magenta</item>
+    </string-array>
+    <string-array name="game_bar_format_entries">
+        <item>I plotë</item>
+        <item>Minimal</item>
+    </string-array>
+    <string-array name="game_bar_split_mode_entries">
+        <item>Krah për krah</item>
+        <item>I grumbulluar</item>
+    </string-array>
+    <string-array name="game_bar_longpress_entries">
+        <item>1 sekondë</item>
+        <item>3 sekonda</item>
+        <item>5 sekonda</item>
+        <item>10 sekonda</item>
+    </string-array>
+</resources>

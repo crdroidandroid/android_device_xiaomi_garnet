@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="game_bar_fps_method_entries">
+        <item>新 API（默认）</item>
+        <item>旧版 Sysfs</item>
+    </string-array>
+    <string-array name="fps_overlay_update_interval_entries">
+        <item>每 500 毫秒</item>
+        <item>每秒</item>
+        <item>每 2 秒</item>
+        <item>每 5 秒</item>
+    </string-array>
+    <string-array name="fps_overlay_position_entries">
+        <item>左上</item>
+        <item>上中</item>
+        <item>右上</item>
+        <item>左下</item>
+        <item>下中</item>
+        <item>右下</item>
+        <item>自定义（可拖动）</item>
+    </string-array>
+    <string-array name="fps_overlay_color_entries">
+        <item>白色</item>
+        <item>深红色</item>
+        <item>水果沙拉</item>
+        <item>宝蓝色</item>
+        <item>琥珀色</item>
+        <item>蓝绿色</item>
+        <item>电光紫</item>
+        <item>品红色</item>
+    </string-array>
+    <string-array name="game_bar_format_entries">
+        <item>完整</item>
+        <item>简洁</item>
+    </string-array>
+    <string-array name="game_bar_split_mode_entries">
+        <item>并排</item>
+        <item>堆叠</item>
+    </string-array>
+    <string-array name="game_bar_longpress_entries">
+        <item>1 秒</item>
+        <item>3 秒</item>
+        <item>5 秒</item>
+        <item>10 秒</item>
+    </string-array>
+</resources>

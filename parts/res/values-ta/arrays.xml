@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="game_bar_fps_method_entries">
+        <item>புதிய API (இயல்புநிலை)</item>
+        <item>பழைய Sysfs</item>
+    </string-array>
+    <string-array name="fps_overlay_update_interval_entries">
+        <item>ஒவ்வொரு 500ms</item>
+        <item>ஒவ்வொரு வினாடியும்</item>
+        <item>ஒவ்வொரு 2 வினாடிகளும்</item>
+        <item>ஒவ்வொரு 5 வினாடிகளும்</item>
+    </string-array>
+    <string-array name="fps_overlay_position_entries">
+        <item>மேல் இடது</item>
+        <item>மேல் நடு</item>
+        <item>மேல் வலது</item>
+        <item>கீழ் இடது</item>
+        <item>கீழ் நடு</item>
+        <item>கீழ் வலது</item>
+        <item>தனிப்பயன் (இழுக்கக்கூடியது)</item>
+    </string-array>
+    <string-array name="fps_overlay_color_entries">
+        <item>வெள்ளை</item>
+        <item>கிரிம்சன்</item>
+        <item>பழ சாலட்</item>
+        <item>ராயல் நீலம்</item>
+        <item>அம்பர்</item>
+        <item>டீல்</item>
+        <item>மின் ஊதா</item>
+        <item>மெஜந்தா</item>
+    </string-array>
+    <string-array name="game_bar_format_entries">
+        <item>முழு</item>
+        <item>குறைந்தபட்சம்</item>
+    </string-array>
+    <string-array name="game_bar_split_mode_entries">
+        <item>பக்கவாட்டு</item>
+        <item>அடுக்கியது</item>
+    </string-array>
+    <string-array name="game_bar_longpress_entries">
+        <item>1 வினாடி</item>
+        <item>3 வினாடிகள்</item>
+        <item>5 வினாடிகள்</item>
+        <item>10 வினாடிகள்</item>
+    </string-array>
+</resources>

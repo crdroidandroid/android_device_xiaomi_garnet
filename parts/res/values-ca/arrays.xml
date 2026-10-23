@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="game_bar_fps_method_entries">
+        <item>Nova API (per defecte)</item>
+        <item>Sysfs antic</item>
+    </string-array>
+    <string-array name="fps_overlay_update_interval_entries">
+        <item>Cada 500 ms</item>
+        <item>Cada segon</item>
+        <item>Cada 2 segons</item>
+        <item>Cada 5 segons</item>
+    </string-array>
+    <string-array name="fps_overlay_position_entries">
+        <item>A dalt a l\'esquerra</item>
+        <item>A dalt al centre</item>
+        <item>A dalt a la dreta</item>
+        <item>A baix a l\'esquerra</item>
+        <item>A baix al centre</item>
+        <item>A baix a la dreta</item>
+        <item>Personalitzada (arrossegable)</item>
+    </string-array>
+    <string-array name="fps_overlay_color_entries">
+        <item>Blanc</item>
+        <item>Carmesí</item>
+        <item>Amanida de fruites</item>
+        <item>Blau reial</item>
+        <item>Ambre</item>
+        <item>Verd blavós</item>
+        <item>Violeta elèctric</item>
+        <item>Magenta</item>
+    </string-array>
+    <string-array name="game_bar_format_entries">
+        <item>Complet</item>
+        <item>Mínim</item>
+    </string-array>
+    <string-array name="game_bar_split_mode_entries">
+        <item>De costat a costat</item>
+        <item>Apilat</item>
+    </string-array>
+    <string-array name="game_bar_longpress_entries">
+        <item>1 segon</item>
+        <item>3 segons</item>
+        <item>5 segons</item>
+        <item>10 segons</item>
+    </string-array>
+</resources>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="game_bar_fps_method_entries">
+        <item>Новый API (по умолчанию)</item>
+        <item>Устаревший Sysfs</item>
+    </string-array>
+    <string-array name="fps_overlay_update_interval_entries">
+        <item>Каждые 500 мс</item>
+        <item>Каждую секунду</item>
+        <item>Каждые 2 секунды</item>
+        <item>Каждые 5 секунд</item>
+    </string-array>
+    <string-array name="fps_overlay_position_entries">
+        <item>Сверху слева</item>
+        <item>Сверху по центру</item>
+        <item>Сверху справа</item>
+        <item>Снизу слева</item>
+        <item>Снизу по центру</item>
+        <item>Снизу справа</item>
+        <item>Настраиваемое (перетаскиваемое)</item>
+    </string-array>
+    <string-array name="fps_overlay_color_entries">
+        <item>Белый</item>
+        <item>Малиновый</item>
+        <item>Фруктовый салат</item>
+        <item>Королевский синий</item>
+        <item>Янтарный</item>
+        <item>Бирюзовый</item>
+        <item>Электрический фиолетовый</item>
+        <item>Маджента</item>
+    </string-array>
+    <string-array name="game_bar_format_entries">
+        <item>Полный</item>
+        <item>Минимальный</item>
+    </string-array>
+    <string-array name="game_bar_split_mode_entries">
+        <item>Рядом</item>
+        <item>Друг под другом</item>
+    </string-array>
+    <string-array name="game_bar_longpress_entries">
+        <item>1 секунда</item>
+        <item>3 секунды</item>
+        <item>5 секунд</item>
+        <item>10 секунд</item>
+    </string-array>
+</resources>

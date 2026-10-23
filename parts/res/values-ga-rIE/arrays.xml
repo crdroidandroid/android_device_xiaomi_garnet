@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="game_bar_fps_method_entries">
+        <item>API Nua (Réamhshocrú)</item>
+        <item>Sean-Sysfs</item>
+    </string-array>
+    <string-array name="fps_overlay_update_interval_entries">
+        <item>Gach 500ms</item>
+        <item>Gach soicind</item>
+        <item>Gach 2 shoicind</item>
+        <item>Gach 5 shoicind</item>
+    </string-array>
+    <string-array name="fps_overlay_position_entries">
+        <item>Barr ar Chlé</item>
+        <item>Barr sa Lár</item>
+        <item>Barr ar Dheis</item>
+        <item>Bun ar Chlé</item>
+        <item>Bun sa Lár</item>
+        <item>Bun ar Dheis</item>
+        <item>Saincheaptha (Inaistrithe)</item>
+    </string-array>
+    <string-array name="fps_overlay_color_entries">
+        <item>Bán</item>
+        <item>Crimson</item>
+        <item>Sailéad Torthaí</item>
+        <item>Gorm Ríoga</item>
+        <item>Ómra</item>
+        <item>Teal</item>
+        <item>Violet Leictreach</item>
+        <item>Magaenta</item>
+    </string-array>
+    <string-array name="game_bar_format_entries">
+        <item>Iomlán</item>
+        <item>Íosta</item>
+    </string-array>
+    <string-array name="game_bar_split_mode_entries">
+        <item>Taobh le Taobh</item>
+        <item>Cruachta</item>
+    </string-array>
+    <string-array name="game_bar_longpress_entries">
+        <item>1 soicind</item>
+        <item>3 shoicind</item>
+        <item>5 shoicind</item>
+        <item>10 soicind</item>
+    </string-array>
+</resources>

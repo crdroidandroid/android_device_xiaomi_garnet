@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="game_bar_fps_method_entries">
+        <item>Yeni API (Varsayılan)</item>
+        <item>Eski Sysfs</item>
+    </string-array>
+    <string-array name="fps_overlay_update_interval_entries">
+        <item>Her 500 ms</item>
+        <item>Her saniye</item>
+        <item>Her 2 saniye</item>
+        <item>Her 5 saniye</item>
+    </string-array>
+    <string-array name="fps_overlay_position_entries">
+        <item>Sol Üst</item>
+        <item>Orta Üst</item>
+        <item>Sağ Üst</item>
+        <item>Sol Alt</item>
+        <item>Orta Alt</item>
+        <item>Sağ Alt</item>
+        <item>Özel (Sürüklenebilir)</item>
+    </string-array>
+    <string-array name="fps_overlay_color_entries">
+        <item>Beyaz</item>
+        <item>Kızıl</item>
+        <item>Meyve Salatası</item>
+        <item>Kraliyet Mavisi</item>
+        <item>Kehribar</item>
+        <item>Deniz Mavisi</item>
+        <item>Elektrik Menekşesi</item>
+        <item>Macenta</item>
+    </string-array>
+    <string-array name="game_bar_format_entries">
+        <item>Tam</item>
+        <item>Minimal</item>
+    </string-array>
+    <string-array name="game_bar_split_mode_entries">
+        <item>Yan Yana</item>
+        <item>Üst Üste</item>
+    </string-array>
+    <string-array name="game_bar_longpress_entries">
+        <item>1 saniye</item>
+        <item>3 saniye</item>
+        <item>5 saniye</item>
+        <item>10 saniye</item>
+    </string-array>
+</resources>

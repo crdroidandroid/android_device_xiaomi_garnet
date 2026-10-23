@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="game_bar_fps_method_entries">
+        <item>API mới (Mặc định)</item>
+        <item>Sysfs cũ</item>
+    </string-array>
+    <string-array name="fps_overlay_update_interval_entries">
+        <item>Mỗi 500 ms</item>
+        <item>Mỗi giây</item>
+        <item>Mỗi 2 giây</item>
+        <item>Mỗi 5 giây</item>
+    </string-array>
+    <string-array name="fps_overlay_position_entries">
+        <item>Trên cùng bên trái</item>
+        <item>Trên cùng ở giữa</item>
+        <item>Trên cùng bên phải</item>
+        <item>Dưới cùng bên trái</item>
+        <item>Dưới cùng ở giữa</item>
+        <item>Dưới cùng bên phải</item>
+        <item>Tùy chỉnh (kéo được)</item>
+    </string-array>
+    <string-array name="fps_overlay_color_entries">
+        <item>Trắng</item>
+        <item>Đỏ thẫm</item>
+        <item>Sa lát trái cây</item>
+        <item>Xanh hoàng gia</item>
+        <item>Hổ phách</item>
+        <item>Xanh mòng két</item>
+        <item>Tím điện</item>
+        <item>Magenta</item>
+    </string-array>
+    <string-array name="game_bar_format_entries">
+        <item>Đầy đủ</item>
+        <item>Tối thiểu</item>
+    </string-array>
+    <string-array name="game_bar_split_mode_entries">
+        <item>Song song</item>
+        <item>Xếp chồng</item>
+    </string-array>
+    <string-array name="game_bar_longpress_entries">
+        <item>1 giây</item>
+        <item>3 giây</item>
+        <item>5 giây</item>
+        <item>10 giây</item>
+    </string-array>
+</resources>

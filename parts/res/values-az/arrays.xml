@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="game_bar_fps_method_entries">
+        <item>Yeni API (Standart)</item>
+        <item>Köhnə Sysfs</item>
+    </string-array>
+    <string-array name="fps_overlay_update_interval_entries">
+        <item>Hər 500 ms</item>
+        <item>Hər saniyə</item>
+        <item>Hər 2 saniyə</item>
+        <item>Hər 5 saniyə</item>
+    </string-array>
+    <string-array name="fps_overlay_position_entries">
+        <item>Yuxarı sol</item>
+        <item>Yuxarı mərkəz</item>
+        <item>Yuxarı sağ</item>
+        <item>Aşağı sol</item>
+        <item>Aşağı mərkəz</item>
+        <item>Aşağı sağ</item>
+        <item>Xüsusi (sürüşdürülə bilən)</item>
+    </string-array>
+    <string-array name="fps_overlay_color_entries">
+        <item>Ağ</item>
+        <item>Tünd qırmızı</item>
+        <item>Meyvə salatı</item>
+        <item>Kral mavi</item>
+        <item>Kəhrəba</item>
+        <item>Tünd firuzəyi</item>
+        <item>Elektrik bənövşəyi</item>
+        <item>Macenta</item>
+    </string-array>
+    <string-array name="game_bar_format_entries">
+        <item>Tam</item>
+        <item>Minimal</item>
+    </string-array>
+    <string-array name="game_bar_split_mode_entries">
+        <item>Yan-yana</item>
+        <item>Üst-üstə</item>
+    </string-array>
+    <string-array name="game_bar_longpress_entries">
+        <item>1 saniyə</item>
+        <item>3 saniyə</item>
+        <item>5 saniyə</item>
+        <item>10 saniyə</item>
+    </string-array>
+</resources>

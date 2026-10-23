@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="game_bar_fps_method_entries">
+        <item>API نوێ (بنەڕەت)</item>
+        <item>Sysfs کۆن</item>
+    </string-array>
+    <string-array name="fps_overlay_update_interval_entries">
+        <item>هەموو 500ms</item>
+        <item>هەموو چرکەیەک</item>
+        <item>هەموو 2 چرکە</item>
+        <item>هەموو 5 چرکە</item>
+    </string-array>
+    <string-array name="fps_overlay_position_entries">
+        <item>سەرەوە چەپ</item>
+        <item>سەرەوە ناوەند</item>
+        <item>سەرەوە ڕاست</item>
+        <item>خوارەوە چەپ</item>
+        <item>خوارەوە ناوەند</item>
+        <item>خوارەوە ڕاست</item>
+        <item>تایبەت (دەکشێت)</item>
+    </string-array>
+    <string-array name="fps_overlay_color_entries">
+        <item>سپی</item>
+        <item>سووری تۆخ</item>
+        <item>سەڵاتەی میوە</item>
+        <item>شینی شاهانە</item>
+        <item>کەهرەبایی</item>
+        <item>شینی سەوز</item>
+        <item>مۆری کارەبایی</item>
+        <item>ماگێنتا</item>
+    </string-array>
+    <string-array name="game_bar_format_entries">
+        <item>تەواو</item>
+        <item>کەمترین</item>
+    </string-array>
+    <string-array name="game_bar_split_mode_entries">
+        <item>تەنیشت یەک</item>
+        <item>کەڵەکەکراو</item>
+    </string-array>
+    <string-array name="game_bar_longpress_entries">
+        <item>1 چرکە</item>
+        <item>3 چرکە</item>
+        <item>5 چرکە</item>
+        <item>10 چرکە</item>
+    </string-array>
+</resources>

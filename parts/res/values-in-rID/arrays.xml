@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="game_bar_fps_method_entries">
+        <item>API Baru (Default)</item>
+        <item>Sysfs Lama</item>
+    </string-array>
+    <string-array name="fps_overlay_update_interval_entries">
+        <item>Setiap 500 md</item>
+        <item>Setiap detik</item>
+        <item>Setiap 2 detik</item>
+        <item>Setiap 5 detik</item>
+    </string-array>
+    <string-array name="fps_overlay_position_entries">
+        <item>Kiri Atas</item>
+        <item>Tengah Atas</item>
+        <item>Kanan Atas</item>
+        <item>Kiri Bawah</item>
+        <item>Tengah Bawah</item>
+        <item>Kanan Bawah</item>
+        <item>Kustom (Dapat Digeser)</item>
+    </string-array>
+    <string-array name="fps_overlay_color_entries">
+        <item>Putih</item>
+        <item>Crimson</item>
+        <item>Salad Buah</item>
+        <item>Biru Royal</item>
+        <item>Kuning Amber</item>
+        <item>Teal</item>
+        <item>Ungu Elektrik</item>
+        <item>Magenta</item>
+    </string-array>
+    <string-array name="game_bar_format_entries">
+        <item>Penuh</item>
+        <item>Minimal</item>
+    </string-array>
+    <string-array name="game_bar_split_mode_entries">
+        <item>Berdampingan</item>
+        <item>Bertumpuk</item>
+    </string-array>
+    <string-array name="game_bar_longpress_entries">
+        <item>1 detik</item>
+        <item>3 detik</item>
+        <item>5 detik</item>
+        <item>10 detik</item>
+    </string-array>
+</resources>

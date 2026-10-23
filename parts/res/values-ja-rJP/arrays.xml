@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="game_bar_fps_method_entries">
+        <item>新しいAPI（デフォルト）</item>
+        <item>従来のSysfs</item>
+    </string-array>
+    <string-array name="fps_overlay_update_interval_entries">
+        <item>500ミリ秒ごと</item>
+        <item>1秒ごと</item>
+        <item>2秒ごと</item>
+        <item>5秒ごと</item>
+    </string-array>
+    <string-array name="fps_overlay_position_entries">
+        <item>左上</item>
+        <item>上中央</item>
+        <item>右上</item>
+        <item>左下</item>
+        <item>下中央</item>
+        <item>右下</item>
+        <item>カスタム（ドラッグ可能）</item>
+    </string-array>
+    <string-array name="fps_overlay_color_entries">
+        <item>白</item>
+        <item>クリムゾン</item>
+        <item>フルーツサラダ</item>
+        <item>ロイヤルブルー</item>
+        <item>琥珀</item>
+        <item>ティール</item>
+        <item>エレクトリックバイオレット</item>
+        <item>マゼンタ</item>
+    </string-array>
+    <string-array name="game_bar_format_entries">
+        <item>フル</item>
+        <item>最小</item>
+    </string-array>
+    <string-array name="game_bar_split_mode_entries">
+        <item>横並び</item>
+        <item>縦積み</item>
+    </string-array>
+    <string-array name="game_bar_longpress_entries">
+        <item>1秒</item>
+        <item>3秒</item>
+        <item>5秒</item>
+        <item>10秒</item>
+    </string-array>
+</resources>

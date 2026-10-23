@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="game_bar_fps_method_entries">
+        <item>새 API(기본값)</item>
+        <item>기존 Sysfs</item>
+    </string-array>
+    <string-array name="fps_overlay_update_interval_entries">
+        <item>500ms마다</item>
+        <item>1초마다</item>
+        <item>2초마다</item>
+        <item>5초마다</item>
+    </string-array>
+    <string-array name="fps_overlay_position_entries">
+        <item>왼쪽 위</item>
+        <item>가운데 위</item>
+        <item>오른쪽 위</item>
+        <item>왼쪽 아래</item>
+        <item>가운데 아래</item>
+        <item>오른쪽 아래</item>
+        <item>사용자 지정(드래그 가능)</item>
+    </string-array>
+    <string-array name="fps_overlay_color_entries">
+        <item>흰색</item>
+        <item>크림슨</item>
+        <item>프루트 샐러드</item>
+        <item>로열 블루</item>
+        <item>앰버</item>
+        <item>틸</item>
+        <item>일렉트릭 바이올렛</item>
+        <item>마젠타</item>
+    </string-array>
+    <string-array name="game_bar_format_entries">
+        <item>전체</item>
+        <item>최소</item>
+    </string-array>
+    <string-array name="game_bar_split_mode_entries">
+        <item>나란히</item>
+        <item>쌓기</item>
+    </string-array>
+    <string-array name="game_bar_longpress_entries">
+        <item>1초</item>
+        <item>3초</item>
+        <item>5초</item>
+        <item>10초</item>
+    </string-array>
+</resources>

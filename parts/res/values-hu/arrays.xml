@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="game_bar_fps_method_entries">
+        <item>Új API (alapértelmezett)</item>
+        <item>Régi Sysfs</item>
+    </string-array>
+    <string-array name="fps_overlay_update_interval_entries">
+        <item>500 ms-enként</item>
+        <item>Másodpercenként</item>
+        <item>2 másodpercenként</item>
+        <item>5 másodpercenként</item>
+    </string-array>
+    <string-array name="fps_overlay_position_entries">
+        <item>Bal fent</item>
+        <item>Középen fent</item>
+        <item>Jobb fent</item>
+        <item>Bal lent</item>
+        <item>Középen lent</item>
+        <item>Jobb lent</item>
+        <item>Egyéni (húzható)</item>
+    </string-array>
+    <string-array name="fps_overlay_color_entries">
+        <item>Fehér</item>
+        <item>Bíbor</item>
+        <item>Gyümölcssaláta</item>
+        <item>Királykék</item>
+        <item>Borostyán</item>
+        <item>Pávakék</item>
+        <item>Elektromos lila</item>
+        <item>Magenta</item>
+    </string-array>
+    <string-array name="game_bar_format_entries">
+        <item>Teljes</item>
+        <item>Minimális</item>
+    </string-array>
+    <string-array name="game_bar_split_mode_entries">
+        <item>Egymás mellett</item>
+        <item>Egymás alatt</item>
+    </string-array>
+    <string-array name="game_bar_longpress_entries">
+        <item>1 másodperc</item>
+        <item>3 másodperc</item>
+        <item>5 másodperc</item>
+        <item>10 másodperc</item>
+    </string-array>
+</resources>

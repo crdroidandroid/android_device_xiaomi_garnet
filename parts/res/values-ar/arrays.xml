@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="game_bar_fps_method_entries">
+        <item>API الجديدة (الافتراضية)</item>
+        <item>Sysfs القديمة</item>
+    </string-array>
+    <string-array name="fps_overlay_update_interval_entries">
+        <item>كل 500 مللي ثانية</item>
+        <item>كل ثانية</item>
+        <item>كل ثانيتين</item>
+        <item>كل 5 ثوانٍ</item>
+    </string-array>
+    <string-array name="fps_overlay_position_entries">
+        <item>أعلى اليسار</item>
+        <item>أعلى الوسط</item>
+        <item>أعلى اليمين</item>
+        <item>أسفل اليسار</item>
+        <item>أسفل الوسط</item>
+        <item>أسفل اليمين</item>
+        <item>مخصص (قابل للسحب)</item>
+    </string-array>
+    <string-array name="fps_overlay_color_entries">
+        <item>أبيض</item>
+        <item>قرمزي</item>
+        <item>سلطة فواكه</item>
+        <item>أزرق ملكي</item>
+        <item>كهرماني</item>
+        <item>أخضر مزرق</item>
+        <item>بنفسجي كهربائي</item>
+        <item>أرجواني</item>
+    </string-array>
+    <string-array name="game_bar_format_entries">
+        <item>كامل</item>
+        <item>أدنى</item>
+    </string-array>
+    <string-array name="game_bar_split_mode_entries">
+        <item>جنبًا إلى جنب</item>
+        <item>مكدّس</item>
+    </string-array>
+    <string-array name="game_bar_longpress_entries">
+        <item>ثانية واحدة</item>
+        <item>3 ثوانٍ</item>
+        <item>5 ثوانٍ</item>
+        <item>10 ثوانٍ</item>
+    </string-array>
+</resources>

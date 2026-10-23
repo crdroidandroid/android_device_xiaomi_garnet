@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="game_bar_fps_method_entries">
+        <item>Νέο API (προεπιλογή)</item>
+        <item>Παλιό Sysfs</item>
+    </string-array>
+    <string-array name="fps_overlay_update_interval_entries">
+        <item>Κάθε 500 ms</item>
+        <item>Κάθε δευτερόλεπτο</item>
+        <item>Κάθε 2 δευτερόλεπτα</item>
+        <item>Κάθε 5 δευτερόλεπτα</item>
+    </string-array>
+    <string-array name="fps_overlay_position_entries">
+        <item>Επάνω αριστερά</item>
+        <item>Επάνω κέντρο</item>
+        <item>Επάνω δεξιά</item>
+        <item>Κάτω αριστερά</item>
+        <item>Κάτω κέντρο</item>
+        <item>Κάτω δεξιά</item>
+        <item>Προσαρμοσμένη (μετακινήσιμη)</item>
+    </string-array>
+    <string-array name="fps_overlay_color_entries">
+        <item>Λευκό</item>
+        <item>Βυσσινί</item>
+        <item>Φρουτοσαλάτα</item>
+        <item>Βασιλικό μπλε</item>
+        <item>Κεχριμπαρένιο</item>
+        <item>Πετρόλ</item>
+        <item>Ηλεκτρικό βιολετί</item>
+        <item>Ματζέντα</item>
+    </string-array>
+    <string-array name="game_bar_format_entries">
+        <item>Πλήρης</item>
+        <item>Ελάχιστη</item>
+    </string-array>
+    <string-array name="game_bar_split_mode_entries">
+        <item>Δίπλα-δίπλα</item>
+        <item>Στοιβαγμένη</item>
+    </string-array>
+    <string-array name="game_bar_longpress_entries">
+        <item>1 δευτερόλεπτο</item>
+        <item>3 δευτερόλεπτα</item>
+        <item>5 δευτερόλεπτα</item>
+        <item>10 δευτερόλεπτα</item>
+    </string-array>
+</resources>

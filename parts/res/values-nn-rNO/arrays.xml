@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="game_bar_fps_method_entries">
+        <item>Ny API (standard)</item>
+        <item>Gammal Sysfs</item>
+    </string-array>
+    <string-array name="fps_overlay_update_interval_entries">
+        <item>Kvar 500. ms</item>
+        <item>Kvart sekund</item>
+        <item>Kvart 2. sekund</item>
+        <item>Kvart 5. sekund</item>
+    </string-array>
+    <string-array name="fps_overlay_position_entries">
+        <item>Oppe til venstre</item>
+        <item>Oppe i midten</item>
+        <item>Oppe til høgre</item>
+        <item>Nede til venstre</item>
+        <item>Nede i midten</item>
+        <item>Nede til høgre</item>
+        <item>Tilpassa (kan dragast)</item>
+    </string-array>
+    <string-array name="fps_overlay_color_entries">
+        <item>Kvit</item>
+        <item>Karmosin</item>
+        <item>Fruktsalat</item>
+        <item>Kongeblå</item>
+        <item>Rav</item>
+        <item>Blågrøn</item>
+        <item>Elektrisk fiolett</item>
+        <item>Magenta</item>
+    </string-array>
+    <string-array name="game_bar_format_entries">
+        <item>Full</item>
+        <item>Minimal</item>
+    </string-array>
+    <string-array name="game_bar_split_mode_entries">
+        <item>Side om side</item>
+        <item>Stablet</item>
+    </string-array>
+    <string-array name="game_bar_longpress_entries">
+        <item>1 sekund</item>
+        <item>3 sekund</item>
+        <item>5 sekund</item>
+        <item>10 sekund</item>
+    </string-array>
+</resources>
