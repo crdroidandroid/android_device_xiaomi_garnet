@@ -41,6 +41,10 @@ on early-init
 on init
     wait /dev/block/platform/soc/${ro.boot.bootdevice}
     symlink /dev/block/platform/soc/${ro.boot.bootdevice} /dev/block/bootdevice
+    # The bootloader passes the block2mtd parameters for the oops partition,
+    # and /dev/block/sda15 only exists after coldboot. Do not wait for
+    # vendor.all.modules.ready: a stuck module is what the log must catch.
+    exec_background u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor_dlkm/lib/modules block2mtd
     chown system system /sys/devices/platform/soc/1d84000.ufshc/auto_hibern8
     chmod 0660 /sys/devices/platform/soc/1d84000.ufshc/auto_hibern8
     start logd

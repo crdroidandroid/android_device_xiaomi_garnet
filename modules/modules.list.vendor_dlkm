@@ -44,6 +44,7 @@ rmnet_wlan.ko
 rmnet_aps.ko
 rmnet_sch.ko
 msm_video.ko
+mtdoops.ko
 qseecom_dlkm.ko
 governor_msm_adreno_tz.ko
 governor_gpubw_mon.ko
