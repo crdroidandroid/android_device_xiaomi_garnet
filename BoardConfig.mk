@@ -130,7 +130,7 @@ TARGET_KERNEL_EXT_MODULES := \
 	qcom/opensource/mmrm-driver \
 	qcom/opensource/audio-kernel \
 	qcom/opensource/camera-kernel \
-	qcom/opensource/cvp-kernel \
+	qcom/opensource/datarmnet-ext/mem \
 	qcom/opensource/dataipa/drivers/platform/msm \
 	qcom/opensource/datarmnet/core \
 	qcom/opensource/datarmnet-ext/aps \
@@ -140,14 +140,24 @@ TARGET_KERNEL_EXT_MODULES := \
 	qcom/opensource/datarmnet-ext/perf_tether \
 	qcom/opensource/datarmnet-ext/sch \
 	qcom/opensource/datarmnet-ext/wlan \
+	qcom/opensource/securemsm-kernel \
+	qcom/opensource/mm-drivers/msm_ext_display \
+	qcom/opensource/mm-drivers/sync_fence \
+	qcom/opensource/synx-kernel-v1 \
 	qcom/opensource/display-drivers/msm \
-	qcom/opensource/eva-kernel \
+	qcom/opensource/eva-kernel-v1 \
+	qcom/opensource/graphics-kernel \
+	qcom/opensource/bt-kernel \
+	qcom/opensource/dsp-kernel \
+	qcom/opensource/touch-drivers \
 	qcom/opensource/video-driver \
-	qcom/opensource/wlan/qcacld-3.0/.adrastea
+	qcom/opensource/wlan/platform \
+	qcom/opensource/wlan/qcacld-3.0/.adrastea \
+	xiaomi
 
-first_stage_modules := $(strip $(shell cat $(TARGET_KERNEL_SOURCE)/modules.list.msm.parrot $(DEVICE_PATH)/modules/modules.list.first_stage))
-second_stage_modules := $(strip $(shell cat $(DEVICE_PATH)/modules/modules.list.second_stage))
-vendor_dlkm_modules := $(strip $(shell cat $(DEVICE_PATH)/modules/modules.list.vendor_dlkm))
+first_stage_modules := $(strip $(shell if [ -f $(TARGET_KERNEL_SOURCE)/modules.list.msm.parrot ]; then cat $(TARGET_KERNEL_SOURCE)/modules.list.msm.parrot | grep -v '^\s*#' | grep -v '^\s*$$'; fi) $(shell if [ -f $(DEVICE_PATH)/modules/modules.list.first_stage ]; then cat $(DEVICE_PATH)/modules/modules.list.first_stage | grep -v '^\s*#' | grep -v '^\s*$$'; fi))
+second_stage_modules := $(strip $(shell if [ -f $(DEVICE_PATH)/modules/modules.list.second_stage ]; then cat $(DEVICE_PATH)/modules/modules.list.second_stage | grep -v '^\s*#' | grep -v '^\s*$$'; fi))
+vendor_dlkm_modules := $(strip $(shell if [ -f $(DEVICE_PATH)/modules/modules.list.vendor_dlkm ]; then cat $(DEVICE_PATH)/modules/modules.list.vendor_dlkm | grep -v '^\s*#' | grep -v '^\s*$$'; fi))
 
 BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD := $(first_stage_modules)
 BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD := $(first_stage_modules) $(second_stage_modules)
@@ -155,6 +165,8 @@ BOARD_VENDOR_KERNEL_MODULES_BLOCKLIST_FILE := $(TARGET_KERNEL_SOURCE)/modules.ve
 BOARD_VENDOR_KERNEL_MODULES_LOAD := $(second_stage_modules) $(vendor_dlkm_modules)
 BOARD_VENDOR_RAMDISK_KERNEL_MODULES_BLOCKLIST_FILE := $(BOARD_VENDOR_KERNEL_MODULES_BLOCKLIST_FILE)
 BOOT_KERNEL_MODULES := $(first_stage_modules) $(second_stage_modules)
+BOARD_KERNEL_MODULES_LOAD_ALLOW_MISSING := true
+TARGET_AUTO_COLLECT_KERNEL_MODULE_DEPS := true
 
 # Partitions
 -include vendor/lineage/config/BoardConfigReservedSize.mk
@@ -198,9 +210,13 @@ TARGET_USERIMAGES_USE_F2FS := true
 
 # RIL
 ENABLE_VENDOR_RIL_SERVICE := true
+$(call soong_config_set,rmnetctl,old_rmnet_data,true)
 
 # Sepolicy
 include device/lineage/sepolicy/libion/sepolicy.mk
+# Must stay above SEPolicy.mk, which picks the sm8750 policy the 6.6 HALs need
+TARGET_KERNEL_VERSION := 6.6
+
 include device/lineage/sepolicy/libperfmgr/sepolicy.mk
 include device/qcom/sepolicy_vndr/SEPolicy.mk
 
