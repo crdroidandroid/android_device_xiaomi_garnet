@@ -119,6 +119,11 @@ BOARD_KERNEL_CMDLINE := \
     bootinfo.fingerprint=$(LINEAGE_VERSION) \
     swinfo.fingerprint=$(LINEAGE_VERSION)
 
+# Keep unused clocks and power domains enabled
+BOARD_KERNEL_CMDLINE += \
+    clk_ignore_unused \
+    pd_ignore_unused
+
 BOARD_BOOTCONFIG := \
     androidboot.hardware=qcom \
     androidboot.memcg=1 \
