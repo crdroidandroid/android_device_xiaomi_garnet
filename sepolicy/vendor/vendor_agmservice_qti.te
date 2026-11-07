@@ -1,0 +1,39 @@
+# Stock AGMIPC@1.0 HIDL service, ported from the sm8450 agmsvc.te. The
+# sm8750 policy only labels its hwservice (hal_audio_hwservice).
+type vendor_agmservice_qti, domain;
+type vendor_agmservice_qti_exec, exec_type, vendor_file_type, file_type;
+
+init_daemon_domain(vendor_agmservice_qti)
+hal_server_domain(vendor_agmservice_qti, hal_audio)
+hwbinder_use(vendor_agmservice_qti)
+
+# The HAL (PAL, AGM plugins) is the client; AGM calls back into it
+binder_call(vendor_agmservice_qti, hal_audio_default)
+binder_call(hal_audio_default, vendor_agmservice_qti)
+
+allow vendor_agmservice_qti vendor_agm_device:chr_file rw_file_perms;
+allow vendor_agmservice_qti dmabuf_system_heap_device:chr_file r_file_perms;
+allow vendor_agmservice_qti vendor_dmabuf_audio_ml_heap_device:chr_file r_file_perms;
+
+allow vendor_agmservice_qti vendor_sysfs_agm:dir r_dir_perms;
+allow vendor_agmservice_qti vendor_sysfs_agm:file rw_file_perms;
+allow vendor_agmservice_qti vendor_sysfs_adsp_ssr:file w_file_perms;
+
+# Servreg (PD mapper/notifier) over QRTR
+allow vendor_agmservice_qti self:qipcrtr_socket create_socket_perms_no_ioctl;
+
+allow vendor_agmservice_qti vendor_audio_data_file:dir w_dir_perms;
+allow vendor_agmservice_qti vendor_audio_data_file:file create_file_perms;
+
+allow vendor_agmservice_qti self:global_capability_class_set sys_nice;
+
+# The Xiaomi libagm picks the Awinic or FourSemi ACDB set from the smart PA type
+allow vendor_agmservice_qti smartpa_type:file r_file_perms;
+get_prop(vendor_agmservice_qti, vendor_audio_prop)
+
+userdebug_or_eng(`
+  get_prop(vendor_agmservice_qti, vendor_audio_debug_prop)
+  get_prop(vendor_agmservice_qti, vendor_pd_locater_dbg_prop)
+  allow vendor_agmservice_qti vendor_data_file:file r_file_perms;
+  allow vendor_agmservice_qti proc_sysrq:file rw_file_perms;
+')

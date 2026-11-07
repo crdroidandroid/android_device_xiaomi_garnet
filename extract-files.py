@@ -18,6 +18,7 @@ from extract_utils.main import (
 )
 
 namespace_imports = [
+    'hardware/qcom-caf/sm8450-6.6',
     'hardware/qcom-caf/sm8450',
     'hardware/qcom-caf/wlan',
     'hardware/xiaomi',
@@ -37,6 +38,8 @@ lib_fixups: lib_fixups_user_type = {
         'vendor.qti.hardware.qccvndhal@1.0',
         'vendor.qti.imsrtpservice@3.0',
         'vendor.qti.diaghal@1.0',
+        'vendor.qti.hardware.AGMIPC@1.0',
+        'vendor.qti.hardware.pal@1.0',
     ): lib_fixup_vendor_suffix,
 }
 
