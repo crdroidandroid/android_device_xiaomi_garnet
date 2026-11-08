@@ -279,7 +279,6 @@ odm/etc/camera/videofilter/166_F50.png
 odm/lib64/com.xiaomi.camdfx.so
 odm/lib64/libMiPhotoFilter.so
 odm/lib64/librfs_warp.so
-vendor/bin/hw/vendor.qti.camera.provider@2.7-service_64
 vendor/bin/hw/vendor.xiaomi.hardware.quickcamera@1.0-service
 vendor/etc/camera/CFR_para_MACRO_V01.bin
 vendor/etc/camera/CFR_para_MACRO_V01_SN.bin
@@ -651,7 +650,6 @@ vendor/etc/camera/xiaomi/thirdpartyrawsupernightjpeg.json
 vendor/etc/camera/xiaomi/thirdpartyrawsupernightyuv.json
 vendor/etc/camera/xiaomi/thirdpartysnapshot.json
 vendor/etc/camera/xiaomiSceneDetection.xml
-vendor/etc/init/vendor.qti.camera.provider@2.7-service_64.rc
 vendor/etc/vintf/manifest/vendor.xiaomi.hardware.quickcamera@1.0-service.xml
 vendor/lib64/camera/components/com.mi.node.AIIE.so
 vendor/lib64/camera/components/com.mi.node.aiasd.so
@@ -768,22 +766,6 @@ vendor/lib64/camera/plugins/com.xiaomi.plugin.sr.so
 vendor/lib64/camera/plugins/com.xiaomi.plugin.supermoon.so
 vendor/lib64/camera/plugins/com.xiaomi.plugin.swjpegencode.so
 vendor/lib64/camera/plugins/com.xiaomi.plugin.tsskinbeautifier.so
-vendor/lib64/camx.device@3.2-impl.so
-vendor/lib64/camx.device@3.3-impl.so
-vendor/lib64/camx.device@3.4-ext-impl.so
-vendor/lib64/camx.device@3.4-impl.so
-vendor/lib64/camx.device@3.5-ext-impl.so
-vendor/lib64/camx.device@3.5-impl.so
-vendor/lib64/camx.device@3.6-ext-impl.so
-vendor/lib64/camx.device@3.6-impl.so
-vendor/lib64/camx.device@3.7-impl.so
-vendor/lib64/camx.provider@2.4-external.so
-vendor/lib64/camx.provider@2.4-impl.so
-vendor/lib64/camx.provider@2.4-legacy.so
-vendor/lib64/camx.provider@2.5-external.so
-vendor/lib64/camx.provider@2.5-legacy.so
-vendor/lib64/camx.provider@2.6-legacy.so
-vendor/lib64/camx.provider@2.7-legacy.so
 vendor/lib64/com.qti.chiusecaseselector.so
 vendor/lib64/com.qti.feature2.anchorsync.so
 vendor/lib64/com.qti.feature2.demux.so
@@ -877,7 +859,6 @@ vendor/lib64/libcamxfdalgo.so
 vendor/lib64/libcamxfdengine.so
 vendor/lib64/libcamxhwnodecontext.so
 vendor/lib64/libcamxifestriping.so
-vendor/lib64/libcamximageformatutils.so
 vendor/lib64/libcamxqsatalgo.so
 vendor/lib64/libcamxsettingsmanager.so
 vendor/lib64/libcamxstatscore.so
@@ -971,12 +952,23 @@ vendor/lib64/libxmi_hdr_checker.so
 vendor/lib64/libxmi_high_dynamic_range.so
 vendor/lib64/libxmi_slow_motion_mein.so
 vendor/lib64/libxmi_slow_motion_triger.so
-vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
 vendor/lib64/vendor.xiaomi.hardware.bgservice@1.0-impl.so
 vendor/lib64/vendor.xiaomi.hardware.bgservice@1.0.so
 vendor/lib64/vendor.xiaomi.hardware.campostproc@1.0-service-impl.so
 vendor/lib64/vendor.xiaomi.hardware.campostproc@1.0.so
 vendor/lib64/vendor.xiaomi.hardware.quickcamera@1.0.so
+
+# Camera - from PDX257 ELBE-1.1.0-REL-260522-1202
+vendor/bin/hw/vendor.qti.camera.provider-service_64|f2566187feed4d735b9350aeb7290ad467359116
+vendor/etc/init/vendor.qti.camera.provider-service_64.rc|a4cec1edb4312381e19f8d7246cd4727c5bbe935
+vendor/etc/vintf/manifest/vendor.qti.camera.postproc-impl.xml|c5bf529645adf309ee12eca0e8fa4a8306afcfbe
+vendor/etc/vintf/manifest/vendor.qti.camera.provider.xml|a9c4f3de3f7d8b0841d75e2d1940dd5503c36892
+vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so;DISABLE_CHECKELF|ec6a5b4e52dceded09199458139217b3c60109c7|fa3b5cece33bd1bfa8cde742c4cc7b481b50723e
+
+# Camera CamX - from PDX257 ELBE-1.1.0-REL-260522-1202
+vendor/lib64/camx.device-impl.so|69596cb9d17b19d702f10f5f221c3c4fc12bd8bf
+vendor/lib64/camx.provider-impl.so|3cbbb02ad6beb46bf43652efdae3801075d8b0f3
+vendor/lib64/libcamximageformatutils.so;DISABLE_CHECKELF|1748a050feb507842325d954be3a64fee28cb0a0|c39823bc128cc0db1c66dee8a568bd530872ed2a
 
 # Camera firmware
 vendor/firmware/CAMERA_ICP.b00

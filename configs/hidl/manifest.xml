@@ -30,16 +30,6 @@
         <fqname>@1.0::IBluetoothHci/default</fqname>
     </hal>
     <hal format="hidl">
-        <name>android.hardware.camera.provider</name>
-        <transport>hwbinder</transport>
-        <version>2.7</version>
-        <interface>
-            <name>ICameraProvider</name>
-            <instance>legacy/1</instance>
-        </interface>
-        <fqname>@2.7::ICameraProvider/legacy/1</fqname>
-    </hal>
-    <hal format="hidl">
         <name>android.hardware.gatekeeper</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
@@ -181,16 +171,6 @@
             <instance>default</instance>
         </interface>
         <fqname>@1.0::IService/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.qti.hardware.camera.postproc</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IPostProcService</name>
-            <instance>camerapostprocservice</instance>
-        </interface>
-        <fqname>@1.0::IPostProcService/camerapostprocservice</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.qti.hardware.capabilityconfigstore</name>

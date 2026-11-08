@@ -18,6 +18,7 @@ from extract_utils.main import (
 )
 
 namespace_imports = [
+    'device/xiaomi/garnet',
     'hardware/qcom-caf/sm8450-6.6',
     'hardware/qcom-caf/sm8450',
     'hardware/qcom-caf/wlan',
@@ -69,17 +70,6 @@ blob_fixups: blob_fixups_user_type = {
     'system_ext/framework/mirilhook.jar': blob_fixup()
         .apktool_patch('blob-patches/mirilhook.patch', '-r'),
     (
-        'vendor/bin/hw/vendor.qti.camera.provider@2.7-service_64',
-        'vendor/lib64/camx.device@3.4-ext-impl.so',
-        'vendor/lib64/camx.device@3.5-ext-impl.so',
-        'vendor/lib64/camx.device@3.6-ext-impl.so',
-        'vendor/lib64/camx.provider@2.4-external.so',
-        'vendor/lib64/camx.provider@2.4-impl.so',
-        'vendor/lib64/camx.provider@2.4-legacy.so',
-        'vendor/lib64/camx.provider@2.5-external.so',
-        'vendor/lib64/camx.provider@2.5-legacy.so',
-        'vendor/lib64/camx.provider@2.6-legacy.so',
-        'vendor/lib64/camx.provider@2.7-legacy.so',
         'vendor/lib64/com.qti.feature2.anchorsync.so',
         'vendor/lib64/libaudiocloudctrl.so',
         'vendor/lib64/libdpps.so',
@@ -98,8 +88,10 @@ blob_fixups: blob_fixups_user_type = {
         .regex_replace('.+media_codecs_(google_audio|google_c2|google_telephony|vendor_audio).+\n', ''),
     'vendor/etc/vintf/manifest/c2_manifest_vendor.xml': blob_fixup()
         .regex_replace('.+dolby.+\n', ''),
+    'vendor/lib64/hw/camera.qcom.so': blob_fixup()
+        .add_needed('libcamximageformatutils_shim.so')
+        .add_needed('libprocessgroup_shim.so'),
     (
-        'vendor/lib64/hw/camera.qcom.so',
         'vendor/lib64/hw/com.qti.chi.override.so',
         'vendor/lib64/libcamxcommonutils.so',
         'vendor/lib64/libmialgoengine.so'
@@ -134,8 +126,17 @@ blob_fixups: blob_fixups_user_type = {
         .clear_symbol_version('AHardwareBuffer_unlock'),
     'vendor/lib64/libcamximageformatutils.so': blob_fixup()
         .replace_needed(
-            'vendor.qti.hardware.display.config-V2-ndk_platform.so',
-            'vendor.qti.hardware.display.config-V2-ndk.so'
+            'android.hardware.graphics.allocator-V1-ndk.so',
+            'android.hardware.graphics.allocator-V2-ndk.so'
+        ),
+    'vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so': blob_fixup()
+        .replace_needed(
+            'android.hardware.camera.common-V2-ndk.so',
+            'android.hardware.camera.common-V1-ndk.so'
+        )
+        .replace_needed(
+            'android.hardware.graphics.allocator-V1-ndk.so',
+            'android.hardware.graphics.allocator-V2-ndk.so'
         ),
     (
         'vendor/lib64/libqtikeymint.so',
