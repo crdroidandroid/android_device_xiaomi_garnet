@@ -1,0 +1,3 @@
+userdebug_or_eng(`
+  domain_auto_trans(shell, vendor_port-bridge_exec, vendor_netmgrd)
+')

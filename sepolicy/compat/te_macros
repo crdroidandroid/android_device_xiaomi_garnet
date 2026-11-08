@@ -1,0 +1,11 @@
+#####################################
+# netmgr_socket(clientdomain)
+# Allow client domain to connecto and send
+# via a local socket to the netmgrd domain.
+# Also allow the client domain to remove
+# its own socket.
+define(`netmgr_socket', `
+allow $1 vendor_netmgrd_socket:dir r_dir_perms;
+unix_socket_connect($1, vendor_netmgrd, vendor_netmgrd)
+allow $1 vendor_netmgrd_socket:sock_file { read getattr write };
+')

@@ -1,0 +1,4 @@
+netmgr_socket(vendor_ims_service);
+hal_attribute_hwservice(vendor_hal_imsfactory, vendor_hal_imsfactory_hwservice)
+hal_attribute_hwservice(vendor_hal_imsfactory, vendor_hal_imsrcsd_hwservice)
+hal_attribute_hwservice(vendor_hal_imsfactory, vendor_hal_imscallinfo_hwservice)

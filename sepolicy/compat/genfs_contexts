@@ -1,0 +1,7 @@
+genfscon sysfs /devices/platform/soc/1c00000.pcie/pci0000:00/0000:00:00.0/0000:01:00.0/mhi_1103_00.01.00/wakeup  u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/1c00000.pcie/wakeup  u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/8c0000.qcom,qupv3_2_geni_se/894000.qcom,qup_uart/wakeup  u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/ac0000.qcom,qupv3_1_geni_se/a84000.i2c/i2c-2/2-0008/wakeup  u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/soc:gpio-keys/wakeup  u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,spcom/wakeup  u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/virtual/misc/fastrpc-sdsp-secure/wakeup  u:object_r:sysfs_wakeup:s0

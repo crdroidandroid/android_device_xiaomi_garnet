@@ -6,8 +6,6 @@ binder_call(platform_app, vendor_hal_camerapostproc_xiaomi)
 allow platform_app vendor_hal_camerapostproc_xiaomi_hwservice:hwservice_manager find;
 
 allow platform_app adsprpcd_file:dir { open read search };
-allow platform_app vendor_xdsp_device:chr_file { ioctl open read write };
-allow platform_app vendor_qdsp_device:chr_file { ioctl open read write };
 
 allow platform_app vendor_camera_data_file:dir { append map r_dir_perms write };
 allow platform_app vendor_camera_data_file:file { getattr open read };

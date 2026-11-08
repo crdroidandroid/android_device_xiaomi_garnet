@@ -1,0 +1,2 @@
+# Allow read SOC name
+get_prop(vendor_hal_keymint_qti, vendor_soc_name_prop)

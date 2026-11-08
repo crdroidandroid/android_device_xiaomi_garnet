@@ -1,0 +1,10 @@
+/data/vendor/netmgr(/.*)?  u:object_r:vendor_netmgr_data_file:s0
+/data/vendor/netmgr/recovery(/.*)?  u:object_r:vendor_netmgr_recovery_data_file:s0
+/dev/socket/netmgr(/.*)?  u:object_r:vendor_netmgrd_socket:s0
+/sys/devices/platform/soc/1d84000.ufshc/host0/target0:0:0/0:0:0:[0-9]+/block/sd[a-z]/queue/discard_max_bytes  u:object_r:vendor_sysfs_mmc_host:s0
+/sys/devices/platform/soc/1d84000.ufshc/host0/target0:0:0/0:0:0:[0-9]+/block/sd[a-z]/queue/read_ahead_kb  u:object_r:vendor_sysfs_sd:s0
+/sys/devices/platform/soc/3000000.remoteproc-adsp/remoteproc/remoteproc[0-9]+/3000000.remoteproc-adsp:glink-edge/3000000.remoteproc-adsp:glink-edge.adsp_apps.-1.-1/wakeup(/.*)?  u:object_r:sysfs_wakeup:s0
+/sys/devices/platform/soc/8804000.sdhci/mmc_host/mmc[0-1]/mmc[0-1]:[a-f0-9]+/block/mmcblk[0-1]/queue/read_ahead_kb  u:object_r:vendor_sysfs_sd:s0
+/sys/devices/virtual/bdi/8:[0-9]+/read_ahead_kb  u:object_r:vendor_sysfs_sd:s0
+/vendor/bin/hw/android\.hardware\.gatekeeper@1\.0-service-qti  u:object_r:vendor_hal_gatekeeper_qti_exec:s0
+/vendor/bin/netmgrd  u:object_r:vendor_netmgrd_exec:s0

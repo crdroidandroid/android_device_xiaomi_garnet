@@ -1,0 +1,2 @@
+allow system_server vendor_netmgrd:fd use;
+allow system_server vendor_netmgrd:udp_socket { getattr getopt read write };

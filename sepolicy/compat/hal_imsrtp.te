@@ -1,0 +1,3 @@
+hwbinder_use(vendor_hal_imsrtp)
+get_prop(vendor_hal_imsrtp, hwservicemanager_prop)
+add_hwservice(vendor_hal_imsrtp, vendor_hal_imsrtp_hwservice)

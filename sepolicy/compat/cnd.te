@@ -1,0 +1,3 @@
+netmgr_socket(vendor_cnd)
+allow vendor_cnd vendor_netmgrd:fd use;
+allow vendor_cnd vendor_netmgrd:udp_socket { read write };

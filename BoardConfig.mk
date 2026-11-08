@@ -220,6 +220,14 @@ TARGET_KERNEL_VERSION := 6.6
 include device/lineage/sepolicy/libperfmgr/sepolicy.mk
 include device/qcom/sepolicy_vndr/SEPolicy.mk
 
+# sm8750 only adds its HIDL compat policy on taro. The 5.10 Xiaomi blobs still
+# need it (qseecom, IMS, data, gatekeeper, QCC...). qva/vendor/compat applies as
+# is; generic/vendor/compat clashes with the parrot policy, so a trimmed copy
+# lives in sepolicy/compat.
+BOARD_VENDOR_SEPOLICY_DIRS += \
+    device/qcom/sepolicy_vndr/sm8750/qva/vendor/compat \
+    $(DEVICE_PATH)/sepolicy/compat
+
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
 
