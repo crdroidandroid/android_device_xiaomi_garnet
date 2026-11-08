@@ -1,6 +1,11 @@
 # Audio
 genfscon sysfs /kernel/smartpa/smartpa_type u:object_r:smartpa_type:s0
 
+# Display
+genfscon sysfs /devices/platform/soc/soc:qcom,dsi-display-primary/fod_ui u:object_r:vendor_sysfs_displayfeature:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,dsi-display-primary/local_hbm u:object_r:vendor_sysfs_displayfeature:s0
+genfscon sysfs /devices/virtual/mi_display/disp-DSI-0 u:object_r:vendor_sysfs_displayfeature:s0
+
 # Extcon
 genfscon sysfs /devices/platform/soc/soc:spf_core_platform/soc:spf_core_platform:lpass-cdc/wcd937x-codec/extcon u:object_r:sysfs_extcon:s0
 
