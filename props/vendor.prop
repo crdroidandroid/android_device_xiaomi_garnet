@@ -161,6 +161,7 @@ ro.hardware.keystore_desede=true
 # Media
 debug.c2.use_dmabufheaps=1
 debug.stagefright.c2inputsurface=-1
+media.c2.hal.selection=aidl
 ro.media.xml_variant.profiles=_parrot_v0
 
 # NFC

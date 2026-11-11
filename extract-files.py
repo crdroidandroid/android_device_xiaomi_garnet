@@ -62,6 +62,11 @@ blob_fixups: blob_fixups_user_type = {
             'android.hardware.gnss-V1-ndk_platform.so',
             'android.hardware.gnss-V1-ndk.so'
         ),
+    'vendor/bin/hw/vendor.qti.media.c2@1.0-service': blob_fixup()
+        .sig_replace(
+            '00 2a 80 52',
+            '00 2c 80 52',
+        ),
     'vendor/bin/qcc-trd': blob_fixup()
         .replace_needed(
             'libgrpc++_unsecure.so',
@@ -85,9 +90,13 @@ blob_fixups: blob_fixups_user_type = {
     ): blob_fixup()
         .regex_replace(r'=(\d+)>', r'="\1">'),
     'vendor/etc/media_codecs_parrot_v0.xml': blob_fixup()
-        .regex_replace('.+media_codecs_(google_audio|google_c2|google_telephony|vendor_audio).+\n', ''),
+        .regex_replace('.+media_codecs_(google_audio|google_c2|google_telephony|vendor_audio).+\n', '')
+        .regex_replace(r'(?s) *<MediaCodec name="c2\.dolby\.[^"]+" type="video/dolby-vision">.*?</MediaCodec>\n', ''),
     'vendor/etc/vintf/manifest/c2_manifest_vendor.xml': blob_fixup()
-        .regex_replace('.+dolby.+\n', ''),
+        .regex_replace('.+dolby.+\n', '')
+        .regex_replace('format="hidl"', 'format="aidl"')
+        .regex_replace('.+<(transport|version)>.+\n', '')
+        .regex_replace('.+<instance>software</instance>\n', ''),
     'vendor/lib64/hw/camera.qcom.so': blob_fixup()
         .add_needed('libcamximageformatutils_shim.so')
         .add_needed('libprocessgroup_shim.so'),
@@ -110,6 +119,11 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('libaudioroute.so', 'libaudioroute-v34.so', 'libtinyxml2.so', 'libtinyxml2-v34.so'),
     'vendor/lib64/libQnnDspV65CalculatorStub.so': blob_fixup()
         .add_needed('liblog.so'),
+    'vendor/lib64/libqcodec2_core.so': blob_fixup()
+        .replace_needed(
+            'android.hardware.graphics.common-V5-ndk.so',
+            'android.hardware.graphics.common-V7-ndk.so'
+        ),
     (
         'odm/lib64/libMiPhotoFilter.so',
         'vendor/lib64/libalhLDC.so',
