@@ -83,13 +83,12 @@ usb_f_cdev.ko
 usb_f_gsi.ko
 gh_irq_lend.ko
 gh_mem_notifier.ko
-qts.ko
 xiaomi_touch.ko
 focaltech_3683g.ko
 nt36xxx-i2c.ko
-goodix_ts.ko
+goodix_core.ko
 pm8941-pwrkey.ko
-qti_battery_charger.ko
+qti_battery_charger_main.ko
 qcom-hv-haptics.ko
 fpc16xx.ko
 goodix_fod.ko
@@ -111,6 +110,7 @@ ddr_cdev.ko
 qti_userspace_cdev.ko
 qti_cpufreq_cdev.ko
 qti_devfreq_cdev.ko
+mi_thermal_interface.ko
 qcom-cpufreq-hw.ko
 qcom_lpm.ko
 leds-qti-tri-led.ko

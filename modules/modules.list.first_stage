@@ -1,5 +1,6 @@
 # Core first-stage modules are loaded directly from:
 # $(TARGET_KERNEL_SOURCE)/modules.list.msm.parrot
+hwid.ko
 tmecom-intf.ko
 qti-fixed-regulator.ko
 qcom-cpufreq-hw.ko
