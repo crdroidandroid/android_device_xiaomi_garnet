@@ -112,6 +112,18 @@ service vendor.audio-hal /vendor/bin/hw/android.hardware.audio.service
     onrestart restart audioserver
     socket audio_us_socket_0 seqpacket 0666 system system
 
+# The AGM service detects the smart PA and stores it in a persist property,
+# but the audio HAL may already have read it. When the property was still
+# empty at boot (first boot after a clean flash), restart the HAL once so
+# it picks up the detected amplifier without a reboot. early-boot runs after
+# the persist properties are loaded and before class hal starts.
+on early-boot
+    setprop vendor.audio.pa.smartpa_at_boot ${persist.vendor.audio.pa.smartpa_type:-unset}
+
+on property:vendor.audio.pa.smartpa_at_boot=unset && property:persist.vendor.audio.pa.smartpa_type=*
+    setprop vendor.audio.pa.smartpa_at_boot detected
+    restart --only-if-running vendor.audio-hal
+
 service vendor.sensors-hal-multihal /vendor/bin/hw/android.hardware.sensors-service.xiaomi-multihal
     override
     class hal

@@ -1,5 +1,6 @@
 # Audio
 persist.vendor.audio.pa.smartpa_type u:object_r:vendor_audio_prop:s0
+vendor.audio.pa.smartpa_at_boot u:object_r:vendor_audio_prop:s0
 vendor.audio.voice.receiver.status u:object_r:vendor_audio_prop:s0
 
 # Camera
