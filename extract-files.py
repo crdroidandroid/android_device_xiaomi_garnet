@@ -90,7 +90,8 @@ blob_fixups: blob_fixups_user_type = {
     ): blob_fixup()
         .regex_replace(r'=(\d+)>', r'="\1">'),
     'vendor/etc/media_codecs_parrot_v0.xml': blob_fixup()
-        .regex_replace('.+media_codecs_(google_audio|google_c2|google_telephony|vendor_audio).+\n', ''),
+        .regex_replace('.+media_codecs_(google_audio|google_c2|google_telephony|vendor_audio).+\n', '')
+        .regex_replace(r'(?s) *<MediaCodec name="c2\.dolby\.[^"]+" type="video/dolby-vision">.*?</MediaCodec>\n', ''),
     'vendor/etc/vintf/manifest/c2_manifest_vendor.xml': blob_fixup()
         .regex_replace('.+dolby.+\n', '')
         .regex_replace('format="hidl"', 'format="aidl"')
