@@ -1069,7 +1069,7 @@ vendor/lib64/libscveCommon_stub.so
 vendor/lib64/libscveObjectSegmentation.so
 vendor/lib64/libscveObjectTracker.so
 vendor/lib64/libscveObjectTracker_stub.so
-vendor/lib64/libvideoutils.so
+vendor/lib64/libvideoutils.so|3fa43457f6c4e773387e8c24d4700c24e8eca496
 
 # Computer vision firmware
 vendor/firmware/evass-lt-21.b00
@@ -1476,13 +1476,13 @@ vendor/lib64/vendor.qti.hardware.ListenSoundModel@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.ListenSoundModel@1.0.so
 
 # Media
-vendor/bin/hw/vendor.qti.media.c2@1.0-service
+vendor/bin/hw/vendor.qti.media.c2@1.0-service|9cf67c2848ab982513e37bf2921f2427a34a8b43|7fedba0e96eaf76bbdcf4cd94e06d64d645f7851
 vendor/bin/hw/vendor.qti.media.c2audio@1.0-service
 vendor/etc/init/vendor.qti.media.c2@1.0-service.rc
 vendor/etc/init/vendor.qti.media.c2audio@1.0-service.rc
-vendor/etc/seccomp_policy/codec2.vendor.base-arm64.policy
-vendor/etc/seccomp_policy/codec2.vendor.ext-arm64.policy
-vendor/etc/vintf/manifest/c2_manifest_vendor.xml
+vendor/etc/seccomp_policy/codec2.vendor.base-arm64.policy|1bd2621778d771207bdb1ad5ae902966fe3de683
+vendor/etc/seccomp_policy/codec2.vendor.ext-arm64.policy|a134d3d5d74294ca8164056b42389b1c7dbb2b65
+vendor/etc/vintf/manifest/c2_manifest_vendor.xml|fb1e3a4b9ef810dfa7a35c0b4c1bcc5090c25b95|bddae2416671ae64769f2c76f19ed4db1d6c3eae
 vendor/etc/vintf/manifest/c2_manifest_vendor_audio.xml
 vendor/lib64/libEvrcSwCodec.so
 vendor/lib64/libQcelp13SwCodec.so
@@ -1495,20 +1495,20 @@ vendor/lib64/libqc2audio_hwaudiocodec.so
 vendor/lib64/libqc2audio_platform.so
 vendor/lib64/libqc2audio_swaudiocodec.so
 vendor/lib64/libqc2audio_utils.so
-vendor/lib64/libqc2colorconvertfilter.so
-vendor/lib64/libqc2filter.so
-vendor/lib64/libqcodec2_base.so
-vendor/lib64/libqcodec2_basecodec.so
-vendor/lib64/libqcodec2_core.so
-vendor/lib64/libqcodec2_filterbase.so
-vendor/lib64/libqcodec2_hooks.so
-vendor/lib64/libqcodec2_mockfilter.so
-vendor/lib64/libqcodec2_mockqc2filter.so
-vendor/lib64/libqcodec2_platform.so
-vendor/lib64/libqcodec2_utils.so
-vendor/lib64/libqcodec2_v4l2codec.so
-vendor/lib64/libvideotxr.so
-vendor/lib64/qti.video.utils.videobufferlayout.so
+vendor/lib64/libqc2colorconvertfilter.so|fe0ef6d73fc604c4a7d4f7c1fb5fecba6f6ebd48
+vendor/lib64/libqc2filter.so|7afae7243af2f742069aeca6e4e52c9a45a11b42
+vendor/lib64/libqcodec2_base.so|2138f4db41e760126d56d79d27b7f106cb5b8c7c
+vendor/lib64/libqcodec2_basecodec.so|66e9af4f57e4eb822336616fc173b7d48543af9f
+vendor/lib64/libqcodec2_core.so|b4647b587ee21f1965cc925a1dc2bf5b0ceb1ea0|3978dba501d69e52e8aed9a7843e52163626f0ed
+vendor/lib64/libqcodec2_filterbase.so|fe1842795517cfe10339ac051e7342021f1cb59b
+vendor/lib64/libqcodec2_hooks.so|ee1025df517d01051fdab66d9b49631636435e76
+vendor/lib64/libqcodec2_mockfilter.so|b6537f35579cd4c860a4d417f504e9f70b762b97
+vendor/lib64/libqcodec2_mockqc2filter.so|c14e23f221042a0ac61d86d574b92650ad50ec5b
+vendor/lib64/libqcodec2_platform.so|7ad4fb73b6388b7ac2246ca3eb24363e45f4a4ec
+vendor/lib64/libqcodec2_utils.so|17115b47196d58924fb2a928c13caa157101c3e8
+vendor/lib64/libqcodec2_v4l2codec.so|17c06607dd66f6ef27e6d7bc35ad7e158870a381
+vendor/lib64/libvideotxr.so|16421596d94e3b0c012039515abf68ed0ea7713b
+vendor/lib64/qti.video.utils.videobufferlayout.so|add6dd313fa18fe0ab40ae055e06cd11d88f4545
 
 # Media Config
 vendor/etc/media_codecs_parrot_v0.xml
