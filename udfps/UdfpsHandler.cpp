@@ -11,13 +11,11 @@
 #include <android-base/properties.h>
 #include <android-base/unique_fd.h>
 
+#include <fcntl.h>
 #include <poll.h>
-#include <sys/ioctl.h>
+#include <unistd.h>
 #include <fstream>
 #include <thread>
-
-#include <display/drm/mi_disp.h>
-#include <linux/xiaomi_touch.h>
 
 #include "UdfpsHandler.h"
 
@@ -25,54 +23,36 @@
 #define PARAM_NIT_FOD 1
 #define PARAM_NIT_NONE 0
 
-#define LOW_BRIGHTNESS_THRESHHOLD 100
-
 #define COMMAND_FOD_PRESS_STATUS 1
 #define PARAM_FOD_PRESSED 1
 #define PARAM_FOD_RELEASED 0
 
-#define DISP_FEATURE_PATH "/dev/mi_display/disp_feature"
-#define TOUCH_DEV_PATH "/dev/xiaomi-touch"
+#define DISPLAY_PATH "/sys/devices/platform/soc/soc:qcom,dsi-display-primary"
+#define LOCAL_HBM_PATH DISPLAY_PATH "/local_hbm"
+#define FOD_UI_PATH DISPLAY_PATH "/fod_ui"
+#define LOCAL_HBM_OFF 0
+#define LOCAL_HBM_1000NIT 1000
 
 using ::aidl::android::hardware::biometrics::fingerprint::AcquiredInfo;
 
 namespace {
 
-static std::shared_ptr<disp_event_resp> parseDispEvent(int fd) {
-    disp_event header;
-    ssize_t headerSize = read(fd, &header, sizeof(header));
-    if (headerSize < sizeof(header)) {
-        LOG(ERROR) << "unexpected display event header size: " << headerSize;
-        return nullptr;
-    }
-
-    std::shared_ptr<disp_event_resp> response(static_cast<disp_event_resp*>(malloc(header.length)),
-                                              free);
-    if (!response) {
-        LOG(ERROR) << "failed to allocate memory for display event response";
-        return nullptr;
-    }
-    response->base = header;
-
-    int dataLength = response->base.length - sizeof(response->base);
-    if (dataLength < 0) {
-        LOG(ERROR) << "invalid data length: " << response->base.length;
-        return nullptr;
-    }
-
-    ssize_t dataSize = read(fd, &response->data, dataLength);
-    if (dataSize < dataLength) {
-        LOG(ERROR) << "unexpected display event data size: " << dataSize;
-        return nullptr;
-    }
-
-    return response;
+template <typename T>
+static void set(const std::string& path, const T& value) {
+    std::ofstream file(path);
+    file << value;
 }
 
-struct disp_base displayBasePrimary = {
-        .flag = 0,
-        .disp_id = MI_DISP_PRIMARY,
-};
+static bool readBool(int fd) {
+    char c;
+
+    if (lseek(fd, 0, SEEK_SET) < 0 || read(fd, &c, sizeof(c)) != 1) {
+        PLOG(ERROR) << "failed to read " << FOD_UI_PATH;
+        return false;
+    }
+
+    return c != '0';
+}
 
 }  // anonymous namespace
 
@@ -80,85 +60,57 @@ class XiaomiGarnetUdfpsHandler : public UdfpsHandler {
   public:
     void init(fingerprint_device_t* device) {
         mDevice = device;
-        disp_fd_ = android::base::unique_fd(open(DISP_FEATURE_PATH, O_RDWR));
+        if (!mDevice) {
+            LOG(ERROR) << "no fingerprint device";
+            return;
+        }
 
         // Thread to listen for fod ui changes
         std::thread([this]() {
-            android::base::unique_fd fd(open(DISP_FEATURE_PATH, O_RDWR));
+            android::base::unique_fd fd(open(FOD_UI_PATH, O_RDONLY));
             if (fd < 0) {
-                LOG(ERROR) << "failed to open " << DISP_FEATURE_PATH << " , err: " << fd;
+                PLOG(ERROR) << "failed to open " << FOD_UI_PATH;
                 return;
             }
 
-            // Register for FOD events
-            struct disp_event_req displayEventRequest = {
-                    .base = displayBasePrimary,
-                    .type = MI_DISP_EVENT_FOD,
-            };
-            if (ioctl(fd.get(), MI_DISP_IOCTL_REGISTER_EVENT, &displayEventRequest) < 0) {
-                LOG(ERROR) << "failed to register FOD event";
-                return;
-            }
-
-            struct pollfd dispEventPoll = {
+            struct pollfd fodUiPoll = {
                     .fd = fd.get(),
-                    .events = POLLIN,
+                    .events = POLLERR | POLLPRI,
                     .revents = 0,
             };
 
+            readBool(fd.get());
             while (true) {
-                int rc = poll(&dispEventPoll, 1, -1);
+                int rc = poll(&fodUiPoll, 1, -1);
                 if (rc < 0) {
-                    LOG(ERROR) << "failed to poll " << DISP_FEATURE_PATH << ", err: " << rc;
+                    PLOG(ERROR) << "failed to poll " << FOD_UI_PATH;
                     continue;
                 }
-
-                std::shared_ptr<disp_event_resp> response = parseDispEvent(fd.get());
-                if (!response) {
-                    continue;
-                }
-
-                if (response->base.type != MI_DISP_EVENT_FOD) {
-                    LOG(ERROR) << "unexpected display event: " << response->base.type;
-                    continue;
-                }
-
-                int value = response->data[0];
-                LOG(DEBUG) << "received data: " << std::bitset<8>(value);
-
-                bool localHbmUiReady = value & LOCAL_HBM_UI_READY;
 
                 mDevice->extCmd(mDevice, COMMAND_NIT,
-                                localHbmUiReady ? PARAM_NIT_FOD : PARAM_NIT_NONE);
+                                readBool(fd.get()) ? PARAM_NIT_FOD : PARAM_NIT_NONE);
             }
         }).detach();
     }
 
     void onFingerDown(uint32_t /*x*/, uint32_t /*y*/, float /*minor*/, float /*major*/) {
-        if (mAuthSuccess) return;
+        if (mAuthSuccess || !mDevice) return;
         LOG(INFO) << __func__;
 
         mDevice->extCmd(mDevice, COMMAND_FOD_PRESS_STATUS, PARAM_FOD_PRESSED);
 
         // Request HBM
-        struct disp_local_hbm_req displayLhbmRequest = {
-                .base = displayBasePrimary,
-                .local_hbm_value = LHBM_TARGET_BRIGHTNESS_WHITE_1000NIT,
-        };
-        ioctl(disp_fd_.get(), MI_DISP_IOCTL_SET_LOCAL_HBM, &displayLhbmRequest);
+        set(LOCAL_HBM_PATH, LOCAL_HBM_1000NIT);
     }
 
     void onFingerUp() {
+        if (!mDevice) return;
         LOG(DEBUG) << __func__;
 
         mDevice->extCmd(mDevice, COMMAND_FOD_PRESS_STATUS, PARAM_FOD_RELEASED);
 
         // Disable HBM
-        struct disp_local_hbm_req displayLhbmRequest = {
-                .base = displayBasePrimary,
-                .local_hbm_value = LHBM_TARGET_BRIGHTNESS_OFF_FINGER_UP,
-        };
-        ioctl(disp_fd_.get(), MI_DISP_IOCTL_SET_LOCAL_HBM, &displayLhbmRequest);
+        set(LOCAL_HBM_PATH, LOCAL_HBM_OFF);
     }
 
     void onAcquired(int32_t result, int32_t vendorCode) {
@@ -193,8 +145,7 @@ class XiaomiGarnetUdfpsHandler : public UdfpsHandler {
     void onAuthenticationFailed() { onFingerUp(); }
 
   private:
-    fingerprint_device_t* mDevice;
-    android::base::unique_fd disp_fd_;
+    fingerprint_device_t* mDevice = nullptr;
     bool mAuthSuccess = false;
 };
 

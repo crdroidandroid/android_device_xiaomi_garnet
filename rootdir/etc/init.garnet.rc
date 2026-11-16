@@ -32,6 +32,9 @@ on boot
     chmod 0666 /dev/input/event2
 
 on post-fs-data
+    # Local HBM
+    chown system system /sys/devices/platform/soc/soc:qcom,dsi-display-primary/local_hbm
+
     mkdir /data/vendor/misc 01771 system system
     mkdir /data/vendor/misc/mi_fp 0770 system system
     mkdir /persist/mi_fp 0770 system system
