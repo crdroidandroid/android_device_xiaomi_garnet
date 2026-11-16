@@ -99,7 +99,11 @@ blob_fixups: blob_fixups_user_type = {
         .regex_replace('.+<instance>software</instance>\n', ''),
     'vendor/lib64/hw/camera.qcom.so': blob_fixup()
         .add_needed('libcamximageformatutils_shim.so')
-        .add_needed('libprocessgroup_shim.so'),
+        .add_needed('libprocessgroup_shim.so')
+        .binary_regex_replace(
+            b'_ZN4CamX16ImageFormatUtils9GetFormatERNS_17GrallocPropertiesERNS_6FormatE',
+            b'_ZN4CamX16ImageFormatUtils9GetXiaomiERNS_17GrallocPropertiesERNS_6FormatE',
+        ),
     (
         'vendor/lib64/hw/com.qti.chi.override.so',
         'vendor/lib64/libcamxcommonutils.so',
