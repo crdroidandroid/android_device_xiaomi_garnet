@@ -110,6 +110,7 @@ ddr_cdev.ko
 qti_userspace_cdev.ko
 qti_cpufreq_cdev.ko
 qti_devfreq_cdev.ko
+mi_thermal_interface.ko
 qcom-cpufreq-hw.ko
 qcom_lpm.ko
 leds-qti-tri-led.ko
