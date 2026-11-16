@@ -119,6 +119,13 @@ BOARD_KERNEL_CMDLINE := \
     bootinfo.fingerprint=$(LINEAGE_VERSION) \
     swinfo.fingerprint=$(LINEAGE_VERSION)
 
+# DEBUG ONLY (bring-up): keep the clocks and power domains that no driver
+# claimed yet. Not on the 5.10 cmdline; remove once 6.6 is known to work
+# without them.
+BOARD_KERNEL_CMDLINE += \
+    clk_ignore_unused \
+    pd_ignore_unused
+
 BOARD_BOOTCONFIG := \
     androidboot.hardware=qcom \
     androidboot.memcg=1 \
