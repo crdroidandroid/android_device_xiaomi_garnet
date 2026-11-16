@@ -1,0 +1,4 @@
+#allow use of netmgrd unix sockets
+netmgr_socket(vendor_qmipriod);
+allow vendor_qmipriod vendor_netmgrd_socket:dir w_dir_perms;
+allow vendor_qmipriod vendor_netmgrd_socket:sock_file create;

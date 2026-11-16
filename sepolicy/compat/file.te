@@ -1,0 +1,3 @@
+type vendor_netmgrd_socket, file_type;
+type vendor_netmgr_data_file, file_type, data_file_type;
+type vendor_netmgr_recovery_data_file, file_type, data_file_type;

@@ -1,0 +1,5 @@
+type vendor_hal_dataconnection_hwservice, hwservice_manager_type, protected_hwservice;
+type vendor_hal_iwlan_hwservice, hwservice_manager_type, protected_hwservice;
+type vendor_hal_imsrcsd_hwservice, hwservice_manager_type, protected_hwservice;
+type vendor_hal_imsrtp_hwservice, hwservice_manager_type, protected_hwservice;
+type vendor_hal_imscallinfo_hwservice, hwservice_manager_type, protected_hwservice;

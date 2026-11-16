@@ -1,0 +1,2 @@
+allow vendor_qtidataservices_app vendor_netmgrd:fd use;
+allow vendor_qtidataservices_app vendor_netmgrd:udp_socket { getattr getopt read write };

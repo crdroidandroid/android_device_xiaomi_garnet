@@ -1,0 +1,7 @@
+com.qualcomm.qti.imscmservice::IImsCmService  u:object_r:vendor_hal_imsrcsd_hwservice:s0
+com.qualcomm.qti.uceservice::IUceService  u:object_r:vendor_hal_imsrcsd_hwservice:s0
+vendor.qti.hardware.data.connection::IDataConnection  u:object_r:vendor_hal_dataconnection_hwservice:s0
+vendor.qti.hardware.data.iwlan::IIWlan  u:object_r:vendor_hal_iwlan_hwservice:s0
+vendor.qti.ims.callinfo::IService  u:object_r:vendor_hal_imscallinfo_hwservice:s0
+vendor.qti.ims.factory::IImsFactory  u:object_r:vendor_hal_imsfactory_hwservice:s0
+vendor.qti.imsrtpservice::IRTPService  u:object_r:vendor_hal_imsrtp_hwservice:s0
