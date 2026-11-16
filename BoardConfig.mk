@@ -153,6 +153,7 @@ TARGET_KERNEL_EXT_MODULES := \
 	qcom/opensource/video-driver \
 	qcom/opensource/wlan/platform \
 	qcom/opensource/wlan/qcacld-3.0/.adrastea \
+	nxp/opensource/driver \
 	xiaomi
 
 first_stage_modules := $(strip $(shell if [ -f $(TARGET_KERNEL_SOURCE)/modules.list.msm.parrot ]; then cat $(TARGET_KERNEL_SOURCE)/modules.list.msm.parrot | grep -v '^\s*#' | grep -v '^\s*$$'; fi) $(shell if [ -f $(DEVICE_PATH)/modules/modules.list.first_stage ]; then cat $(DEVICE_PATH)/modules/modules.list.first_stage | grep -v '^\s*#' | grep -v '^\s*$$'; fi))
