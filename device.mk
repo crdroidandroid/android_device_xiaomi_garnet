@@ -168,6 +168,9 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_PACKAGES += \
     XiaomiEuicc
 
+# Face unlock
+TARGET_FACE_UNLOCK_SUPPORTED := true
+
 # Fastbootd
 PRODUCT_PACKAGES += \
     fastbootd
